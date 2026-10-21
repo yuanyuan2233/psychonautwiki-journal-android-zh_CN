@@ -21,7 +21,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.isaakhanimann.journal.R
 
 /**
  * 位于“统计”页面顶部大标题旁（用户标记红框处）的耐受度功能胶囊入口按钮。
@@ -52,7 +54,7 @@ fun ToleranceEntryButton(
             )
             Spacer(modifier = Modifier.width(6.dp))
             Text(
-                text = "耐受度分析",
+                text = stringResource(R.string.tolerance_analysis),
                 style = MaterialTheme.typography.labelLarge
             )
         }

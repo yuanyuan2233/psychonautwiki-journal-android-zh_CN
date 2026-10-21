@@ -183,4 +183,48 @@
     <string name="stats_choose_longer_range">Choose a longer duration range to see statistics.</string>
     <string name="stats_tolerance">Tolerance</string>
     <string name="stats_dose_unknown">Unknown dose</string>
+
+    <!-- Tolerance Analysis -->
+    <string name="tolerance_analysis">Tolerance Analysis</string>
+    <string name="tolerance_chart_title">Tolerance Timeline</string>
+    <string name="tolerance_simulate_ingestion">Simulate Ingestion</string>
+    <string name="tolerance_model_limitations">Model Limitations</string>
+    <string name="tolerance_range_1m">Last 1M</string>
+    <string name="tolerance_range_3m">Last 3M</string>
+    <string name="tolerance_range_6m">Last 6M</string>
+    <string name="tolerance_range_1y">Last 1Y</string>
+    <string name="tolerance_previewing_simulations">Previewing %1$d simulated ingestions</string>
+    <string name="tolerance_clear_simulation">Clear</string>
+    <string name="tolerance_gantt_hint">Tolerance Recovery Gantt Matrix</string>
+    <string name="tolerance_tracked_substances_title">Tracked Substances · Subjective Adjustment:</string>
+    <string name="tolerance_customized_badge">✓ Custom</string>
+    <string name="tolerance_adjust_button">Adjust ➔</string>
+    <string name="tolerance_legend_title">Legend &amp; Subjective Adaptation:</string>
+    <string name="tolerance_legend_full">Full Tolerance</string>
+    <string name="tolerance_legend_half">Half Tolerance</string>
+    <string name="tolerance_legend_today">Today (Now)</string>
+    <string name="tolerance_legend_custom_dot">Yellow dot: customized with personal perception</string>
+    <string name="tolerance_harm_reduction_title">💡 Harm Reduction Notice</string>
+    <string name="tolerance_harm_reduction_desc">This model estimates recovery timelines based on PsychonautWiki pharmacokinetic data, assuming full tolerance develops immediately. Because of individual metabolic differences, you can tap any substance card below to adjust recovery days or mark tolerance as reset.</string>
+    <string name="tolerance_dialog_about_title">About Tolerance Model</string>
+    <string name="tolerance_dialog_section1_title">1. Theoretical Model Limitations</string>
+    <string name="tolerance_dialog_section1_desc">This chart illustrates the theoretical population timeline from full tolerance to half and zero baseline. It does not account for exact ingested doses or multi-substance cross tolerance.</string>
+    <string name="tolerance_dialog_section2_title">2. Subjective Perception Freedom</string>
+    <string name="tolerance_dialog_section2_desc">Your body is your own guide. Tap any substance to customize full tolerance days, zero tolerance days, or mark baseline recovered early.</string>
+    <string name="tolerance_dialog_ok">Got it</string>
+    <string name="tolerance_sim_dialog_title">Simulate Ingestion</string>
+    <string name="tolerance_sim_dialog_hint">Enter a substance name to preview how your tolerance window would be extended if taken now:</string>
+    <string name="tolerance_sim_dialog_input_label">Substance name (e.g. LSD, Psilocybin)</string>
+    <string name="tolerance_sim_dialog_add">Simulate</string>
+    <string name="tolerance_chart_empty">No ingestions with tolerance data in the selected period</string>
+
+    <!-- Tolerance Bottom Sheet -->
+    <string name="tolerance_sheet_description">Subjective Adaptation: Due to individual physiological differences and varying dosages, you can freely calibrate your actual tolerance recovery cycle rather than strictly following standard theoretical averages.</string>
+    <string name="tolerance_sheet_mark_today">⚡ Mark as Fully Reset Today (Baseline Recovered)</string>
+    <string name="tolerance_sheet_full_days_label">Full Tolerance Days</string>
+    <string name="tolerance_sheet_full_days_placeholder">e.g. 2.0 (leave blank for baseline)</string>
+    <string name="tolerance_sheet_zero_days_label">Zero Tolerance Days</string>
+    <string name="tolerance_sheet_zero_days_placeholder">e.g. 5.0 (leave blank for baseline)</string>
+    <string name="tolerance_sheet_reset">Restore Baseline</string>
+    <string name="tolerance_sheet_save">Save Adaptation</string>
 </resources>

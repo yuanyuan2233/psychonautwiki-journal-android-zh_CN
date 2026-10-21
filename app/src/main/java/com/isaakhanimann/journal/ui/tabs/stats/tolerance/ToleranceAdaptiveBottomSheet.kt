@@ -33,9 +33,11 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
+import com.isaakhanimann.journal.R
 import com.isaakhanimann.journal.ui.tabs.search.SubstanceLocalizationHelper
 
 /**
@@ -93,7 +95,7 @@ fun ToleranceAdaptiveBottomSheet(
             Spacer(modifier = Modifier.height(16.dp))
 
             Text(
-                text = "主观体感自适应：由于个体生理代谢及用药剂量差异，您可以自由修正您感受到的真实耐药恢复周期，无需受限于标准药代理论均值。",
+                text = stringResource(R.string.tolerance_sheet_description),
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
@@ -114,7 +116,7 @@ fun ToleranceAdaptiveBottomSheet(
             ) {
                 Icon(Icons.Filled.CheckCircle, contentDescription = null)
                 Spacer(modifier = Modifier.width(8.dp))
-                Text("⚡ 标记为今天已完全归零 (感知已恢复基线)")
+                Text(stringResource(R.string.tolerance_sheet_mark_today))
             }
 
             Spacer(modifier = Modifier.height(20.dp))
@@ -123,8 +125,8 @@ fun ToleranceAdaptiveBottomSheet(
             OutlinedTextField(
                 value = fullDaysText,
                 onValueChange = { fullDaysText = it },
-                label = { Text("完全耐受体感天数 (Full Tolerance)") },
-                placeholder = { Text("例如: 2.0 (留空遵循药代基准)") },
+                label = { Text(stringResource(R.string.tolerance_sheet_full_days_label)) },
+                placeholder = { Text(stringResource(R.string.tolerance_sheet_full_days_placeholder)) },
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
                 singleLine = true,
                 modifier = Modifier.fillMaxWidth()
@@ -136,8 +138,8 @@ fun ToleranceAdaptiveBottomSheet(
             OutlinedTextField(
                 value = zeroDaysText,
                 onValueChange = { zeroDaysText = it },
-                label = { Text("耐受完全归零体感天数 (Zero Tolerance)") },
-                placeholder = { Text("例如: 5.0 (留空遵循药代基准)") },
+                label = { Text(stringResource(R.string.tolerance_sheet_zero_days_label)) },
+                placeholder = { Text(stringResource(R.string.tolerance_sheet_zero_days_placeholder)) },
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
                 singleLine = true,
                 modifier = Modifier.fillMaxWidth()
@@ -158,7 +160,7 @@ fun ToleranceAdaptiveBottomSheet(
                 ) {
                     Icon(Icons.Filled.RestartAlt, contentDescription = null)
                     Spacer(modifier = Modifier.width(4.dp))
-                    Text("恢复理论基准")
+                    Text(stringResource(R.string.tolerance_sheet_reset))
                 }
 
                 Button(
@@ -176,7 +178,7 @@ fun ToleranceAdaptiveBottomSheet(
                     },
                     modifier = Modifier.weight(1f)
                 ) {
-                    Text("保存自适应")
+                    Text(stringResource(R.string.tolerance_sheet_save))
                 }
             }
         }

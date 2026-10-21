@@ -183,4 +183,48 @@
     <string name="stats_choose_longer_range">请选择更长的时间跨度以查看统计数据。</string>
     <string name="stats_tolerance">耐受性</string>
     <string name="stats_dose_unknown">剂量未知</string>
+
+    <!-- Tolerance Analysis -->
+    <string name="tolerance_analysis">耐受度分析</string>
+    <string name="tolerance_chart_title">耐受度时序分析</string>
+    <string name="tolerance_simulate_ingestion">模拟摄入推演</string>
+    <string name="tolerance_model_limitations">模型局限性说明</string>
+    <string name="tolerance_range_1m">近1个月</string>
+    <string name="tolerance_range_3m">近3个月</string>
+    <string name="tolerance_range_6m">近半年</string>
+    <string name="tolerance_range_1y">近1年</string>
+    <string name="tolerance_previewing_simulations">正在预览 %1$d 条推演摄入</string>
+    <string name="tolerance_clear_simulation">清除推演</string>
+    <string name="tolerance_gantt_hint">耐药恢复甘特矩阵 (滑动界面无冲突，调节请在下方列表操作)</string>
+    <string name="tolerance_tracked_substances_title">已追踪物质 · 主观体感自适应调节：</string>
+    <string name="tolerance_customized_badge">✓ 已自适应</string>
+    <string name="tolerance_adjust_button">调节体感 ➔</string>
+    <string name="tolerance_legend_title">图例与体感自适应：</string>
+    <string name="tolerance_legend_full">完全耐受 (脱敏期)</string>
+    <string name="tolerance_legend_half">半耐受 (衰减中)</string>
+    <string name="tolerance_legend_today">今日 (Now)</string>
+    <string name="tolerance_legend_custom_dot">黄色小圆点：已融入您个人的主观耐受体感修正</string>
+    <string name="tolerance_harm_reduction_title">💡 科学减害提示</string>
+    <string name="tolerance_harm_reduction_desc">本模型基于 PsychonautWiki 公开药代动力学阶段推算，默认单次即建立瞬时完全耐受。由于个体生理差异与剂量不计，您可点击任意物质卡片自主调整恢复天数或标记已归零。</string>
+    <string name="tolerance_dialog_about_title">关于耐受度模型</string>
+    <string name="tolerance_dialog_section1_title">1. 理论模型局限性</string>
+    <string name="tolerance_dialog_section1_desc">该图表反映了从完全耐受建立到减半、最终归零的群体理论时间。但未考虑实际摄入剂量及多物质交叉耐受。\n</string>
+    <string name="tolerance_dialog_section2_title">2. 主观体感自由度</string>
+    <string name="tolerance_dialog_section2_desc">身体由您自己感知。点击物质即可自由设置完全耐受天数、归零天数或标记提前恢复。</string>
+    <string name="tolerance_dialog_ok">了解</string>
+    <string name="tolerance_sim_dialog_title">推演添加模拟服药</string>
+    <string name="tolerance_sim_dialog_hint">输入物质名称，预演若在当前时刻服用，耐受窗口会被顺延到哪一天：</string>
+    <string name="tolerance_sim_dialog_input_label">物质英文或中文学名 (如 LSD, Psilocybin)</string>
+    <string name="tolerance_sim_dialog_add">添加推演</string>
+    <string name="tolerance_chart_empty">所选周期内暂无包含耐受药理数据的服药记录</string>
+
+    <!-- Tolerance Bottom Sheet -->
+    <string name="tolerance_sheet_description">主观体感自适应：由于个体生理代谢及用药剂量差异，您可以自由修正您感受到的真实耐药恢复周期，无需受限于标准药代理论均值。</string>
+    <string name="tolerance_sheet_mark_today">⚡ 标记为今天已完全归零 (感知已恢复基线)</string>
+    <string name="tolerance_sheet_full_days_label">完全耐受体感天数 (Full Tolerance)</string>
+    <string name="tolerance_sheet_full_days_placeholder">例如: 2.0 (留空遵循药代基准)</string>
+    <string name="tolerance_sheet_zero_days_label">耐受完全归零体感天数 (Zero Tolerance)</string>
+    <string name="tolerance_sheet_zero_days_placeholder">例如: 5.0 (留空遵循药代基准)</string>
+    <string name="tolerance_sheet_reset">恢复理论基准</string>
+    <string name="tolerance_sheet_save">保存自适应</string>
 </resources>

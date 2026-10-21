@@ -32,8 +32,10 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.drawText
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.rememberTextMeasurer
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.isaakhanimann.journal.R
 import com.isaakhanimann.journal.ui.tabs.search.SubstanceLocalizationHelper
 import java.time.Instant
 import java.time.ZoneId
@@ -61,7 +63,7 @@ fun ToleranceChart(
             contentAlignment = Alignment.Center
         ) {
             Text(
-                text = "所选周期内暂无包含耐受药理数据的服药记录",
+                text = stringResource(R.string.tolerance_chart_empty),
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
@@ -93,7 +95,12 @@ fun ToleranceChart(
     }
 
     val zoneId = remember { ZoneId.systemDefault() }
-    val dateFormatter = remember { DateTimeFormatter.ofPattern("M月d日").withZone(zoneId) }
+    val isZh = SubstanceLocalizationHelper.isChinese()
+    val dateFormatter = remember(isZh) {
+        val pattern = if (isZh) "M月d日" else "MMM d"
+        val locale = if (isZh) java.util.Locale.CHINA else java.util.Locale.US
+        DateTimeFormatter.ofPattern(pattern, locale).withZone(zoneId)
+    }
 
     Canvas(
         modifier = modifier

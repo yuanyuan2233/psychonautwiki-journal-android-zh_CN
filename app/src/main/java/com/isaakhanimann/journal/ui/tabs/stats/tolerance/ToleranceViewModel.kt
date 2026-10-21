@@ -4,8 +4,10 @@
 
 package com.isaakhanimann.journal.ui.tabs.stats.tolerance
 
+import androidx.annotation.StringRes
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.isaakhanimann.journal.R
 import com.isaakhanimann.journal.data.room.experiences.ExperienceRepository
 import com.isaakhanimann.journal.data.room.experiences.relations.ExperienceWithIngestionsAndCompanions
 import com.isaakhanimann.journal.data.substances.repositories.SubstanceRepositoryInterface
@@ -21,11 +23,11 @@ import java.time.Instant
 import java.time.temporal.ChronoUnit
 import javax.inject.Inject
 
-enum class ToleranceTimeRange(val label: String, val days: Long) {
-    ONE_MONTH("近1个月", 30),
-    THREE_MONTHS("近3个月", 90),
-    SIX_MONTHS("近半年", 180),
-    ONE_YEAR("近1年", 365)
+enum class ToleranceTimeRange(@StringRes val labelRes: Int, val days: Long) {
+    ONE_MONTH(R.string.tolerance_range_1m, 30),
+    THREE_MONTHS(R.string.tolerance_range_3m, 90),
+    SIX_MONTHS(R.string.tolerance_range_6m, 180),
+    ONE_YEAR(R.string.tolerance_range_1y, 365)
 }
 
 data class ToleranceUiState(

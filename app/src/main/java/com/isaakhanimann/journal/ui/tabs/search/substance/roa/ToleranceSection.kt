@@ -54,41 +54,42 @@ fun ToleranceSection(
     crossTolerances: List<String>,
     modifier: Modifier = Modifier
 ) {
-    if (tolerance != null || crossTolerances.isNotEmpty()) {
+    val localizedTolerance = com.isaakhanimann.journal.ui.tabs.search.ToleranceLocalizationHelper.getLocalizedTolerance(tolerance)
+    if (localizedTolerance != null || crossTolerances.isNotEmpty()) {
         Column(modifier) {
-            if (tolerance != null) {
+            if (localizedTolerance != null) {
                 val labelWidth = 55.dp
                 Row(
                     verticalAlignment = Alignment.Top
                 ) {
-                    if (tolerance.full != null) {
+                    if (localizedTolerance.full != null) {
                         Text(
                             text = stringResource(R.string.drugs_tolerance_full),
                             modifier = Modifier.width(labelWidth)
                         )
-                        Text(text = tolerance.full)
+                        Text(text = localizedTolerance.full)
                     }
                 }
                 Row(
                     verticalAlignment = Alignment.Top
                 ) {
-                    if (tolerance.half != null) {
+                    if (localizedTolerance.half != null) {
                         Text(
                             text = stringResource(R.string.drugs_tolerance_half),
                             modifier = Modifier.width(labelWidth)
                         )
-                        Text(text = tolerance.half)
+                        Text(text = localizedTolerance.half)
                     }
                 }
                 Row(
                     verticalAlignment = Alignment.Top
                 ) {
-                    if (tolerance.zero != null) {
+                    if (localizedTolerance.zero != null) {
                         Text(
                             text = stringResource(R.string.drugs_tolerance_zero),
                             modifier = Modifier.width(labelWidth)
                         )
-                        Text(text = tolerance.zero)
+                        Text(text = localizedTolerance.zero)
                     }
                 }
                 Text(text = stringResource(R.string.drugs_tolerance_zero_explanation), style = MaterialTheme.typography.bodySmall)

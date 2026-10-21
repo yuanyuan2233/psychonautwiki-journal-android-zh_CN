@@ -47,9 +47,11 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.isaakhanimann.journal.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -66,18 +68,18 @@ fun ToleranceChartScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("耐受度时序分析") },
+                title = { Text(stringResource(R.string.tolerance_chart_title)) },
                 navigationIcon = {
                     IconButton(onClick = navigateBack) {
-                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "返回")
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = stringResource(R.string.journal_action_back))
                     }
                 },
                 actions = {
                     IconButton(onClick = { showAddSimulationDialog = true }) {
-                        Icon(Icons.Outlined.AddCircleOutline, contentDescription = "模拟摄入推演")
+                        Icon(Icons.Outlined.AddCircleOutline, contentDescription = stringResource(R.string.tolerance_simulate_ingestion))
                     }
                     IconButton(onClick = { showExplanationDialog = true }) {
-                        Icon(Icons.Outlined.Info, contentDescription = "模型局限性说明")
+                        Icon(Icons.Outlined.Info, contentDescription = stringResource(R.string.tolerance_model_limitations))
                     }
                 }
             )
@@ -109,7 +111,7 @@ fun ToleranceChartScreen(
                         FilterChip(
                             selected = range == uiState.selectedRange,
                             onClick = { viewModel.selectRange(range) },
-                            label = { Text(range.label) }
+                            label = { Text(stringResource(range.labelRes)) }
                         )
                     }
                 }
@@ -134,11 +136,11 @@ fun ToleranceChartScreen(
                             horizontalArrangement = Arrangement.SpaceBetween
                         ) {
                             Text(
-                                text = "正在预览 ${uiState.simulatedIngestions.size} 条推演摄入",
+                                text = stringResource(R.string.tolerance_previewing_simulations, uiState.simulatedIngestions.size),
                                 style = MaterialTheme.typography.bodySmall
                             )
                             TextButton(onClick = viewModel::clearSimulatedIngestions) {
-                                Text("清除推演")
+                                Text(stringResource(R.string.tolerance_clear_simulation))
                             }
                         }
                     }
@@ -154,7 +156,7 @@ fun ToleranceChartScreen(
                 ) {
                     Column(modifier = Modifier.padding(12.dp)) {
                         Text(
-                            text = "耐药恢复甘特矩阵 (滑动界面无冲突，调节请在下方列表操作)",
+                            text = stringResource(R.string.tolerance_gantt_hint),
                             style = MaterialTheme.typography.labelMedium,
                             color = MaterialTheme.colorScheme.onSurfaceVariant
                         )
@@ -176,7 +178,7 @@ fun ToleranceChartScreen(
 
                 if (trackedSubstances.isNotEmpty()) {
                     Text(
-                        text = "已追踪物质 · 主观体感自适应调节：",
+                        text = stringResource(R.string.tolerance_tracked_substances_title),
                         style = MaterialTheme.typography.titleSmall,
                         fontWeight = FontWeight.Bold
                     )
@@ -233,7 +235,7 @@ fun ToleranceChartScreen(
                                         if (window?.isUserCustomized == true) {
                                             Spacer(modifier = Modifier.width(6.dp))
                                             Text(
-                                                text = "✓ 已自适应",
+                                                text = stringResource(R.string.tolerance_customized_badge),
                                                 style = MaterialTheme.typography.labelSmall,
                                                 color = Color(0xFFFFD54F)
                                             )
@@ -246,7 +248,7 @@ fun ToleranceChartScreen(
                                         contentPadding = androidx.compose.foundation.layout.PaddingValues(horizontal = 12.dp, vertical = 4.dp),
                                         modifier = Modifier.height(32.dp)
                                     ) {
-                                        Text("调节体感 ➔", style = MaterialTheme.typography.labelSmall)
+                                        Text(stringResource(R.string.tolerance_adjust_button), style = MaterialTheme.typography.labelSmall)
                                     }
                                 }
 
@@ -265,7 +267,7 @@ fun ToleranceChartScreen(
 
                 // 4. 图例说明栏
                 Text(
-                    text = "图例与体感自适应：",
+                    text = stringResource(R.string.tolerance_legend_title),
                     style = MaterialTheme.typography.titleSmall,
                     fontWeight = FontWeight.Bold
                 )
@@ -275,9 +277,9 @@ fun ToleranceChartScreen(
                     horizontalArrangement = Arrangement.spacedBy(16.dp),
                     modifier = Modifier.fillMaxWidth()
                 ) {
-                    LegendItem(color = MaterialTheme.colorScheme.primary, text = "完全耐受 (脱敏期)")
-                    LegendItem(color = MaterialTheme.colorScheme.primary.copy(alpha = 0.45f), text = "半耐受 (衰减中)")
-                    LegendItem(color = Color(0xFF00E5FF), text = "今日 (Now)")
+                    LegendItem(color = MaterialTheme.colorScheme.primary, text = stringResource(R.string.tolerance_legend_full))
+                    LegendItem(color = MaterialTheme.colorScheme.primary.copy(alpha = 0.45f), text = stringResource(R.string.tolerance_legend_half))
+                    LegendItem(color = Color(0xFF00E5FF), text = stringResource(R.string.tolerance_legend_today))
                 }
                 Spacer(modifier = Modifier.height(4.dp))
                 Row(verticalAlignment = Alignment.CenterVertically) {
@@ -288,7 +290,7 @@ fun ToleranceChartScreen(
                     )
                     Spacer(modifier = Modifier.width(6.dp))
                     Text(
-                        text = "黄色小圆点：已融入您个人的主观耐受体感修正",
+                        text = stringResource(R.string.tolerance_legend_custom_dot),
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
@@ -306,14 +308,14 @@ fun ToleranceChartScreen(
                 ) {
                     Column(modifier = Modifier.padding(16.dp)) {
                         Text(
-                            text = "💡 科学减害提示",
+                            text = stringResource(R.string.tolerance_harm_reduction_title),
                             style = MaterialTheme.typography.labelLarge,
                             fontWeight = FontWeight.Bold,
                             color = MaterialTheme.colorScheme.primary
                         )
                         Spacer(modifier = Modifier.height(6.dp))
                         Text(
-                            text = "本模型基于 PsychonautWiki 公开药代动力学阶段推算，默认单次即建立瞬时完全耐受。由于个体生理差异与剂量不计，您可点击任意物质卡片自主调整恢复天数或标记已归零。",
+                            text = stringResource(R.string.tolerance_harm_reduction_desc),
                             style = MaterialTheme.typography.bodySmall,
                             color = MaterialTheme.colorScheme.onSurfaceVariant
                         )
@@ -348,32 +350,32 @@ fun ToleranceChartScreen(
     if (showExplanationDialog) {
         AlertDialog(
             onDismissRequest = { showExplanationDialog = false },
-            title = { Text("关于耐受度模型") },
+            title = { Text(stringResource(R.string.tolerance_dialog_about_title)) },
             text = {
                 Column {
                     Text(
-                        text = "1. 理论模型局限性",
+                        text = stringResource(R.string.tolerance_dialog_section1_title),
                         fontWeight = FontWeight.Bold,
                         style = MaterialTheme.typography.bodyMedium
                     )
                     Text(
-                        text = "该图表反映了从完全耐受建立到减半、最终归零的群体理论时间。但未考虑实际摄入剂量及多物质交叉耐受。\n",
+                        text = stringResource(R.string.tolerance_dialog_section1_desc),
                         style = MaterialTheme.typography.bodySmall
                     )
                     Text(
-                        text = "2. 主观体感自由度",
+                        text = stringResource(R.string.tolerance_dialog_section2_title),
                         fontWeight = FontWeight.Bold,
                         style = MaterialTheme.typography.bodyMedium
                     )
                     Text(
-                        text = "身体由您自己感知。点击物质即可自由设置完全耐受天数、归零天数或标记提前恢复。",
+                        text = stringResource(R.string.tolerance_dialog_section2_desc),
                         style = MaterialTheme.typography.bodySmall
                     )
                 }
             },
             confirmButton = {
                 TextButton(onClick = { showExplanationDialog = false }) {
-                    Text("了解")
+                    Text(stringResource(R.string.tolerance_dialog_ok))
                 }
             }
         )
@@ -384,18 +386,18 @@ fun ToleranceChartScreen(
         var inputSubstanceName by remember { mutableStateOf("") }
         AlertDialog(
             onDismissRequest = { showAddSimulationDialog = false },
-            title = { Text("推演添加模拟服药") },
+            title = { Text(stringResource(R.string.tolerance_sim_dialog_title)) },
             text = {
                 Column {
                     Text(
-                        text = "输入物质名称，预演若在当前时刻服用，耐受窗口会被顺延到哪一天：",
+                        text = stringResource(R.string.tolerance_sim_dialog_hint),
                         style = MaterialTheme.typography.bodySmall
                     )
                     Spacer(modifier = Modifier.height(12.dp))
                     OutlinedTextField(
                         value = inputSubstanceName,
                         onValueChange = { inputSubstanceName = it },
-                        label = { Text("物质英文或中文学名 (如 LSD, Psilocybin)") },
+                        label = { Text(stringResource(R.string.tolerance_sim_dialog_input_label)) },
                         singleLine = true
                     )
                 }
@@ -409,12 +411,12 @@ fun ToleranceChartScreen(
                         }
                     }
                 ) {
-                    Text("添加推演")
+                    Text(stringResource(R.string.tolerance_sim_dialog_add))
                 }
             },
             dismissButton = {
                 TextButton(onClick = { showAddSimulationDialog = false }) {
-                    Text("取消")
+                    Text(stringResource(R.string.settings_cancel))
                 }
             }
         )
