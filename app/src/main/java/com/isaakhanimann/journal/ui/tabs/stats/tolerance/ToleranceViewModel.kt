@@ -88,21 +88,7 @@ class ToleranceViewModel @Inject constructor(
                         }
                 }
 
-                // 10 种代表性耐受药物样本（填满图表做完整综合效果测试）
-                val tenSampleDrugs = listOf(
-                    SubstanceAndDay("Psilocybin", now.minus(3, ChronoUnit.DAYS)),
-                    SubstanceAndDay("Ketamine", now.minus(2, ChronoUnit.DAYS)),
-                    SubstanceAndDay("MDMA", now.minus(18, ChronoUnit.DAYS)),
-                    SubstanceAndDay("LSD", now.minus(5, ChronoUnit.DAYS)),
-                    SubstanceAndDay("2C-B", now.minus(1, ChronoUnit.DAYS)),
-                    SubstanceAndDay("Amphetamine", now.minus(8, ChronoUnit.DAYS)),
-                    SubstanceAndDay("Cannabis", now.minus(4, ChronoUnit.DAYS)),
-                    SubstanceAndDay("DXM", now.minus(10, ChronoUnit.DAYS)),
-                    SubstanceAndDay("Caffeine", now.minus(1, ChronoUnit.DAYS)),
-                    SubstanceAndDay("Mescaline", now.minus(6, ChronoUnit.DAYS))
-                )
-
-                val allIngestionPairs = (realIngestions + tenSampleDrugs + simulated).distinctBy {
+                val allIngestionPairs = (realIngestions + simulated).distinctBy {
                     it.substanceName + (it.time.epochSecond / 86400)
                 }
 
