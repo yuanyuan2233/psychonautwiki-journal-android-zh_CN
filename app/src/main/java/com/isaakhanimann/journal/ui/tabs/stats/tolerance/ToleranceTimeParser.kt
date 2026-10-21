@@ -21,19 +21,19 @@ object ToleranceTimeParser {
      * 作为快速匹配与复杂描述的兜底
      */
     private val standardToleranceHours = mapOf(
-        "LSD" to Pair(null, 120.0), // zero: 5 days
-        "1P-LSD" to Pair(null, 120.0),
-        "1B-LSD" to Pair(null, 120.0),
-        "AL-LAD" to Pair(null, 120.0),
-        "ETH-LAD" to Pair(null, 120.0),
+        "LSD" to Pair(72.0, 120.0), // half: 3 days, zero: 5 days
+        "1P-LSD" to Pair(72.0, 120.0),
+        "1B-LSD" to Pair(72.0, 120.0),
+        "AL-LAD" to Pair(72.0, 120.0),
+        "ETH-LAD" to Pair(72.0, 120.0),
         "Psilocybin" to Pair(72.0, 168.0), // half: 3 days, zero: 7 days
         "Psilocin" to Pair(72.0, 168.0),
         "Psilocybin mushrooms" to Pair(72.0, 168.0),
         "MDMA" to Pair(720.0, 1800.0), // half: 1 month, zero: 2.5 months
         "MDA" to Pair(720.0, 1800.0),
-        "2C-B" to Pair(null, 72.0), // zero: 3 days
-        "2C-E" to Pair(null, 120.0),
-        "2C-I" to Pair(null, 120.0),
+        "2C-B" to Pair(36.0, 72.0), // half: 1.5 days, zero: 3 days
+        "2C-E" to Pair(48.0, 120.0),
+        "2C-I" to Pair(48.0, 120.0),
         "Mescaline" to Pair(72.0, 168.0),
         "Ketamine" to Pair(168.0, 336.0), // 1-2 weeks
         "DXM" to Pair(168.0, 336.0),
@@ -93,6 +93,22 @@ object ToleranceTimeParser {
         }
 
         return null
+    }
+
+    /**
+     * 判断该物质是否属于“完全耐受缺失”（有归零期但缺少单次完全耐受脱敏期，如普瑞巴林）
+     */
+    fun isFullToleranceMissing(substanceName: String, tolerance: Tolerance?): Boolean {
+        val zero = getZeroToleranceInHours(substanceName, tolerance)
+        val half = getHalfToleranceInHours(substanceName, tolerance)
+        return zero != null && half == null
+    }
+
+    /**
+     * 判断该物质是否整体缺乏耐受药代数据
+     */
+    fun isToleranceDataMissing(substanceName: String, tolerance: Tolerance?): Boolean {
+        return getZeroToleranceInHours(substanceName, tolerance) == null
     }
 
     /**

@@ -203,7 +203,11 @@ fun ToleranceChartScreen(
                             trackedSubstances.forEachIndexed { index, substanceName ->
                                 val localizedName = com.isaakhanimann.journal.ui.tabs.search.SubstanceLocalizationHelper.getLocalizedName(substanceName)
                                 val window = uiState.toleranceWindows.firstOrNull { it.substanceName == substanceName }
-                                val maxEndInstant = uiState.toleranceWindows.filter { it.substanceName == substanceName }.map { it.end }.maxOrNull()
+                                val windowsForSubstance = uiState.toleranceWindows.filter { it.substanceName == substanceName }
+                                val hasFull = windowsForSubstance.any { it.toleranceType == ToleranceType.FULL }
+                                val hasHalf = windowsForSubstance.any { it.toleranceType == ToleranceType.HALF }
+                                val isFullMissing = !hasFull && hasHalf
+                                val maxEndInstant = windowsForSubstance.map { it.end }.maxOrNull()
                                 val color = window?.adaptiveColor?.getComposeColor(androidx.compose.foundation.isSystemInDarkTheme())
                                     ?: MaterialTheme.colorScheme.primary
 
@@ -239,6 +243,21 @@ fun ToleranceChartScreen(
                                                     color = MaterialTheme.colorScheme.onSurfaceVariant
                                                 )
                                             }
+                                            if (isFullMissing) {
+                                                Spacer(modifier = Modifier.width(6.dp))
+                                                Box(
+                                                    modifier = Modifier
+                                                        .background(Color(0xFFFF9800).copy(alpha = 0.15f), RoundedCornerShape(4.dp))
+                                                        .padding(horizontal = 6.dp, vertical = 2.dp)
+                                                ) {
+                                                    Text(
+                                                        text = stringResource(R.string.tolerance_missing_full_chip),
+                                                        style = MaterialTheme.typography.labelSmall,
+                                                        color = Color(0xFFFF9800),
+                                                        fontWeight = FontWeight.Medium
+                                                    )
+                                                }
+                                            }
                                             if (window?.isUserCustomized == true) {
                                                 Spacer(modifier = Modifier.width(6.dp))
                                                 Text(
@@ -261,8 +280,13 @@ fun ToleranceChartScreen(
                                             val now = Instant.now()
                                             if (maxEndInstant.isAfter(now)) {
                                                 val daysLeft = ChronoUnit.DAYS.between(now.atZone(zoneId).toLocalDate(), maxEndInstant.atZone(zoneId).toLocalDate()).coerceAtLeast(1)
+                                                val expectedText = if (isFullMissing) {
+                                                    stringResource(R.string.tolerance_recovery_expected_half_only, formattedDate, daysLeft)
+                                                } else {
+                                                    stringResource(R.string.tolerance_recovery_expected, formattedDate, daysLeft)
+                                                }
                                                 Text(
-                                                    text = stringResource(R.string.tolerance_recovery_expected, formattedDate, daysLeft),
+                                                    text = expectedText,
                                                     style = MaterialTheme.typography.bodySmall,
                                                     color = Color(0xFF00C853),
                                                     fontWeight = FontWeight.Medium

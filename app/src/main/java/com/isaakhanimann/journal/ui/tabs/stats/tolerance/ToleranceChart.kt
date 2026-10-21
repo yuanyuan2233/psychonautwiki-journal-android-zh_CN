@@ -157,28 +157,49 @@ fun ToleranceChart(
         substances.forEachIndexed { index, substanceName ->
             val rowY = headerHeight + index * rowHeight
             val localizedName = SubstanceLocalizationHelper.getLocalizedName(substanceName)
+            val windowsForSubstance = toleranceWindows.filter { it.substanceName == substanceName }
+            val hasFull = windowsForSubstance.any { it.toleranceType == ToleranceType.FULL }
+            val hasHalf = windowsForSubstance.any { it.toleranceType == ToleranceType.HALF }
+            val isFullMissing = !hasFull && hasHalf
 
             // 左侧物质中文名称
             drawText(
                 textMeasurer = textMeasurer,
                 text = localizedName,
-                topLeft = Offset(8.dp.toPx(), rowY + 12.dp.toPx()),
+                topLeft = Offset(8.dp.toPx(), rowY + 10.dp.toPx()),
                 style = TextStyle(
-                    fontSize = 14.sp,
+                    fontSize = 13.sp,
                     fontWeight = FontWeight.Bold,
                     color = if (isDark) Color.White else Color(0xFF1A1A1A)
                 )
             )
 
-            // 英文学名/备注（微缩副标题）
-            if (localizedName != substanceName) {
+            // 若完全耐受缺失，在第二行（或英文名旁边）醒目标注 [完全耐受缺失]
+            val badgeText = when {
+                isFullMissing -> if (isZh) "[完全耐受缺失]" else "[No Full Tolerance]"
+                windowsForSubstance.isEmpty() -> if (isZh) "[耐受数据缺失]" else "[No Data]"
+                else -> null
+            }
+
+            val subTitleText = buildString {
+                if (localizedName != substanceName) {
+                    append(substanceName)
+                }
+                if (badgeText != null) {
+                    if (isNotEmpty()) append(" ")
+                    append(badgeText)
+                }
+            }
+
+            if (subTitleText.isNotEmpty()) {
                 drawText(
                     textMeasurer = textMeasurer,
-                    text = substanceName,
-                    topLeft = Offset(8.dp.toPx(), rowY + 32.dp.toPx()),
+                    text = subTitleText,
+                    topLeft = Offset(8.dp.toPx(), rowY + 30.dp.toPx()),
                     style = TextStyle(
-                        fontSize = 10.sp,
-                        color = if (isDark) Color(0x77FFFFFF) else Color(0x77000000)
+                        fontSize = 9.sp,
+                        fontWeight = if (badgeText != null) FontWeight.Medium else FontWeight.Normal,
+                        color = if (badgeText != null) Color(0xFFFFA726) else if (isDark) Color(0x77FFFFFF) else Color(0x77000000)
                     )
                 )
             }
@@ -194,7 +215,6 @@ fun ToleranceChart(
             )
 
             // 找出属于该物质的所有耐受窗口
-            val windowsForSubstance = toleranceWindows.filter { it.substanceName == substanceName }
             for (window in windowsForSubstance) {
                 val startX = instantToX(window.start)
                 val endX = instantToX(window.end)
@@ -221,6 +241,25 @@ fun ToleranceChart(
                         radius = 3.dp.toPx(),
                         center = Offset(startX + 6.dp.toPx(), barY + barHeight / 2)
                     )
+                }
+            }
+
+            // 若存在完全耐受向半耐受过渡（双阶段完整），在阶段交界处绘制细分转换线与标记
+            if (hasFull && hasHalf) {
+                val fullEndInstant = windowsForSubstance
+                    .filter { it.toleranceType == ToleranceType.FULL }
+                    .map { it.end }
+                    .maxOrNull()
+                if (fullEndInstant != null) {
+                    val transitionX = instantToX(fullEndInstant)
+                    if (transitionX in labelColumnWidth..width) {
+                        drawLine(
+                            color = if (isDark) Color(0x88FFFFFF) else Color(0x88000000),
+                            start = Offset(transitionX, barY),
+                            end = Offset(transitionX, barY + barHeight),
+                            strokeWidth = 1.5.dp.toPx()
+                        )
+                    }
                 }
             }
 

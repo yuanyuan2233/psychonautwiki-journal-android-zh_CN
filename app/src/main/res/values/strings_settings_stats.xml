@@ -198,6 +198,10 @@
     <string name="tolerance_gantt_hint">Tolerance Recovery Gantt Matrix</string>
     <string name="tolerance_tracked_substances_title">Tracked Substances · Subjective Adjustment:</string>
     <string name="tolerance_customized_badge">✓ Custom</string>
+    <string name="tolerance_missing_full_chip">No Full Tolerance</string>
+    <string name="tolerance_missing_full_badge">[No Full Tolerance]</string>
+    <string name="tolerance_missing_data_badge">[No Tolerance Data]</string>
+    <string name="tolerance_recovery_expected_half_only">Expected reset: %1$s (%2$d days left · half-decay only)</string>
     <string name="tolerance_adjust_button">Adjust ➔</string>
     <string name="tolerance_legend_title">Legend &amp; Subjective Adaptation:</string>
     <string name="tolerance_legend_full">Full Tolerance</string>

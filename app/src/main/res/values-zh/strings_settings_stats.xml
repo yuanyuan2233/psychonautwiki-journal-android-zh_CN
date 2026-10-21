@@ -198,6 +198,10 @@
     <string name="tolerance_gantt_hint">耐药恢复甘特矩阵 (滑动界面无冲突，调节请在下方列表操作)</string>
     <string name="tolerance_tracked_substances_title">已追踪物质 · 主观体感自适应调节：</string>
     <string name="tolerance_customized_badge">✓ 已自适应</string>
+    <string name="tolerance_missing_full_chip">完全耐受缺失</string>
+    <string name="tolerance_missing_full_badge">[完全耐受缺失]</string>
+    <string name="tolerance_missing_data_badge">[耐受数据缺失]</string>
+    <string name="tolerance_recovery_expected_half_only">预计耐受归零：%1$s (还剩 %2$d 天 · 仅半耐受衰减)</string>
     <string name="tolerance_adjust_button">调节体感 ➔</string>
     <string name="tolerance_legend_title">图例与体感自适应：</string>
     <string name="tolerance_legend_full">完全耐受 (脱敏期)</string>
