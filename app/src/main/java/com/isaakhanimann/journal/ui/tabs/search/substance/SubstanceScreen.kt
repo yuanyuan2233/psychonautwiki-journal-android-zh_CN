@@ -255,6 +255,9 @@ fun SubstanceScreen(
                     }
                 }
             }
+            substance.pharmacokinetics?.let { pk ->
+                PharmacokineticsView(pk = pk)
+            }
             val roasWithDosesDefined = substance.roas.filter { roa ->
                 val roaDose = roa.roaDose
                 val isEveryDoseNull =

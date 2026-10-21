@@ -40,6 +40,7 @@ data class Substance(
     val saferUse: List<String>,
     val interactions: Interactions?,
     val roas: List<Roa>,
+    val pharmacokinetics: Pharmacokinetics? = null,
 ) {
     fun getRoa(route: AdministrationRoute): Roa? {
         return roas.firstOrNull { it.route == route }

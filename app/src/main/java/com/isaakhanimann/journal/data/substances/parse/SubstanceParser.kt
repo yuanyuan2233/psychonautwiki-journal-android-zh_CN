@@ -106,6 +106,8 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
         val interactions = parseInteractions(jsonInteractions)
         val jsonRoas = jsonSubstance.getOptionalJSONArray("roas")
         val roas = parseRoas(jsonRoas)
+        val jsonPk = jsonSubstance.getOptionalJSONObject("pharmacokinetics")
+        val pharmacokinetics = parsePharmacokinetics(jsonPk)
         return Substance(
             name = name,
             commonNames = commonNames,
@@ -124,6 +126,23 @@ class SubstanceParser @Inject constructor() : SubstanceParserInterface {
             saferUse = saferUse,
             interactions = interactions,
             roas = roas,
+            pharmacokinetics = pharmacokinetics,
+        )
+    }
+
+    private fun parsePharmacokinetics(jsonPk: JSONObject?): Pharmacokinetics? {
+        if (jsonPk == null) return null
+        return Pharmacokinetics(
+            halfLife = jsonPk.getOptionalString("halfLife"),
+            halfLifeHours = jsonPk.getOptionalDouble("halfLifeHours"),
+            tMax = jsonPk.getOptionalString("tMax"),
+            tMaxHours = jsonPk.getOptionalDouble("tMaxHours"),
+            bioavailability = jsonPk.getOptionalString("bioavailability"),
+            cypEnzymes = parseJsonArrayToStringArray(jsonPk.getOptionalJSONArray("cypEnzymes")),
+            clearance = jsonPk.getOptionalString("clearance"),
+            brandName = jsonPk.getOptionalString("brandName"),
+            indications = parseJsonArrayToStringArray(jsonPk.getOptionalJSONArray("indications")),
+            contraindications = parseJsonArrayToStringArray(jsonPk.getOptionalJSONArray("contraindications")),
         )
     }
 

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2022. Isaak Hanimann.
+ * Copyright (c) 2022-2026. Isaak Hanimann & PsychonautWiki Journal Contributors.
  * This file is part of PsychonautWiki Journal.
  *
  * PsychonautWiki Journal is free software: you can redistribute it and/or modify
@@ -18,24 +18,36 @@
 
 package com.isaakhanimann.journal.ui.tabs.journal.addingestion.time
 
+import androidx.compose.animation.Crossfade
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -45,8 +57,10 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
@@ -66,8 +80,8 @@ fun ColorPickerPreview() {
     ColorPicker(
         selectedColor = AdaptiveColor.BLUE,
         onChangeOfColor = {},
-        alreadyUsedColors,
-        otherColors
+        alreadyUsedColors = alreadyUsedColors,
+        otherColors = otherColors
     )
 }
 
@@ -100,6 +114,7 @@ fun ColorPicker(
     if (isColorPickerVisible) {
         ColorDialog(
             dismiss = { isColorPickerVisible = false },
+            selectedColor = selectedColor,
             onChangeOfColor = onChangeOfColor,
             alreadyUsedColors = alreadyUsedColors,
             otherColors = otherColors
@@ -116,6 +131,7 @@ fun ColorDialogPreview() {
     }
     ColorDialog(
         dismiss = {},
+        selectedColor = AdaptiveColor.BLUE,
         onChangeOfColor = {},
         alreadyUsedColors = alreadyUsedColors,
         otherColors = otherColors
@@ -125,49 +141,304 @@ fun ColorDialogPreview() {
 @Composable
 fun ColorDialog(
     dismiss: () -> Unit,
+    selectedColor: AdaptiveColor? = null,
     onChangeOfColor: (AdaptiveColor) -> Unit,
     alreadyUsedColors: List<AdaptiveColor>,
     otherColors: List<AdaptiveColor>
 ) {
+    val isDarkTheme = isSystemInDarkTheme()
+    var currentFamily by remember { mutableStateOf<ColorFamily?>(null) }
+
     AlertDialog(
         onDismissRequest = dismiss,
         title = {
-            Text(text = stringResource(R.string.journal_pick_color), style = MaterialTheme.typography.titleLarge)
+            if (currentFamily == null) {
+                Text(
+                    text = stringResource(R.string.journal_pick_color),
+                    style = MaterialTheme.typography.titleLarge
+                )
+            } else {
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    IconButton(
+                        onClick = { currentFamily = null },
+                        modifier = Modifier.size(36.dp)
+                    ) {
+                        Icon(
+                            imageVector = Icons.AutoMirrored.Filled.ArrowBack,
+                            contentDescription = stringResource(R.string.journal_color_back_to_hues)
+                        )
+                    }
+                    Text(
+                        text = stringResource(currentFamily!!.titleRes),
+                        style = MaterialTheme.typography.titleLarge
+                    )
+                }
+            }
         },
         text = {
             Column(
-                modifier = Modifier.verticalScroll(rememberScrollState())
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .heightIn(min = 260.dp, max = 420.dp)
+                    .verticalScroll(rememberScrollState())
             ) {
-                if (otherColors.isEmpty()) {
-                    Text(text = stringResource(R.string.journal_color_no_unused))
-                } else {
-                    Text(text = stringResource(R.string.journal_color_not_used))
-                    Spacer(modifier = Modifier.height(2.dp))
-                    CircleColorButtons(colors = otherColors) {
-                        onChangeOfColor(it)
-                        dismiss()
-                    }
-                }
-                if (alreadyUsedColors.isNotEmpty()) {
-                    Spacer(modifier = Modifier.height(5.dp))
-                    Text(text = stringResource(R.string.journal_color_already_used))
-                    Spacer(modifier = Modifier.height(2.dp))
-                    CircleColorButtons(colors = alreadyUsedColors) {
-                        onChangeOfColor(it)
-                        dismiss()
+                Crossfade(
+                    targetState = currentFamily,
+                    label = "ColorFamilyCrossfade"
+                ) { family ->
+                    if (family == null) {
+                        BaseHuesView(
+                            selectedColor = selectedColor,
+                            alreadyUsedColors = alreadyUsedColors,
+                            isDarkTheme = isDarkTheme,
+                            onSelectFamily = { currentFamily = it },
+                            onSelectDirectColor = {
+                                onChangeOfColor(it)
+                                dismiss()
+                            }
+                        )
+                    } else {
+                        ShadesView(
+                            family = family,
+                            selectedColor = selectedColor,
+                            alreadyUsedColors = alreadyUsedColors,
+                            isDarkTheme = isDarkTheme,
+                            onSelectShade = {
+                                onChangeOfColor(it)
+                                dismiss()
+                            }
+                        )
                     }
                 }
             }
         },
         confirmButton = {
-            TextButton(
-                modifier = Modifier.fillMaxWidth(),
-                onClick = dismiss
-            ) {
-                Text(stringResource(R.string.journal_action_cancel), textAlign = TextAlign.Center)
+            TextButton(onClick = dismiss) {
+                Text(stringResource(R.string.journal_action_cancel))
             }
         },
+        dismissButton = if (currentFamily != null) {
+            {
+                TextButton(onClick = { currentFamily = null }) {
+                    Text(stringResource(R.string.journal_color_back_to_hues))
+                }
+            }
+        } else null
     )
+}
+
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+private fun BaseHuesView(
+    selectedColor: AdaptiveColor?,
+    alreadyUsedColors: List<AdaptiveColor>,
+    isDarkTheme: Boolean,
+    onSelectFamily: (ColorFamily) -> Unit,
+    onSelectDirectColor: (AdaptiveColor) -> Unit
+) {
+    Column(modifier = Modifier.fillMaxWidth()) {
+        Text(
+            text = stringResource(R.string.journal_color_select_hue),
+            style = MaterialTheme.typography.bodyMedium,
+            color = MaterialTheme.colorScheme.onSurfaceVariant
+        )
+        Spacer(modifier = Modifier.height(12.dp))
+
+        FlowRow(
+            horizontalArrangement = Arrangement.spacedBy(10.dp),
+            verticalArrangement = Arrangement.spacedBy(10.dp),
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            ColorFamily.entries.forEach { family ->
+                val isSelectedFamily = selectedColor != null && family.shades.contains(selectedColor)
+                BaseHueSwatch(
+                    family = family,
+                    isSelectedFamily = isSelectedFamily,
+                    isDarkTheme = isDarkTheme,
+                    onClick = { onSelectFamily(family) }
+                )
+            }
+        }
+
+        if (alreadyUsedColors.isNotEmpty()) {
+            Spacer(modifier = Modifier.height(16.dp))
+            HorizontalDivider()
+            Spacer(modifier = Modifier.height(10.dp))
+            Text(
+                text = stringResource(R.string.journal_color_already_used),
+                style = MaterialTheme.typography.labelLarge,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
+            )
+            Spacer(modifier = Modifier.height(8.dp))
+            FlowRow(
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                verticalArrangement = Arrangement.spacedBy(8.dp),
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                alreadyUsedColors.distinct().forEach { usedColor ->
+                    ShadeSwatch(
+                        color = usedColor,
+                        isSelected = usedColor == selectedColor,
+                        isAlreadyUsed = true,
+                        isDarkTheme = isDarkTheme,
+                        onClick = { onSelectDirectColor(usedColor) }
+                    )
+                }
+            }
+        }
+    }
+}
+
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+private fun ShadesView(
+    family: ColorFamily,
+    selectedColor: AdaptiveColor?,
+    alreadyUsedColors: List<AdaptiveColor>,
+    isDarkTheme: Boolean,
+    onSelectShade: (AdaptiveColor) -> Unit
+) {
+    Column(modifier = Modifier.fillMaxWidth()) {
+        Text(
+            text = stringResource(R.string.journal_color_select_shade),
+            style = MaterialTheme.typography.bodyMedium,
+            color = MaterialTheme.colorScheme.onSurfaceVariant
+        )
+        Spacer(modifier = Modifier.height(12.dp))
+
+        FlowRow(
+            horizontalArrangement = Arrangement.spacedBy(10.dp),
+            verticalArrangement = Arrangement.spacedBy(10.dp),
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            family.shades.forEach { shade ->
+                ShadeSwatch(
+                    color = shade,
+                    isSelected = shade == selectedColor,
+                    isAlreadyUsed = alreadyUsedColors.contains(shade),
+                    isDarkTheme = isDarkTheme,
+                    onClick = { onSelectShade(shade) }
+                )
+            }
+        }
+    }
+}
+
+@Composable
+private fun BaseHueSwatch(
+    family: ColorFamily,
+    isSelectedFamily: Boolean,
+    isDarkTheme: Boolean,
+    onClick: () -> Unit
+) {
+    val shape = RoundedCornerShape(10.dp)
+    val composeColor = family.baseColor.getComposeColor(isDarkTheme)
+    val isLight = (0.299 * composeColor.red + 0.587 * composeColor.green + 0.114 * composeColor.blue) > 0.5
+
+    val borderModifier = if (isSelectedFamily) {
+        Modifier.border(
+            width = 3.dp,
+            color = MaterialTheme.colorScheme.primary,
+            shape = shape
+        )
+    } else {
+        Modifier.border(
+            width = 1.dp,
+            color = MaterialTheme.colorScheme.outlineVariant.copy(alpha = 0.6f),
+            shape = shape
+        )
+    }
+
+    Surface(
+        shape = shape,
+        color = composeColor,
+        onClick = onClick,
+        modifier = Modifier
+            .size(52.dp)
+            .then(borderModifier)
+            .semantics { contentDescription = family.name }
+    ) {
+        if (isSelectedFamily) {
+            Box(
+                modifier = Modifier.fillMaxSize(),
+                contentAlignment = Alignment.Center
+            ) {
+                Box(
+                    modifier = Modifier
+                        .size(10.dp)
+                        .background(
+                            color = if (isLight) Color.Black.copy(alpha = 0.8f) else Color.White.copy(alpha = 0.9f),
+                            shape = CircleShape
+                        )
+                )
+            }
+        }
+    }
+}
+
+@Composable
+private fun ShadeSwatch(
+    color: AdaptiveColor,
+    isSelected: Boolean,
+    isAlreadyUsed: Boolean,
+    isDarkTheme: Boolean,
+    onClick: () -> Unit
+) {
+    val shape = RoundedCornerShape(10.dp)
+    val composeColor = color.getComposeColor(isDarkTheme)
+    val isLight = (0.299 * composeColor.red + 0.587 * composeColor.green + 0.114 * composeColor.blue) > 0.5
+
+    val borderModifier = if (isSelected) {
+        Modifier.border(
+            width = 3.dp,
+            color = MaterialTheme.colorScheme.primary,
+            shape = shape
+        )
+    } else {
+        Modifier.border(
+            width = 1.dp,
+            color = MaterialTheme.colorScheme.outlineVariant.copy(alpha = 0.6f),
+            shape = shape
+        )
+    }
+
+    Surface(
+        shape = shape,
+        color = composeColor,
+        onClick = onClick,
+        modifier = Modifier
+            .size(52.dp)
+            .then(borderModifier)
+            .semantics { contentDescription = color.name }
+    ) {
+        Box(
+            modifier = Modifier.fillMaxSize(),
+            contentAlignment = Alignment.Center
+        ) {
+            if (isSelected) {
+                Icon(
+                    imageVector = Icons.Default.Check,
+                    contentDescription = null,
+                    tint = if (isLight) Color.Black else Color.White,
+                    modifier = Modifier.size(24.dp)
+                )
+            } else if (isAlreadyUsed) {
+                Box(
+                    modifier = Modifier
+                        .align(Alignment.TopEnd)
+                        .padding(5.dp)
+                        .size(8.dp)
+                        .background(
+                            color = if (isLight) Color.Black.copy(alpha = 0.6f) else Color.White.copy(alpha = 0.85f),
+                            shape = CircleShape
+                        )
+                )
+            }
+        }
+    }
 }
 
 @OptIn(ExperimentalLayoutApi::class)
@@ -197,5 +468,4 @@ fun CircleColorButtons(
             ) {}
         }
     }
-
 }
