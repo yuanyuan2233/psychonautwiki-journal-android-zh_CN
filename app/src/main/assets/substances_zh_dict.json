@@ -9139,39 +9139,33 @@
     },
     "Poppers": {
       "name_en": "Poppers",
-      "name_zh": "啪啪水",
+      "name_zh": "亚硝酸酯",
       "zh_aliases": [
-        "Rush",
-        "芳香烃",
-        "亚硝酸异戊酯",
-        "亚硝酸异丁酯",
-        "亚硝酸酯类吸入剂",
-        "亚硝酸酯"
+        "芳香剂",
+        "皮皮"
       ],
       "pinyin": [
-        "fang'xiang'ting",
-        "fangxiangting",
-        "pa'pa'shui",
-        "papashui",
-        "ya'xiao'suan'yi'ding'zhi",
-        "ya'xiao'suan'yi'wu'zhi",
-        "ya'xiao'suan'zhi'lei'xi'ru'ji",
-        "yaxiaosuanyidingzhi",
-        "yaxiaosuanyiwuzhi",
-        "yaxiaosuanzhileixiruji",
         "ya'xiao'suan'zhi",
-        "yaxiaosuanzhi"
+        "yaxiaosuanzhi",
+        "fang'xiang'ji",
+        "fangxiangji",
+        "pi'pi",
+        "pipi",
+        "poppers"
       ],
       "pinyin_abbr": [
-        "fxt",
-        "pps",
-        "yxsydz",
-        "yxsywz",
-        "yxszlxrj",
-        "yxsz"
+        "yxsz",
+        "fxj",
+        "pp",
+        "popp"
       ],
-      "categories": [],
-      "categories_zh": [],
+      "categories": [
+        "depressant"
+      ],
+      "categories_zh": [
+        "抑制剂"
+      ],
+      "cas": null,
       "url": "https://psychonautwiki.org/wiki/Poppers"
     },
     "Pramiracetam": {
@@ -10593,8 +10587,12 @@
       "name_en": "25B-NBOH",
       "name_zh": "25B-NBOH",
       "zh_aliases": [],
-      "pinyin": [],
-      "pinyin_abbr": [],
+      "pinyin": [
+        "25bnboh"
+      ],
+      "pinyin_abbr": [
+        "25bnboh"
+      ],
       "categories": [
         "psychedelic"
       ],
@@ -10610,10 +10608,12 @@
       "zh_aliases": [],
       "pinyin": [
         "4-'fu'yi'ji'-2,5-'er'jia'yang'ji'ben'yi'an",
-        "4-fuyiji-2,5-erjiayangjibenyian"
+        "4-fuyiji-2,5-erjiayangjibenyian",
+        "2cef"
       ],
       "pinyin_abbr": [
-        "4fyj-ejyjbya"
+        "4fyj-ejyjbya",
+        "2cef"
       ],
       "categories": [
         "psychedelic"
@@ -10630,17 +10630,19 @@
       "zh_aliases": [],
       "pinyin": [
         "2,5-'er'jia'yang'ji'ben'yi'an",
-        "2,5-erjiayangjibenyian"
+        "2,5-erjiayangjibenyian",
+        "2ch"
       ],
       "pinyin_abbr": [
-        "2ejyjbya"
+        "2ejyjbya",
+        "2ch"
       ],
       "categories": [
         "stimulant",
         "psychedelic"
       ],
       "categories_zh": [
-        "中枢兴奋剂",
+        "兴奋剂",
         "致幻剂"
       ],
       "cas": null,
@@ -10650,8 +10652,12 @@
       "name_en": "3-Cl-PCP",
       "name_zh": "3-Cl-PCP",
       "zh_aliases": [],
-      "pinyin": [],
-      "pinyin_abbr": [],
+      "pinyin": [
+        "3clpcp"
+      ],
+      "pinyin_abbr": [
+        "3clpcp"
+      ],
       "categories": [
         "dissociative"
       ],
@@ -10671,19 +10677,21 @@
         "ke'luo'fen'tong",
         "keluofentong",
         "3-'lv'jia'ka'xi'tong",
-        "3-lvjiakaxitong"
+        "3-lvjiakaxitong",
+        "3cmc"
       ],
       "pinyin_abbr": [
         "klft",
-        "3ljkxt"
+        "3ljkxt",
+        "3cmc"
       ],
       "categories": [
         "stimulant",
         "entactogen"
       ],
       "categories_zh": [
-        "中枢兴奋剂",
-        "共情剂"
+        "兴奋剂",
+        "entactogen"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/3-CMC.md"
@@ -10694,10 +10702,12 @@
       "zh_aliases": [],
       "pinyin": [
         "3-'jia'ji'ben'huan'li'ding",
-        "3-jiajibenhuanliding"
+        "3-jiajibenhuanliding",
+        "3mepcp"
       ],
       "pinyin_abbr": [
-        "3jjbhld"
+        "3jjbhld",
+        "3mep"
       ],
       "categories": [
         "dissociative"
@@ -10712,8 +10722,12 @@
       "name_en": "3-Me-PCPy",
       "name_zh": "3-Me-PCPy",
       "zh_aliases": [],
-      "pinyin": [],
-      "pinyin_abbr": [],
+      "pinyin": [
+        "3mepcpy"
+      ],
+      "pinyin_abbr": [
+        "3mepcpy"
+      ],
       "categories": [
         "research-chemical"
       ],
@@ -10733,19 +10747,21 @@
         "4-'lv'ben'bing'an",
         "4-lvbenbingan",
         "dui'lv'ben'bing'an",
-        "duilvbenbingan"
+        "duilvbenbingan",
+        "4ca"
       ],
       "pinyin_abbr": [
         "4lbba",
-        "dlbba"
+        "dlbba",
+        "4ca"
       ],
       "categories": [
         "stimulant",
         "entactogen"
       ],
       "categories_zh": [
-        "中枢兴奋剂",
-        "共情剂"
+        "兴奋剂",
+        "entactogen"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/4-CA.md"
@@ -10756,16 +10772,18 @@
       "zh_aliases": [],
       "pinyin": [
         "4-'fu'jia'ka'xi'tong",
-        "4-fujiakaxitong"
+        "4-fujiakaxitong",
+        "4fmc"
       ],
       "pinyin_abbr": [
-        "4fjkxt"
+        "4fjkxt",
+        "4fmc"
       ],
       "categories": [
         "stimulant"
       ],
       "categories_zh": [
-        "中枢兴奋剂"
+        "兴奋剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/4-FMC.md"
@@ -10776,10 +10794,12 @@
       "zh_aliases": [],
       "pinyin": [
         "4-'jia'ji'a'mi'lei'si",
-        "4-jiajiamileisi"
+        "4-jiajiamileisi",
+        "4mar"
       ],
       "pinyin_abbr": [
-        "4jjamls"
+        "4jjamls",
+        "4mar"
       ],
       "categories": [
         "research-chemical"
@@ -10795,7 +10815,9 @@
       "name_zh": "α-乙基-2C-D",
       "zh_aliases": [
         "α-乙基-DOM",
-        "4-甲基-2,5-二甲氧基-α-乙基苯乙胺"
+        "4-甲基-2,5-二甲氧基-α-乙基苯乙胺",
+        "αyj-",
+        "α-yiji-2C-D"
       ],
       "pinyin": [
         "α-'yi'ji'-2C-D",
@@ -10803,11 +10825,17 @@
         "α-'yi'ji'-DOM",
         "α-yiji-DOM",
         "4-'jia'ji'-2,5-'er'jia'yang'ji'-α-'yi'ji'ben'yi'an",
-        "4-jiaji-2,5-erjiayangji-α-yijibenyian"
+        "4-jiaji-2,5-erjiayangji-α-yijibenyian",
+        "yj",
+        "yiji2cd",
+        "4cd"
       ],
       "pinyin_abbr": [
         "αyj-",
-        "4jj-ejyj-yjbya"
+        "4jj-ejyj-yjbya",
+        "yj",
+        "yiji2cd",
+        "4cd"
       ],
       "categories": [
         "psychedelic"
@@ -10855,16 +10883,18 @@
       "zh_aliases": [],
       "pinyin": [
         "8-'lv'cha'jian",
-        "8-lvchajian"
+        "8-lvchajian",
+        "8ctp"
       ],
       "pinyin_abbr": [
-        "8lcj"
+        "8lcj",
+        "8ctp"
       ],
       "categories": [
         "stimulant"
       ],
       "categories_zh": [
-        "中枢兴奋剂"
+        "兴奋剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/8-氯茶碱.md"
@@ -10980,23 +11010,28 @@
       "name_en": "MDNEB",
       "name_zh": "丁酮酮",
       "zh_aliases": [
-        "N-乙基MDNMB"
+        "N-乙基MDNMB",
+        "βk-MBDB"
       ],
       "pinyin": [
         "ding'tong'tong",
         "dingtongtong",
         "N-'yi'ji'MDNMB",
-        "N-yijiMDNMB"
+        "N-yijiMDNMB",
+        "kmbdb",
+        "mdneb"
       ],
       "pinyin_abbr": [
         "dtt",
-        "NyjM"
+        "NyjM",
+        "kmbdb",
+        "mdne"
       ],
       "categories": [
         "stimulant"
       ],
       "categories_zh": [
-        "中枢兴奋剂"
+        "兴奋剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/MDNEB.md"
@@ -11026,21 +11061,27 @@
     "MDNMP": {
       "name_en": "MDNMP",
       "name_zh": "3,4-亚甲二氧基戊酮",
-      "zh_aliases": [],
+      "zh_aliases": [
+        "βk-MBDP"
+      ],
       "pinyin": [
         "3,4-'ya'jia'er'yang'ji'wu'tong",
-        "3,4-yajiaeryangjiwutong"
+        "3,4-yajiaeryangjiwutong",
+        "kmbdp",
+        "mdnmp"
       ],
       "pinyin_abbr": [
-        "3yjeyjwt"
+        "3yjeyjwt",
+        "kmbdp",
+        "mdnm"
       ],
       "categories": [
         "stimulant",
         "entactogen"
       ],
       "categories_zh": [
-        "中枢兴奋剂",
-        "共情剂"
+        "兴奋剂",
+        "entactogen"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/MDNMP.md"
@@ -11051,16 +11092,18 @@
       "zh_aliases": [],
       "pinyin": [
         "3',4'-'ya'jia'shuang'yang'ji'-α-'bi'ge'wan'ji'ji'tong",
-        "3',4'-yajiashuangyangji-α-bigewanjijitong"
+        "3',4'-yajiashuangyangji-α-bigewanjijitong",
+        "mdphp"
       ],
       "pinyin_abbr": [
-        "3yjsyj-bgwjjt"
+        "3yjsyj-bgwjjt",
+        "mdph"
       ],
       "categories": [
         "stimulant"
       ],
       "categories_zh": [
-        "中枢兴奋剂"
+        "兴奋剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/MDPHP.md"
@@ -11095,18 +11138,20 @@
         "3-'jia'yang'ji'-4,5-'ya'jia'shuang'yang'ji'ben'bing'an",
         "3-jiayangji-4,5-yajiashuangyangjibenbingan",
         "5-'jia'yang'ji'-3,4-'ya'jia'shuang'yang'ji'ben'bing'an",
-        "5-jiayangji-3,4-yajiashuangyangjibenbingan"
+        "5-jiayangji-3,4-yajiashuangyangjibenbingan",
+        "mmda"
       ],
       "pinyin_abbr": [
         "3jyj-yjsyjbba",
-        "5jyj-yjsyjbba"
+        "5jyj-yjsyjbba",
+        "mmda"
       ],
       "categories": [
         "entactogen",
         "psychedelic"
       ],
       "categories_zh": [
-        "共情剂",
+        "entactogen",
         "致幻剂"
       ],
       "cas": null,
@@ -11114,10 +11159,16 @@
     },
     "MXPr": {
       "name_en": "MXPr",
-      "name_zh": "MXPr",
+      "name_zh": "3-MeO-2′-Oxo-PCPr",
       "zh_aliases": [],
-      "pinyin": [],
-      "pinyin_abbr": [],
+      "pinyin": [
+        "3meo2oxopcpr",
+        "mxpr"
+      ],
+      "pinyin_abbr": [
+        "3meo2oxopcpr",
+        "mxpr"
+      ],
       "categories": [
         "dissociative"
       ],
@@ -11173,16 +11224,18 @@
       "zh_aliases": [],
       "pinyin": [
         "O-'qu'jia'qu'ma'duo",
-        "O-qujiaqumaduo"
+        "O-qujiaqumaduo",
+        "odsmt"
       ],
       "pinyin_abbr": [
-        "Oqjqmd"
+        "Oqjqmd",
+        "odsm"
       ],
       "categories": [
         "depressant"
       ],
       "categories_zh": [
-        "中枢抑制剂"
+        "抑制剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/O-去甲曲马多.md"
@@ -11211,10 +11264,16 @@
     },
     "Semax": {
       "name_en": "Semax",
-      "name_zh": "Semax",
+      "name_zh": "L-Methionyl-L-α-glutamylhistidyl-L-phenylalanyl-L-prolylglycyl-L-proline",
       "zh_aliases": [],
-      "pinyin": [],
-      "pinyin_abbr": [],
+      "pinyin": [
+        "lmethionyllglutamylhistidyllphenylalanyllprolylglycyllproline",
+        "semax"
+      ],
+      "pinyin_abbr": [
+        "lmethionyllglutamylhistidyllphenylalanyllprolylglycyllproline",
+        "sema"
+      ],
       "categories": [
         "research-chemical"
       ],
@@ -11226,14 +11285,13 @@
     },
     "SR-17018": {
       "name_en": "SR-17018",
-      "name_zh": "SR-17018或脱离炼狱的赎罪券",
+      "name_zh": "SR-17018",
       "zh_aliases": [],
       "pinyin": [
-        "SR-17018'huo'tuo'li'lian'yu'de'shu'zui'quan",
-        "SR-17018huotuolilianyudeshuzuiquan"
+        "sr17018"
       ],
       "pinyin_abbr": [
-        "Shtllydszq"
+        "sr17018"
       ],
       "categories": [
         "research-chemical"
@@ -11248,8 +11306,12 @@
       "name_en": "WIN-1161-3",
       "name_zh": "WIN-1161-3",
       "zh_aliases": [],
-      "pinyin": [],
-      "pinyin_abbr": [],
+      "pinyin": [
+        "win11613"
+      ],
+      "pinyin_abbr": [
+        "win11613"
+      ],
       "categories": [
         "research-chemical"
       ],
@@ -11288,23 +11350,29 @@
       "name_en": "Tlitliltzin",
       "name_zh": "三色牵牛",
       "zh_aliases": [
-        "墨西哥牵牛花"
+        "墨西哥牵牛花",
+        "黑色神圣之物"
       ],
       "pinyin": [
         "san'se'qian'niu",
         "sanseqianniu",
         "mo'xi'ge'qian'niu'hua",
-        "moxigeqianniuhua"
+        "moxigeqianniuhua",
+        "hei'se'shen'sheng'zhi'wu",
+        "heiseshenshengzhiwu",
+        "tlitliltzin"
       ],
       "pinyin_abbr": [
         "ssqn",
-        "mxgqnh"
+        "mxgqnh",
+        "hssszw",
+        "tlit"
       ],
       "categories": [
-        "research-chemical"
+        "psychedelic"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致幻剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/三色牵牛.md"
@@ -11345,21 +11413,23 @@
         "fu'da'fei'ni",
         "fudafeini",
         "fu'dai'mo'da'fei'ni",
-        "fudaimodafeini"
+        "fudaimodafeini",
+        "crl40940"
       ],
       "pinyin_abbr": [
         "efmdfn",
         "fmdfn",
         "fdfn",
-        "fdmdfn"
+        "fdmdfn",
+        "crl4"
       ],
       "categories": [
         "stimulant",
         "eugeroic"
       ],
       "categories_zh": [
-        "中枢兴奋剂",
-        "促醒剂"
+        "兴奋剂",
+        "eugeroic"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/二氟莫达非尼.md"
@@ -11539,18 +11609,20 @@
         "jia'bo'sha'duo",
         "jiaboshaduo",
         "si'qing'yi'e'zuo'bing'bi'ding",
-        "siqingyiezuobingbiding"
+        "siqingyiezuobingbiding",
+        "thip"
       ],
       "pinyin_abbr": [
         "jbsd",
-        "sqyezbbd"
+        "sqyezbbd",
+        "thip"
       ],
       "categories": [
         "depressant",
         "psychedelic"
       ],
       "categories_zh": [
-        "中枢抑制剂",
+        "抑制剂",
         "致幻剂"
       ],
       "cas": null,
@@ -11559,20 +11631,27 @@
     "Picamilon": {
       "name_en": "Picamilon",
       "name_zh": "匹卡米隆",
-      "zh_aliases": [],
+      "zh_aliases": [
+        "Пикамилон",
+        "N-nicotinoyl-γ-aminobutyric acid"
+      ],
       "pinyin": [
         "pi'ka'mi'long",
-        "pikamilong"
+        "pikamilong",
+        "nnicotinoylaminobutyricacid",
+        "picamilon"
       ],
       "pinyin_abbr": [
-        "pkml"
+        "pkml",
+        "nnicotinoylaminobutyricacid",
+        "pica"
       ],
       "categories": [
         "depressant",
         "nootropic"
       ],
       "categories_zh": [
-        "中枢抑制剂",
+        "抑制剂",
         "促智药"
       ],
       "cas": null,
@@ -11582,23 +11661,33 @@
       "name_en": "ʻawa",
       "name_zh": "卡瓦",
       "zh_aliases": [
-        "卡瓦-卡瓦"
+        "卡瓦胡椒",
+        "卡瓦-卡瓦",
+        "卡瓦酒"
       ],
       "pinyin": [
         "ka'wa",
         "kawa",
+        "ka'wa'hu'jiao",
+        "kawahujiao",
         "ka'wa'-'ka'wa",
-        "kawa-kawa"
+        "kawa-kawa",
+        "ka'wa'jiu",
+        "kawajiu",
+        "awa"
       ],
       "pinyin_abbr": [
         "kw",
-        "kw-kw"
+        "kwhj",
+        "kw-kw",
+        "kwj",
+        "awa"
       ],
       "categories": [
         "depressant"
       ],
       "categories_zh": [
-        "中枢抑制剂"
+        "抑制剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/卡瓦.md"
@@ -11632,23 +11721,33 @@
       "name_en": "Shrooms",
       "name_zh": "墨西哥裸盖菇",
       "zh_aliases": [
+        "半裸盖菇",
+        "自由之帽",
         "魔法蘑菇"
       ],
       "pinyin": [
         "mo'xi'ge'luo'gai'gu",
         "moxigeluogaigu",
+        "ban'luo'gai'gu",
+        "banluogaigu",
+        "zi'you'zhi'mao",
+        "ziyouzhimao",
         "mo'fa'mo'gu",
-        "mofamogu"
+        "mofamogu",
+        "shrooms"
       ],
       "pinyin_abbr": [
         "mxglgg",
-        "mfmg"
+        "blgg",
+        "zyzm",
+        "mfmg",
+        "shro"
       ],
       "categories": [
-        "research-chemical"
+        "psychedelic"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致幻剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/墨西哥裸盖菇.md"
@@ -11689,19 +11788,27 @@
         "mi'duo'bi",
         "miduobi",
         "jin'si'ping",
-        "jinsiping"
+        "jinsiping",
+        "ldeprenylnpropargyllmethamphetamine"
       ],
       "pinyin_abbr": [
         "sljl bya",
         "sljl",
         "mdb",
-        "jsp"
+        "jsp",
+        "ldep"
       ],
       "categories": [
-        "stimulant"
+        "stimulant",
+        "nootropic",
+        "antiparkinsonian",
+        "maoi"
       ],
       "categories_zh": [
-        "中枢兴奋剂"
+        "兴奋剂",
+        "促智药",
+        "antiparkinsonian",
+        "单胺氧化酶抑制剂"
       ],
       "cas": "14611-51-914611-52-0（盐酸盐）",
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/司来吉兰+苯乙胺.md"
@@ -11844,27 +11951,33 @@
       "name_en": "HBW",
       "name_zh": "夏威夷小木玫瑰",
       "zh_aliases": [
+        "银叶牵牛",
         "象藤",
         "夏威夷婴儿木玫瑰"
       ],
       "pinyin": [
         "xia'wei'yi'xiao'mu'mei'gui",
         "xiaweiyixiaomumeigui",
+        "yin'ye'qian'niu",
+        "yinyeqianniu",
         "xiang'teng",
         "xiangteng",
         "xia'wei'yi'ying'er'mu'mei'gui",
-        "xiaweiyiyingermumeigui"
+        "xiaweiyiyingermumeigui",
+        "hbw"
       ],
       "pinyin_abbr": [
         "xwyxmmg",
+        "yyqn",
         "xt",
-        "xwyyemmg"
+        "xwyyemmg",
+        "hbw"
       ],
       "categories": [
-        "research-chemical"
+        "psychedelic"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致幻剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/夏威夷小木玫瑰.md"
@@ -12145,16 +12258,20 @@
       "zh_aliases": [],
       "pinyin": [
         "fu'ma'xi'ni",
-        "fumaxini"
+        "fumaxini",
+        "anexate"
       ],
       "pinyin_abbr": [
-        "fmxn"
+        "fmxn",
+        "anex"
       ],
       "categories": [
-        "benzodiazepine"
+        "benzodiazepine",
+        "antidote"
       ],
       "categories_zh": [
-        "苯二氮䓬类"
+        "苯二氮䓬类",
+        "antidote"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/氟马西尼.md"
@@ -12175,13 +12292,15 @@
         "N-'ben'bing'an",
         "N-benbingan",
         "2-'lv'bian'ji",
-        "2-lvbianji"
+        "2-lvbianji",
+        "asenlix"
       ],
       "pinyin_abbr": [
         "lbls",
         "lyw",
         "Nbba",
-        "2lbj"
+        "2lbj",
+        "asen"
       ],
       "categories": [
         "research-chemical"
@@ -12223,20 +12342,39 @@
     },
     "Changa": {
       "name_en": "Changa",
-      "name_zh": "相思汤",
-      "zh_aliases": [],
+      "name_zh": "泛相思汤",
+      "zh_aliases": [
+        "相思汤",
+        "草药死藤水",
+        "烟熏相思汤",
+        "DMT草药熏香"
+      ],
       "pinyin": [
+        "fan'xiang'si'tang",
+        "fanxiangsitang",
         "xiang'si'tang",
-        "xiangsitang"
+        "xiangsitang",
+        "cao'yao'si'teng'shui",
+        "caoyaositengshui",
+        "yan'xun'xiang'si'tang",
+        "yanxunxiangsitang",
+        "DMT'cao'yao'xun'xiang",
+        "DMTcaoyaoxunxiang",
+        "changa"
       ],
       "pinyin_abbr": [
-        "xst"
+        "fxst",
+        "xst",
+        "cysts",
+        "yxxst",
+        "Dcyxx",
+        "chan"
       ],
       "categories": [
-        "research-chemical"
+        "psychedelic"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致幻剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/泛相思汤.md"
@@ -12247,16 +12385,20 @@
       "zh_aliases": [],
       "pinyin": [
         "luo'pai'ding'an",
-        "luopaidingan"
+        "luopaidingan",
+        "imodium"
       ],
       "pinyin_abbr": [
-        "lpda"
+        "lpda",
+        "imod"
       ],
       "categories": [
-        "opioid"
+        "opioid",
+        "antidiarrheal"
       ],
       "categories_zh": [
-        "阿片类"
+        "阿片类药物",
+        "antidiarrheal"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/洛哌丁胺.md"
@@ -12312,19 +12454,38 @@
     "morning-glory": {
       "name_en": "morning-glory",
       "name_zh": "牵牛花",
-      "zh_aliases": [],
+      "zh_aliases": [
+        "牵牛子",
+        "圆叶牵牛",
+        "三色牵牛",
+        "大花牵牛"
+      ],
       "pinyin": [
         "qian'niu'hua",
-        "qianniuhua"
+        "qianniuhua",
+        "qian'niu'zi",
+        "qianniuzi",
+        "yuan'ye'qian'niu",
+        "yuanyeqianniu",
+        "san'se'qian'niu",
+        "sanseqianniu",
+        "da'hua'qian'niu",
+        "dahuaqianniu",
+        "morningglory"
       ],
       "pinyin_abbr": [
-        "qnh"
+        "qnh",
+        "qnz",
+        "yyqn",
+        "ssqn",
+        "dhqn",
+        "morn"
       ],
       "categories": [
-        "research-chemical"
+        "psychedelic"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致幻剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/牵牛花.md"
@@ -12400,12 +12561,14 @@
         "2-'an'ji'-4-'jia'ji'ji'wan",
         "2-anji-4-jiajijiwan",
         "1,3-'er'jia'ji'wu'an",
-        "1,3-erjiajiwuan"
+        "1,3-erjiajiwuan",
+        "13dmaa"
       ],
       "pinyin_abbr": [
         "jjja",
         "2aj-jjjw",
-        "1ejjwa"
+        "1ejjwa",
+        "13dm"
       ],
       "categories": [
         "research-chemical"
@@ -12520,10 +12683,12 @@
       "zh_aliases": [],
       "pinyin": [
         "shi'shan'jian'jia",
-        "shishanjianjia"
+        "shishanjianjia",
+        "hupa"
       ],
       "pinyin_abbr": [
-        "ssjj"
+        "ssjj",
+        "hupa"
       ],
       "categories": [
         "research-chemical"
@@ -12578,23 +12743,32 @@
       "name_en": "Calumbi",
       "name_zh": "细花含羞草",
       "zh_aliases": [
-        "朱雷玛黑"
+        "朱雷玛黑",
+        "纤花含羞草",
+        "特佩兹科维特"
       ],
       "pinyin": [
         "xi'hua'han'xiu'cao",
         "xihuahanxiucao",
         "zhu'lei'ma'hei",
-        "zhuleimahei"
+        "zhuleimahei",
+        "xian'hua'han'xiu'cao",
+        "xianhuahanxiucao",
+        "te'pei'zi'ke'wei'te",
+        "tepeizikeweite",
+        "calumbi"
       ],
       "pinyin_abbr": [
         "xhhxc",
-        "zlmh"
+        "zlmh",
+        "tpzkwt",
+        "calu"
       ],
       "categories": [
-        "research-chemical"
+        "psychedelic"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致幻剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/细花含羞草.md"
@@ -12965,23 +13139,35 @@
       "name_en": "Nymphaea nouchali var. caerulea",
       "name_zh": "蓝莲花",
       "zh_aliases": [
-        "莲花"
+        "埃及蓝睡莲",
+        "埃及蓝莲花",
+        "蓝睡莲"
       ],
       "pinyin": [
         "lan'lian'hua",
         "lanlianhua",
-        "lian'hua",
-        "lianhua"
+        "ai'ji'lan'shui'lian",
+        "aijilanshuilian",
+        "ai'ji'lan'lian'hua",
+        "aijilanlianhua",
+        "lan'shui'lian",
+        "lanshuilian",
+        "nymphaeanouchalivarcaerulea"
       ],
       "pinyin_abbr": [
         "llh",
-        "lh"
+        "ajlsl",
+        "ajllh",
+        "lsl",
+        "nymp"
       ],
       "categories": [
-        "research-chemical"
+        "depressant",
+        "oneirogen"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "抑制剂",
+        "oneirogen"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/蓝莲花.md"
@@ -13381,31 +13567,27 @@
       "name_en": "Yatonglvluogaigu",
       "name_zh": "亚铜绿裸盖菇",
       "zh_aliases": [
-        "波浪盖",
-        "亚铜绿",
-        "金顶"
+        "铜绿裸盖菇",
+        "波浪盖"
       ],
       "pinyin": [
         "ya'tong'lv'luo'gai'gu",
         "yatonglvluogaigu",
+        "tong'lv'luo'gai'gu",
+        "tonglvluogaigu",
         "bo'lang'gai",
-        "bolanggai",
-        "ya'tong'lv",
-        "yatonglv",
-        "jin'ding",
-        "jinding"
+        "bolanggai"
       ],
       "pinyin_abbr": [
         "ytllgg",
-        "blg",
-        "ytl",
-        "jd"
+        "tllgg",
+        "blg"
       ],
       "categories": [
-        "research-chemical"
+        "psychedelic"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致幻剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/亚铜绿裸盖菇.md"
@@ -13414,43 +13596,29 @@
       "name_en": "Cebaitong",
       "name_zh": "侧柏酮",
       "zh_aliases": [
-        "鼠尾草",
-        "普通鼠尾草",
-        "白鼠尾草",
-        "药用鼠尾草",
-        "苦艾",
-        "苦艾酒"
+        "苦艾素",
+        "苦艾脑"
       ],
       "pinyin": [
         "ce'bai'tong",
         "cebaitong",
-        "shu'wei'cao",
-        "shuweicao",
-        "pu'tong'shu'wei'cao",
-        "putongshuweicao",
-        "bai'shu'wei'cao",
-        "baishuweicao",
-        "yao'yong'shu'wei'cao",
-        "yaoyongshuweicao",
-        "ku'ai",
-        "kuai",
-        "ku'ai'jiu",
-        "kuaijiu"
+        "ku'ai'su",
+        "kuaisu",
+        "ku'ai'nao",
+        "kuainao"
       ],
       "pinyin_abbr": [
         "cbt",
-        "swc",
-        "ptswc",
-        "bswc",
-        "yyswc",
-        "ka",
-        "kaj"
+        "kas",
+        "kan"
       ],
       "categories": [
-        "research-chemical"
+        "stimulant",
+        "tentative"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "兴奋剂",
+        "tentative"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/侧柏酮.md"
@@ -13475,7 +13643,7 @@
         "stimulant"
       ],
       "categories_zh": [
-        "中枢兴奋剂"
+        "兴奋剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/卡西酮.md"
@@ -13545,38 +13713,36 @@
       "name_zh": "墨西哥鼠尾草",
       "zh_aliases": [
         "预言者鼠尾草",
-        "斯卡·玛丽亚·帕斯托拉",
+        "神圣鼠尾草",
         "先知鼠尾草",
-        "牧羊女之草",
-        "萨莉"
+        "牧羊女之草"
       ],
       "pinyin": [
         "mo'xi'ge'shu'wei'cao",
         "moxigeshuweicao",
         "yu'yan'zhe'shu'wei'cao",
         "yuyanzheshuweicao",
-        "si'ka'·'ma'li'ya'·'pa'si'tuo'la",
-        "sika·maliya·pasituola",
+        "shen'sheng'shu'wei'cao",
+        "shenshengshuweicao",
         "xian'zhi'shu'wei'cao",
         "xianzhishuweicao",
         "mu'yang'nv'zhi'cao",
-        "muyangnvzhicao",
-        "sa'li",
-        "sali"
+        "muyangnvzhicao"
       ],
       "pinyin_abbr": [
         "mxgswc",
         "yyzswc",
-        "sk·mly·pstl",
+        "ssswc",
         "xzswc",
-        "mynzc",
-        "sl"
+        "mynzc"
       ],
       "categories": [
-        "research-chemical"
+        "psychedelic",
+        "dissociative"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致幻剂",
+        "解离剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/墨西哥鼠尾草.md"
@@ -13606,10 +13772,10 @@
         "kab"
       ],
       "categories": [
-        "research-chemical"
+        "psychedelic"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致幻剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/大果柯拉豆.md"
@@ -13618,27 +13784,31 @@
       "name_en": "Tianxianzi",
       "name_zh": "天仙子",
       "zh_aliases": [
-        "植物",
-        "臭龙葵"
+        "莨菪",
+        "黑天仙子",
+        "牙痛草"
       ],
       "pinyin": [
         "tian'xian'zi",
         "tianxianzi",
-        "zhi'wu",
-        "zhiwu",
-        "chou'long'kui",
-        "choulongkui"
+        "lang'dang",
+        "langdang",
+        "hei'tian'xian'zi",
+        "heitianxianzi",
+        "ya'tong'cao",
+        "yatongcao"
       ],
       "pinyin_abbr": [
         "txz",
-        "zw",
-        "clk"
+        "ld",
+        "htxz",
+        "ytc"
       ],
       "categories": [
-        "research-chemical"
+        "deliriant"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致谵妄剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/天仙子.md"
@@ -13717,19 +13887,30 @@
     "Chenghuangegao": {
       "name_en": "Chenghuangegao",
       "name_zh": "橙黄鹅膏",
-      "zh_aliases": [],
+      "zh_aliases": [
+        "香橼鹅膏",
+        "假死帽鹅膏"
+      ],
       "pinyin": [
         "cheng'huang'e'gao",
-        "chenghuangegao"
+        "chenghuangegao",
+        "xiang'yuan'e'gao",
+        "xiangyuanegao",
+        "jia'si'mao'e'gao",
+        "jiasimaoegao"
       ],
       "pinyin_abbr": [
-        "cheg"
+        "cheg",
+        "xyeg",
+        "jsmeg"
       ],
       "categories": [
-        "research-chemical"
+        "deliriant",
+        "tentative"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致谵妄剂",
+        "tentative"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/橙黄鹅膏.md"
@@ -13738,23 +13919,31 @@
       "name_en": "Siteng",
       "name_zh": "死藤",
       "zh_aliases": [
-        "卡皮木或亚赫"
+        "卡皮木",
+        "亚赫",
+        "死藤水原料"
       ],
       "pinyin": [
         "si'teng",
         "siteng",
-        "ka'pi'mu'huo'ya'he",
-        "kapimuhuoyahe"
+        "ka'pi'mu",
+        "kapimu",
+        "ya'he",
+        "yahe",
+        "si'teng'shui'yuan'liao",
+        "sitengshuiyuanliao"
       ],
       "pinyin_abbr": [
         "st",
-        "kpmhyh"
+        "kpm",
+        "yh",
+        "stsyl"
       ],
       "categories": [
-        "research-chemical"
+        "psychedelic"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致幻剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/死藤.md"
@@ -13809,10 +13998,14 @@
         "ykne"
       ],
       "categories": [
-        "depressant"
+        "depressant",
+        "sedative",
+        "anxiolytic"
       ],
       "categories_zh": [
-        "中枢抑制剂"
+        "抑制剂",
+        "sedative",
+        "anxiolytic"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/甲丙氨酯.md"
@@ -13823,7 +14016,7 @@
       "zh_aliases": [
         "南非醉茄",
         "印度人参",
-        "毒醋栗和冬樱桃"
+        "冬樱桃"
       ],
       "pinyin": [
         "shui'jia",
@@ -13832,20 +14025,22 @@
         "nanfeizuijia",
         "yin'du'ren'shen",
         "yindurenshen",
-        "du'cu'li'he'dong'ying'tao",
-        "duculihedongyingtao"
+        "dong'ying'tao",
+        "dongyingtao"
       ],
       "pinyin_abbr": [
         "sj",
         "nfzj",
         "ydrs",
-        "dclhdyt"
+        "dyt"
       ],
       "categories": [
-        "research-chemical"
+        "depressant",
+        "nootropic"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "抑制剂",
+        "促智药"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/睡茄.md"
@@ -13873,19 +14068,32 @@
     "Jingshenhuoxingxiangsishushuzhiwu": {
       "name_en": "Jingshenhuoxingxiangsishushuzhiwu",
       "name_zh": "精神活性相思树属植物",
-      "zh_aliases": [],
+      "zh_aliases": [
+        "精神活性金合欢",
+        "相思树属",
+        "金合欢属"
+      ],
       "pinyin": [
         "jing'shen'huo'xing'xiang'si'shu'shu'zhi'wu",
-        "jingshenhuoxingxiangsishushuzhiwu"
+        "jingshenhuoxingxiangsishushuzhiwu",
+        "jing'shen'huo'xing'jin'he'huan",
+        "jingshenhuoxingjinhehuan",
+        "xiang'si'shu'shu",
+        "xiangsishushu",
+        "jin'he'huan'shu",
+        "jinhehuanshu"
       ],
       "pinyin_abbr": [
-        "jshxxssszw"
+        "jshxxssszw",
+        "jshxjhh",
+        "xsss",
+        "jhhs"
       ],
       "categories": [
-        "research-chemical"
+        "psychedelic"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致幻剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/精神活性相思树属植物.md"
@@ -14007,19 +14215,32 @@
     "Zhihuanxianrenzhang": {
       "name_en": "Zhihuanxianrenzhang",
       "name_zh": "致幻仙人掌",
-      "zh_aliases": [],
+      "zh_aliases": [
+        "麦斯卡林仙人掌",
+        "乌羽玉仙人掌",
+        "佩奥特"
+      ],
       "pinyin": [
         "zhi'huan'xian'ren'zhang",
-        "zhihuanxianrenzhang"
+        "zhihuanxianrenzhang",
+        "mai'si'ka'lin'xian'ren'zhang",
+        "maisikalinxianrenzhang",
+        "wu'yu'yu'xian'ren'zhang",
+        "wuyuyuxianrenzhang",
+        "pei'ao'te",
+        "peiaote"
       ],
       "pinyin_abbr": [
-        "zhxrz"
+        "zhxrz",
+        "msklxrz",
+        "wyyxrz",
+        "pat"
       ],
       "categories": [
-        "research-chemical"
+        "psychedelic"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致幻剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/致幻仙人掌.md"
@@ -14117,23 +14338,27 @@
       "name_en": "Jiacanshu",
       "name_zh": "茄参属",
       "zh_aliases": [
-        "曼德拉草"
+        "曼德拉草",
+        "风茄"
       ],
       "pinyin": [
         "jia'can'shu",
         "jiacanshu",
         "man'de'la'cao",
-        "mandelacao"
+        "mandelacao",
+        "feng'jia",
+        "fengjia"
       ],
       "pinyin_abbr": [
         "jcs",
-        "mdlc"
+        "mdlc",
+        "fj"
       ],
       "categories": [
-        "research-chemical"
+        "deliriant"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致谵妄剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/茄参属.md"
@@ -14179,10 +14404,10 @@
         "qxlgg"
       ],
       "categories": [
-        "research-chemical"
+        "psychedelic"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致幻剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/蓝柄裸盖菇.md"
@@ -14215,19 +14440,28 @@
     "Luogaigushu": {
       "name_en": "Luogaigushu",
       "name_zh": "裸盖菇属",
-      "zh_aliases": [],
+      "zh_aliases": [
+        "赛洛西宾蘑菇",
+        "致幻蘑菇"
+      ],
       "pinyin": [
         "luo'gai'gu'shu",
-        "luogaigushu"
+        "luogaigushu",
+        "sai'luo'xi'bin'mo'gu",
+        "sailuoxibinmogu",
+        "zhi'huan'mo'gu",
+        "zhihuanmogu"
       ],
       "pinyin_abbr": [
-        "lggs"
+        "lggs",
+        "slxbmg",
+        "zhmg"
       ],
       "categories": [
-        "research-chemical"
+        "psychedelic"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致幻剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/裸盖菇属.md"
@@ -14235,19 +14469,24 @@
     "Xibanyaluogaigu": {
       "name_en": "Xibanyaluogaigu",
       "name_zh": "西班牙裸盖菇",
-      "zh_aliases": [],
+      "zh_aliases": [
+        "比利牛斯裸盖菇"
+      ],
       "pinyin": [
         "xi'ban'ya'luo'gai'gu",
-        "xibanyaluogaigu"
+        "xibanyaluogaigu",
+        "bi'li'niu'si'luo'gai'gu",
+        "biliniusiluogaigu"
       ],
       "pinyin_abbr": [
-        "xbylgg"
+        "xbylgg",
+        "blnslgg"
       ],
       "categories": [
-        "research-chemical"
+        "psychedelic"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致幻剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/西班牙裸盖菇.md"
@@ -14256,12 +14495,15 @@
       "name_en": "Baobanegao",
       "name_zh": "豹斑鹅膏",
       "zh_aliases": [
+        "豹斑毒伞",
         "豹帽",
         "假赭盖鹅膏"
       ],
       "pinyin": [
         "bao'ban'e'gao",
         "baobanegao",
+        "bao'ban'du'san",
+        "baobandusan",
         "bao'mao",
         "baomao",
         "jia'zhe'gai'e'gao",
@@ -14269,14 +14511,17 @@
       ],
       "pinyin_abbr": [
         "bbeg",
+        "bbds",
         "bm",
         "jzgeg"
       ],
       "categories": [
-        "research-chemical"
+        "deliriant",
+        "depressant"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致谵妄剂",
+        "抑制剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/豹斑鹅膏.md"
@@ -14317,10 +14562,14 @@
         "l"
       ],
       "categories": [
-        "research-chemical"
+        "mood-stabilizer",
+        "depressant",
+        "common"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "心境稳定剂",
+        "抑制剂",
+        "common"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/锂.md"
@@ -14478,10 +14727,12 @@
       "zh_aliases": [],
       "pinyin": [
         "bai'tu'BRON",
-        "baituBRON"
+        "baituBRON",
+        "sspharmaceuticalsbrontablets"
       ],
       "pinyin_abbr": [
-        "btB"
+        "btB",
+        "ssph"
       ],
       "categories": [
         "research-chemical"
@@ -14516,23 +14767,33 @@
       "name_en": "Mycomorphbox_Psychoactive",
       "name_zh": "古巴裸盖菇",
       "zh_aliases": [
+        "黄金顶",
+        "大孢裸盖菇",
         "魔法蘑菇"
       ],
       "pinyin": [
         "gu'ba'luo'gai'gu",
         "gubaluogaigu",
+        "huang'jin'ding",
+        "huangjinding",
+        "da'bao'luo'gai'gu",
+        "dabaoluogaigu",
         "mo'fa'mo'gu",
-        "mofamogu"
+        "mofamogu",
+        "mycomorphboxpsychoactive"
       ],
       "pinyin_abbr": [
         "gblgg",
-        "mfmg"
+        "hjd",
+        "dblgg",
+        "mfmg",
+        "myco"
       ],
       "categories": [
-        "research-chemical"
+        "psychedelic"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致幻剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/古巴裸盖菇.md"
@@ -14543,10 +14804,12 @@
       "zh_aliases": [],
       "pinyin": [
         "xi'ru'ji",
-        "xiruji"
+        "xiruji",
+        "noscrackerwithballoonandcharger"
       ],
       "pinyin_abbr": [
-        "xrj"
+        "xrj",
+        "nosc"
       ],
       "categories": [
         "research-chemical"
@@ -14561,31 +14824,37 @@
       "name_en": "Coffea_Arabica",
       "name_zh": "咖啡属",
       "zh_aliases": [
-        "爪哇咖啡",
-        "咖啡",
-        "晨间提神物"
+        "小果咖啡",
+        "阿拉比卡咖啡",
+        "咖啡豆",
+        "咖啡"
       ],
       "pinyin": [
         "ka'fei'shu",
         "kafeishu",
-        "zhao'wa'ka'fei",
-        "zhaowakafei",
+        "xiao'guo'ka'fei",
+        "xiaoguokafei",
+        "a'la'bi'ka'ka'fei",
+        "alabikakafei",
+        "ka'fei'dou",
+        "kafeidou",
         "ka'fei",
         "kafei",
-        "chen'jian'ti'shen'wu",
-        "chenjiantishenwu"
+        "coffeaarabica"
       ],
       "pinyin_abbr": [
         "kfs",
-        "zwkf",
+        "xgkf",
+        "albkkf",
+        "kfd",
         "kf",
-        "cjtsw"
+        "coff"
       ],
       "categories": [
-        "research-chemical"
+        "stimulant"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "兴奋剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/咖啡属.md"
@@ -14603,18 +14872,22 @@
         "qiu'jing'jin'si'que'cao",
         "qiujingjinsiquecao",
         "ha'ding'cao",
-        "hadingcao"
+        "hadingcao",
+        "phalarisaquatica"
       ],
       "pinyin_abbr": [
         "syc",
         "qjjsqc",
-        "hdc"
+        "hdc",
+        "phal"
       ],
       "categories": [
-        "research-chemical"
+        "psychedelic",
+        "tentative"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致幻剂",
+        "tentative"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/水虉草.md"
@@ -14623,57 +14896,33 @@
       "name_en": "Songbird-egg",
       "name_zh": "相思皮",
       "zh_aliases": [
-        "绿九节",
-        "查克鲁纳",
-        "查克罗纳",
-        "罂粟",
-        "鸦片",
-        "阿片烟",
-        "梦",
-        "苏摩",
-        "鼠尾草素乙甲氧醚",
-        "鼠尾草素乙"
+        "相思树皮",
+        "金合欢根皮",
+        "彩虹相思皮"
       ],
       "pinyin": [
         "xiang'si'pi",
         "xiangsipi",
-        "lv'jiu'jie",
-        "lvjiujie",
-        "cha'ke'lu'na",
-        "chakeluna",
-        "cha'ke'luo'na",
-        "chakeluona",
-        "ying'su",
-        "yingsu",
-        "ya'pian",
-        "yapian",
-        "a'pian'yan",
-        "apianyan",
-        "meng",
-        "su'mo",
-        "sumo",
-        "shu'wei'cao'su'yi'jia'yang'mi",
-        "shuweicaosuyijiayangmi",
-        "shu'wei'cao'su'yi",
-        "shuweicaosuyi"
+        "xiang'si'shu'pi",
+        "xiangsishupi",
+        "jin'he'huan'gen'pi",
+        "jinhehuangenpi",
+        "cai'hong'xiang'si'pi",
+        "caihongxiangsipi",
+        "songbirdegg"
       ],
       "pinyin_abbr": [
         "xsp",
-        "ljj",
-        "ckln",
-        "ys",
-        "yp",
-        "apy",
-        "m",
-        "sm",
-        "swcsyjym",
-        "swcsy"
+        "xssp",
+        "jhhgp",
+        "chxsp",
+        "song"
       ],
       "categories": [
-        "research-chemical"
+        "psychedelic"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致幻剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/相思皮.md"
@@ -14691,12 +14940,14 @@
         "ju'xing'lu'wei",
         "juxingluwei",
         "ju'xing'gan'zhe",
-        "juxingganzhe"
+        "juxingganzhe",
+        "arundodonax"
       ],
       "pinyin_abbr": [
         "lz",
         "jxlw",
-        "jxgz"
+        "jxgz",
+        "arun"
       ],
       "categories": [
         "research-chemical"
@@ -14733,16 +14984,22 @@
       "zh_aliases": [],
       "pinyin": [
         "cha'ben'hai'ming",
-        "chabenhaiming"
+        "chabenhaiming",
+        "dimenhydrinate"
       ],
       "pinyin_abbr": [
-        "cbhm"
+        "cbhm",
+        "dime"
       ],
       "categories": [
-        "research-chemical"
+        "deliriant",
+        "depressant",
+        "antihistamine"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致谵妄剂",
+        "抑制剂",
+        "antihistamine"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/茶苯海明.md"
@@ -14757,17 +15014,21 @@
         "yi'cao'shu",
         "yicaoshu",
         "jin'si'que'cao",
-        "jinsiquecao"
+        "jinsiquecao",
+        "phalaris"
       ],
       "pinyin_abbr": [
         "ycs",
-        "jsqc"
+        "jsqc",
+        "phal"
       ],
       "categories": [
-        "research-chemical"
+        "psychedelic",
+        "tentative"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致幻剂",
+        "tentative"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/虉草属.md"
@@ -14776,48 +15037,76 @@
       "name_en": "Aptenia",
       "name_zh": "露子花属",
       "zh_aliases": [
-        "匍匐冰花"
+        "匍匐冰花",
+        "心叶日中花",
+        "心叶冰花",
+        "花蔓草"
       ],
       "pinyin": [
         "lu'zi'hua'shu",
         "luzihuashu",
         "pu'fu'bing'hua",
-        "pufubinghua"
+        "pufubinghua",
+        "xin'ye'ri'zhong'hua",
+        "xinyerizhonghua",
+        "xin'ye'bing'hua",
+        "xinyebinghua",
+        "hua'man'cao",
+        "huamancao",
+        "aptenia"
       ],
       "pinyin_abbr": [
         "lzhs",
-        "pfbh"
+        "pfbh",
+        "xyrzh",
+        "xybh",
+        "hmc",
+        "apte"
       ],
       "categories": [
-        "research-chemical"
+        "depressant",
+        "nootropic"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "抑制剂",
+        "促智药"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/露子花属.md"
     },
     "Tabernaemontana": {
       "name_en": "Tabernaemontana",
-      "name_zh": "鹅花树",
+      "name_zh": "山马茶属",
       "zh_aliases": [
-        "伊博加"
+        "鹅花树",
+        "狗牙花属",
+        "非洲山马茶"
       ],
       "pinyin": [
+        "shan'ma'cha'shu",
+        "shanmachashu",
         "e'hua'shu",
         "ehuashu",
-        "yi'bo'jia",
-        "yibojia"
+        "gou'ya'hua'shu",
+        "gouyahuashu",
+        "fei'zhou'shan'ma'cha",
+        "feizhoushanmacha",
+        "tabernaemontana"
       ],
       "pinyin_abbr": [
+        "smcs",
         "ehs",
-        "ybj"
+        "gyhs",
+        "fzsmc",
+        "tabe"
       ],
       "categories": [
-        "research-chemical"
+        "psychedelic",
+        "tentative"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致幻剂",
+        "tentative"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/鹅花树.md"
@@ -14828,16 +15117,24 @@
       "zh_aliases": [],
       "pinyin": [
         "bing'wu'suan",
-        "bingwusuan"
+        "bingwusuan",
+        "valproicacid"
       ],
       "pinyin_abbr": [
-        "bws"
+        "bws",
+        "valp"
       ],
       "categories": [
-        "research-chemical"
+        "mood-stabilizer",
+        "depressant",
+        "antiepileptic",
+        "common"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "心境稳定剂",
+        "抑制剂",
+        "antiepileptic",
+        "common"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/丙戊酸.md"
@@ -14848,16 +15145,22 @@
       "zh_aliases": [],
       "pinyin": [
         "fan'ben'huan'bing'an",
-        "fanbenhuanbingan"
+        "fanbenhuanbingan",
+        "tranylcypromine"
       ],
       "pinyin_abbr": [
-        "fbhba"
+        "fbhba",
+        "tran"
       ],
       "categories": [
-        "research-chemical"
+        "antidepressant",
+        "maoi",
+        "stimulant"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "抗抑郁药",
+        "单胺氧化酶抑制剂",
+        "兴奋剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/反苯环丙胺.md"
@@ -14865,19 +15168,30 @@
     "San Pedro cactus": {
       "name_en": "San Pedro cactus",
       "name_zh": "圣佩德罗仙人掌",
-      "zh_aliases": [],
+      "zh_aliases": [
+        "圣佩德罗",
+        "瓦楚马"
+      ],
       "pinyin": [
         "sheng'pei'de'luo'xian'ren'zhang",
-        "shengpeideluoxianrenzhang"
+        "shengpeideluoxianrenzhang",
+        "sheng'pei'de'luo",
+        "shengpeideluo",
+        "wa'chu'ma",
+        "wachuma",
+        "sanpedrocactus"
       ],
       "pinyin_abbr": [
-        "spdlxrz"
+        "spdlxrz",
+        "spdl",
+        "wcm",
+        "sanp"
       ],
       "categories": [
-        "research-chemical"
+        "psychedelic"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致幻剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/圣佩德罗仙人掌.md"
@@ -14885,19 +15199,32 @@
     "Compound Licorice Tablets": {
       "name_en": "Compound Licorice Tablets",
       "name_zh": "复方甘草片",
-      "zh_aliases": [],
+      "zh_aliases": [
+        "甘草片",
+        "复方甘草含片"
+      ],
       "pinyin": [
         "fu'fang'gan'cao'pian",
-        "fufanggancaopian"
+        "fufanggancaopian",
+        "gan'cao'pian",
+        "gancaopian",
+        "fu'fang'gan'cao'han'pian",
+        "fufanggancaohanpian",
+        "compoundlicoricetablets"
       ],
       "pinyin_abbr": [
-        "ffgcp"
+        "ffgcp",
+        "gcp",
+        "ffgchp",
+        "comp"
       ],
       "categories": [
-        "research-chemical"
+        "opioid",
+        "depressant"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "阿片类药物",
+        "抑制剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/复方甘草片.md"
@@ -14933,10 +15260,12 @@
       "zh_aliases": [],
       "pinyin": [
         "yu'mei'pian",
-        "yumeipian"
+        "yumeipian",
+        "yumeitablets"
       ],
       "pinyin_abbr": [
-        "ymp"
+        "ymp",
+        "yume"
       ],
       "categories": [
         "research-chemical"
@@ -15054,23 +15383,39 @@
       "name_en": "Amanita muscaria",
       "name_zh": "毒蝇伞",
       "zh_aliases": [
+        "蛤蟆菌",
+        "蝇伞",
+        "红托鹅膏",
         "蝇鹅膏"
       ],
       "pinyin": [
         "du'ying'san",
         "duyingsan",
+        "ha'ma'jun",
+        "hamajun",
+        "ying'san",
+        "yingsan",
+        "hong'tuo'e'gao",
+        "hongtuoegao",
         "ying'e'gao",
-        "yingegao"
+        "yingegao",
+        "amanitamuscaria"
       ],
       "pinyin_abbr": [
         "dys",
-        "yeg"
+        "hmj",
+        "ys",
+        "hteg",
+        "yeg",
+        "aman"
       ],
       "categories": [
-        "research-chemical"
+        "deliriant",
+        "depressant"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致谵妄剂",
+        "抑制剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/毒蝇伞.md"
@@ -15081,16 +15426,22 @@
       "zh_aliases": [],
       "pinyin": [
         "fu'lv'ti'zuo'lun",
-        "fulvtizuolun"
+        "fulvtizuolun",
+        "fluclotizolam"
       ],
       "pinyin_abbr": [
-        "fltzl"
+        "fltzl",
+        "fluc"
       ],
       "categories": [
-        "depressant"
+        "depressant",
+        "benzodiazepine",
+        "research-chemical"
       ],
       "categories_zh": [
-        "中枢抑制剂"
+        "抑制剂",
+        "苯二氮䓬类",
+        "研究性化学品"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/氟氯替唑仑.md"
@@ -15130,10 +15481,12 @@
       "zh_aliases": [],
       "pinyin": [
         "xiang'yan",
-        "xiangyan"
+        "xiangyan",
+        "tobacco"
       ],
       "pinyin_abbr": [
-        "xy"
+        "xy",
+        "toba"
       ],
       "categories": [
         "research-chemical"
@@ -15148,46 +15501,36 @@
       "name_en": "Yancaoshu",
       "name_zh": "烟草属",
       "zh_aliases": [
-        "香烟",
-        "烟",
-        "卷烟",
-        "手卷烟",
-        "癌棍",
-        "佩吞",
-        "皮耶西耶特尔"
+        "烟草",
+        "黄花烟草",
+        "红花烟草",
+        "香烟原料"
       ],
       "pinyin": [
         "yan'cao'shu",
         "yancaoshu",
-        "xiang'yan",
-        "xiangyan",
-        "yan",
-        "juan'yan",
-        "juanyan",
-        "shou'juan'yan",
-        "shoujuanyan",
-        "ai'gun",
-        "aigun",
-        "pei'tun",
-        "peitun",
-        "pi'ye'xi'ye'te'er",
-        "piyexiyeteer"
+        "yan'cao",
+        "yancao",
+        "huang'hua'yan'cao",
+        "huanghuayancao",
+        "hong'hua'yan'cao",
+        "honghuayancao",
+        "xiang'yan'yuan'liao",
+        "xiangyanyuanliao"
       ],
       "pinyin_abbr": [
         "ycs",
-        "xy",
-        "y",
-        "jy",
-        "sjy",
-        "ag",
-        "pt",
-        "pyxyte"
+        "yc",
+        "hhyc",
+        "xyyl"
       ],
       "categories": [
-        "research-chemical"
+        "stimulant",
+        "habit-forming"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "兴奋剂",
+        "易成瘾物质"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/烟草属.md"
@@ -15195,19 +15538,30 @@
     "Bolivian torch cactus": {
       "name_en": "Bolivian torch cactus",
       "name_zh": "玻利维亚火炬仙人掌",
-      "zh_aliases": [],
+      "zh_aliases": [
+        "玻利维亚火炬",
+        "阿丘马"
+      ],
       "pinyin": [
         "bo'li'wei'ya'huo'ju'xian'ren'zhang",
-        "boliweiyahuojuxianrenzhang"
+        "boliweiyahuojuxianrenzhang",
+        "bo'li'wei'ya'huo'ju",
+        "boliweiyahuoju",
+        "a'qiu'ma",
+        "aqiuma",
+        "boliviantorchcactus"
       ],
       "pinyin_abbr": [
-        "blwyhjxrz"
+        "blwyhjxrz",
+        "blwyhj",
+        "aqm",
+        "boli"
       ],
       "categories": [
-        "research-chemical"
+        "psychedelic"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致幻剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/玻利维亚火炬仙人掌.md"
@@ -15222,17 +15576,19 @@
         "bi'lu'huo'ju'xian'ren'zhang",
         "biluhuojuxianrenzhang",
         "bi'lu'huo'ju",
-        "biluhuoju"
+        "biluhuoju",
+        "peruviantorchcactus"
       ],
       "pinyin_abbr": [
         "blhjxrz",
-        "blhj"
+        "blhj",
+        "peru"
       ],
       "categories": [
-        "research-chemical"
+        "psychedelic"
       ],
       "categories_zh": [
-        "研究性化学品"
+        "致幻剂"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/秘鲁火炬仙人掌.md"
@@ -15250,12 +15606,14 @@
         "you'kang",
         "youkang",
         "you'ke'la'er'huo'ke'bu'la'xin",
-        "youkelaerhuokebulaxin"
+        "youkelaerhuokebulaxin",
+        "yohimbine"
       ],
       "pinyin_abbr": [
         "yhb",
         "yk",
-        "yklehkblx"
+        "yklehkblx",
+        "yohi"
       ],
       "categories": [
         "research-chemical"
@@ -15272,10 +15630,12 @@
       "zh_aliases": [],
       "pinyin": [
         "gua'ding'an",
-        "guadingan"
+        "guadingan",
+        "agmatine"
       ],
       "pinyin_abbr": [
-        "gda"
+        "gda",
+        "agma"
       ],
       "categories": [
         "nootropic"
@@ -15292,18 +15652,24 @@
       "zh_aliases": [],
       "pinyin": [
         "jin'gang'wan'an",
-        "jingangwanan"
+        "jingangwanan",
+        "amantadine"
       ],
       "pinyin_abbr": [
-        "jgwa"
+        "jgwa",
+        "aman"
       ],
       "categories": [
         "dissociative",
-        "deliriant"
+        "deliriant",
+        "antiparkinsonian",
+        "antiviral"
       ],
       "categories_zh": [
         "解离剂",
-        "谵妄剂"
+        "致谵妄剂",
+        "antiparkinsonian",
+        "antiviral"
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/金刚烷胺.md"
@@ -15311,18 +15677,27 @@
     "Ibotenic acid": {
       "name_en": "Ibotenic acid",
       "name_zh": "鹅膏蕈氨酸",
-      "zh_aliases": [],
+      "zh_aliases": [
+        "鹅膏氨酸"
+      ],
       "pinyin": [
         "e'gao'xun'an'suan",
-        "egaoxunansuan"
+        "egaoxunansuan",
+        "e'gao'an'suan",
+        "egaoansuan",
+        "ibotenicacid"
       ],
       "pinyin_abbr": [
-        "egxas"
+        "egxas",
+        "egas",
+        "ibot"
       ],
       "categories": [
+        "deliriant",
         "psychedelic"
       ],
       "categories_zh": [
+        "致谵妄剂",
         "致幻剂"
       ],
       "cas": null,
