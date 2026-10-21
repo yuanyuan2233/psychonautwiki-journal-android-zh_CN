@@ -8453,12 +8453,13 @@
     },
     "O-PCE": {
       "name_en": "O-PCE",
-      "name_zh": "去氯乙环利定",
+      "name_zh": "2-氧代乙环利定",
       "zh_aliases": [
+        "2-氧代乙环利定",
+        "2'-氧代乙环利定",
         "2'-Oxo-PCE",
         "Eticyclidone",
-        "2'-氧代-PCE",
-        "乙环利定"
+        "2'-氧代-PCE"
       ],
       "pinyin": [
         "qu'lv'yi'huan'li'ding",
@@ -8466,12 +8467,15 @@
         "2'-'yang'dai'-PCE",
         "2'-yangdai-PCE",
         "yi'huan'li'ding",
-        "yihuanliding"
+        "yihuanliding",
+        "2-'yang'dai'yi'huan'li'ding",
+        "2-yangdaiyihuanliding"
       ],
       "pinyin_abbr": [
         "qlyhld",
         "2yd-",
-        "yhld"
+        "yhld",
+        "2ydyhld"
       ],
       "categories": [
         "dissociative",
@@ -8721,8 +8725,7 @@
       "zh_aliases": [
         "Eticyclidine",
         "CI-400",
-        "乙环利定",
-        "2'-氧代-PCE"
+        "乙环利定"
       ],
       "pinyin": [
         "yi'huan'li'ding",
@@ -12065,35 +12068,6 @@
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/天仙子.md"
     },
-    "amfebutamone": {
-      "name_en": "amfebutamone",
-      "name_zh": "安非他酮",
-      "zh_aliases": [
-        "威博隽",
-        "载班"
-      ],
-      "pinyin": [
-        "an'fei'ta'tong",
-        "anfeitatong",
-        "wei'bo'juan",
-        "weibojuan",
-        "zai'ban",
-        "zaiban"
-      ],
-      "pinyin_abbr": [
-        "aftt",
-        "wbj",
-        "zb"
-      ],
-      "categories": [
-        "stimulant"
-      ],
-      "categories_zh": [
-        "中枢兴奋剂"
-      ],
-      "cas": "34841-39-9",
-      "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/安非他酮.md"
-    },
     "尼氟西泮": {
       "name_en": "尼氟西泮",
       "name_zh": "尼氟西泮",
@@ -12115,28 +12089,6 @@
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/尼氟西泮.md"
-    },
-    "Sonata": {
-      "name_en": "Sonata",
-      "name_zh": "扎来普隆",
-      "zh_aliases": [],
-      "pinyin": [
-        "zha'lai'pu'long",
-        "zhalaipulong"
-      ],
-      "pinyin_abbr": [
-        "zlpl"
-      ],
-      "categories": [
-        "depressant",
-        "psychedelic"
-      ],
-      "categories_zh": [
-        "中枢抑制剂",
-        "致幻剂"
-      ],
-      "cas": "151319-34-5",
-      "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/扎来普隆.md"
     },
     "曼陀罗属": {
       "name_en": "曼陀罗属",
@@ -14763,41 +14715,6 @@
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/MK-801.md"
     },
-    "Mycomorphbox_Psychoactive": {
-      "name_en": "Mycomorphbox_Psychoactive",
-      "name_zh": "古巴裸盖菇",
-      "zh_aliases": [
-        "黄金顶",
-        "大孢裸盖菇",
-        "魔法蘑菇"
-      ],
-      "pinyin": [
-        "gu'ba'luo'gai'gu",
-        "gubaluogaigu",
-        "huang'jin'ding",
-        "huangjinding",
-        "da'bao'luo'gai'gu",
-        "dabaoluogaigu",
-        "mo'fa'mo'gu",
-        "mofamogu",
-        "mycomorphboxpsychoactive"
-      ],
-      "pinyin_abbr": [
-        "gblgg",
-        "hjd",
-        "dblgg",
-        "mfmg",
-        "myco"
-      ],
-      "categories": [
-        "psychedelic"
-      ],
-      "categories_zh": [
-        "致幻剂"
-      ],
-      "cas": null,
-      "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/古巴裸盖菇.md"
-    },
     "NOS_Cracker_With_Balloon_And_Charger": {
       "name_en": "NOS_Cracker_With_Balloon_And_Charger",
       "name_zh": "吸入剂",
@@ -15702,6 +15619,121 @@
       ],
       "cas": null,
       "url": "https://github.com/SalviaSWC/FreeODwiki/blob/main/药物/鹅膏蕈氨酸.md"
+    },
+    "Zaleplon": {
+      "name_en": "Zaleplon",
+      "name_zh": "扎来普隆",
+      "zh_aliases": [
+        "安钠芬",
+        "扎来普隆胶囊",
+        "Sonata",
+        "Starnoc",
+        "Andante"
+      ],
+      "pinyin": [
+        "zha'lai'pu'long",
+        "zhalaipulong",
+        "an'na'fen",
+        "annafen",
+        "zha'lai'pu'long'jiao'nang",
+        "zhalaipulongjiaonang"
+      ],
+      "pinyin_abbr": [
+        "zlpl",
+        "anf",
+        "zlpljn"
+      ],
+      "categories": [
+        "hypnotic",
+        "z-drug",
+        "depressant",
+        "common"
+      ],
+      "categories_zh": [
+        "镇静催眠剂",
+        "Z-药类催眠药",
+        "中枢抑制剂",
+        "常用药物"
+      ],
+      "cas": "151319-34-5",
+      "url": "https://en.wikipedia.org/wiki/Zaleplon"
+    },
+    "Bupropion": {
+      "name_en": "Bupropion",
+      "name_zh": "安非他酮",
+      "zh_aliases": [
+        "威博隽",
+        "载班",
+        "悦亭",
+        "盐酸安非他酮缓释片",
+        "Wellbutrin",
+        "Zyban",
+        "Aplenzin"
+      ],
+      "pinyin": [
+        "an'fei'ta'tong",
+        "anfeitatong",
+        "wei'bo'juan",
+        "weibojuan",
+        "zai'ban",
+        "zaiban",
+        "yue'ting",
+        "yueting"
+      ],
+      "pinyin_abbr": [
+        "aftt",
+        "wbj",
+        "zb",
+        "yt"
+      ],
+      "categories": [
+        "antidepressant",
+        "ndri",
+        "stimulant",
+        "common"
+      ],
+      "categories_zh": [
+        "抗抑郁药",
+        "NDRI",
+        "中枢兴奋剂",
+        "常用药物"
+      ],
+      "cas": "34841-39-9",
+      "url": "https://en.wikipedia.org/wiki/Bupropion"
+    },
+    "Psilocybe cubensis": {
+      "name_en": "Psilocybe cubensis",
+      "name_zh": "古巴裸盖菇",
+      "zh_aliases": [
+        "黄金顶",
+        "大孢裸盖菇",
+        "魔法蘑菇",
+        "Golden Teacher"
+      ],
+      "pinyin": [
+        "gu'ba'luo'gai'gu",
+        "gubaluogaigu",
+        "huang'jin'ding",
+        "huangjinding",
+        "da'bao'luo'gai'gu",
+        "dabaoluogaigu",
+        "mo'fa'mo'gu",
+        "mofamogu"
+      ],
+      "pinyin_abbr": [
+        "gblgg",
+        "hjd",
+        "dblgg",
+        "mfmg"
+      ],
+      "categories": [
+        "psychedelic"
+      ],
+      "categories_zh": [
+        "致幻剂"
+      ],
+      "cas": null,
+      "url": "https://en.wikipedia.org/wiki/Psilocybe_cubensis"
     }
   }
 }

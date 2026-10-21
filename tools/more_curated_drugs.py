@@ -41,9 +41,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Ketoconazole", "Clarithromycin", "Erythromycin", "Pimozide"],
-            "unsafe": ["Alcohol", "Benzodiazepines", "Methadone", "Haloperidol"],
-            "uncertain": ["Phenytoin", "Carbamazepine"]
+            "dangerous": ["酮康唑", "克拉霉素", "红霉素", "匹莫齐特"],
+            "unsafe": ["酒精 (乙醇)", "苯二氮䓬类中枢抑制剂", "美沙酮", "氟哌啶醇"],
+            "uncertain": ["苯妥英钠", "卡马西平"]
         }
     },
     {
@@ -78,9 +78,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Parenteral Benzodiazepines (心肺骤停风险)"],
-            "unsafe": ["Fluvoxamine", "Ciprofloxacin", "Alcohol", "Levodopa"],
-            "uncertain": ["Carbamazepine", "Valproate"]
+            "dangerous": ["注射用苯二氮䓬类 (心肺骤停高危)"],
+            "unsafe": ["氟伏沙明", "环丙沙星", "酒精 (乙醇)", "左旋多巴"],
+            "uncertain": ["卡马西平", "丙戊酸钠 / 丙戊酸"]
         }
     },
     {
@@ -115,9 +115,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Pimozide", "Levodopa (疗效拮抗)"],
-            "unsafe": ["Fluoxetine", "Paroxetine", "Alcohol", "Clozapine"],
-            "uncertain": ["Carbamazepine"]
+            "dangerous": ["匹莫齐特", "左旋多巴 (疗效拮抗)"],
+            "unsafe": ["氟西汀", "帕罗西汀", "酒精 (乙醇)", "氯氮平"],
+            "uncertain": ["卡马西平"]
         }
     },
     {
@@ -152,9 +152,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Bone Marrow Depressants (骨髓抑制剂)", "Carbamazepine", "Ciprofloxacin", "Fluvoxamine (血药浓度飙升数倍)"],
-            "unsafe": ["Benzodiazepines (呼吸抑制)", "Alcohol", "Anticholinergics"],
-            "uncertain": ["Tobacco smoking (吸烟显著降低血药浓度)"]
+            "dangerous": ["骨髓抑制剂 (骨髓抑制剂)", "卡马西平", "环丙沙星", "氟伏沙明 (血药浓度飙升数倍)"],
+            "unsafe": ["苯二氮䓬类药物 (呼吸抑制)", "酒精 (乙醇)", "抗胆碱能药物"],
+            "uncertain": ["吸烟 (吸烟显著降低血药浓度)"]
         }
     },
     {
@@ -189,9 +189,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Levodopa", "Dopamine Agonists"],
-            "unsafe": ["Drugs that prolong QT interval", "Alcohol"],
-            "uncertain": ["Carbamazepine"]
+            "dangerous": ["左旋多巴", "多巴胺受体激动剂"],
+            "unsafe": ["延长 QT 间期药物", "酒精 (乙醇)"],
+            "uncertain": ["卡马西平"]
         }
     },
     {
@@ -226,9 +226,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Class IA & III Antiarrhythmics (Sotalol, Amiodarone)", "Levodopa", "IV Erythromycin"],
-            "unsafe": ["Citalopram", "Methadone", "Haloperidol"],
-            "uncertain": ["Alcohol", "CNS Depressants"]
+            "dangerous": ["ⅠA 类及 Ⅲ 类抗心律失常药 (索他洛尔、胺碘酮等)", "左旋多巴", "静脉注射红霉素"],
+            "unsafe": ["西酞普兰", "美沙酮", "氟哌啶醇"],
+            "uncertain": ["酒精 (乙醇)", "中枢神经系统抑制剂"]
         }
     },
     {
@@ -263,9 +263,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Drugs prolonging QT interval (Quinidine, Sotalol, Dofetilide, Moxifloxacin)"],
-            "unsafe": ["Ketoconazole", "Carbamazepine", "Alcohol"],
-            "uncertain": ["SSRIs"]
+            "dangerous": ["延长 QT 间期药物 (奎尼丁、索他洛尔、多非利特、莫西沙星等)"],
+            "unsafe": ["酮康唑", "卡马西平", "酒精 (乙醇)"],
+            "uncertain": ["选择性5-羟色胺再摄取抑制剂 (SSRI)"]
         }
     },
     {
@@ -300,9 +300,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Ketoconazole", "Clarithromycin", "Rifampin", "St John's Wort"],
-            "unsafe": ["Diltiazem", "Fluconazole", "Alcohol"],
-            "uncertain": ["Lithium"]
+            "dangerous": ["酮康唑", "克拉霉素", "利福平", "贯叶连翘 (圣约翰草)"],
+            "unsafe": ["地尔硫䓬", "氟康唑", "酒精 (乙醇)"],
+            "uncertain": ["碳酸锂"]
         }
     },
     {
@@ -337,9 +337,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["IV Haloperidol + QT prolonging agents (尖端扭转型室速)", "Levodopa"],
-            "unsafe": ["Fluoxetine", "Paroxetine", "Carbamazepine", "Alcohol"],
-            "uncertain": ["Lithium (高剂量脑病综合征风险)"]
+            "dangerous": ["静脉注射氟哌啶醇 + QT间期延长药物 (尖端扭转型室速风险)", "左旋多巴"],
+            "unsafe": ["氟西汀", "帕罗西汀", "卡马西平", "酒精 (乙醇)"],
+            "uncertain": ["碳酸锂 (高剂量脑病综合征风险)"]
         }
     },
     {
@@ -374,9 +374,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Epinephrine (肾上腺素翻转导致致命低血压)", "CNS Depressants"],
-            "unsafe": ["Alcohol", "Anticholinergics", "Barbiturates"],
-            "uncertain": ["Propranolol"]
+            "dangerous": ["肾上腺素 (翻转导致致命低血压)", "中枢神经系统抑制剂"],
+            "unsafe": ["酒精 (乙醇)", "抗胆碱能药物", "巴比妥类药物"],
+            "uncertain": ["普萘洛尔"]
         }
     },
 
@@ -415,9 +415,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["MAOIs (Tranylcypromine, Phenelzine)"],
-            "unsafe": ["Alcohol", "Benzodiazepines", "Tramadol", "Ketoconazole"],
-            "uncertain": ["Carbamazepine", "Cimetidine"]
+            "dangerous": ["单胺氧化酶抑制剂 (反苯环丙胺、苯乙肼等)"],
+            "unsafe": ["酒精 (乙醇)", "苯二氮䓬类中枢抑制剂", "曲马多", "酮康唑"],
+            "uncertain": ["卡马西平", "西咪替丁"]
         }
     },
     {
@@ -452,9 +452,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Tizanidine", "Agomelatine", "Clozapine", "MAOIs", "Ramelteon"],
-            "unsafe": ["Theophylline", "Warfarin", "Alprazolam", "Olanzapine"],
-            "uncertain": ["Caffeine (半衰期大幅延长数倍)"]
+            "dangerous": ["替扎尼定", "阿戈美拉汀", "氯氮平", "单胺氧化酶抑制剂 (MAOI)", "雷美替胺"],
+            "unsafe": ["茶碱", "华法林", "阿普唑仑", "奥氮平"],
+            "uncertain": ["咖啡因 (半衰期大幅延长数倍)"]
         }
     },
     {
@@ -489,9 +489,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["MAOIs", "Pimozide", "QT-prolonging drugs"],
-            "unsafe": ["Omeprazole (CYP2C19抑制导致血药浓度升高)", "Tramadol", "NSAIDs"],
-            "uncertain": ["Alcohol"]
+            "dangerous": ["单胺氧化酶抑制剂 (MAOI)", "匹莫齐特", "延长 QT 间期药物"],
+            "unsafe": ["奥美拉唑 (CYP2C19抑制导致血药浓度升高)", "曲马多", "非甾体抗炎药 (NSAIDs)"],
+            "uncertain": ["酒精 (乙醇)"]
         }
     },
     {
@@ -526,9 +526,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Fluvoxamine (血药暴露暴增 60 倍)", "Ciprofloxacin"],
-            "unsafe": ["Estrogens (升高阿戈美拉汀浓度)", "Alcohol"],
-            "uncertain": ["Propranolol"]
+            "dangerous": ["氟伏沙明 (血药暴露暴增 60 倍)", "环丙沙星"],
+            "unsafe": ["雌激素类药物 (升高阿戈美拉汀浓度)", "酒精 (乙醇)"],
+            "uncertain": ["普萘洛尔"]
         }
     },
     {
@@ -563,9 +563,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["MAOIs", "Linezolid"],
-            "unsafe": ["Bupropion (CYP2D6强抑制使伏硫西汀暴露翻倍)", "Fluoxetine", "Tramadol"],
-            "uncertain": ["Rifampin (降低浓度)"]
+            "dangerous": ["单胺氧化酶抑制剂 (MAOI)", "利奈唑胺"],
+            "unsafe": ["安非他酮 (CYP2D6强抑制使伏硫西汀暴露翻倍)", "氟西汀", "曲马多"],
+            "uncertain": ["利福平 (降低浓度)"]
         }
     },
     {
@@ -600,9 +600,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["MAOIs (致死高热惊厥危象)", "Cisapride"],
-            "unsafe": ["Tramadol", "Alcohol", "SSRI (Fluoxetine/Paroxetine 抑制 CYP2D6 致毒性蓄积)"],
-            "uncertain": ["Cimetidine"]
+            "dangerous": ["单胺氧化酶抑制剂 (MAOI) (致死高热惊厥危象)", "西沙必利"],
+            "unsafe": ["曲马多", "酒精 (乙醇)", "选择性5-羟色胺再摄取抑制剂 (SSRI) (Fluoxetine/Paroxetine 抑制 CYP2D6 致毒性蓄积)"],
+            "uncertain": ["西咪替丁"]
         }
     },
     {
@@ -637,9 +637,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["MAOIs", "Linezolid"],
-            "unsafe": ["Tramadol", "SSRI", "Anticholinergic drugs", "Alcohol"],
-            "uncertain": ["Cigarette smoking"]
+            "dangerous": ["单胺氧化酶抑制剂 (MAOI)", "利奈唑胺"],
+            "unsafe": ["曲马多", "选择性5-羟色胺再摄取抑制剂 (SSRI)", "抗胆碱能药物", "酒精 (乙醇)"],
+            "uncertain": ["吸烟 (烟草多环芳烃诱导CYP1A2)"]
         }
     },
     {
@@ -674,9 +674,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["MAOIs"],
-            "unsafe": ["Alcohol", "Cimetidine", "SSRI"],
-            "uncertain": ["Tolazamide"]
+            "dangerous": ["单胺氧化酶抑制剂 (MAOI)"],
+            "unsafe": ["酒精 (乙醇)", "西咪替丁", "选择性5-羟色胺再摄取抑制剂 (SSRI)"],
+            "uncertain": ["妥拉磺脲"]
         }
     },
 
@@ -715,9 +715,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Opioids (致命呼吸骤停)", "Ketoconazole", "Itraconazole"],
-            "unsafe": ["Alcohol (协同严重 CNS 抑制致昏迷)", "Grapefruit juice", "Cimetidine"],
-            "uncertain": ["Fluvoxamine"]
+            "dangerous": ["阿片类药物 (致命呼吸骤停)", "酮康唑", "伊曲康唑"],
+            "unsafe": ["酒精 / 乙醇 (协同严重 CNS 抑制致昏迷)", "西柚汁 (葡萄柚汁)", "西咪替丁"],
+            "uncertain": ["氟伏沙明"]
         }
     },
     {
@@ -752,9 +752,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Opioids", "Alcohol (协同强效中枢呼吸抑制)"],
-            "unsafe": ["Phenytoin", "Phenobarbital", "Valproate (可诱发失神发作持续状态)"],
-            "uncertain": ["CYP3A4 inhibitors"]
+            "dangerous": ["阿片类药物", "酒精 / 乙醇 (协同强效中枢呼吸抑制)"],
+            "unsafe": ["苯妥英钠", "苯巴比妥", "丙戊酸 / 丙戊酸钠 (可诱发失神发作持续状态)"],
+            "uncertain": ["CYP3A4 抑制剂"]
         }
     },
     {
@@ -789,9 +789,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Opioids", "CNS Depressants"],
-            "unsafe": ["Omeprazole (CYP2C19抑制延长清除)", "Alcohol", "Cimetidine"],
-            "uncertain": ["Grapefruit juice"]
+            "dangerous": ["阿片类药物", "中枢神经系统抑制剂"],
+            "unsafe": ["奥美拉唑 (CYP2C19抑制延长清除)", "酒精 (乙醇)", "西咪替丁"],
+            "uncertain": ["西柚汁 (葡萄柚汁)"]
         }
     },
     {
@@ -826,9 +826,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Opioids (致死性呼吸受损)"],
-            "unsafe": ["Valproate (抑制葡糖醛酸结合使劳拉西泮浓度翻倍)", "Alcohol", "Probenecid"],
-            "uncertain": ["Oral contraceptives"]
+            "dangerous": ["阿片类药物 (致死性呼吸受损)"],
+            "unsafe": ["丙戊酸 / 丙戊酸钠 (抑制葡糖醛酸结合使劳拉西泮浓度翻倍)", "酒精 (乙醇)", "丙磺舒"],
+            "uncertain": ["复方口服避孕药"]
         }
     },
     {
@@ -863,9 +863,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Opioids"],
-            "unsafe": ["Alcohol", "CNS Depressants"],
-            "uncertain": ["Phenytoin"]
+            "dangerous": ["阿片类药物"],
+            "unsafe": ["酒精 (乙醇)", "中枢神经系统抑制剂"],
+            "uncertain": ["苯妥英钠"]
         }
     },
     {
@@ -900,9 +900,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Strong CYP3A4 inhibitors (Clarithromycin, Ketoconazole - 浓度提升5-10倍引起呼吸抑制)", "Opioids"],
-            "unsafe": ["Alcohol", "Protease inhibitors"],
-            "uncertain": ["St John's Wort"]
+            "dangerous": ["强效 CYP3A4 抑制剂 (Clarithromycin, Ketoconazole - 浓度提升5-10倍引起呼吸抑制)", "阿片类药物"],
+            "unsafe": ["酒精 (乙醇)", "Protease inhibitors"],
+            "uncertain": ["贯叶连翘 (圣约翰草)"]
         }
     },
     {
@@ -937,9 +937,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Alcohol (梦游致命行为发生率急剧上升)", "Opioids"],
-            "unsafe": ["Ketoconazole", "Rifampin (清除加速 70%)", "Fluvoxamine"],
-            "uncertain": ["SSRIs"]
+            "dangerous": ["酒精 / 乙醇 (梦游致命行为发生率急剧上升)", "阿片类药物"],
+            "unsafe": ["酮康唑", "利福平 (清除加速 70%)", "氟伏沙明"],
+            "uncertain": ["选择性5-羟色胺再摄取抑制剂 (SSRI)"]
         }
     },
     {
@@ -974,9 +974,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Alcohol (严重协同神经抑制与谵妄)", "Opioids"],
-            "unsafe": ["Erythromycin", "Ketoconazole", "Carbamazepine"],
-            "uncertain": ["Cimetidine"]
+            "dangerous": ["酒精 / 乙醇 (严重协同神经抑制与谵妄)", "阿片类药物"],
+            "unsafe": ["红霉素", "酮康唑", "卡马西平"],
+            "uncertain": ["西咪替丁"]
         }
     },
     {
@@ -1011,9 +1011,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Alcohol", "Opioids"],
-            "unsafe": ["Ketoconazole", "Clarithromycin", "Rifampicin"],
-            "uncertain": ["Grapefruit juice"]
+            "dangerous": ["酒精 (乙醇)", "阿片类药物"],
+            "unsafe": ["酮康唑", "克拉霉素", "利福平"],
+            "uncertain": ["西柚汁 (葡萄柚汁)"]
         }
     },
     {
@@ -1048,9 +1048,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Alcohol"],
-            "unsafe": ["Cimetidine (抑制醛氧化酶使扎来普隆浓度增加 85%)", "Rifampin"],
-            "uncertain": ["CNS depressants"]
+            "dangerous": ["酒精 (乙醇)"],
+            "unsafe": ["西咪替丁 (抑制醛氧化酶使血药浓度剧增 85%)", "利福平"],
+            "uncertain": ["中枢神经系统抑制剂"]
         }
     },
     {
@@ -1085,9 +1085,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["MAOIs (致命严重高血压反应)"],
-            "unsafe": ["Strong CYP3A4 inhibitors (Ketoconazole, Itraconazole, Erythromycin 显著升高浓度)", "Grapefruit juice"],
-            "uncertain": ["Haloperidol", "Trazodone"]
+            "dangerous": ["单胺氧化酶抑制剂 (MAOI) (致命严重高血压反应)"],
+            "unsafe": ["强效 CYP3A4 抑制剂 (Ketoconazole, Itraconazole, Erythromycin 显著升高浓度)", "西柚汁 (葡萄柚汁)"],
+            "uncertain": ["氟哌啶醇", "曲唑酮"]
         }
     },
 
@@ -1126,9 +1126,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Clozapine (骨髓抑制协同致死)", "MAOIs"],
-            "unsafe": ["Oral contraceptives / HRT (雌激素被加速清除失效)", "Valproate", "Erythromycin", "Fluoxetine"],
-            "uncertain": ["Grapefruit juice"]
+            "dangerous": ["氯氮平 (骨髓抑制协同致死)", "单胺氧化酶抑制剂 (MAOI)"],
+            "unsafe": ["口服避孕药 / HRT (雌激素被加速清除失效)", "丙戊酸钠 / 丙戊酸", "红霉素", "氟西汀"],
+            "uncertain": ["西柚汁 (葡萄柚汁)"]
         }
     },
     {
@@ -1163,9 +1163,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["High doses + Oral contraceptives (降低避孕药有效性)"],
-            "unsafe": ["Alcohol", "Phenytoin (浓度升高)", "Carbamazepine"],
-            "uncertain": ["Valproate"]
+            "dangerous": ["大剂量联合口服避孕药 (降低避孕药有效性)"],
+            "unsafe": ["酒精 (乙醇)", "苯妥英钠 (浓度升高)", "卡马西平"],
+            "uncertain": ["丙戊酸钠 / 丙戊酸"]
         }
     },
     {
@@ -1200,9 +1200,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Valproate (协同诱发高氨血症性脑病与低温症)"],
-            "unsafe": ["Oral contraceptives (高剂量使炔雌醇暴露下降)", "Carbonic anhydrase inhibitors (如乙酰唑胺，加剧肾结石)"],
-            "uncertain": ["Metformin", "Lithium"]
+            "dangerous": ["丙戊酸 / 丙戊酸钠 (协同诱发高氨血症性脑病与低温症)"],
+            "unsafe": ["口服避孕药 (高剂量使炔雌醇暴露下降)", "碳酸酐酶抑制剂 (如乙酰唑胺，加剧肾结石风险)"],
+            "uncertain": ["二甲双胍", "碳酸锂"]
         }
     },
     {
@@ -1237,9 +1237,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Opioids (严重协同中枢与呼吸抑制，FDA黑框警告)"],
-            "unsafe": ["Antacids (含铝镁抗酸药降低加巴喷丁吸收约 20%)", "Alcohol"],
-            "uncertain": ["Morphine (增加加巴喷丁AUC)"]
+            "dangerous": ["阿片类药物 (严重协同中枢与呼吸抑制，FDA黑框警告)"],
+            "unsafe": ["抗酸药物 (含铝镁抗酸药降低加巴喷丁吸收约 20%)", "酒精 (乙醇)"],
+            "uncertain": ["吗啡 (增加加巴喷丁AUC)"]
         }
     },
     {
@@ -1274,9 +1274,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Opioids (严重协同呼吸抑制与昏迷风险)"],
-            "unsafe": ["Lorazepam", "Alcohol (运动协调障碍与镇静大幅放大)", "Thiazolidinediones (加剧水肿)"],
-            "uncertain": ["Oxycodone"]
+            "dangerous": ["阿片类药物 (严重协同呼吸抑制与昏迷风险)"],
+            "unsafe": ["劳拉西泮", "酒精 / 乙醇 (运动协调障碍与镇静大幅放大)", "噻唑烷二酮类降糖药 (加剧水肿)"],
+            "uncertain": ["羟考酮"]
         }
     },
 
@@ -1315,9 +1315,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["MAOIs", "Vasopressors"],
-            "unsafe": ["Alcohol (破坏缓释机制导致剂量倾泻)", "Warfarin", "Anticonvulsants"],
-            "uncertain": ["Clonidine"]
+            "dangerous": ["单胺氧化酶抑制剂 (MAOI)", "血管加压药 / 升压药"],
+            "unsafe": ["酒精 / 乙醇 (破坏缓释机制导致剂量倾泻)", "华法林", "抗惊厥 / 抗癫痫药"],
+            "uncertain": ["可乐定"]
         }
     },
     {
@@ -1352,9 +1352,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Steroidal Contraceptives / Estrogens (诱导CYP3A4使避孕药/HRT失效)", "Cyclosporine"],
-            "unsafe": ["Diazepam", "Phenytoin", "Warfarin", "Omeprazole"],
-            "uncertain": ["Alcohol"]
+            "dangerous": ["甾体避孕药 / 雌激素 (诱导CYP3A4使避孕药/HRT失效)", "环孢素"],
+            "unsafe": ["地西泮", "苯妥英钠", "华法林", "奥美拉唑"],
+            "uncertain": ["酒精 (乙醇)"]
         }
     },
     {
@@ -1389,9 +1389,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Hormonal Contraceptives / HRT (CYP3A4 诱导失效)"],
-            "unsafe": ["Omeprazole", "Diazepam", "Warfarin"],
-            "uncertain": ["CNS Stimulants"]
+            "dangerous": ["激素类避孕药 / HRT (CYP3A4 诱导导致疗效失效)"],
+            "unsafe": ["奥美拉唑", "地西泮", "华法林"],
+            "uncertain": ["中枢神经系统兴奋剂"]
         }
     },
     {
@@ -1426,9 +1426,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Beta-Blockers (停药时加剧恶性高血压反跳)", "TCA (减弱降压效力)"],
-            "unsafe": ["Alcohol", "CNS Depressants", "Digitalis (加重心动过缓)"],
-            "uncertain": ["Levodopa"]
+            "dangerous": ["β受体阻滞剂 (停药时加剧恶性高血压反跳)", "TCA (减弱降压效力)"],
+            "unsafe": ["酒精 (乙醇)", "中枢神经系统抑制剂", "洋地黄类强心苷 (加重心动过缓)"],
+            "uncertain": ["左旋多巴"]
         }
     },
     {
@@ -1463,9 +1463,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["MAOIs", "Sympathomimetic agents (肾上腺素等增压反应加剧)"],
-            "unsafe": ["Alcohol", "CNS Depressants", "Anticholinergics"],
-            "uncertain": ["Antihypertensives"]
+            "dangerous": ["单胺氧化酶抑制剂 (MAOI)", "拟交感神经药物 (肾上腺素等增压反应加剧)"],
+            "unsafe": ["酒精 (乙醇)", "中枢神经系统抑制剂", "抗胆碱能药物"],
+            "uncertain": ["降血压药物"]
         }
     },
 
@@ -1514,9 +1514,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Strong prothrombotic agents"],
-            "unsafe": ["CYP3A4 inducers (Carbamazepine, Modafinil, St John's Wort 加快雌激素清除)", "Smoking"],
-            "uncertain": ["Lamotrigine (雌激素加速拉莫三嗪清除)"]
+            "dangerous": ["强促血栓形成药物"],
+            "unsafe": ["CYP3A4 诱导剂 (Carbamazepine, Modafinil, St John's Wort 加快雌激素清除)", "吸烟 (烟草多环芳烃显著加快代谢)"],
+            "uncertain": ["拉莫三嗪 (雌激素加速拉莫三嗪清除)"]
         }
     },
     {
@@ -1561,9 +1561,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Smoking (吸烟显著增加口服血栓风险，透皮相对较优)"],
-            "unsafe": ["Strong CYP3A4 Inducers (Rifampin, St John's Wort)", "Lamotrigine"],
-            "uncertain": ["Thyroid hormones"]
+            "dangerous": ["吸烟 (吸烟显著增加口服血栓风险，透皮相对较优)"],
+            "unsafe": ["强效 CYP3A4 诱导剂 (利福平、圣约翰草等)", "拉莫三嗪"],
+            "uncertain": ["甲状腺激素"]
         }
     },
     {
@@ -1598,9 +1598,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Pregnancy / Fetal exposure"],
-            "unsafe": ["CYP3A4 inhibitors (Ketoconazole, Ciprofloxacin, Ritonavir 使度他雄胺清除更慢)"],
-            "uncertain": ["Warfarin"]
+            "dangerous": ["妊娠期 / 胎儿暴露禁忌"],
+            "unsafe": ["CYP3A4 抑制剂 (Ketoconazole, Ciprofloxacin, Ritonavir 使度他雄胺清除更慢)"],
+            "uncertain": ["华法林"]
         }
     },
     {
@@ -1635,9 +1635,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["None direct pharmacological interaction"],
-            "unsafe": ["Drugs prolonging QT interval (雄激素去势可能轻度延长心电QT)"],
-            "uncertain": ["Hyperprolactinemic drugs"]
+            "dangerous": ["无直接药理学相互作用"],
+            "unsafe": ["延长 QT 间期药物 (雄激素去势可能轻度延长心电QT)"],
+            "uncertain": ["升高催乳素水平药物"]
         }
     },
     {
@@ -1672,9 +1672,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["None directly"],
-            "unsafe": ["QT prolonging drugs"],
-            "uncertain": ["Antiandrogens (在初期联合以对抗骤升)"]
+            "dangerous": ["无直接相互作用冲突"],
+            "unsafe": ["延长 QT 间期药物"],
+            "uncertain": ["抗雄激素药物 (初始阶段联用对抗睾酮骤升)"]
         }
     },
     {
@@ -1719,9 +1719,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Active thromboembolic disorders"],
-            "unsafe": ["CYP3A4 inducers (加速代谢)", "Alcohol", "Sedatives (加重嗜睡)"],
-            "uncertain": ["Ketoconazole (减缓代谢提高浓度)"]
+            "dangerous": ["活动性血栓栓塞性疾病"],
+            "unsafe": ["CYP3A4 诱导剂 (加速代谢)", "酒精 (乙醇)", "镇静药物 (加重嗜睡)"],
+            "uncertain": ["酮康唑 (减缓代谢提高浓度)"]
         }
     },
     {
@@ -1756,9 +1756,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Active deep vein thrombosis or pulmonary embolism"],
-            "unsafe": ["CYP3A4 inducers (Aminoglutethimide, Carbamazepine, St John's Wort)"],
-            "uncertain": ["Antidiabetic medications (可能轻度损害葡萄糖耐量)"]
+            "dangerous": ["活动性深静脉血栓形成或肺栓塞"],
+            "unsafe": ["强效 CYP3A4 诱导剂 (氨鲁米特、卡马西平、圣约翰草等)"],
+            "uncertain": ["降血糖药物 (可能轻度损害葡萄糖耐量)"]
         }
     },
     {
@@ -1793,9 +1793,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Secondary exposure to children/pregnant women"],
-            "unsafe": ["Oral Anticoagulants (Warfarin 增效出血风险)", "Insulin (胰岛素敏感性改变)"],
-            "uncertain": ["Corticosteroids (加剧液体潴留水肿)"]
+            "dangerous": ["儿童/孕妇二手接触禁忌"],
+            "unsafe": ["口服抗凝血药 (华法林增效出血风险)", "胰岛素 (胰岛素敏感性改变)"],
+            "uncertain": ["糖皮质激素 (加剧液体潴留水肿)"]
         }
     },
     {
@@ -1840,9 +1840,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Oral Anticoagulants (增强出血倾向)"],
-            "unsafe": ["Insulin and oral antidiabetic agents", "Adrenocorticosteroids"],
-            "uncertain": ["Cyclosporine"]
+            "dangerous": ["口服抗凝血药 (增强出血倾向)"],
+            "unsafe": ["胰岛素及口服降血糖药物", "肾上腺皮质激素类药物"],
+            "uncertain": ["环孢素"]
         }
     },
     {
@@ -1877,9 +1877,9 @@ ADDITIONAL_CURATED_DRUGS = [
             }
         ],
         "interactions": {
-            "dangerous": ["Warfarin / Blood thinners"],
-            "unsafe": ["Insulin", "Corticosteroids"],
-            "uncertain": ["Paclitaxel"]
+            "dangerous": ["华法林等抗凝血药物"],
+            "unsafe": ["胰岛素", "糖皮质激素类药物"],
+            "uncertain": ["紫杉醇"]
         }
     }
 ]
