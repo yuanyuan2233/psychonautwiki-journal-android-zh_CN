@@ -322,28 +322,33 @@
           },
           "duration": {
             "onset": {
-              "min": 20,
-              "max": 60,
+              "min": 20.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 40.0,
               "units": "minutes"
             },
             "peak": {
-              "min": 1,
-              "max": 2,
+              "min": 1.0,
+              "max": 2.0,
               "units": "hours"
             },
             "offset": {
               "min": 1.5,
-              "max": 2,
+              "max": 2.0,
               "units": "hours"
             },
             "total": {
-              "min": 3,
-              "max": 5,
+              "min": 3.0,
+              "max": 5.0,
               "units": "hours"
             },
             "afterglow": {
-              "min": 2,
-              "max": 4,
+              "min": 2.0,
+              "max": 4.0,
               "units": "hours"
             }
           }
@@ -508,6 +513,11 @@
               "min": 6,
               "max": 12,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 45.0,
+              "max": 90.0,
+              "units": "minutes"
             }
           }
         }
@@ -979,6 +989,26 @@
               "min": 6,
               "max": 8,
               "units": "hours"
+            },
+            "onset": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 45.0,
+              "max": 90.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 2.0,
+              "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.0,
+              "max": 3.0,
+              "units": "hours"
             }
           }
         }
@@ -1053,6 +1083,21 @@
               "min": 2,
               "max": 4,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
             }
           }
         }
@@ -1476,6 +1521,16 @@
               "min": 1,
               "max": 4,
               "units": "hours"
+            },
+            "peak": {
+              "min": 20.0,
+              "max": 45.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
             }
           }
         },
@@ -1507,6 +1562,16 @@
             "afterglow": {
               "min": 3,
               "max": 8,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 45.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.5,
               "units": "hours"
             }
           }
@@ -1903,6 +1968,16 @@
               "min": 3,
               "max": 6,
               "units": "days"
+            },
+            "peak": {
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.5,
+              "max": 2.5,
+              "units": "hours"
             }
           }
         }
@@ -2067,6 +2142,11 @@
               "min": 4,
               "max": 6,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
             }
           }
         }
@@ -2376,6 +2456,11 @@
               "min": 5,
               "max": 10,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 45.0,
+              "max": 90.0,
+              "units": "minutes"
             }
           }
         }
@@ -2499,6 +2584,11 @@
               "min": 2,
               "max": 3,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 90.0,
+              "units": "seconds"
             }
           }
         },
@@ -2562,6 +2652,21 @@
             "total": {
               "min": 4,
               "max": 7,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.5,
+              "max": 3.0,
               "units": "hours"
             }
           }
@@ -2881,6 +2986,16 @@
             "afterglow": {
               "min": 2,
               "max": 4,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 10.0,
+              "max": 25.0,
+              "units": "minutes"
+            },
+            "total": {
+              "min": 3.0,
+              "max": 7.0,
               "units": "hours"
             }
           }
@@ -3294,6 +3409,11 @@
               "min": 1,
               "max": 2,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
             }
           }
         }
@@ -3365,6 +3485,11 @@
               "min": 2,
               "max": 4,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
             }
           }
         },
@@ -3402,6 +3527,11 @@
               "min": 2,
               "max": 6,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 45.0,
+              "max": 90.0,
+              "units": "minutes"
             }
           }
         }
@@ -3471,6 +3601,11 @@
               "min": 2,
               "max": 4,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 60.0,
+              "max": 90.0,
+              "units": "minutes"
             }
           }
         }
@@ -3657,19 +3792,29 @@
             "heavyMin": 15
           },
           "duration": {
+            "onset": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
             "peak": {
-              "min": 6,
-              "max": 8,
+              "min": 4.0,
+              "max": 6.0,
               "units": "hours"
             },
             "offset": {
-              "min": 4,
-              "max": 6,
+              "min": 4.0,
+              "max": 6.0,
               "units": "hours"
             },
             "total": {
-              "min": 8,
-              "max": 14,
+              "min": 8.0,
+              "max": 14.0,
               "units": "hours"
             }
           }
@@ -3738,6 +3883,21 @@
             "afterglow": {
               "min": 2,
               "max": 24,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "peak": {
+              "min": 4.0,
+              "max": 8.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 4.0,
+              "max": 8.0,
               "units": "hours"
             }
           }
@@ -4322,8 +4482,28 @@
           },
           "duration": {
             "total": {
-              "min": 3,
-              "max": 6,
+              "min": 3.0,
+              "max": 6.0,
+              "units": "hours"
+            },
+            "onset": {
+              "min": 1.0,
+              "max": 5.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 5.0,
+              "max": 15.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.5,
+              "max": 3.0,
               "units": "hours"
             }
           }
@@ -4352,6 +4532,21 @@
               "min": 30,
               "max": 90,
               "units": "minutes"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 45.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.5,
+              "max": 2.5,
+              "units": "hours"
             }
           }
         }
@@ -4407,6 +4602,26 @@
             "total": {
               "min": 4,
               "max": 6,
+              "units": "hours"
+            },
+            "onset": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.5,
+              "max": 2.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.5,
+              "max": 2.5,
               "units": "hours"
             }
           }
@@ -4468,6 +4683,21 @@
             "total": {
               "min": 4,
               "max": 6,
+              "units": "hours"
+            },
+            "onset": {
+              "min": 15.0,
+              "max": 40.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.5,
+              "max": 2.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.5,
+              "max": 2.5,
               "units": "hours"
             }
           }
@@ -4984,6 +5214,11 @@
               "min": 2,
               "max": 3,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
             }
           }
         }
@@ -5128,6 +5363,26 @@
               "min": 45,
               "max": 120,
               "units": "minutes"
+            },
+            "onset": {
+              "min": 1.0,
+              "max": 3.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 3.0,
+              "max": 10.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 20.0,
+              "max": 45.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
             }
           }
         }
@@ -5214,6 +5469,11 @@
               "min": 3,
               "max": 5,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
             }
           }
         },
@@ -5250,6 +5510,11 @@
             "afterglow": {
               "min": 3,
               "max": 6,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
               "units": "hours"
             }
           }
@@ -5321,6 +5586,11 @@
             "afterglow": {
               "min": 3,
               "max": 6,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
               "units": "hours"
             }
           }
@@ -6521,6 +6791,11 @@
               "min": 3,
               "max": 7,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
             }
           }
         }
@@ -6628,6 +6903,21 @@
             "total": {
               "min": 25,
               "max": 45,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 1.0,
+              "max": 3.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 10.0,
+              "max": 20.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 15.0,
+              "max": 25.0,
               "units": "minutes"
             }
           }
@@ -7198,6 +7488,21 @@
               "min": 4,
               "max": 12,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 45.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 2.0,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.5,
+              "max": 2.5,
+              "units": "hours"
             }
           }
         }
@@ -7273,6 +7578,11 @@
               "min": 4,
               "max": 8,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
             }
           }
         },
@@ -7310,6 +7620,11 @@
               "min": 5,
               "max": 10,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
             }
           }
         }
@@ -7789,6 +8104,11 @@
               "min": 1,
               "max": 3,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 5.0,
+              "max": 15.0,
+              "units": "minutes"
             }
           }
         },
@@ -7891,6 +8211,21 @@
               "min": 4,
               "max": 6,
               "units": "hours"
+            },
+            "onset": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 45.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 2.0,
+              "max": 3.5,
+              "units": "hours"
             }
           }
         }
@@ -7973,6 +8308,21 @@
             "afterglow": {
               "min": 2,
               "max": 6,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 2.0,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.5,
+              "max": 3.0,
               "units": "hours"
             }
           }
@@ -8104,6 +8454,11 @@
               "min": 1,
               "max": 3,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
             }
           }
         }
@@ -8165,6 +8520,21 @@
               "min": 60.0,
               "max": 180.0,
               "units": "minutes"
+            },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "peak": {
+              "min": 4.0,
+              "max": 7.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 3.0,
+              "max": 6.0,
+              "units": "hours"
             }
           }
         }
@@ -8229,8 +8599,13 @@
           },
           "duration": {
             "onset": {
-              "min": 0,
-              "max": 20,
+              "min": 10,
+              "max": 45,
+              "units": "seconds"
+            },
+            "comeup": {
+              "min": 2,
+              "max": 10,
               "units": "minutes"
             },
             "peak": {
@@ -8314,8 +8689,33 @@
             "heavyMin": 8
           },
           "duration": {
+            "onset": {
+              "min": 20,
+              "max": 40,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 30,
+              "max": 60,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 45,
+              "max": 90,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 30,
+              "max": 60,
+              "units": "minutes"
+            },
             "total": {
               "min": 2,
+              "max": 4,
+              "units": "hours"
+            },
+            "afterglow": {
+              "min": 1,
               "max": 3,
               "units": "hours"
             }
@@ -8653,6 +9053,11 @@
               "min": 2,
               "max": 4,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 10.0,
+              "max": 20.0,
+              "units": "minutes"
             }
           }
         },
@@ -8690,6 +9095,11 @@
               "min": 1,
               "max": 48,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
             }
           }
         },
@@ -8727,6 +9137,11 @@
               "min": 1,
               "max": 8,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 3.0,
+              "max": 10.0,
+              "units": "minutes"
             }
           }
         }
@@ -8833,6 +9248,11 @@
               "min": 2,
               "max": 4,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 10.0,
+              "max": 20.0,
+              "units": "minutes"
             }
           }
         },
@@ -8870,6 +9290,11 @@
               "min": 4,
               "max": 12,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
             }
           }
         },
@@ -8884,9 +9309,9 @@
           },
           "duration": {
             "onset": {
-              "min": 20,
-              "max": 60,
-              "units": "seconds"
+              "min": 0.5,
+              "max": 1.0,
+              "units": "minutes"
             },
             "peak": {
               "min": 3,
@@ -8907,6 +9332,11 @@
               "min": 1,
               "max": 3,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 1.0,
+              "max": 3.0,
+              "units": "minutes"
             }
           }
         }
@@ -8944,19 +9374,34 @@
             "heavyMin": 0.8
           },
           "duration": {
-            "total": {
-              "min": 1.0,
-              "max": 2.0,
-              "units": "hours"
-            },
             "onset": {
-              "min": 0.0,
-              "max": 5.0,
+              "min": 10,
+              "max": 20,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 10,
+              "max": 25,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 30,
+              "max": 60,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 20,
+              "max": 45,
+              "units": "minutes"
+            },
+            "total": {
+              "min": 1,
+              "max": 2,
+              "units": "hours"
+            },
             "afterglow": {
-              "min": 2.0,
-              "max": 4.0,
+              "min": 2,
+              "max": 4,
               "units": "hours"
             }
           }
@@ -9026,8 +9471,13 @@
           },
           "duration": {
             "onset": {
-              "min": 0,
-              "max": 20,
+              "min": 10,
+              "max": 45,
+              "units": "seconds"
+            },
+            "comeup": {
+              "min": 5,
+              "max": 15,
               "units": "minutes"
             },
             "peak": {
@@ -9282,6 +9732,11 @@
               "max": 20,
               "units": "seconds"
             },
+            "comeup": {
+              "min": 2,
+              "max": 8,
+              "units": "minutes"
+            },
             "peak": {
               "min": 10,
               "max": 30,
@@ -9380,13 +9835,28 @@
           },
           "duration": {
             "onset": {
-              "min": 7,
-              "max": 10,
+              "min": 7.0,
+              "max": 10.0,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 5.0,
+              "max": 10.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 1.5,
+              "max": 2.5,
+              "units": "hours"
+            },
             "total": {
-              "min": 3,
-              "max": 4,
+              "min": 3.0,
+              "max": 4.0,
               "units": "hours"
             }
           }
@@ -9402,13 +9872,28 @@
           },
           "duration": {
             "onset": {
-              "min": 20,
-              "max": 40,
+              "min": 20.0,
+              "max": 40.0,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 45.0,
+              "max": 90.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 1,
-              "max": 4,
+              "min": 2.0,
+              "max": 4.0,
               "units": "hours"
             }
           }
@@ -9630,9 +10115,19 @@
               "max": 1.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 0.25,
+              "max": 0.5,
+              "units": "hours"
+            },
             "peak": {
               "min": 0.75,
               "max": 1.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 4.5,
+              "max": 7.0,
               "units": "hours"
             },
             "total": {
@@ -9860,6 +10355,21 @@
               "min": 8,
               "max": 12,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "peak": {
+              "min": 3.0,
+              "max": 5.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.5,
+              "max": 4.0,
+              "units": "hours"
             }
           }
         }
@@ -9908,9 +10418,24 @@
               "max": 75,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 30,
+              "max": 60,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 4,
-              "max": 8,
+              "min": 4.0,
+              "max": 8.0,
               "units": "hours"
             }
           }
@@ -10011,9 +10536,19 @@
               "max": 0.5,
               "units": "hours"
             },
+            "comeup": {
+              "min": 0.75,
+              "max": 1.5,
+              "units": "hours"
+            },
             "peak": {
               "min": 1.0,
               "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 4.0,
+              "max": 8.0,
               "units": "hours"
             },
             "total": {
@@ -10272,9 +10807,19 @@
               "max": 1.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 0.5,
+              "max": 3.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 1.0,
               "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 10.0,
+              "max": 16.0,
               "units": "hours"
             },
             "total": {
@@ -10370,9 +10915,19 @@
               "max": 2.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 2.0,
               "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 20.0,
+              "max": 28.0,
               "units": "hours"
             },
             "total": {
@@ -10778,9 +11333,24 @@
               "max": 90,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 30,
+              "max": 60,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 3,
-              "max": 5,
+              "min": 3.0,
+              "max": 5.0,
               "units": "hours"
             }
           }
@@ -11089,9 +11659,19 @@
               "max": 3.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 2.0,
+              "max": 2.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 3.0,
               "max": 5.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 42.0,
+              "max": 62.0,
               "units": "hours"
             },
             "total": {
@@ -11218,6 +11798,16 @@
             "total": {
               "min": 12.0,
               "max": 18.0,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 0.5,
+              "max": 1.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 6.0,
+              "max": 10.0,
               "units": "hours"
             }
           },
@@ -11477,6 +12067,16 @@
               "min": 12.0,
               "max": 24.0,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 0.5,
+              "max": 1.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 6.0,
+              "max": 12.0,
+              "units": "hours"
             }
           },
           "bioavailability": {
@@ -11566,6 +12166,11 @@
               "min": 1,
               "max": 8,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
             }
           }
         }
@@ -11816,6 +12421,11 @@
               "min": 24,
               "max": 72,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 45.0,
+              "max": 90.0,
+              "units": "minutes"
             }
           }
         }
@@ -11888,9 +12498,19 @@
               "max": 12.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 12.0,
+              "max": 24.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 24.0,
               "max": 36.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 72.0,
+              "max": 144.0,
               "units": "hours"
             },
             "total": {
@@ -12003,18 +12623,28 @@
           },
           "duration": {
             "onset": {
-              "min": 30,
-              "max": 60,
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 60.0,
+              "max": 90.0,
               "units": "minutes"
             },
             "peak": {
-              "min": 2,
-              "max": 4,
+              "min": 2.0,
+              "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.5,
+              "max": 4.0,
               "units": "hours"
             },
             "total": {
-              "min": 6,
-              "max": 10,
+              "min": 6.0,
+              "max": 10.0,
               "units": "hours"
             }
           },
@@ -12159,23 +12789,33 @@
           },
           "duration": {
             "onset": {
-              "min": 15,
-              "max": 45,
+              "min": 15.0,
+              "max": 45.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
               "units": "minutes"
             },
             "peak": {
-              "min": 5,
-              "max": 8,
+              "min": 2.0,
+              "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 3.5,
+              "max": 8.0,
               "units": "hours"
             },
             "total": {
-              "min": 6,
-              "max": 20,
+              "min": 6.0,
+              "max": 14.0,
               "units": "hours"
             },
             "afterglow": {
-              "min": 1,
-              "max": 12,
+              "min": 1.0,
+              "max": 12.0,
               "units": "hours"
             }
           }
@@ -12435,23 +13075,33 @@
           },
           "duration": {
             "onset": {
-              "min": 30,
-              "max": 60,
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
               "units": "minutes"
             },
             "peak": {
-              "min": 4,
-              "max": 8,
+              "min": 2.0,
+              "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 5.0,
+              "max": 8.0,
               "units": "hours"
             },
             "total": {
-              "min": 8,
-              "max": 14,
+              "min": 8.0,
+              "max": 14.0,
               "units": "hours"
             },
             "afterglow": {
-              "min": 1,
-              "max": 3,
+              "min": 1.0,
+              "max": 3.0,
               "units": "days"
             }
           }
@@ -12467,23 +13117,33 @@
           },
           "duration": {
             "onset": {
-              "min": 40,
-              "max": 80,
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 45.0,
+              "max": 90.0,
               "units": "minutes"
             },
             "peak": {
               "min": 1.5,
-              "max": 2,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 15.0,
+              "max": 18.0,
               "units": "hours"
             },
             "total": {
-              "min": 18,
-              "max": 24,
+              "min": 18.0,
+              "max": 24.0,
               "units": "hours"
             },
             "afterglow": {
-              "min": 1,
-              "max": 3,
+              "min": 1.0,
+              "max": 3.0,
               "units": "days"
             }
           }
@@ -12563,9 +13223,19 @@
               "max": 2.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 2.0,
+              "max": 3.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 3.0,
               "max": 5.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 10.0,
+              "max": 14.0,
               "units": "hours"
             },
             "total": {
@@ -12658,6 +13328,16 @@
             "total": {
               "min": 6.0,
               "max": 10.0,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 40.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 3.0,
+              "max": 5.0,
               "units": "hours"
             }
           },
@@ -12794,6 +13474,11 @@
               "min": 4,
               "max": 12,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
             }
           }
         }
@@ -13059,6 +13744,11 @@
               "min": 2,
               "max": 4,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 3.0,
+              "max": 8.0,
+              "units": "minutes"
             }
           }
         }
@@ -13143,19 +13833,29 @@
             "heavyMin": 60
           },
           "duration": {
-            "comeup": {
-              "min": 15,
-              "max": 30,
+            "onset": {
+              "min": 30,
+              "max": 60,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 30,
+              "max": 60,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.5,
+              "units": "hours"
+            },
             "offset": {
-              "min": 1,
-              "max": 1.5,
+              "min": 1.0,
+              "max": 2.0,
               "units": "hours"
             },
             "total": {
-              "min": 1.5,
-              "max": 4,
+              "min": 2.0,
+              "max": 5.0,
               "units": "hours"
             }
           }
@@ -13413,9 +14113,19 @@
               "max": 3.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 2.0,
+              "max": 4.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 4.0,
               "max": 8.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 6.0,
+              "max": 12.0,
               "units": "hours"
             },
             "total": {
@@ -13504,18 +14214,33 @@
           },
           "duration": {
             "onset": {
-              "min": 15,
-              "max": 60,
+              "min": 15.0,
+              "max": 45.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
               "units": "minutes"
             },
             "peak": {
-              "min": 2,
-              "max": 5,
+              "min": 1.5,
+              "max": 2.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.0,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "total": {
+              "min": 4.0,
+              "max": 6.0,
               "units": "hours"
             },
             "afterglow": {
-              "min": 1,
-              "max": 12,
+              "min": 1.0,
+              "max": 12.0,
               "units": "hours"
             }
           }
@@ -13706,23 +14431,33 @@
           },
           "duration": {
             "onset": {
-              "min": 30,
-              "max": 60,
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 60.0,
+              "max": 120.0,
               "units": "minutes"
             },
             "peak": {
-              "min": 120,
-              "max": 180,
-              "units": "minutes"
+              "min": 2.0,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 20.0,
+              "max": 54.0,
+              "units": "hours"
             },
             "total": {
-              "min": 24,
-              "max": 60,
+              "min": 24.0,
+              "max": 60.0,
               "units": "hours"
             },
             "afterglow": {
-              "min": 150,
-              "max": 300,
+              "min": 150.0,
+              "max": 300.0,
               "units": "hours"
             }
           }
@@ -13788,9 +14523,19 @@
               "max": 1.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 2.0,
               "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 14.0,
+              "max": 28.0,
               "units": "hours"
             },
             "total": {
@@ -13954,17 +14699,33 @@
           },
           "duration": {
             "onset": {
-              "min": 30,
-              "max": 60,
+              "min": 30.0,
+              "max": 60.0,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.5,
+              "max": 2.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 3.5,
+              "max": 4.5,
+              "units": "hours"
+            },
             "total": {
-              "min": 6,
+              "min": 6.0,
+              "max": 8.0,
               "units": "hours"
             },
             "afterglow": {
-              "min": 12,
-              "max": 24,
+              "min": 12.0,
+              "max": 24.0,
               "units": "hours"
             }
           }
@@ -14031,9 +14792,19 @@
               "max": 2.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 2.0,
               "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 20.0,
+              "max": 28.0,
               "units": "hours"
             },
             "total": {
@@ -14204,9 +14975,19 @@
               "max": 2.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.0,
+              "max": 4.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 2.0,
               "max": 6.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 20.0,
+              "max": 36.0,
               "units": "hours"
             },
             "total": {
@@ -14320,9 +15101,19 @@
               "max": 1.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 0.5,
+              "max": 2.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 1.0,
               "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 10.0,
+              "max": 18.0,
               "units": "hours"
             },
             "total": {
@@ -14418,13 +15209,28 @@
           },
           "duration": {
             "onset": {
-              "min": 10,
-              "max": 30,
+              "min": 10.0,
+              "max": 30.0,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 20.0,
+              "max": 45.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 3.5,
+              "max": 6.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 6,
-              "max": 10,
+              "min": 6.0,
+              "max": 10.0,
               "units": "hours"
             }
           }
@@ -14498,9 +15304,19 @@
               "max": 1.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 2.0,
               "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 4.0,
+              "max": 8.0,
               "units": "hours"
             },
             "total": {
@@ -14606,9 +15422,19 @@
               "max": 1.5,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.0,
+              "max": 1.5,
+              "units": "hours"
+            },
             "peak": {
               "min": 1.5,
               "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 9.0,
+              "max": 18.0,
               "units": "hours"
             },
             "total": {
@@ -15030,9 +15856,24 @@
               "max": 5,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 5,
+              "max": 15,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 3,
-              "max": 6,
+              "min": 3.0,
+              "max": 6.0,
               "units": "hours"
             }
           }
@@ -15052,9 +15893,24 @@
               "max": 30,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 30,
+              "max": 60,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.5,
+              "max": 2.5,
+              "units": "hours"
+            },
             "total": {
-              "min": 3,
-              "max": 6,
+              "min": 3.0,
+              "max": 6.0,
               "units": "hours"
             }
           }
@@ -15103,23 +15959,28 @@
           },
           "duration": {
             "onset": {
-              "min": 15,
-              "max": 30,
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 15.0,
+              "max": 30.0,
               "units": "minutes"
             },
             "peak": {
-              "min": 1,
-              "max": 2,
+              "min": 1.0,
+              "max": 2.0,
               "units": "hours"
             },
             "offset": {
-              "min": 2,
-              "max": 3,
+              "min": 2.0,
+              "max": 3.0,
               "units": "hours"
             },
             "total": {
-              "min": 3,
-              "max": 5,
+              "min": 3.0,
+              "max": 5.0,
               "units": "hours"
             }
           }
@@ -15170,9 +16031,24 @@
               "max": 90,
               "units": "minutes"
             },
-            "total": {
+            "comeup": {
               "min": 30,
-              "max": 36,
+              "max": 60,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 12.0,
+              "max": 24.0,
+              "units": "hours"
+            },
+            "total": {
+              "min": 30.0,
+              "max": 36.0,
               "units": "hours"
             }
           }
@@ -15295,6 +16171,21 @@
               "min": 5,
               "max": 7,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 2.0,
+              "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.0,
+              "max": 3.0,
+              "units": "hours"
             }
           }
         }
@@ -15364,9 +16255,19 @@
               "max": 2.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.5,
+              "max": 2.5,
+              "units": "hours"
+            },
             "peak": {
               "min": 3.0,
               "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 24.0,
+              "max": 36.0,
               "units": "hours"
             },
             "total": {
@@ -15459,6 +16360,21 @@
             "afterglow": {
               "min": 2,
               "max": 8,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.5,
+              "units": "hours"
+            },
+            "total": {
+              "min": 4.0,
+              "max": 6.0,
               "units": "hours"
             }
           }
@@ -15828,6 +16744,11 @@
               "min": 2,
               "max": 24,
               "units": "hours"
+            },
+            "total": {
+              "min": 6.0,
+              "max": 14.0,
+              "units": "hours"
             }
           }
         },
@@ -15954,6 +16875,16 @@
             "total": {
               "min": 16,
               "max": 24,
+              "units": "hours"
+            },
+            "peak": {
+              "min": 6.0,
+              "max": 12.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 4.0,
+              "max": 8.0,
               "units": "hours"
             }
           }
@@ -16120,6 +17051,16 @@
               "min": 2,
               "max": 4,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 10.0,
+              "max": 25.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 1.5,
+              "max": 2.5,
+              "units": "hours"
             }
           }
         },
@@ -16147,6 +17088,21 @@
               "min": 2,
               "max": 3,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 40.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 1.5,
+              "units": "hours"
             }
           }
         },
@@ -16169,6 +17125,26 @@
               "min": 2,
               "max": 4,
               "units": "hours"
+            },
+            "onset": {
+              "min": 10.0,
+              "max": 60.0,
+              "units": "seconds"
+            },
+            "comeup": {
+              "min": 2.0,
+              "max": 5.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 15.0,
+              "max": 45.0,
+              "units": "minutes"
             }
           }
         }
@@ -16266,14 +17242,29 @@
           "name": "oral",
           "duration": {
             "onset": {
-              "min": 20,
-              "max": 120,
+              "min": 30.0,
+              "max": 60.0,
               "units": "minutes"
             },
             "comeup": {
-              "min": 60,
-              "max": 120,
-              "units": "minutes"
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "peak": {
+              "min": 4.0,
+              "max": 8.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 12.0,
+              "max": 24.0,
+              "units": "hours"
+            },
+            "total": {
+              "min": 24.0,
+              "max": 48.0,
+              "units": "hours"
             }
           }
         }
@@ -16616,6 +17607,26 @@
               "min": 30,
               "max": 90,
               "units": "minutes"
+            },
+            "onset": {
+              "min": 1.0,
+              "max": 3.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 2.0,
+              "max": 5.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 20.0,
+              "max": 45.0,
+              "units": "minutes"
             }
           }
         }
@@ -16652,9 +17663,29 @@
             "heavyMin": 30
           },
           "duration": {
+            "onset": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 45.0,
+              "max": 90.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 3,
-              "max": 4,
+              "min": 2.0,
+              "max": 4.0,
               "units": "hours"
             }
           }
@@ -16787,6 +17818,11 @@
             "total": {
               "min": 16,
               "max": 72,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 2.0,
+              "max": 5.0,
               "units": "hours"
             }
           }
@@ -17116,18 +18152,33 @@
           },
           "duration": {
             "onset": {
-              "min": 20,
-              "max": 30,
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
               "units": "minutes"
             },
             "peak": {
-              "min": 1,
-              "max": 4,
+              "min": 1.5,
+              "max": 2.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.0,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "total": {
+              "min": 4.0,
+              "max": 6.0,
               "units": "hours"
             },
             "afterglow": {
-              "min": 1,
-              "max": 6,
+              "min": 1.0,
+              "max": 12.0,
               "units": "hours"
             }
           }
@@ -17184,6 +18235,21 @@
               "min": 2,
               "max": 4,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
             }
           }
         },
@@ -17205,6 +18271,21 @@
             "total": {
               "min": 15,
               "max": 60,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 2.0,
+              "max": 5.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 10.0,
+              "max": 25.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 10.0,
+              "max": 25.0,
               "units": "minutes"
             }
           }
@@ -17396,9 +18477,19 @@
               "max": 0.75,
               "units": "hours"
             },
+            "comeup": {
+              "min": 0.25,
+              "max": 1.25,
+              "units": "hours"
+            },
             "peak": {
               "min": 0.5,
               "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 11.0,
+              "max": 32.0,
               "units": "hours"
             },
             "total": {
@@ -17602,13 +18693,28 @@
           },
           "duration": {
             "onset": {
-              "min": 10,
-              "max": 45,
+              "min": 10.0,
+              "max": 45.0,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 2.0,
+              "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 5.0,
+              "max": 7.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 8,
-              "max": 12,
+              "min": 8.0,
+              "max": 12.0,
               "units": "hours"
             }
           }
@@ -17681,9 +18787,29 @@
             "heavyMin": 200
           },
           "duration": {
+            "onset": {
+              "min": 20.0,
+              "max": 40.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 40.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.0,
+              "max": 3.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 3,
-              "max": 4,
+              "min": 4.0,
+              "max": 6.0,
               "units": "hours"
             }
           }
@@ -17947,6 +19073,21 @@
               "min": 4,
               "max": 24,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.5,
+              "max": 2.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
             }
           }
         },
@@ -17968,6 +19109,21 @@
             "total": {
               "min": 5,
               "max": 7,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 40.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 2.0,
+              "max": 3.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.5,
+              "max": 3.0,
               "units": "hours"
             }
           }
@@ -18005,6 +19161,11 @@
               "min": 2,
               "max": 5,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 2.0,
+              "max": 5.0,
+              "units": "minutes"
             }
           }
         }
@@ -18069,9 +19230,19 @@
               "max": 1.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 1.5,
               "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 5.0,
+              "max": 18.0,
               "units": "hours"
             },
             "total": {
@@ -18172,9 +19343,19 @@
               "max": 3.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 4.0,
+              "max": 7.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 6.0,
               "max": 10.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 6.0,
+              "max": 6.0,
               "units": "hours"
             },
             "total": {
@@ -18271,9 +19452,19 @@
               "max": 2.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.0,
+              "max": 1.5,
+              "units": "hours"
+            },
             "peak": {
               "min": 2.0,
               "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 336.0,
+              "max": 672.0,
               "units": "hours"
             },
             "total": {
@@ -18367,9 +19558,19 @@
               "max": 1.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 0.5,
+              "max": 1.5,
+              "units": "hours"
+            },
             "peak": {
               "min": 1.0,
               "max": 2.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 8.0,
+              "max": 14.0,
               "units": "hours"
             },
             "total": {
@@ -18456,6 +19657,21 @@
               "min": 1,
               "max": 3,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 45.0,
+              "max": 90.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 45.0,
+              "max": 90.0,
+              "units": "minutes"
             }
           }
         }
@@ -18727,6 +19943,21 @@
               "min": 6,
               "max": 12,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 5.0,
+              "max": 15.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "total": {
+              "min": 2.0,
+              "max": 5.0,
+              "units": "hours"
             }
           }
         }
@@ -18782,6 +20013,21 @@
             "afterglow": {
               "min": 2,
               "max": 4,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 45.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.0,
               "units": "hours"
             }
           }
@@ -18848,6 +20094,21 @@
             "total": {
               "min": 5,
               "max": 7,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 2.0,
+              "max": 3.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.5,
+              "max": 3.0,
               "units": "hours"
             }
           }
@@ -18929,6 +20190,21 @@
               "min": 6,
               "max": 24,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
             }
           }
         }
@@ -19007,6 +20283,21 @@
               "min": 3,
               "max": 5,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "peak": {
+              "min": 3.0,
+              "max": 5.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.5,
+              "max": 4.0,
+              "units": "hours"
             }
           }
         }
@@ -19079,9 +20370,19 @@
               "max": 2.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 2.0,
+              "max": 2.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 3.0,
               "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 18.0,
+              "max": 24.0,
               "units": "hours"
             },
             "total": {
@@ -19193,9 +20494,19 @@
               "max": 2.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 2.0,
               "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 12.0,
+              "max": 24.0,
               "units": "hours"
             },
             "total": {
@@ -19224,9 +20535,19 @@
               "max": 1.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 0.5,
+              "max": 1.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 1.0,
               "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 8.0,
+              "max": 16.0,
               "units": "hours"
             },
             "total": {
@@ -19315,19 +20636,29 @@
           },
           "duration": {
             "onset": {
-              "min": 12.0,
-              "max": 24.0,
-              "units": "hours"
+              "min": 0.5,
+              "max": 1.0,
+              "units": "days"
+            },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "days"
             },
             "peak": {
-              "min": 72.0,
-              "max": 120.0,
-              "units": "hours"
+              "min": 2.0,
+              "max": 4.0,
+              "units": "days"
+            },
+            "offset": {
+              "min": 3.0,
+              "max": 5.0,
+              "units": "days"
             },
             "total": {
-              "min": 168.0,
-              "max": 240.0,
-              "units": "hours"
+              "min": 7.0,
+              "max": 10.0,
+              "units": "days"
             }
           },
           "bioavailability": {
@@ -19410,19 +20741,29 @@
           },
           "duration": {
             "onset": {
-              "min": 12.0,
-              "max": 24.0,
-              "units": "hours"
+              "min": 0.5,
+              "max": 1.0,
+              "units": "days"
+            },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "days"
             },
             "peak": {
-              "min": 72.0,
-              "max": 108.0,
-              "units": "hours"
+              "min": 3.0,
+              "max": 5.0,
+              "units": "days"
+            },
+            "offset": {
+              "min": 4.0,
+              "max": 8.0,
+              "units": "days"
             },
             "total": {
-              "min": 168.0,
-              "max": 336.0,
-              "units": "hours"
+              "min": 7.0,
+              "max": 14.0,
+              "units": "days"
             }
           },
           "bioavailability": {
@@ -19441,19 +20782,29 @@
           },
           "duration": {
             "onset": {
-              "min": 12.0,
-              "max": 24.0,
-              "units": "hours"
+              "min": 0.5,
+              "max": 1.0,
+              "units": "days"
+            },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "days"
             },
             "peak": {
-              "min": 72.0,
-              "max": 120.0,
-              "units": "hours"
+              "min": 3.0,
+              "max": 5.0,
+              "units": "days"
+            },
+            "offset": {
+              "min": 4.0,
+              "max": 8.0,
+              "units": "days"
             },
             "total": {
-              "min": 168.0,
-              "max": 336.0,
-              "units": "hours"
+              "min": 7.0,
+              "max": 14.0,
+              "units": "days"
             }
           },
           "bioavailability": {
@@ -19552,9 +20903,19 @@
               "max": 2.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.0,
+              "max": 3.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 2.0,
               "max": 6.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 12.0,
+              "max": 24.0,
               "units": "hours"
             },
             "total": {
@@ -19583,9 +20944,19 @@
               "max": 2.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 2.0,
               "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 6.0,
+              "max": 12.0,
               "units": "hours"
             },
             "total": {
@@ -19689,9 +21060,19 @@
               "max": 1.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 0.5,
+              "max": 1.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 1.0,
               "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 6.0,
+              "max": 14.0,
               "units": "hours"
             },
             "total": {
@@ -19716,19 +21097,29 @@
           },
           "duration": {
             "onset": {
-              "min": 6.0,
-              "max": 12.0,
-              "units": "hours"
+              "min": 0.5,
+              "max": 1.0,
+              "units": "days"
+            },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "days"
             },
             "peak": {
-              "min": 48.0,
-              "max": 72.0,
-              "units": "hours"
+              "min": 2.0,
+              "max": 3.0,
+              "units": "days"
+            },
+            "offset": {
+              "min": 2.0,
+              "max": 4.0,
+              "units": "days"
             },
             "total": {
-              "min": 120.0,
-              "max": 168.0,
-              "units": "hours"
+              "min": 5.0,
+              "max": 7.0,
+              "units": "days"
             }
           },
           "bioavailability": {
@@ -19818,9 +21209,19 @@
               "max": 0.5,
               "units": "hours"
             },
+            "comeup": {
+              "min": 0.55,
+              "max": 1.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 0.8,
               "max": 1.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 4.4,
+              "max": 5.5,
               "units": "hours"
             },
             "total": {
@@ -19935,9 +21336,29 @@
             "heavyMin": 200
           },
           "duration": {
+            "onset": {
+              "min": 20.0,
+              "max": 40.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 40.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.5,
+              "max": 2.5,
+              "units": "hours"
+            },
             "total": {
-              "min": 4,
-              "max": 5,
+              "min": 3.0,
+              "max": 5.0,
               "units": "hours"
             }
           }
@@ -20036,6 +21457,11 @@
               "min": 2,
               "max": 12,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 45.0,
+              "units": "minutes"
             }
           }
         }
@@ -20111,6 +21537,21 @@
               "min": 4,
               "max": 7,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
             }
           }
         },
@@ -20132,6 +21573,21 @@
             "total": {
               "min": 2,
               "max": 6,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 10.0,
+              "max": 20.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.0,
               "units": "hours"
             }
           }
@@ -20254,27 +21710,32 @@
           },
           "duration": {
             "onset": {
-              "min": 10,
-              "max": 15,
+              "min": 10.0,
+              "max": 15.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 10.0,
+              "max": 15.0,
               "units": "minutes"
             },
             "peak": {
-              "min": 1,
+              "min": 1.0,
               "max": 1.5,
               "units": "hours"
             },
             "offset": {
-              "min": 1,
-              "max": 2,
+              "min": 1.0,
+              "max": 2.0,
               "units": "hours"
             },
             "total": {
-              "min": 2,
-              "max": 4,
+              "min": 2.0,
+              "max": 4.0,
               "units": "hours"
             },
             "afterglow": {
-              "min": 1,
+              "min": 1.0,
               "max": 1.5,
               "units": "hours"
             }
@@ -20377,13 +21838,28 @@
           },
           "duration": {
             "onset": {
-              "min": 20,
-              "max": 60,
+              "min": 20.0,
+              "max": 60.0,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.5,
+              "max": 2.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 3.5,
+              "max": 4.5,
+              "units": "hours"
+            },
             "total": {
-              "min": 6,
-              "max": 8,
+              "min": 6.0,
+              "max": 8.0,
               "units": "hours"
             }
           }
@@ -20426,13 +21902,33 @@
           "duration": {
             "total": {
               "min": 2.0,
-              "max": 2.5,
+              "max": 3.5,
               "units": "hours"
             },
             "afterglow": {
               "min": 4.0,
               "max": 8.0,
               "units": "hours"
+            },
+            "onset": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 45.0,
+              "max": 75.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
             }
           }
         }
@@ -20497,6 +21993,21 @@
             "total": {
               "min": 3,
               "max": 4,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.0,
               "units": "hours"
             }
           }
@@ -20598,13 +22109,28 @@
           },
           "duration": {
             "onset": {
-              "min": 15,
-              "max": 30,
+              "min": 5.0,
+              "max": 15.0,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 5.0,
+              "max": 10.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 20.0,
+              "max": 40.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 1,
-              "max": 4,
+              "min": 1.5,
+              "max": 3.0,
               "units": "hours"
             }
           }
@@ -20620,13 +22146,28 @@
           },
           "duration": {
             "onset": {
-              "min": 15,
-              "max": 30,
+              "min": 15.0,
+              "max": 30.0,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 15.0,
+              "max": 20.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 1,
-              "max": 4,
+              "min": 2.0,
+              "max": 4.0,
               "units": "hours"
             }
           }
@@ -20642,13 +22183,28 @@
           },
           "duration": {
             "onset": {
-              "min": 2,
-              "max": 4,
+              "min": 2.0,
+              "max": 4.0,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 10.0,
+              "max": 14.0,
+              "units": "hours"
+            },
+            "peak": {
+              "min": 24.0,
+              "max": 36.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 12.0,
+              "max": 18.0,
               "units": "hours"
             },
             "total": {
-              "min": 48,
-              "max": 72,
+              "min": 48.0,
+              "max": 72.0,
               "units": "hours"
             }
           }
@@ -20714,9 +22270,19 @@
               "max": 1.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 0.5,
+              "max": 1.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 1.0,
               "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 6.0,
+              "max": 12.0,
               "units": "hours"
             },
             "total": {
@@ -20805,28 +22371,33 @@
           },
           "duration": {
             "onset": {
-              "min": 20,
-              "max": 40,
+              "min": 20.0,
+              "max": 40.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 40.0,
               "units": "minutes"
             },
             "peak": {
-              "min": 1,
-              "max": 2,
+              "min": 1.0,
+              "max": 2.0,
               "units": "hours"
             },
             "offset": {
-              "min": 2,
-              "max": 6,
+              "min": 2.0,
+              "max": 6.0,
               "units": "hours"
             },
             "total": {
-              "min": 5,
-              "max": 8,
+              "min": 5.0,
+              "max": 8.0,
               "units": "hours"
             },
             "afterglow": {
-              "min": 6,
-              "max": 24,
+              "min": 6.0,
+              "max": 24.0,
               "units": "hours"
             }
           }
@@ -20875,13 +22446,28 @@
           },
           "duration": {
             "onset": {
-              "min": 40,
-              "max": 90,
+              "min": 40.0,
+              "max": 90.0,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 60.0,
+              "max": 90.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 2.0,
+              "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 3.0,
+              "max": 6.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 6,
-              "max": 12,
+              "min": 6.0,
+              "max": 12.0,
               "units": "hours"
             }
           }
@@ -20934,9 +22520,29 @@
             "heavyMin": 400
           },
           "duration": {
+            "onset": {
+              "min": 20.0,
+              "max": 45.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 2.0,
+              "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 3.0,
+              "max": 6.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 12,
-              "max": 18,
+              "min": 6.0,
+              "max": 12.0,
               "units": "hours"
             }
           }
@@ -21135,18 +22741,33 @@
           },
           "duration": {
             "onset": {
-              "min": 20,
-              "max": 30,
+              "min": 20.0,
+              "max": 30.0,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 20.0,
+              "max": 40.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.5,
+              "max": 5.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 4,
-              "max": 8,
+              "min": 4.0,
+              "max": 8.0,
               "units": "hours"
             },
             "afterglow": {
-              "min": 2,
-              "max": 24,
+              "min": 2.0,
+              "max": 24.0,
               "units": "hours"
             }
           }
@@ -21200,28 +22821,33 @@
           },
           "duration": {
             "onset": {
-              "min": 20,
-              "max": 40,
+              "min": 20.0,
+              "max": 40.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 40.0,
               "units": "minutes"
             },
             "peak": {
-              "min": 1,
-              "max": 2,
+              "min": 1.0,
+              "max": 2.0,
               "units": "hours"
             },
             "offset": {
-              "min": 2,
-              "max": 4,
+              "min": 2.0,
+              "max": 4.0,
               "units": "hours"
             },
             "total": {
-              "min": 4,
-              "max": 8,
+              "min": 4.0,
+              "max": 8.0,
               "units": "hours"
             },
             "afterglow": {
-              "min": 1,
-              "max": 12,
+              "min": 1.0,
+              "max": 12.0,
               "units": "hours"
             }
           }
@@ -21300,9 +22926,19 @@
               "max": 4.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 4.0,
+              "max": 4.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 6.0,
               "max": 8.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 36.0,
+              "max": 80.0,
               "units": "hours"
             },
             "total": {
@@ -21402,9 +23038,19 @@
               "max": 2.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 2.0,
+              "max": 3.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 3.0,
               "max": 5.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 12.0,
+              "max": 20.0,
               "units": "hours"
             },
             "total": {
@@ -21510,9 +23156,19 @@
               "max": 2.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 2.0,
+              "max": 6.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 3.0,
               "max": 8.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 18.0,
+              "max": 20.0,
               "units": "hours"
             },
             "total": {
@@ -21858,9 +23514,19 @@
               "max": 2.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.0,
+              "max": 1.5,
+              "units": "hours"
+            },
             "peak": {
               "min": 2.0,
               "max": 3.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.0,
+              "max": 3.0,
               "units": "hours"
             },
             "total": {
@@ -21922,28 +23588,33 @@
           },
           "duration": {
             "onset": {
-              "min": 15,
-              "max": 60,
+              "min": 15.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 15.0,
+              "max": 30.0,
               "units": "minutes"
             },
             "peak": {
-              "min": 1,
-              "max": 2,
+              "min": 1.0,
+              "max": 2.0,
               "units": "hours"
             },
             "offset": {
-              "min": 1,
-              "max": 3,
-              "units": "minutes"
+              "min": 1.0,
+              "max": 2.5,
+              "units": "hours"
             },
             "total": {
-              "min": 2,
-              "max": 5,
-              "units": "minutes"
+              "min": 2.5,
+              "max": 5.0,
+              "units": "hours"
             },
             "afterglow": {
-              "min": 1,
-              "max": 3,
+              "min": 1.0,
+              "max": 3.0,
               "units": "hours"
             }
           }
@@ -21986,9 +23657,24 @@
               "max": 60,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 30,
+              "max": 60,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 2.0,
+              "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 3.0,
+              "max": 6.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 6,
-              "max": 12,
+              "min": 6.0,
+              "max": 12.0,
               "units": "hours"
             }
           },
@@ -22056,19 +23742,29 @@
           },
           "duration": {
             "onset": {
-              "min": 24.0,
-              "max": 48.0,
-              "units": "hours"
+              "min": 1.0,
+              "max": 2.0,
+              "units": "days"
+            },
+            "comeup": {
+              "min": 7.0,
+              "max": 12.0,
+              "units": "days"
             },
             "peak": {
-              "min": 288.0,
-              "max": 360.0,
-              "units": "hours"
+              "min": 12.0,
+              "max": 15.0,
+              "units": "days"
+            },
+            "offset": {
+              "min": 14.0,
+              "max": 50.0,
+              "units": "days"
             },
             "total": {
-              "min": 672.0,
-              "max": 2016.0,
-              "units": "hours"
+              "min": 28.0,
+              "max": 84.0,
+              "units": "days"
             }
           },
           "bioavailability": {
@@ -22348,9 +24044,19 @@
               "max": 1.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.5,
+              "max": 4.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 2.0,
               "max": 5.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 14.0,
+              "max": 20.0,
               "units": "hours"
             },
             "total": {
@@ -22667,6 +24373,21 @@
               "min": 1,
               "max": 12,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 45.0,
+              "max": 90.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
             }
           }
         }
@@ -22847,13 +24568,28 @@
           },
           "duration": {
             "onset": {
-              "min": 10,
-              "max": 60,
+              "min": 10.0,
+              "max": 30.0,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 20.0,
+              "max": 40.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.5,
+              "max": 5.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 4,
-              "max": 8,
+              "min": 4.0,
+              "max": 8.0,
               "units": "hours"
             }
           }
@@ -23145,18 +24881,33 @@
           },
           "duration": {
             "onset": {
-              "min": 30,
-              "max": 180,
+              "min": 45.0,
+              "max": 90.0,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
+            },
             "peak": {
-              "min": 18,
-              "max": 36,
+              "min": 4.0,
+              "max": 8.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 8.0,
+              "max": 16.0,
+              "units": "hours"
+            },
+            "total": {
+              "min": 18.0,
+              "max": 36.0,
               "units": "hours"
             },
             "afterglow": {
-              "min": 24,
-              "max": 72,
+              "min": 12.0,
+              "max": 72.0,
               "units": "hours"
             }
           }
@@ -23227,6 +24978,11 @@
               "min": 6,
               "max": 8,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
             }
           }
         }
@@ -23522,8 +25278,13 @@
           },
           "duration": {
             "onset": {
+              "min": 10,
+              "max": 45,
+              "units": "seconds"
+            },
+            "comeup": {
               "min": 5,
-              "max": 10,
+              "max": 15,
               "units": "minutes"
             },
             "peak": {
@@ -23532,13 +25293,13 @@
               "units": "minutes"
             },
             "offset": {
-              "min": 5,
-              "max": 10,
+              "min": 15,
+              "max": 30,
               "units": "minutes"
             },
             "total": {
-              "min": 1,
-              "max": 2,
+              "min": 1.5,
+              "max": 2.5,
               "units": "hours"
             },
             "afterglow": {
@@ -23607,8 +25368,13 @@
           },
           "duration": {
             "onset": {
+              "min": 10,
+              "max": 45,
+              "units": "seconds"
+            },
+            "comeup": {
               "min": 5,
-              "max": 10,
+              "max": 15,
               "units": "minutes"
             },
             "peak": {
@@ -23617,13 +25383,13 @@
               "units": "minutes"
             },
             "offset": {
-              "min": 5,
-              "max": 10,
+              "min": 15,
+              "max": 30,
               "units": "minutes"
             },
             "total": {
-              "min": 1,
-              "max": 2,
+              "min": 1.5,
+              "max": 2.5,
               "units": "hours"
             },
             "afterglow": {
@@ -24195,6 +25961,11 @@
               "min": 4,
               "max": 8,
               "units": "hours"
+            },
+            "total": {
+              "min": 4.0,
+              "max": 8.0,
+              "units": "hours"
             }
           },
           "bioavailability": {
@@ -24278,23 +26049,28 @@
           },
           "duration": {
             "onset": {
-              "min": 20,
-              "max": 40,
+              "min": 20.0,
+              "max": 40.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 40.0,
               "units": "minutes"
             },
             "peak": {
-              "min": 1,
-              "max": 2,
+              "min": 1.0,
+              "max": 2.0,
               "units": "hours"
             },
             "offset": {
-              "min": 3,
-              "max": 6,
+              "min": 2.0,
+              "max": 4.0,
               "units": "hours"
             },
             "total": {
-              "min": 2,
-              "max": 4,
+              "min": 4.0,
+              "max": 7.0,
               "units": "hours"
             }
           }
@@ -24464,6 +26240,26 @@
             "total": {
               "min": 4,
               "max": 10,
+              "units": "hours"
+            },
+            "onset": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 45.0,
+              "max": 90.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 2.0,
+              "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.0,
+              "max": 4.0,
               "units": "hours"
             }
           }
@@ -24715,6 +26511,21 @@
               "min": 6,
               "max": 10,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 2.0,
+              "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.0,
+              "max": 4.0,
+              "units": "hours"
             }
           }
         }
@@ -24863,9 +26674,19 @@
               "max": 2.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 2.0,
               "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 20.0,
+              "max": 28.0,
               "units": "hours"
             },
             "total": {
@@ -24998,19 +26819,29 @@
           },
           "duration": {
             "onset": {
-              "min": 24.0,
-              "max": 48.0,
-              "units": "hours"
+              "min": 1.0,
+              "max": 2.0,
+              "units": "days"
+            },
+            "comeup": {
+              "min": 1.0,
+              "max": 3.0,
+              "units": "days"
             },
             "peak": {
-              "min": 48.0,
-              "max": 96.0,
-              "units": "hours"
+              "min": 2.0,
+              "max": 4.0,
+              "units": "days"
+            },
+            "offset": {
+              "min": 20.0,
+              "max": 60.0,
+              "units": "days"
             },
             "total": {
-              "min": 672.0,
-              "max": 2016.0,
-              "units": "hours"
+              "min": 28.0,
+              "max": 84.0,
+              "units": "days"
             }
           },
           "bioavailability": {
@@ -25311,9 +27142,19 @@
               "max": 2.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 2.0,
+              "max": 2.5,
+              "units": "hours"
+            },
             "peak": {
               "min": 3.0,
               "max": 4.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 18.0,
+              "max": 27.0,
               "units": "hours"
             },
             "total": {
@@ -25425,9 +27266,19 @@
               "max": 0.8,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.2,
+              "max": 1.7,
+              "units": "hours"
+            },
             "peak": {
               "min": 1.5,
               "max": 2.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 5.0,
+              "max": 11.0,
               "units": "hours"
             },
             "total": {
@@ -25672,9 +27523,19 @@
               "max": 1.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 0.5,
+              "max": 2.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 1.0,
               "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 16.0,
+              "max": 18.0,
               "units": "hours"
             },
             "total": {
@@ -25781,6 +27642,11 @@
             "offset": {
               "min": 3,
               "max": 8,
+              "units": "hours"
+            },
+            "total": {
+              "min": 5.0,
+              "max": 12.0,
               "units": "hours"
             }
           }
@@ -25983,6 +27849,11 @@
             "offset": {
               "min": 1,
               "max": 2,
+              "units": "hours"
+            },
+            "total": {
+              "min": 4.0,
+              "max": 6.0,
               "units": "hours"
             }
           }
@@ -26634,6 +28505,11 @@
               "min": 2,
               "max": 48,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 45.0,
+              "units": "minutes"
             }
           }
         }
@@ -26784,6 +28660,11 @@
             "afterglow": {
               "min": 20,
               "max": 60,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 1.0,
+              "max": 3.0,
               "units": "minutes"
             }
           }
@@ -27144,6 +29025,21 @@
               "min": 2,
               "max": 12,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 10.0,
+              "max": 20.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
             }
           }
         },
@@ -27170,6 +29066,21 @@
             "afterglow": {
               "min": 4,
               "max": 48,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.0,
               "units": "hours"
             }
           }
@@ -27259,9 +29170,19 @@
               "max": 2.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 2.0,
               "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 6.0,
+              "max": 14.0,
               "units": "hours"
             },
             "total": {
@@ -28374,24 +30295,34 @@
             "heavyMin": 600
           },
           "duration": {
+            "onset": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 45.0,
+              "units": "minutes"
+            },
             "peak": {
-              "min": 2,
-              "max": 4,
+              "min": 1.5,
+              "max": 3.0,
               "units": "hours"
             },
             "offset": {
-              "min": 2,
-              "max": 4,
+              "min": 2.0,
+              "max": 4.0,
               "units": "hours"
             },
             "total": {
-              "min": 5,
-              "max": 8,
+              "min": 5.0,
+              "max": 8.0,
               "units": "hours"
             },
             "afterglow": {
-              "min": 6,
-              "max": 8,
+              "min": 2.0,
+              "max": 6.0,
               "units": "hours"
             }
           }
@@ -28406,9 +30337,29 @@
             "heavyMin": 300
           },
           "duration": {
+            "onset": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 3.0,
+              "max": 5.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
             "total": {
-              "min": 1,
-              "max": 2,
+              "min": 1.0,
+              "max": 2.0,
               "units": "hours"
             }
           }
@@ -28502,6 +30453,26 @@
             "total": {
               "min": 4,
               "max": 6,
+              "units": "hours"
+            },
+            "onset": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 45.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.5,
+              "max": 2.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.0,
               "units": "hours"
             }
           }
@@ -28604,6 +30575,11 @@
               "min": 1,
               "max": 2,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
             }
           }
         }
@@ -28820,6 +30796,21 @@
               "min": 1,
               "max": 3,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 45.0,
+              "max": 90.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 2.0,
+              "max": 3.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.0,
+              "max": 3.0,
+              "units": "hours"
             }
           }
         }
@@ -28897,6 +30888,11 @@
               "min": 1,
               "max": 2,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 10.0,
+              "max": 20.0,
+              "units": "minutes"
             }
           }
         },
@@ -28934,6 +30930,11 @@
               "min": 1,
               "max": 8,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
             }
           }
         }
@@ -29141,6 +31142,16 @@
               "min": 4.0,
               "max": 12.0,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 0.5,
+              "max": 1.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
             }
           },
           "bioavailability": {
@@ -29220,18 +31231,33 @@
           },
           "duration": {
             "onset": {
-              "min": 30,
-              "max": 90,
+              "min": 30.0,
+              "max": 60.0,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.5,
+              "max": 4.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 5,
-              "max": 8,
+              "min": 5.0,
+              "max": 8.0,
               "units": "hours"
             },
             "afterglow": {
-              "min": 10,
-              "max": 30,
+              "min": 10.0,
+              "max": 30.0,
               "units": "hours"
             }
           }
@@ -29308,6 +31334,26 @@
             "total": {
               "min": 4,
               "max": 6,
+              "units": "hours"
+            },
+            "onset": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 45.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.5,
+              "max": 2.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.0,
               "units": "hours"
             }
           }
@@ -29434,6 +31480,26 @@
               "min": 3,
               "max": 8,
               "units": "hours"
+            },
+            "onset": {
+              "min": 25.0,
+              "max": 45.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.5,
+              "units": "hours"
             }
           }
         }
@@ -29501,9 +31567,19 @@
               "max": 0.35,
               "units": "hours"
             },
+            "comeup": {
+              "min": 0.35,
+              "max": 0.65,
+              "units": "hours"
+            },
             "peak": {
               "min": 0.5,
               "max": 1.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 3.0,
               "units": "hours"
             },
             "total": {
@@ -29629,9 +31705,19 @@
               "max": 1.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.0,
+              "max": 1.5,
+              "units": "hours"
+            },
             "peak": {
               "min": 1.5,
               "max": 2.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 21.0,
+              "max": 31.0,
               "units": "hours"
             },
             "total": {
@@ -29771,6 +31857,16 @@
             "total": {
               "min": 10.0,
               "max": 16.0,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 0.5,
+              "max": 1.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 4.0,
+              "max": 8.0,
               "units": "hours"
             }
           },
@@ -30174,9 +32270,24 @@
               "max": 60,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 30,
+              "max": 60,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 3,
-              "max": 6,
+              "min": 3.0,
+              "max": 6.0,
               "units": "hours"
             }
           }
@@ -30271,6 +32382,11 @@
               "min": 1,
               "max": 8,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 10.0,
+              "max": 25.0,
+              "units": "minutes"
             }
           }
         },
@@ -30308,6 +32424,11 @@
               "min": 2,
               "max": 4,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 3.0,
+              "max": 10.0,
+              "units": "minutes"
             }
           }
         }
@@ -30376,8 +32497,28 @@
           },
           "duration": {
             "total": {
-              "min": 5,
-              "max": 8,
+              "min": 5.0,
+              "max": 8.0,
+              "units": "hours"
+            },
+            "onset": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 2.0,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.0,
+              "max": 4.0,
               "units": "hours"
             }
           }
@@ -30446,9 +32587,29 @@
           },
           "duration": {
             "total": {
-              "min": 2,
-              "max": 4,
+              "min": 2.0,
+              "max": 4.0,
               "units": "hours"
+            },
+            "onset": {
+              "min": 1.0,
+              "max": 8.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 5.0,
+              "max": 15.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 30.0,
+              "max": 90.0,
+              "units": "minutes"
             }
           }
         },
@@ -30463,8 +32624,28 @@
           },
           "duration": {
             "total": {
-              "min": 4,
-              "max": 6,
+              "min": 4.0,
+              "max": 6.0,
+              "units": "hours"
+            },
+            "onset": {
+              "min": 10.0,
+              "max": 20.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 40.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.5,
+              "max": 3.0,
               "units": "hours"
             }
           }
@@ -30481,8 +32662,28 @@
           "duration": {
             "total": {
               "min": 1.5,
-              "max": 3,
+              "max": 3.0,
               "units": "hours"
+            },
+            "onset": {
+              "min": 1.0,
+              "max": 5.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 2.0,
+              "max": 8.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
             }
           }
         }
@@ -30555,6 +32756,21 @@
               "min": 2,
               "max": 4,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 40.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 45.0,
+              "max": 90.0,
+              "units": "minutes"
             }
           }
         }
@@ -30742,13 +32958,28 @@
           },
           "duration": {
             "onset": {
-              "min": 0,
-              "max": 10,
+              "min": 2.0,
+              "max": 5.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 3.0,
+              "max": 5.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 10.0,
+              "max": 20.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 20.0,
+              "max": 30.0,
               "units": "minutes"
             },
             "total": {
-              "min": 30,
-              "max": 60,
+              "min": 30.0,
+              "max": 60.0,
               "units": "minutes"
             }
           }
@@ -30762,13 +32993,28 @@
           },
           "duration": {
             "onset": {
-              "min": 0.25,
-              "max": 2,
+              "min": 1.0,
+              "max": 2.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 2.0,
+              "max": 4.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 5.0,
+              "max": 15.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 20.0,
+              "max": 30.0,
               "units": "minutes"
             },
             "total": {
-              "min": 30,
-              "max": 60,
+              "min": 30.0,
+              "max": 60.0,
               "units": "minutes"
             }
           }
@@ -30782,13 +33028,28 @@
           },
           "duration": {
             "onset": {
-              "min": 0.25,
-              "max": 2,
+              "min": 0.5,
+              "max": 1.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 2.0,
+              "max": 5.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 20.0,
+              "max": 30.0,
               "units": "minutes"
             },
             "total": {
-              "min": 30,
-              "max": 60,
+              "min": 30.0,
+              "max": 60.0,
               "units": "minutes"
             }
           }
@@ -31072,13 +33333,28 @@
           },
           "duration": {
             "onset": {
-              "min": 45,
-              "max": 120,
+              "min": 45.0,
+              "max": 90.0,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 45.0,
+              "max": 90.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 2.0,
+              "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 6.0,
+              "max": 16.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 10,
-              "max": 75,
+              "min": 10.0,
+              "max": 24.0,
               "units": "hours"
             }
           }
@@ -31387,28 +33663,33 @@
           },
           "duration": {
             "onset": {
-              "min": 10,
-              "max": 15,
+              "min": 10.0,
+              "max": 30.0,
               "units": "seconds"
             },
+            "comeup": {
+              "min": 2.0,
+              "max": 5.0,
+              "units": "minutes"
+            },
             "peak": {
-              "min": 2,
-              "max": 5,
+              "min": 2.0,
+              "max": 4.0,
               "units": "hours"
             },
             "offset": {
-              "min": 2,
-              "max": 4,
+              "min": 2.0,
+              "max": 4.0,
               "units": "hours"
             },
             "total": {
-              "min": 5,
-              "max": 8,
+              "min": 5.0,
+              "max": 8.0,
               "units": "hours"
             },
             "afterglow": {
-              "min": 1,
-              "max": 3,
+              "min": 1.0,
+              "max": 3.0,
               "units": "hours"
             }
           }
@@ -31466,28 +33747,33 @@
           },
           "duration": {
             "onset": {
-              "min": 20,
-              "max": 40,
+              "min": 20.0,
+              "max": 40.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 40.0,
               "units": "minutes"
             },
             "peak": {
-              "min": 2,
-              "max": 5,
+              "min": 2.0,
+              "max": 4.0,
               "units": "hours"
             },
             "offset": {
-              "min": 2,
-              "max": 4,
+              "min": 2.0,
+              "max": 4.0,
               "units": "hours"
             },
             "total": {
-              "min": 5,
-              "max": 10,
+              "min": 5.0,
+              "max": 8.0,
               "units": "hours"
             },
             "afterglow": {
-              "min": 1,
-              "max": 3,
+              "min": 1.0,
+              "max": 3.0,
               "units": "hours"
             }
           }
@@ -31564,6 +33850,21 @@
               "min": 2,
               "max": 12,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 10.0,
+              "max": 25.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.5,
+              "max": 2.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
             }
           }
         },
@@ -31590,6 +33891,21 @@
             "afterglow": {
               "min": 4,
               "max": 48,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.5,
+              "max": 2.5,
               "units": "hours"
             }
           }
@@ -31661,9 +33977,19 @@
               "max": 2.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 4.0,
+              "max": 5.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 5.0,
               "max": 7.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 14.0,
+              "max": 22.0,
               "units": "hours"
             },
             "total": {
@@ -31746,17 +34072,24 @@
               "max": 5,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 5,
+              "max": 15,
+              "units": "minutes"
+            },
             "peak": {
-              "max": 2,
+              "min": 0.5,
+              "max": 2.0,
               "units": "hours"
             },
             "offset": {
-              "max": 3,
+              "min": 1.0,
+              "max": 3.0,
               "units": "hours"
             },
             "total": {
-              "min": 2,
-              "max": 5,
+              "min": 2.0,
+              "max": 5.0,
               "units": "hours"
             }
           }
@@ -31771,9 +34104,29 @@
             "heavyMin": 40
           },
           "duration": {
+            "onset": {
+              "min": 15,
+              "max": 30,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 15,
+              "max": 30,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 3,
-              "max": 5,
+              "min": 3.0,
+              "max": 5.0,
               "units": "hours"
             }
           }
@@ -31856,7 +34209,17 @@
               "max": 1.5,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.25,
+              "max": 2.5,
+              "units": "hours"
+            },
             "peak": {
+              "min": 2.0,
+              "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
               "min": 2.0,
               "max": 4.0,
               "units": "hours"
@@ -31953,9 +34316,19 @@
               "max": 2.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 2.0,
+              "max": 3.5,
+              "units": "hours"
+            },
             "peak": {
               "min": 4.0,
               "max": 6.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 6.0,
+              "max": 12.0,
               "units": "hours"
             },
             "total": {
@@ -32042,6 +34415,21 @@
             "total": {
               "min": 8,
               "max": 10,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 2.0,
+              "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 3.0,
+              "max": 5.0,
               "units": "hours"
             }
           }
@@ -32140,13 +34528,28 @@
           },
           "duration": {
             "onset": {
-              "min": 2,
-              "max": 5,
+              "min": 2.0,
+              "max": 5.0,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 5.0,
+              "max": 15.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 45.0,
+              "max": 90.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 1.5,
+              "max": 2.5,
+              "units": "hours"
+            },
             "total": {
-              "min": 3,
-              "max": 5,
+              "min": 3.0,
+              "max": 5.0,
               "units": "hours"
             }
           }
@@ -32162,13 +34565,28 @@
           },
           "duration": {
             "onset": {
-              "min": 20,
-              "max": 40,
+              "min": 20.0,
+              "max": 40.0,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 20.0,
+              "max": 40.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.0,
+              "max": 3.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 4,
-              "max": 6,
+              "min": 4.0,
+              "max": 6.0,
               "units": "hours"
             }
           }
@@ -32228,13 +34646,28 @@
           },
           "duration": {
             "onset": {
-              "min": 20,
-              "max": 45,
+              "min": 20.0,
+              "max": 45.0,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 20.0,
+              "max": 45.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.0,
+              "max": 3.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 4,
-              "max": 6,
+              "min": 4.0,
+              "max": 6.0,
               "units": "hours"
             }
           }
@@ -32307,6 +34740,21 @@
             "total": {
               "min": 6,
               "max": 8,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 45.0,
+              "max": 75.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 2.0,
+              "max": 3.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.0,
+              "max": 3.0,
               "units": "hours"
             }
           }
@@ -32836,6 +35284,21 @@
               "min": 6,
               "max": 8,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 45.0,
+              "max": 75.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 2.0,
+              "max": 3.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.0,
+              "max": 3.0,
+              "units": "hours"
             }
           }
         }
@@ -32907,14 +35370,24 @@
               "max": 4.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 4.0,
+              "max": 8.0,
+              "units": "hours"
+            },
             "peak": {
-              "min": 20.0,
-              "max": 24.0,
+              "min": 8.0,
+              "max": 16.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 10.0,
+              "max": 12.0,
               "units": "hours"
             },
             "total": {
               "min": 24.0,
-              "max": 36.0,
+              "max": 40.0,
               "units": "hours"
             }
           },
@@ -33010,9 +35483,19 @@
               "max": 2.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 3.0,
+              "max": 4.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 4.0,
               "max": 6.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 12.0,
+              "max": 14.0,
               "units": "hours"
             },
             "total": {
@@ -33138,6 +35621,11 @@
               "min": 1,
               "max": 8,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 10.0,
+              "max": 20.0,
+              "units": "minutes"
             }
           }
         },
@@ -33175,6 +35663,11 @@
               "min": 1,
               "max": 10,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 45.0,
+              "units": "minutes"
             }
           }
         }
@@ -33217,28 +35710,33 @@
           },
           "duration": {
             "onset": {
-              "min": 15,
-              "max": 60,
+              "min": 15.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
               "units": "minutes"
             },
             "peak": {
-              "min": 1,
-              "max": 3,
+              "min": 1.0,
+              "max": 3.0,
               "units": "hours"
             },
             "offset": {
-              "min": 1,
-              "max": 2,
+              "min": 1.5,
+              "max": 2.5,
               "units": "hours"
             },
             "total": {
-              "min": 4,
-              "max": 6,
+              "min": 4.0,
+              "max": 6.0,
               "units": "hours"
             },
             "afterglow": {
-              "min": 1,
-              "max": 36,
+              "min": 1.0,
+              "max": 36.0,
               "units": "hours"
             }
           }
@@ -33378,18 +35876,33 @@
           },
           "duration": {
             "onset": {
-              "min": 30,
-              "max": 60,
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 45.0,
               "units": "minutes"
             },
             "peak": {
-              "min": 4,
-              "max": 6,
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.0,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "total": {
+              "min": 3.0,
+              "max": 5.0,
               "units": "hours"
             },
             "afterglow": {
-              "min": 2,
-              "max": 10,
+              "min": 1.0,
+              "max": 6.0,
               "units": "hours"
             }
           }
@@ -33536,18 +36049,33 @@
           },
           "duration": {
             "onset": {
-              "min": 1,
-              "max": 4,
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "peak": {
+              "min": 3.0,
+              "max": 6.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 10.0,
+              "max": 14.0,
               "units": "hours"
             },
             "total": {
-              "min": 15,
-              "max": 24,
+              "min": 15.0,
+              "max": 24.0,
               "units": "hours"
             },
             "afterglow": {
-              "min": 15,
-              "max": 36,
+              "min": 15.0,
+              "max": 36.0,
               "units": "hours"
             }
           }
@@ -33768,6 +36296,21 @@
               "min": 2,
               "max": 3,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
             }
           }
         }
@@ -33896,9 +36439,24 @@
               "max": 90,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 30,
+              "max": 60,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.0,
+              "max": 4.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 4,
-              "max": 8,
+              "min": 4.0,
+              "max": 8.0,
               "units": "hours"
             }
           }
@@ -33958,28 +36516,33 @@
           },
           "duration": {
             "onset": {
-              "min": 5,
-              "max": 15,
+              "min": 5.0,
+              "max": 15.0,
+              "units": "seconds"
+            },
+            "comeup": {
+              "min": 5.0,
+              "max": 15.0,
               "units": "seconds"
             },
             "peak": {
-              "min": 15,
-              "max": 45,
+              "min": 15.0,
+              "max": 45.0,
               "units": "seconds"
             },
             "offset": {
-              "min": 1,
-              "max": 2,
+              "min": 1.0,
+              "max": 2.0,
               "units": "minutes"
             },
             "total": {
-              "min": 1,
-              "max": 3,
+              "min": 1.5,
+              "max": 3.0,
               "units": "minutes"
             },
             "afterglow": {
-              "min": 2,
-              "max": 5,
+              "min": 2.0,
+              "max": 5.0,
               "units": "minutes"
             }
           }
@@ -34037,9 +36600,24 @@
               "max": 90,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 45,
+              "max": 90,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 2.0,
+              "max": 3.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 4,
-              "max": 7,
+              "min": 4.0,
+              "max": 7.0,
               "units": "hours"
             }
           }
@@ -34120,9 +36698,19 @@
               "max": 1.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 0.5,
+              "max": 1.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 1.0,
               "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 6.0,
+              "max": 10.0,
               "units": "hours"
             },
             "total": {
@@ -34193,13 +36781,28 @@
           },
           "duration": {
             "onset": {
-              "min": 30,
-              "max": 45,
+              "min": 30.0,
+              "max": 45.0,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.0,
+              "max": 4.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 4,
-              "max": 8,
+              "min": 4.0,
+              "max": 8.0,
               "units": "hours"
             }
           }
@@ -34263,9 +36866,19 @@
               "max": 1.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 1.5,
               "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 9.0,
+              "max": 18.0,
               "units": "hours"
             },
             "total": {
@@ -34294,9 +36907,19 @@
               "max": 1.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 2.0,
               "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 12.0,
+              "max": 20.0,
               "units": "hours"
             },
             "total": {
@@ -34656,6 +37279,26 @@
               "min": 8,
               "max": 12,
               "units": "hours"
+            },
+            "onset": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "peak": {
+              "min": 3.0,
+              "max": 5.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.5,
+              "max": 4.0,
+              "units": "hours"
             }
           }
         }
@@ -34894,13 +37537,28 @@
           },
           "duration": {
             "onset": {
-              "min": 10,
-              "max": 15,
+              "min": 10.0,
+              "max": 15.0,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 20.0,
+              "max": 45.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 3.5,
+              "max": 5.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 5,
-              "max": 8,
+              "min": 5.0,
+              "max": 8.0,
               "units": "hours"
             }
           }
@@ -34956,15 +37614,30 @@
             "heavyMin": 10.0
           },
           "duration": {
-            "total": {
-              "min": 24.0,
-              "max": 48.0,
-              "units": "hours"
-            },
             "onset": {
               "min": 20.0,
               "max": 45.0,
               "units": "minutes"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 2.0,
+              "max": 6.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 12.0,
+              "max": 24.0,
+              "units": "hours"
+            },
+            "total": {
+              "min": 24.0,
+              "max": 48.0,
+              "units": "hours"
             }
           }
         }
@@ -35048,9 +37721,19 @@
               "max": 1.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.0,
+              "max": 1.5,
+              "units": "hours"
+            },
             "peak": {
               "min": 1.5,
               "max": 2.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 5.0,
+              "max": 9.0,
               "units": "hours"
             },
             "total": {
@@ -35140,6 +37823,16 @@
               "min": 1.75,
               "max": 1.75,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
             }
           }
         }
@@ -35195,9 +37888,19 @@
               "max": 1.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 0.5,
+              "max": 2.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 1.0,
               "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 22.0,
+              "max": 30.0,
               "units": "hours"
             },
             "total": {
@@ -35472,9 +38175,29 @@
           },
           "duration": {
             "onset": {
-              "min": 100,
-              "max": 180,
-              "units": "minutes"
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "peak": {
+              "min": 2.0,
+              "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.0,
+              "max": 4.0,
+              "units": "hours"
+            },
+            "total": {
+              "min": 6.0,
+              "max": 10.0,
+              "units": "hours"
             }
           }
         }
@@ -35729,18 +38452,33 @@
           "name": "smoked",
           "duration": {
             "onset": {
-              "min": 15,
-              "max": 60,
+              "min": 15.0,
+              "max": 30.0,
               "units": "seconds"
             },
+            "comeup": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "seconds"
+            },
+            "peak": {
+              "min": 2.0,
+              "max": 5.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 5.0,
+              "max": 15.0,
+              "units": "minutes"
+            },
             "total": {
-              "min": 15,
-              "max": 90,
+              "min": 15.0,
+              "max": 30.0,
               "units": "minutes"
             },
             "afterglow": {
-              "min": 15,
-              "max": 60,
+              "min": 15.0,
+              "max": 60.0,
               "units": "minutes"
             }
           }
@@ -35749,18 +38487,33 @@
           "name": "sublingual",
           "duration": {
             "onset": {
-              "min": 10,
-              "max": 20,
+              "min": 10.0,
+              "max": 20.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 10.0,
+              "max": 20.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 20.0,
+              "max": 40.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 20.0,
+              "max": 40.0,
               "units": "minutes"
             },
             "total": {
-              "min": 30,
-              "max": 90,
+              "min": 60.0,
+              "max": 90.0,
               "units": "minutes"
             },
             "afterglow": {
-              "min": 30,
-              "max": 120,
+              "min": 30.0,
+              "max": 120.0,
               "units": "minutes"
             }
           }
@@ -35855,28 +38608,33 @@
           },
           "duration": {
             "onset": {
-              "min": 15,
-              "max": 60,
+              "min": 15.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
               "units": "minutes"
             },
             "peak": {
-              "min": 4,
-              "max": 8,
+              "min": 2.0,
+              "max": 4.0,
               "units": "hours"
             },
             "offset": {
-              "min": 2,
-              "max": 4,
+              "min": 2.0,
+              "max": 4.0,
               "units": "hours"
             },
             "total": {
-              "min": 6,
-              "max": 10,
+              "min": 6.0,
+              "max": 10.0,
               "units": "hours"
             },
             "afterglow": {
-              "min": 1,
-              "max": 24,
+              "min": 1.0,
+              "max": 24.0,
               "units": "hours"
             }
           }
@@ -36046,9 +38804,19 @@
               "max": 2.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 3.5,
+              "max": 6.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 4.5,
               "max": 8.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 15.0,
+              "max": 20.0,
               "units": "hours"
             },
             "total": {
@@ -36229,6 +38997,21 @@
               "min": 30.0,
               "max": 120.0,
               "units": "minutes"
+            },
+            "comeup": {
+              "min": 10.0,
+              "max": 20.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
             }
           }
         }
@@ -36340,7 +39123,17 @@
               "max": 4.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 4.0,
+              "max": 4.0,
+              "units": "hours"
+            },
             "peak": {
+              "min": 6.0,
+              "max": 8.0,
+              "units": "hours"
+            },
+            "offset": {
               "min": 6.0,
               "max": 8.0,
               "units": "hours"
@@ -36493,9 +39286,19 @@
               "max": 2.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.0,
+              "max": 1.5,
+              "units": "hours"
+            },
             "peak": {
               "min": 2.5,
               "max": 3.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 8.0,
+              "max": 16.0,
               "units": "hours"
             },
             "total": {
@@ -36604,13 +39407,28 @@
           },
           "duration": {
             "onset": {
-              "min": 1,
-              "max": 2,
+              "min": 1.0,
+              "max": 2.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 1.0,
+              "max": 3.0,
               "units": "minutes"
             },
             "peak": {
-              "min": 5,
-              "max": 10,
+              "min": 5.0,
+              "max": 10.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "total": {
+              "min": 20.0,
+              "max": 45.0,
               "units": "minutes"
             }
           }
@@ -36826,8 +39644,13 @@
           },
           "duration": {
             "onset": {
+              "min": 10,
+              "max": 45,
+              "units": "seconds"
+            },
+            "comeup": {
               "min": 5,
-              "max": 10,
+              "max": 15,
               "units": "minutes"
             },
             "peak": {
@@ -36836,13 +39659,13 @@
               "units": "minutes"
             },
             "offset": {
-              "min": 5,
-              "max": 10,
+              "min": 15,
+              "max": 30,
               "units": "minutes"
             },
             "total": {
-              "min": 2,
-              "max": 3,
+              "min": 2.0,
+              "max": 3.0,
               "units": "hours"
             },
             "afterglow": {
@@ -36908,8 +39731,13 @@
           },
           "duration": {
             "onset": {
+              "min": 10,
+              "max": 45,
+              "units": "seconds"
+            },
+            "comeup": {
               "min": 5,
-              "max": 10,
+              "max": 15,
               "units": "minutes"
             },
             "peak": {
@@ -36918,13 +39746,13 @@
               "units": "minutes"
             },
             "offset": {
-              "min": 0,
-              "max": 0,
+              "min": 10,
+              "max": 20,
               "units": "minutes"
             },
             "total": {
-              "min": 1,
-              "max": 2,
+              "min": 1.0,
+              "max": 2.0,
               "units": "hours"
             },
             "afterglow": {
@@ -37207,9 +40035,19 @@
               "max": 1.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 0.5,
+              "max": 0.5,
+              "units": "hours"
+            },
             "peak": {
               "min": 1.0,
               "max": 1.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.0,
+              "max": 3.0,
               "units": "hours"
             },
             "total": {
@@ -37388,13 +40226,28 @@
           },
           "duration": {
             "onset": {
-              "min": 30,
-              "max": 60,
+              "min": 30.0,
+              "max": 60.0,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 4.5,
+              "max": 5.0,
+              "units": "hours"
+            },
             "total": {
-              "min": 7,
-              "max": 8,
+              "min": 7.0,
+              "max": 8.0,
               "units": "hours"
             },
             "afterglow": {
@@ -37474,9 +40327,19 @@
               "max": 2.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 2.0,
+              "max": 4.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 4.0,
               "max": 8.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 12.0,
+              "max": 20.0,
               "units": "hours"
             },
             "total": {
@@ -37564,19 +40427,29 @@
           },
           "duration": {
             "onset": {
-              "min": 6.0,
-              "max": 12.0,
-              "units": "hours"
+              "min": 0.5,
+              "max": 1.0,
+              "units": "days"
+            },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "days"
             },
             "peak": {
-              "min": 36.0,
-              "max": 72.0,
-              "units": "hours"
+              "min": 2.0,
+              "max": 4.0,
+              "units": "days"
+            },
+            "offset": {
+              "min": 4.0,
+              "max": 8.0,
+              "units": "days"
             },
             "total": {
-              "min": 168.0,
-              "max": 336.0,
-              "units": "hours"
+              "min": 7.0,
+              "max": 14.0,
+              "units": "days"
             }
           },
           "bioavailability": {
@@ -37661,19 +40534,29 @@
           },
           "duration": {
             "onset": {
-              "min": 6.0,
-              "max": 12.0,
-              "units": "hours"
+              "min": 0.5,
+              "max": 1.0,
+              "units": "days"
+            },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "days"
             },
             "peak": {
-              "min": 24.0,
-              "max": 48.0,
-              "units": "hours"
+              "min": 1.5,
+              "max": 3.0,
+              "units": "days"
+            },
+            "offset": {
+              "min": 4.0,
+              "max": 8.0,
+              "units": "days"
             },
             "total": {
-              "min": 168.0,
-              "max": 336.0,
-              "units": "hours"
+              "min": 7.0,
+              "max": 14.0,
+              "units": "days"
             }
           },
           "bioavailability": {
@@ -37692,19 +40575,29 @@
           },
           "duration": {
             "onset": {
-              "min": 6.0,
-              "max": 12.0,
-              "units": "hours"
+              "min": 0.5,
+              "max": 1.0,
+              "units": "days"
+            },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "days"
             },
             "peak": {
-              "min": 24.0,
-              "max": 48.0,
-              "units": "hours"
+              "min": 1.5,
+              "max": 3.0,
+              "units": "days"
+            },
+            "offset": {
+              "min": 4.0,
+              "max": 8.0,
+              "units": "days"
             },
             "total": {
-              "min": 168.0,
-              "max": 336.0,
-              "units": "hours"
+              "min": 7.0,
+              "max": 14.0,
+              "units": "days"
             }
           },
           "bioavailability": {
@@ -37797,19 +40690,29 @@
           },
           "duration": {
             "onset": {
-              "min": 24.0,
-              "max": 48.0,
-              "units": "hours"
+              "min": 1.0,
+              "max": 2.0,
+              "units": "days"
+            },
+            "comeup": {
+              "min": 5.0,
+              "max": 10.0,
+              "units": "days"
             },
             "peak": {
-              "min": 168.0,
-              "max": 336.0,
-              "units": "hours"
+              "min": 7.0,
+              "max": 14.0,
+              "units": "days"
+            },
+            "offset": {
+              "min": 40.0,
+              "max": 60.0,
+              "units": "days"
             },
             "total": {
-              "min": 1680.0,
-              "max": 2352.0,
-              "units": "hours"
+              "min": 70.0,
+              "max": 98.0,
+              "units": "days"
             }
           },
           "bioavailability": {
@@ -37832,7 +40735,17 @@
               "max": 2.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.5,
+              "max": 2.5,
+              "units": "hours"
+            },
             "peak": {
+              "min": 3.0,
+              "max": 5.0,
+              "units": "hours"
+            },
+            "offset": {
               "min": 3.0,
               "max": 5.0,
               "units": "hours"
@@ -37920,6 +40833,21 @@
               "min": 1,
               "max": 3,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 10.0,
+              "max": 20.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 45.0,
+              "max": 90.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
             }
           }
         },
@@ -37941,6 +40869,21 @@
             "total": {
               "min": 6,
               "max": 10,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.5,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 3.0,
+              "max": 6.0,
               "units": "hours"
             }
           }
@@ -37994,14 +40937,24 @@
               "max": 90,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 15,
+              "max": 30,
+              "units": "minutes"
+            },
             "peak": {
-              "min": 1,
-              "max": 3,
+              "min": 1.0,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.0,
               "units": "hours"
             },
             "total": {
-              "min": 3,
-              "max": 6,
+              "min": 3.0,
+              "max": 6.0,
               "units": "hours"
             }
           }
@@ -38288,20 +41241,30 @@
             "heavyMin": 8.0
           },
           "duration": {
-            "total": {
-              "min": 2.0,
-              "max": 6.0,
-              "units": "hours"
-            },
             "onset": {
               "min": 15.0,
               "max": 45.0,
               "units": "minutes"
             },
-            "peak": {
-              "min": 60.0,
-              "max": 120.0,
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
               "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.5,
+              "max": 2.5,
+              "units": "hours"
+            },
+            "total": {
+              "min": 3.0,
+              "max": 6.0,
+              "units": "hours"
             }
           }
         }
@@ -38481,9 +41444,19 @@
               "max": 2.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 2.0,
               "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 10.0,
+              "max": 18.0,
               "units": "hours"
             },
             "total": {
@@ -38821,9 +41794,19 @@
               "max": 1.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 1.0,
+              "max": 1.5,
+              "units": "hours"
+            },
             "peak": {
               "min": 1.5,
               "max": 2.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 3.0,
+              "max": 5.0,
               "units": "hours"
             },
             "total": {
@@ -38911,28 +41894,33 @@
           },
           "duration": {
             "onset": {
-              "min": 20,
-              "max": 30,
+              "min": 20.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 45.0,
               "units": "minutes"
             },
             "peak": {
-              "min": 1,
-              "max": 2,
+              "min": 1.0,
+              "max": 2.0,
               "units": "hours"
             },
             "offset": {
-              "min": 1,
-              "max": 3,
+              "min": 1.0,
+              "max": 3.0,
               "units": "hours"
             },
             "total": {
-              "min": 3,
-              "max": 6,
+              "min": 3.0,
+              "max": 6.0,
               "units": "hours"
             },
             "afterglow": {
-              "min": 1,
-              "max": 12,
+              "min": 1.0,
+              "max": 12.0,
               "units": "hours"
             }
           }
@@ -39005,9 +41993,19 @@
               "max": 1.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 0.5,
+              "max": 0.5,
+              "units": "hours"
+            },
             "peak": {
               "min": 1.0,
               "max": 1.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 4.0,
+              "max": 9.0,
               "units": "hours"
             },
             "total": {
@@ -39098,19 +42096,29 @@
           },
           "duration": {
             "onset": {
-              "min": 1.0,
-              "max": 3.0,
-              "units": "hours"
+              "min": 0.1,
+              "max": 0.5,
+              "units": "days"
+            },
+            "comeup": {
+              "min": 0.5,
+              "max": 2.0,
+              "units": "days"
             },
             "peak": {
-              "min": 24.0,
-              "max": 72.0,
-              "units": "hours"
+              "min": 1.0,
+              "max": 3.0,
+              "units": "days"
+            },
+            "offset": {
+              "min": 25.0,
+              "max": 60.0,
+              "units": "days"
             },
             "total": {
-              "min": 672.0,
-              "max": 2160.0,
-              "units": "hours"
+              "min": 28.0,
+              "max": 90.0,
+              "units": "days"
             }
           },
           "bioavailability": {
@@ -39225,6 +42233,16 @@
               "min": 6,
               "max": 12,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 45.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
             }
           }
         }
@@ -39289,28 +42307,33 @@
           },
           "duration": {
             "onset": {
-              "min": 5,
-              "max": 10,
+              "min": 5.0,
+              "max": 10.0,
               "units": "minutes"
             },
             "comeup": {
-              "min": 15,
-              "max": 20,
+              "min": 15.0,
+              "max": 20.0,
               "units": "minutes"
             },
             "peak": {
-              "min": 1,
-              "max": 2,
+              "min": 1.0,
+              "max": 1.5,
               "units": "hours"
             },
+            "offset": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
             "total": {
-              "min": 2,
-              "max": 3,
+              "min": 2.0,
+              "max": 3.0,
               "units": "hours"
             },
             "afterglow": {
-              "min": 2,
-              "max": 4,
+              "min": 2.0,
+              "max": 4.0,
               "units": "hours"
             }
           }
@@ -39606,9 +42629,19 @@
               "max": 3.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 3.0,
+              "max": 3.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 5.0,
               "max": 6.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 8.0,
+              "max": 12.0,
               "units": "hours"
             },
             "total": {
@@ -39686,19 +42719,29 @@
             "heavyMin": 150.0
           },
           "duration": {
-            "total": {
-              "min": 4.0,
-              "max": 6.0,
-              "units": "hours"
-            },
             "onset": {
               "min": 15.0,
               "max": 30.0,
               "units": "minutes"
             },
+            "comeup": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
+            },
             "peak": {
+              "min": 1.5,
+              "max": 2.5,
+              "units": "hours"
+            },
+            "offset": {
               "min": 2.0,
-              "max": 4.0,
+              "max": 3.0,
+              "units": "hours"
+            },
+            "total": {
+              "min": 4.0,
+              "max": 6.0,
               "units": "hours"
             },
             "afterglow": {
@@ -39770,9 +42813,19 @@
               "max": 4.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 5.0,
+              "max": 7.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 7.0,
               "max": 11.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 34.0,
+              "max": 50.0,
               "units": "hours"
             },
             "total": {
@@ -40418,9 +43471,19 @@
               "max": 0.4,
               "units": "hours"
             },
+            "comeup": {
+              "min": 0.3,
+              "max": 0.6,
+              "units": "hours"
+            },
             "peak": {
               "min": 0.5,
               "max": 1.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 2.0,
+              "max": 3.0,
               "units": "hours"
             },
             "total": {
@@ -40564,7 +43627,17 @@
               "max": 2.0,
               "units": "hours"
             },
+            "comeup": {
+              "min": 3.0,
+              "max": 4.0,
+              "units": "hours"
+            },
             "peak": {
+              "min": 2.0,
+              "max": 4.0,
+              "units": "hours"
+            },
+            "offset": {
               "min": 6.0,
               "max": 8.0,
               "units": "hours"
@@ -40658,9 +43731,19 @@
               "max": 0.5,
               "units": "hours"
             },
+            "comeup": {
+              "min": 0.25,
+              "max": 1.0,
+              "units": "hours"
+            },
             "peak": {
               "min": 0.5,
               "max": 1.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 3.0,
+              "max": 4.0,
               "units": "hours"
             },
             "total": {
@@ -40769,9 +43852,19 @@
               "max": 0.6,
               "units": "hours"
             },
+            "comeup": {
+              "min": 0.7,
+              "max": 1.4,
+              "units": "hours"
+            },
             "peak": {
               "min": 1.0,
               "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 4.0,
+              "max": 4.0,
               "units": "hours"
             },
             "total": {
@@ -40935,6 +44028,21 @@
               "min": 2.0,
               "max": 4.0,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 45.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
             }
           }
         }
@@ -41071,6 +44179,16 @@
               "min": 1,
               "max": 5,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.5,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 4.0,
+              "max": 6.0,
+              "units": "hours"
             }
           }
         }
@@ -41124,6 +44242,21 @@
             "total": {
               "min": 8,
               "max": 12,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "peak": {
+              "min": 3.0,
+              "max": 5.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 3.0,
+              "max": 5.0,
               "units": "hours"
             }
           }
@@ -41190,6 +44323,21 @@
               "min": 6.0,
               "max": 12.0,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 1.0,
+              "max": 5.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 15.0,
+              "max": 30.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 30.0,
+              "max": 60.0,
+              "units": "minutes"
             }
           }
         },
@@ -41218,6 +44366,21 @@
               "min": 6.0,
               "max": 12.0,
               "units": "hours"
+            },
+            "comeup": {
+              "min": 20.0,
+              "max": 45.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 1.0,
+              "max": 2.0,
+              "units": "hours"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.5,
+              "units": "hours"
             }
           }
         },
@@ -41245,6 +44408,21 @@
             "afterglow": {
               "min": 6.0,
               "max": 12.0,
+              "units": "hours"
+            },
+            "comeup": {
+              "min": 5.0,
+              "max": 15.0,
+              "units": "minutes"
+            },
+            "peak": {
+              "min": 20.0,
+              "max": 45.0,
+              "units": "minutes"
+            },
+            "offset": {
+              "min": 1.0,
+              "max": 2.5,
               "units": "hours"
             }
           }
