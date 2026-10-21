@@ -70,6 +70,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.isaakhanimann.journal.R
 import com.isaakhanimann.journal.ui.YOU
 import com.isaakhanimann.journal.ui.tabs.search.substance.roa.toReadableString
+import com.isaakhanimann.journal.ui.tabs.stats.tolerance.ToleranceEntryButton
 import com.isaakhanimann.journal.ui.theme.JournalTheme
 import com.isaakhanimann.journal.ui.theme.horizontalPadding
 import com.isaakhanimann.journal.ui.utils.titleRes
@@ -79,9 +80,11 @@ import com.isaakhanimann.journal.ui.utils.titleRes
 fun StatsScreen(
     viewModel: StatsViewModel = hiltViewModel(),
     navigateToSubstanceCompanion: (substanceName: String, consumerName: String?) -> Unit,
+    navigateToToleranceChart: () -> Unit = {},
 ) {
     StatsScreen(
         navigateToSubstanceCompanion = navigateToSubstanceCompanion,
+        navigateToToleranceChart = navigateToToleranceChart,
         onTapOption = viewModel::onTapOption,
         statsModel = viewModel.statsModelFlow.collectAsState().value,
         onChangeConsumerName = viewModel::onChangeConsumer,
@@ -99,6 +102,7 @@ fun StatsPreview(
     JournalTheme {
         StatsScreen(
             navigateToSubstanceCompanion = { _, _ -> },
+            navigateToToleranceChart = {},
             onTapOption = {},
             statsModel = statsModel,
             onChangeConsumerName = {},
@@ -111,6 +115,7 @@ fun StatsPreview(
 @Composable
 fun StatsScreen(
     navigateToSubstanceCompanion: (substanceName: String, consumerName: String?) -> Unit,
+    navigateToToleranceChart: () -> Unit = {},
     onTapOption: (option: TimePickerOption) -> Unit,
     statsModel: StatsModel,
     onChangeConsumerName: (String?) -> Unit,
@@ -120,13 +125,19 @@ fun StatsScreen(
         topBar = {
             TopAppBar(
                 title = {
-                    Text(
-                        if (statsModel.consumerName == null) {
-                            stringResource(R.string.stats_title)
-                        } else {
-                            stringResource(R.string.stats_title_for_consumer, statsModel.consumerName)
-                        }
-                    )
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Text(
+                            if (statsModel.consumerName == null) {
+                                stringResource(R.string.stats_title)
+                            } else {
+                                stringResource(R.string.stats_title_for_consumer, statsModel.consumerName)
+                            }
+                        )
+                        Spacer(modifier = Modifier.width(16.dp))
+                        ToleranceEntryButton(onClick = navigateToToleranceChart)
+                    }
                 },
                 actions = {
                     if (consumerNamesSorted.isNotEmpty()) {

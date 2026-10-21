@@ -16,3 +16,5 @@ local.properties
 # Python cache
 __pycache__/
 *.py[cod]
+# Kotlin compiler daemon logs
+.kotlin/

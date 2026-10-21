@@ -25,6 +25,7 @@ import com.isaakhanimann.journal.ui.main.navigation.composableWithTransitions
 import com.isaakhanimann.journal.ui.main.navigation.StatsTopLevelRoute
 import com.isaakhanimann.journal.ui.tabs.stats.StatsScreen
 import com.isaakhanimann.journal.ui.tabs.stats.substancecompanion.SubstanceCompanionScreen
+import com.isaakhanimann.journal.ui.tabs.stats.tolerance.ToleranceChartScreen
 import kotlinx.serialization.Serializable
 
 fun NavGraphBuilder.statsGraph(navController: NavHostController) {
@@ -41,16 +42,25 @@ fun NavGraphBuilder.statsGraph(navController: NavHostController) {
                         )
                     )
                 },
+                navigateToToleranceChart = {
+                    navController.navigate(ToleranceChartRoute)
+                }
             )
         }
         composableWithTransitions<SubstanceCompanionRoute> {
             SubstanceCompanionScreen(navigateBack = navController::popBackStack)
+        }
+        composableWithTransitions<ToleranceChartRoute> {
+            ToleranceChartScreen(navigateBack = navController::popBackStack)
         }
     }
 }
 
 @Serializable
 object StatsScreenRoute
+
+@Serializable
+object ToleranceChartRoute
 
 @Serializable
 data class SubstanceCompanionRoute(val substanceName: String, val consumerName: String?)

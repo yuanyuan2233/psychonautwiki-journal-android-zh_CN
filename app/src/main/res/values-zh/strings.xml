@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Journal</string>
+    <string name="app_name">耐受度时序分析测试</string>
 
     <!-- Navigation -->
     <string name="nav_stats">统计</string>
