@@ -712,6 +712,13 @@ object SubstanceLocalizationHelper {
             if (!containsChinese(trimmed)) {
                 return trimmed
             }
+            val parenIndex = trimmed.indexOfAny(charArrayOf('(', '（'))
+            if (parenIndex > 0) {
+                val prefix = trimmed.substring(0, parenIndex).trim()
+                if (!containsChinese(prefix)) {
+                    return prefix
+                }
+            }
             val enName = ZH_NAME_MAP.entries.firstOrNull { it.value.equals(trimmed, ignoreCase = true) }?.key
             if (enName != null) return enName
             val enInCommon = commonNames.firstOrNull { !containsChinese(it) && !isPinyinToken(it) }
