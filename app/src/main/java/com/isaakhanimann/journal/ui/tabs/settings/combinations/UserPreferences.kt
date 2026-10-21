@@ -25,6 +25,7 @@ import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.longPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import com.isaakhanimann.journal.ui.tabs.journal.experience.components.SavedTimeDisplayOption
+import com.isaakhanimann.journal.ui.tabs.settings.AppLanguage
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import java.time.Instant
@@ -46,6 +47,7 @@ class UserPreferences @Inject constructor(private val dataStore: DataStore<Prefe
         val KEY_HIDE_DOSAGE_DOTS = booleanPreferencesKey("key_hide_dosage_dots")
         val KEY_ARE_SUBSTANCE_HEIGHTS_INDEPENDENT = booleanPreferencesKey("KEY_ARE_SUBSTANCE_HEIGHTS_INDEPENDENT")
         val KEY_IS_TIMELINE_HIDDEN = booleanPreferencesKey("KEY_IS_TIMELINE_HIDDEN")
+        val KEY_APP_LANGUAGE = stringPreferencesKey("key_app_language")
     }
 
     suspend fun saveTimeDisplayOption(value: SavedTimeDisplayOption) {
@@ -135,5 +137,17 @@ class UserPreferences @Inject constructor(private val dataStore: DataStore<Prefe
             preferences[PreferencesKeys.KEY_IS_TIMELINE_HIDDEN] = value
         }
     }
+
+    suspend fun saveAppLanguage(value: AppLanguage) {
+        dataStore.edit { preferences ->
+            preferences[PreferencesKeys.KEY_APP_LANGUAGE] = value.code
+        }
+    }
+
+    val appLanguageFlow: Flow<AppLanguage> = dataStore.data
+        .map { preferences ->
+            val code = preferences[PreferencesKeys.KEY_APP_LANGUAGE]
+            AppLanguage.fromCode(code)
+        }
 }
 

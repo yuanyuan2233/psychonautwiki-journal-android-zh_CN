@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">耐受度时序分析测试</string>
+    <string name="app_name">Journal</string>
 
     <!-- Navigation -->
     <string name="nav_stats">统计</string>
@@ -83,4 +83,10 @@
     <string name="action_edit">编辑</string>
     <string name="action_add">添加</string>
     <string name="action_search">搜索</string>
+
+    <!-- Language Settings -->
+    <string name="settings_language">语言 / Language</string>
+    <string name="settings_language_system">跟随系统</string>
+    <string name="settings_language_chinese">简体中文</string>
+    <string name="settings_language_english">English</string>
 </resources>

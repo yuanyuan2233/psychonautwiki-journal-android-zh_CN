@@ -5,6 +5,8 @@
 
 package com.isaakhanimann.journal.ui.tabs.search
 
+import java.util.Locale
+
 object SubstanceLocalizationHelper {
     private val ZH_NAME_MAP: Map<String, String> = mapOf(
         "1,3-DMAA" to "甲基己胺",
@@ -518,12 +520,27 @@ object SubstanceLocalizationHelper {
      */
     fun getLocalizedName(name: String): String = getSubstanceDisplayName(name)
 
+    fun isChinese(): Boolean {
+        return Locale.getDefault().language.startsWith("zh")
+    }
+
     /**
-     * 获取物质的主要展示名称（优先返回中文标准名）
+     * 获取物质的主要展示名称（中文环境优先返回中文标准名，英文环境优先返回英文名）
      */
     fun getSubstanceDisplayName(name: String, commonNames: List<String> = emptyList()): String {
         val trimmed = name.trim()
         if (trimmed.isEmpty()) return ""
+
+        if (!isChinese()) {
+            if (!containsChinese(trimmed)) {
+                return trimmed
+            }
+            val enName = ZH_NAME_MAP.entries.firstOrNull { it.value.equals(trimmed, ignoreCase = true) }?.key
+            if (enName != null) return enName
+            val enInCommon = commonNames.firstOrNull { !containsChinese(it) && !isPinyinToken(it) }
+            if (enInCommon != null) return enInCommon.trim()
+            return trimmed
+        }
         
         // 1. 查静态字典
         ZH_NAME_MAP[trimmed]?.let { return it }
@@ -569,15 +586,18 @@ object SubstanceLocalizationHelper {
     ): String {
         val list = mutableListOf<String>()
         val trimmedName = name.trim()
-        // 如果显示名称是中文，且原名与显示名称不同，优先把英文原名放在副标首位
-        if (trimmedName.isNotEmpty() && !trimmedName.equals(displayName, ignoreCase = true)) {
-            list.add(trimmedName)
+        if (isChinese()) {
+            // 如果显示名称是中文，且原名与显示名称不同，优先把英文原名放在副标首位
+            if (trimmedName.isNotEmpty() && !trimmedName.equals(displayName, ignoreCase = true)) {
+                list.add(trimmedName)
+            }
         }
         // 加入其他人类可读别名（排除 displayName 与内部拼音标记）
         for (item in commonNames) {
             val trimmed = item.trim()
             if (trimmed.isEmpty() || trimmed.equals(displayName, ignoreCase = true)) continue
             if (isPinyinToken(trimmed)) continue
+            if (!isChinese() && containsChinese(trimmed)) continue
             if (!list.contains(trimmed)) {
                 list.add(trimmed)
             }

@@ -18,6 +18,8 @@
 
 package com.isaakhanimann.journal
 
+import android.content.res.Configuration
+import android.content.res.Resources
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -25,26 +27,66 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
+import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalConfiguration
+import androidx.compose.ui.platform.LocalContext
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.isaakhanimann.journal.ui.main.MainScreen
+import com.isaakhanimann.journal.ui.tabs.settings.AppLanguage
+import com.isaakhanimann.journal.ui.tabs.settings.combinations.UserPreferences
 import com.isaakhanimann.journal.ui.theme.JournalTheme
 import dagger.hilt.android.AndroidEntryPoint
+import java.util.Locale
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+
+    @Inject
+    lateinit var userPreferences: UserPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         installSplashScreen()
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            JournalTheme {
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    MainScreen()
+            val appLanguage by userPreferences.appLanguageFlow.collectAsState(initial = AppLanguage.FOLLOW_SYSTEM)
+            val currentContext = LocalContext.current
+
+            val targetLocale = remember(appLanguage) {
+                appLanguage.toLocale() ?: run {
+                    val systemLocales = Resources.getSystem().configuration.locales
+                    if (!systemLocales.isEmpty) systemLocales[0] else Locale.getDefault()
+                }
+            }
+
+            Locale.setDefault(targetLocale)
+
+            val localizedConfiguration = remember(targetLocale, currentContext) {
+                val config = Configuration(currentContext.resources.configuration)
+                config.setLocale(targetLocale)
+                config
+            }
+
+            val localizedContext = remember(localizedConfiguration, currentContext) {
+                currentContext.createConfigurationContext(localizedConfiguration)
+            }
+
+            CompositionLocalProvider(
+                LocalConfiguration provides localizedConfiguration,
+                LocalContext provides localizedContext
+            ) {
+                JournalTheme {
+                    Surface(
+                        modifier = Modifier.fillMaxSize(),
+                        color = MaterialTheme.colorScheme.background
+                    ) {
+                        MainScreen()
+                    }
                 }
             }
         }

@@ -32,6 +32,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
@@ -41,6 +42,7 @@ import androidx.compose.material.icons.outlined.DeleteForever
 import androidx.compose.material.icons.outlined.FileDownload
 import androidx.compose.material.icons.outlined.FileUpload
 import androidx.compose.material.icons.outlined.Info
+import androidx.compose.material.icons.outlined.Language
 import androidx.compose.material.icons.outlined.Medication
 import androidx.compose.material.icons.outlined.Palette
 import androidx.compose.material.icons.outlined.QuestionAnswer
@@ -54,6 +56,7 @@ import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ModalBottomSheet
+import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.SnackbarDuration
 import androidx.compose.material3.SnackbarHost
@@ -106,6 +109,8 @@ fun SettingsPreview() {
         saveIsTimelineHidden = {},
         areSubstanceHeightsIndependent = false,
         saveAreSubstanceHeightsIndependent = {},
+        appLanguage = AppLanguage.FOLLOW_SYSTEM,
+        saveAppLanguage = {},
     )
 }
 
@@ -134,6 +139,8 @@ fun SettingsScreen(
         saveIsTimelineHidden = viewModel::saveIsTimelineHidden,
         areSubstanceHeightsIndependent = viewModel.areSubstanceHeightsIndependentFlow.collectAsState().value,
         saveAreSubstanceHeightsIndependent = viewModel::saveAreSubstanceHeightsIndependent,
+        appLanguage = viewModel.appLanguageFlow.collectAsState().value,
+        saveAppLanguage = viewModel::saveAppLanguage,
     )
 }
 
@@ -155,6 +162,8 @@ fun SettingsScreen(
     saveIsTimelineHidden: (Boolean) -> Unit,
     areSubstanceHeightsIndependent: Boolean,
     saveAreSubstanceHeightsIndependent: (Boolean) -> Unit,
+    appLanguage: AppLanguage,
+    saveAppLanguage: (AppLanguage) -> Unit,
 ) {
     Scaffold(
         topBar = {
@@ -173,6 +182,54 @@ fun SettingsScreen(
                 .verticalScroll(rememberScrollState())
         ) {
             CardWithTitle(title = stringResource(R.string.settings_section_ui), innerPaddingHorizontal = 0.dp) {
+                var isShowingLanguageDialog by remember { mutableStateOf(false) }
+                SettingsButton(
+                    imageVector = Icons.Outlined.Language,
+                    text = "${stringResource(R.string.settings_language)}: ${stringResource(appLanguage.labelRes)}"
+                ) {
+                    isShowingLanguageDialog = true
+                }
+                if (isShowingLanguageDialog) {
+                    AlertDialog(
+                        onDismissRequest = { isShowingLanguageDialog = false },
+                        title = { Text(stringResource(R.string.settings_language)) },
+                        text = {
+                            Column {
+                                AppLanguage.entries.forEach { lang ->
+                                    Row(
+                                        modifier = Modifier
+                                            .fillMaxWidth()
+                                            .clickable {
+                                                saveAppLanguage(lang)
+                                                isShowingLanguageDialog = false
+                                            }
+                                            .padding(vertical = 12.dp, horizontal = 8.dp),
+                                        verticalAlignment = Alignment.CenterVertically
+                                    ) {
+                                        RadioButton(
+                                            selected = (lang == appLanguage),
+                                            onClick = {
+                                                saveAppLanguage(lang)
+                                                isShowingLanguageDialog = false
+                                            }
+                                        )
+                                        Spacer(modifier = Modifier.width(8.dp))
+                                        Text(
+                                            text = stringResource(lang.labelRes),
+                                            style = MaterialTheme.typography.bodyLarge
+                                        )
+                                    }
+                                }
+                            }
+                        },
+                        confirmButton = {
+                            TextButton(onClick = { isShowingLanguageDialog = false }) {
+                                Text(stringResource(R.string.settings_cancel))
+                            }
+                        }
+                    )
+                }
+                HorizontalDivider()
                 SettingsButton(
                     imageVector = Icons.Outlined.Medication,
                     text = stringResource(R.string.settings_custom_units)
