@@ -18,6 +18,9 @@
 
 package com.isaakhanimann.journal
 
+import android.content.Context
+import android.content.ContextWrapper
+import android.content.res.AssetManager
 import android.content.res.Configuration
 import android.content.res.Resources
 import android.os.Bundle
@@ -42,6 +45,14 @@ import com.isaakhanimann.journal.ui.theme.JournalTheme
 import dagger.hilt.android.AndroidEntryPoint
 import java.util.Locale
 import javax.inject.Inject
+
+class LocalizedActivityContext(
+    base: Context,
+    private val localizedContext: Context
+) : ContextWrapper(base) {
+    override fun getResources(): Resources = localizedContext.resources
+    override fun getAssets(): AssetManager = localizedContext.assets
+}
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -72,13 +83,14 @@ class MainActivity : ComponentActivity() {
                 config
             }
 
-            val localizedContext = remember(localizedConfiguration, currentContext) {
-                currentContext.createConfigurationContext(localizedConfiguration)
+            val wrappedLocalizedContext = remember(localizedConfiguration, currentContext) {
+                val configContext = currentContext.createConfigurationContext(localizedConfiguration)
+                LocalizedActivityContext(base = currentContext, localizedContext = configContext)
             }
 
             CompositionLocalProvider(
                 LocalConfiguration provides localizedConfiguration,
-                LocalContext provides localizedContext
+                LocalContext provides wrappedLocalizedContext
             ) {
                 JournalTheme {
                     Surface(
