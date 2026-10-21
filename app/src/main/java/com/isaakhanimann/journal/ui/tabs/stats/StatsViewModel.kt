@@ -24,6 +24,7 @@ import androidx.lifecycle.viewModelScope
 import com.isaakhanimann.journal.R
 import com.isaakhanimann.journal.data.room.experiences.ExperienceRepository
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
+import com.isaakhanimann.journal.data.room.experiences.entities.AppColor
 import com.isaakhanimann.journal.data.room.experiences.entities.Ingestion
 import com.isaakhanimann.journal.data.room.experiences.entities.SubstanceCompanion
 import com.isaakhanimann.journal.data.room.experiences.relations.ExperienceWithIngestionsAndCompanions
@@ -247,18 +248,36 @@ data class StatsModel(
 )
 
 data class ColorCount(
-    val color: AdaptiveColor,
+    val color: AppColor,
     val count: Int
-)
+) {
+    constructor(color: AdaptiveColor, count: Int) : this(AppColor(color), count)
+}
 
 data class StatItem(
     val substanceName: String,
-    val color: AdaptiveColor,
+    val color: AppColor,
     val experienceCount: Int,
     val ingestionCount: Int,
     val routeCounts: List<RouteCount>,
     val totalDose: TotalDose?,
-)
+) {
+    constructor(
+        substanceName: String,
+        color: AdaptiveColor,
+        experienceCount: Int,
+        ingestionCount: Int,
+        routeCounts: List<RouteCount>,
+        totalDose: TotalDose?
+    ) : this(
+        substanceName = substanceName,
+        color = AppColor(color),
+        experienceCount = experienceCount,
+        ingestionCount = ingestionCount,
+        routeCounts = routeCounts,
+        totalDose = totalDose
+    )
+}
 
 data class RouteCount(
     val administrationRoute: AdministrationRoute,

@@ -72,6 +72,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.isaakhanimann.journal.R
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
+import com.isaakhanimann.journal.data.room.experiences.entities.AppColor
 import com.isaakhanimann.journal.data.room.experiences.entities.CustomSubstance
 import com.isaakhanimann.journal.data.room.experiences.entities.CustomUnit
 import com.isaakhanimann.journal.data.substances.AdministrationRoute
@@ -312,11 +313,16 @@ fun SectionHeader(title: String) {
 
 
 @Composable
-fun ColorCircle(adaptiveColor: AdaptiveColor) {
+fun ColorCircle(color: AppColor) {
     val isDarkTheme = isSystemInDarkTheme()
     Surface(
         shape = CircleShape,
-        color = adaptiveColor.getComposeColor(isDarkTheme),
+        color = color.getComposeColor(isDarkTheme),
         modifier = Modifier.size(25.dp)
     ) {}
+}
+
+@Composable
+fun ColorCircle(adaptiveColor: AdaptiveColor) {
+    ColorCircle(color = AppColor(adaptiveColor))
 }

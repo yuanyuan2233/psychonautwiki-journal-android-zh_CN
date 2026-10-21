@@ -22,6 +22,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.isaakhanimann.journal.data.room.experiences.ExperienceRepository
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
+import com.isaakhanimann.journal.data.room.experiences.entities.AppColor
 import com.isaakhanimann.journal.data.room.experiences.entities.CustomSubstance
 import com.isaakhanimann.journal.data.room.experiences.relations.IngestionWithCompanionAndCustomUnit
 import com.isaakhanimann.journal.data.substances.AdministrationRoute
@@ -201,7 +202,7 @@ class AddIngestionSearchViewModel @Inject constructor(
 
     private fun getCustomUnitSuggestionsForSubstance(
         ingestionsForSubstanceAndRoute: List<IngestionWithCompanionAndCustomUnit>,
-        color: AdaptiveColor
+        color: AppColor
     ): List<Suggestion.CustomUnitSuggestion> {
         val groupedByUnit = ingestionsForSubstanceAndRoute.filter { it.customUnit != null && !(it.customUnit?.isArchived ?: true) }
             .groupBy { it.customUnit }
@@ -232,7 +233,7 @@ class AddIngestionSearchViewModel @Inject constructor(
         ingestionsForSubstanceAndRoute: List<IngestionWithCompanionAndCustomUnit>,
         substance: Substance,
         administrationRoute: AdministrationRoute,
-        color: AdaptiveColor
+        color: AppColor
     ): Suggestion.PureSubstanceSuggestion? {
         val ingestionsToConsider = ingestionsForSubstanceAndRoute.filter { it.customUnit == null }
             .map { it.ingestion }
@@ -263,7 +264,7 @@ class AddIngestionSearchViewModel @Inject constructor(
         ingestionsForSubstanceAndRoute: List<IngestionWithCompanionAndCustomUnit>,
         customSubstance: CustomSubstance,
         administrationRoute: AdministrationRoute,
-        color: AdaptiveColor
+        color: AppColor
     ): Suggestion.CustomSubstanceSuggestion? {
         val ingestionsToConsider = ingestionsForSubstanceAndRoute.filter { it.customUnit == null }
             .map { it.ingestion }

@@ -19,6 +19,7 @@
 package com.isaakhanimann.journal.ui.tabs.journal.addingestion.search.suggestion.models
 
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
+import com.isaakhanimann.journal.data.room.experiences.entities.AppColor
 import com.isaakhanimann.journal.data.room.experiences.entities.CustomSubstance
 import com.isaakhanimann.journal.data.room.experiences.entities.CustomUnit
 import com.isaakhanimann.journal.data.room.experiences.entities.PluralizableUnit
@@ -35,10 +36,24 @@ sealed class Suggestion(open val sortInstant: Instant) {
     data class PureSubstanceSuggestion(
         val administrationRoute: AdministrationRoute,
         val substanceName: String,
-        val adaptiveColor: AdaptiveColor,
+        val adaptiveColor: AppColor,
         val dosesAndUnit: List<DoseAndUnit>,
         override val sortInstant: Instant
     ) : Suggestion(sortInstant = sortInstant) {
+        constructor(
+            administrationRoute: AdministrationRoute,
+            substanceName: String,
+            adaptiveColor: AdaptiveColor,
+            dosesAndUnit: List<DoseAndUnit>,
+            sortInstant: Instant
+        ) : this(
+            administrationRoute = administrationRoute,
+            substanceName = substanceName,
+            adaptiveColor = AppColor(adaptiveColor),
+            dosesAndUnit = dosesAndUnit,
+            sortInstant = sortInstant
+        )
+
         override fun isInSearch(searchText: String, substanceNames: List<String>): Boolean {
             return substanceNames.contains(substanceName)
         }
@@ -46,10 +61,22 @@ sealed class Suggestion(open val sortInstant: Instant) {
 
     data class CustomUnitSuggestion(
         val customUnit: CustomUnit,
-        val adaptiveColor: AdaptiveColor,
+        val adaptiveColor: AppColor,
         val dosesAndUnit: List<CustomUnitDoseSuggestion>,
         override val sortInstant: Instant
     ) : Suggestion(sortInstant = sortInstant) {
+        constructor(
+            customUnit: CustomUnit,
+            adaptiveColor: AdaptiveColor,
+            dosesAndUnit: List<CustomUnitDoseSuggestion>,
+            sortInstant: Instant
+        ) : this(
+            customUnit = customUnit,
+            adaptiveColor = AppColor(adaptiveColor),
+            dosesAndUnit = dosesAndUnit,
+            sortInstant = sortInstant
+        )
+
         override fun isInSearch(searchText: String, substanceNames: List<String>): Boolean {
             if (searchText.isEmpty()) {
                 return true
@@ -70,10 +97,24 @@ sealed class Suggestion(open val sortInstant: Instant) {
     data class CustomSubstanceSuggestion(
         val administrationRoute: AdministrationRoute,
         val customSubstance: CustomSubstance,
-        val adaptiveColor: AdaptiveColor,
+        val adaptiveColor: AppColor,
         val dosesAndUnit: List<DoseAndUnit>,
         override val sortInstant: Instant
     ) : Suggestion(sortInstant = sortInstant) {
+        constructor(
+            administrationRoute: AdministrationRoute,
+            customSubstance: CustomSubstance,
+            adaptiveColor: AdaptiveColor,
+            dosesAndUnit: List<DoseAndUnit>,
+            sortInstant: Instant
+        ) : this(
+            administrationRoute = administrationRoute,
+            customSubstance = customSubstance,
+            adaptiveColor = AppColor(adaptiveColor),
+            dosesAndUnit = dosesAndUnit,
+            sortInstant = sortInstant
+        )
+
         override fun isInSearch(searchText: String, substanceNames: List<String>): Boolean {
             if (searchText.isEmpty()) {
                 return true

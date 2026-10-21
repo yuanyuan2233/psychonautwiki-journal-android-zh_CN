@@ -99,7 +99,7 @@ fun PureSubstanceSuggestionRow(
             .padding(horizontal = horizontalPadding)
     ) {
         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            ColorCircle(adaptiveColor = pureSubstanceSuggestion.adaptiveColor)
+            ColorCircle(color = pureSubstanceSuggestion.adaptiveColor)
             val routeName = stringResource(pureSubstanceSuggestion.administrationRoute.getLocalizedNameRes())
             val localizedName = com.isaakhanimann.journal.ui.tabs.search.SubstanceLocalizationHelper.getSubstanceDisplayName(pureSubstanceSuggestion.substanceName)
             Text(
@@ -176,7 +176,7 @@ fun CustomUnitSuggestionRow(
     ) {
         val customUnit = customUnitSuggestion.customUnit
         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            ColorCircle(adaptiveColor = customUnitSuggestion.adaptiveColor)
+            ColorCircle(color = customUnitSuggestion.adaptiveColor)
             val routeName = stringResource(customUnit.administrationRoute.getLocalizedNameRes())
             Text(
                 text = "${customUnit.substanceName} $routeName, ${customUnit.name}",
@@ -227,7 +227,7 @@ fun CustomSubstanceSuggestionRow(
             .padding(horizontal = horizontalPadding)
     ) {
         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            ColorCircle(adaptiveColor = customSubstanceSuggestion.adaptiveColor)
+            ColorCircle(color = customSubstanceSuggestion.adaptiveColor)
             val routeName = stringResource(customSubstanceSuggestion.administrationRoute.getLocalizedNameRes())
             Text(
                 text = "${customSubstanceSuggestion.customSubstance.name} $routeName",

@@ -27,6 +27,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
 import com.isaakhanimann.journal.data.room.experiences.ExperienceRepository
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
+import com.isaakhanimann.journal.data.room.experiences.entities.AppColor
 import com.isaakhanimann.journal.data.room.experiences.entities.TimedNote
 import com.isaakhanimann.journal.ui.main.navigation.graphs.EditTimedNoteRoute
 import com.isaakhanimann.journal.ui.utils.getInstant
@@ -49,7 +50,7 @@ class EditTimedNoteViewModel @Inject constructor(
     state: SavedStateHandle
 ) : ViewModel() {
     var note by mutableStateOf("")
-    var color by mutableStateOf(AdaptiveColor.BLUE)
+    var color by mutableStateOf(AppColor.BLUE)
     var isPartOfTimeline by mutableStateOf(true)
     var localDateTimeFlow = MutableStateFlow(LocalDateTime.now())
     private var timedNote: TimedNote? = null
@@ -88,14 +89,18 @@ class EditTimedNoteViewModel @Inject constructor(
         note = newNote
     }
 
-    fun onChangeColor(newColor: AdaptiveColor) {
+    fun onChangeColor(newColor: AppColor) {
         color = newColor
+    }
+
+    fun onChangeColor(newColor: AdaptiveColor) {
+        color = AppColor(newColor)
     }
 
     private val ingestionsFlow = experienceRepo.getIngestionsWithCompanionsFlow(experienceId)
     private val timedNotesFlow = experienceRepo.getTimedNotesFlowSorted(experienceId)
 
-    val alreadyUsedColorsFlow: StateFlow<List<AdaptiveColor>> =
+    val alreadyUsedColorsFlow: StateFlow<List<AppColor>> =
         ingestionsFlow.combine(timedNotesFlow) { ingestions, notes ->
             val companionColors = ingestions.mapNotNull { it.substanceCompanion?.color }
             val noteColors = notes.map { it.color }
@@ -106,9 +111,9 @@ class EditTimedNoteViewModel @Inject constructor(
             started = SharingStarted.WhileSubscribed(5000)
         )
 
-    val otherColorsFlow: StateFlow<List<AdaptiveColor>> =
+    val otherColorsFlow: StateFlow<List<AppColor>> =
         alreadyUsedColorsFlow.map { alreadyUsedColors ->
-            AdaptiveColor.entries.filter {
+            AdaptiveColor.entries.map { AppColor(it) }.filter {
                 !alreadyUsedColors.contains(it)
             }
         }.stateIn(

@@ -19,6 +19,7 @@
 package com.isaakhanimann.journal.ui.tabs.journal.experience.components
 
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
+import com.isaakhanimann.journal.data.room.experiences.entities.AppColor
 import com.isaakhanimann.journal.data.substances.AdministrationRoute
 import com.isaakhanimann.journal.data.substances.classes.roa.RoaDuration
 import java.time.Instant
@@ -29,7 +30,27 @@ data class DataForOneEffectLine(
     val roaDuration: RoaDuration?,
     val height: Float,
     val horizontalWeight: Float,
-    val color: AdaptiveColor,
+    val color: AppColor,
     val startTime: Instant,
     val endTime: Instant?
-)
+) {
+    constructor(
+        substanceName: String,
+        route: AdministrationRoute,
+        roaDuration: RoaDuration?,
+        height: Float,
+        horizontalWeight: Float,
+        color: AdaptiveColor,
+        startTime: Instant,
+        endTime: Instant?
+    ) : this(
+        substanceName = substanceName,
+        route = route,
+        roaDuration = roaDuration,
+        height = height,
+        horizontalWeight = horizontalWeight,
+        color = AppColor(color),
+        startTime = startTime,
+        endTime = endTime
+    )
+}

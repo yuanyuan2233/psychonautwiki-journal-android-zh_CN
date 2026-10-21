@@ -7,6 +7,7 @@
 package com.isaakhanimann.journal.ui.tabs.stats.tolerance
 
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
+import com.isaakhanimann.journal.data.room.experiences.entities.AppColor
 import java.time.Instant
 
 enum class ToleranceType {
@@ -45,10 +46,28 @@ data class ToleranceWindow(
     val start: Instant,
     val end: Instant,
     val toleranceType: ToleranceType,
-    val adaptiveColor: AdaptiveColor,
+    val adaptiveColor: AppColor,
     val isUserCustomized: Boolean = false,
     val customNote: String? = null
 ) {
+    constructor(
+        substanceName: String,
+        start: Instant,
+        end: Instant,
+        toleranceType: ToleranceType,
+        adaptiveColor: AdaptiveColor,
+        isUserCustomized: Boolean = false,
+        customNote: String? = null
+    ) : this(
+        substanceName = substanceName,
+        start = start,
+        end = end,
+        toleranceType = toleranceType,
+        adaptiveColor = AppColor(adaptiveColor),
+        isUserCustomized = isUserCustomized,
+        customNote = customNote
+    )
+
     fun contains(instant: Instant): Boolean {
         return !instant.isBefore(start) && !instant.isAfter(end)
     }

@@ -19,6 +19,7 @@
 package com.isaakhanimann.journal.data.room.experiences.entities
 
 import androidx.room.Entity
+import androidx.room.Ignore
 import androidx.room.PrimaryKey
 import kotlinx.serialization.Serializable
 
@@ -27,5 +28,11 @@ import kotlinx.serialization.Serializable
 data class SubstanceCompanion(
     @PrimaryKey(autoGenerate = false)
     val substanceName: String,
-    var color: AdaptiveColor,
-)
+    var color: AppColor,
+) {
+    @Ignore
+    constructor(substanceName: String, color: AdaptiveColor) : this(
+        substanceName = substanceName,
+        color = AppColor(color)
+    )
+}

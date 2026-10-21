@@ -27,6 +27,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
 import com.isaakhanimann.journal.data.room.experiences.ExperienceRepository
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
+import com.isaakhanimann.journal.data.room.experiences.entities.AppColor
 import com.isaakhanimann.journal.data.room.experiences.entities.TimedNote
 import com.isaakhanimann.journal.ui.main.navigation.graphs.AddTimedNoteRoute
 import com.isaakhanimann.journal.ui.utils.getInstant
@@ -45,12 +46,12 @@ class AddTimedNoteViewModel @Inject constructor(
     state: SavedStateHandle
 ) : ViewModel() {
     var note by mutableStateOf("")
-    var color by mutableStateOf(AdaptiveColor.BLUE)
+    var color by mutableStateOf(AppColor.BLUE)
     var isPartOfTimeline by mutableStateOf(true)
     val experienceId = state.toRoute<AddTimedNoteRoute>().experienceId
     var localDateTimeFlow = MutableStateFlow(LocalDateTime.now())
-    var alreadyUsedColors by mutableStateOf(emptyList<AdaptiveColor>())
-    var otherColors by mutableStateOf(emptyList<AdaptiveColor>())
+    var alreadyUsedColors by mutableStateOf(emptyList<AppColor>())
+    var otherColors by mutableStateOf(emptyList<AppColor>())
 
     init {
         viewModelScope.launch {
@@ -59,10 +60,10 @@ class AddTimedNoteViewModel @Inject constructor(
             val notes = experienceRepo.getTimedNotes(experienceId)
             val noteColors = notes.map { it.color }.distinct()
             alreadyUsedColors = (substanceColors + noteColors).distinct()
-            otherColors = AdaptiveColor.entries.filter {
+            otherColors = AdaptiveColor.entries.map { AppColor(it) }.filter {
                 !alreadyUsedColors.contains(it)
             }
-            color = otherColors.randomOrNull() ?: AdaptiveColor.BLUE
+            color = otherColors.randomOrNull() ?: AppColor.BLUE
             val lastIngestionTime = ingestionsWithCompanions.maxOfOrNull { it.ingestion.time }
             if (lastIngestionTime != null) {
                 if (Duration.between(lastIngestionTime, Instant.now()).toHours() > 12) {
@@ -86,8 +87,12 @@ class AddTimedNoteViewModel @Inject constructor(
         note = newNote
     }
 
-    fun onChangeColor(newColor: AdaptiveColor) {
+    fun onChangeColor(newColor: AppColor) {
         color = newColor
+    }
+
+    fun onChangeColor(newColor: AdaptiveColor) {
+        color = AppColor(newColor)
     }
 
     fun onDoneTap() {

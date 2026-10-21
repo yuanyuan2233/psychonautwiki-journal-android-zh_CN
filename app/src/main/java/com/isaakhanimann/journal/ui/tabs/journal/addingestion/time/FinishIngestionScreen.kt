@@ -82,6 +82,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.isaakhanimann.journal.R
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
+import com.isaakhanimann.journal.data.room.experiences.entities.AppColor
 import com.isaakhanimann.journal.data.room.experiences.relations.ExperienceWithIngestions
 import com.isaakhanimann.journal.ui.YOU
 import com.isaakhanimann.journal.ui.tabs.journal.experience.components.CardWithTitle
@@ -136,8 +137,8 @@ fun FinishIngestionScreen(
 @Preview
 @Composable
 fun FinishIngestionScreenPreview() {
-    val alreadyUsedColors = listOf(AdaptiveColor.BLUE, AdaptiveColor.PINK)
-    val otherColors = AdaptiveColor.entries.filter { color ->
+    val alreadyUsedColors = listOf(AppColor.BLUE, AppColor.PINK)
+    val otherColors = AdaptiveColor.entries.map { AppColor(it) }.filter { color ->
         !alreadyUsedColors.contains(color)
     }
     FinishIngestionScreen(
@@ -150,7 +151,7 @@ fun FinishIngestionScreenPreview() {
         onChangeEndDateOrTime = {},
         isLoadingColor = false,
         isShowingColorPicker = true,
-        selectedColor = AdaptiveColor.BLUE,
+        selectedColor = AppColor.BLUE,
         onChangeColor = {},
         alreadyUsedColors = alreadyUsedColors,
         otherColors = otherColors,
@@ -185,10 +186,10 @@ fun FinishIngestionScreen(
     localDateTimeEnd: LocalDateTime,
     isLoadingColor: Boolean,
     isShowingColorPicker: Boolean,
-    selectedColor: AdaptiveColor,
-    onChangeColor: (AdaptiveColor) -> Unit,
-    alreadyUsedColors: List<AdaptiveColor>,
-    otherColors: List<AdaptiveColor>,
+    selectedColor: AppColor,
+    onChangeColor: (AppColor) -> Unit,
+    alreadyUsedColors: List<AppColor>,
+    otherColors: List<AppColor>,
     previousNotes: List<String>,
     note: String,
     onNoteChange: (String) -> Unit,

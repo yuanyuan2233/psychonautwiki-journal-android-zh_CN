@@ -40,6 +40,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
+import com.isaakhanimann.journal.data.room.experiences.entities.AppColor
 import com.isaakhanimann.journal.data.room.experiences.entities.SubstanceCompanion
 import com.isaakhanimann.journal.ui.tabs.journal.addingestion.time.ColorPicker
 import androidx.compose.material.icons.Icons
@@ -71,17 +72,17 @@ fun SubstanceColorsScreen(
 @Preview
 @Composable
 fun SubstanceColorsScreenPreview() {
-    val alreadyUsedColors = listOf(AdaptiveColor.OLIVE, AdaptiveColor.AUBURN)
-    val otherColors = AdaptiveColor.entries.filter { !alreadyUsedColors.contains(it) }
+    val alreadyUsedColors = listOf(AppColor.OLIVE, AppColor.AUBURN)
+    val otherColors = AdaptiveColor.entries.map { AppColor(it) }.filter { !alreadyUsedColors.contains(it) }
     SubstanceColorsScreenContent(
         substanceCompanions = listOf(
-            SubstanceCompanion(substanceName = "Substance 1", color = AdaptiveColor.AUBURN),
-            SubstanceCompanion(substanceName = "Substance 2", color = AdaptiveColor.BLUE),
+            SubstanceCompanion(substanceName = "Substance 1", color = AppColor.AUBURN),
+            SubstanceCompanion(substanceName = "Substance 2", color = AppColor.BLUE),
             SubstanceCompanion(
                 substanceName = "Substance with longer 3",
-                color = AdaptiveColor.YELLOW
+                color = AppColor.YELLOW
             ),
-            SubstanceCompanion(substanceName = "Substance 4", color = AdaptiveColor.OLIVE),
+            SubstanceCompanion(substanceName = "Substance 4", color = AppColor.OLIVE),
         ),
         updateColor = { _, _ -> },
         alreadyUsedColors = alreadyUsedColors,
@@ -94,9 +95,9 @@ fun SubstanceColorsScreenPreview() {
 @Composable
 fun SubstanceColorsScreenContent(
     substanceCompanions: List<SubstanceCompanion>,
-    updateColor: (color: AdaptiveColor, substanceName: String) -> Unit,
-    alreadyUsedColors: List<AdaptiveColor>,
-    otherColors: List<AdaptiveColor>,
+    updateColor: (color: AppColor, substanceName: String) -> Unit,
+    alreadyUsedColors: List<AppColor>,
+    otherColors: List<AppColor>,
     navigateBack: () -> Unit = {}
 ) {
     Scaffold(

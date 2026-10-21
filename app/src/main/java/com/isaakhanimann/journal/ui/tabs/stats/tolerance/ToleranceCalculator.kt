@@ -7,6 +7,7 @@
 package com.isaakhanimann.journal.ui.tabs.stats.tolerance
 
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
+import com.isaakhanimann.journal.data.room.experiences.entities.AppColor
 import com.isaakhanimann.journal.data.room.experiences.entities.SubstanceCompanion
 import com.isaakhanimann.journal.data.substances.repositories.SubstanceRepositoryInterface
 import java.time.Instant
@@ -226,27 +227,28 @@ object ToleranceCalculator {
     ): List<ToleranceWindow> {
         val companionMap = substanceCompanions.associate { it.substanceName to it.color }
         val allColors = AdaptiveColor.values().toList()
-        val usedColors = substanceCompanions.map { it.color }.toSet()
-        val availableColors = allColors.filter { it !in usedColors }
+        val usedColors = substanceCompanions.mapNotNull { it.color.adaptiveColor }.toSet()
+        val availableColors = allColors.filter { it !in usedColors }.map { AppColor(it) }
+        val allAppColors = allColors.map { AppColor(it) }
 
         val presetColors = mapOf(
-            "Psilocybin" to AdaptiveColor.PURPLE,
-            "Ketamine" to AdaptiveColor.TEAL,
-            "MDMA" to AdaptiveColor.HOT_PINK,
-            "LSD" to AdaptiveColor.DARK_ORANGE,
-            "2C-B" to AdaptiveColor.CYAN,
-            "Amphetamine" to AdaptiveColor.RED,
-            "Cannabis" to AdaptiveColor.LIME_GREEN,
-            "DXM" to AdaptiveColor.ROYAL_BLUE,
-            "Caffeine" to AdaptiveColor.GOLD,
-            "Mescaline" to AdaptiveColor.CORAL
+            "Psilocybin" to AppColor.PURPLE,
+            "Ketamine" to AppColor.TEAL,
+            "MDMA" to AppColor.HOT_PINK,
+            "LSD" to AppColor.DARK_ORANGE,
+            "2C-B" to AppColor.CYAN,
+            "Amphetamine" to AppColor.RED,
+            "Cannabis" to AppColor.LIME_GREEN,
+            "DXM" to AppColor.ROYAL_BLUE,
+            "Caffeine" to AppColor.GOLD,
+            "Mescaline" to AppColor.CORAL
         )
 
         return substanceIntervals.mapIndexed { index, interval ->
-            val color = companionMap[interval.substanceName]
+            val color: AppColor = companionMap[interval.substanceName]
                 ?: presetColors[interval.substanceName]
                 ?: availableColors.getOrNull(index % max(1, availableColors.size))
-                ?: allColors[index % allColors.size]
+                ?: allAppColors[index % allAppColors.size]
 
             val custom = customizations[interval.substanceName]
             val isCustom = interval.isUserCustomized || custom != null

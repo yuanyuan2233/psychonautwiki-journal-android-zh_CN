@@ -69,6 +69,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.isaakhanimann.journal.R
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
+import com.isaakhanimann.journal.data.room.experiences.entities.AppColor
 
 @Preview
 @Composable
@@ -87,10 +88,10 @@ fun ColorPickerPreview() {
 
 @Composable
 fun ColorPicker(
-    selectedColor: AdaptiveColor,
-    onChangeOfColor: (AdaptiveColor) -> Unit,
-    alreadyUsedColors: List<AdaptiveColor>,
-    otherColors: List<AdaptiveColor>
+    selectedColor: AppColor,
+    onChangeOfColor: (AppColor) -> Unit,
+    alreadyUsedColors: List<AppColor>,
+    otherColors: List<AppColor>
 ) {
     val isDarkTheme = isSystemInDarkTheme()
     var isColorPickerVisible by remember {
@@ -122,6 +123,21 @@ fun ColorPicker(
     }
 }
 
+@Composable
+fun ColorPicker(
+    selectedColor: AdaptiveColor,
+    onChangeOfColor: (AdaptiveColor) -> Unit,
+    alreadyUsedColors: List<AdaptiveColor>,
+    otherColors: List<AdaptiveColor>
+) {
+    ColorPicker(
+        selectedColor = AppColor(selectedColor),
+        onChangeOfColor = { onChangeOfColor(it.toAdaptiveColor()) },
+        alreadyUsedColors = alreadyUsedColors.map { AppColor(it) },
+        otherColors = otherColors.map { AppColor(it) }
+    )
+}
+
 @Preview
 @Composable
 fun ColorDialogPreview() {
@@ -141,10 +157,10 @@ fun ColorDialogPreview() {
 @Composable
 fun ColorDialog(
     dismiss: () -> Unit,
-    selectedColor: AdaptiveColor? = null,
-    onChangeOfColor: (AdaptiveColor) -> Unit,
-    alreadyUsedColors: List<AdaptiveColor>,
-    otherColors: List<AdaptiveColor>
+    selectedColor: AppColor? = null,
+    onChangeOfColor: (AppColor) -> Unit,
+    alreadyUsedColors: List<AppColor>,
+    otherColors: List<AppColor>
 ) {
     val isDarkTheme = isSystemInDarkTheme()
     var currentFamily by remember { mutableStateOf<ColorFamily?>(null) }
@@ -230,14 +246,31 @@ fun ColorDialog(
     )
 }
 
+@Composable
+fun ColorDialog(
+    dismiss: () -> Unit,
+    selectedColor: AdaptiveColor? = null,
+    onChangeOfColor: (AdaptiveColor) -> Unit,
+    alreadyUsedColors: List<AdaptiveColor>,
+    otherColors: List<AdaptiveColor>
+) {
+    ColorDialog(
+        dismiss = dismiss,
+        selectedColor = selectedColor?.let { AppColor(it) },
+        onChangeOfColor = { onChangeOfColor(it.toAdaptiveColor()) },
+        alreadyUsedColors = alreadyUsedColors.map { AppColor(it) },
+        otherColors = otherColors.map { AppColor(it) }
+    )
+}
+
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 private fun BaseHuesView(
-    selectedColor: AdaptiveColor?,
-    alreadyUsedColors: List<AdaptiveColor>,
+    selectedColor: AppColor?,
+    alreadyUsedColors: List<AppColor>,
     isDarkTheme: Boolean,
     onSelectFamily: (ColorFamily) -> Unit,
-    onSelectDirectColor: (AdaptiveColor) -> Unit
+    onSelectDirectColor: (AppColor) -> Unit
 ) {
     Column(modifier = Modifier.fillMaxWidth()) {
         Text(
@@ -253,7 +286,7 @@ private fun BaseHuesView(
             modifier = Modifier.fillMaxWidth()
         ) {
             ColorFamily.entries.forEach { family ->
-                val isSelectedFamily = selectedColor != null && family.shades.contains(selectedColor)
+                val isSelectedFamily = selectedColor?.adaptiveColor != null && family.shades.contains(selectedColor.adaptiveColor)
                 BaseHueSwatch(
                     family = family,
                     isSelectedFamily = isSelectedFamily,
@@ -296,10 +329,10 @@ private fun BaseHuesView(
 @Composable
 private fun ShadesView(
     family: ColorFamily,
-    selectedColor: AdaptiveColor?,
-    alreadyUsedColors: List<AdaptiveColor>,
+    selectedColor: AppColor?,
+    alreadyUsedColors: List<AppColor>,
     isDarkTheme: Boolean,
-    onSelectShade: (AdaptiveColor) -> Unit
+    onSelectShade: (AppColor) -> Unit
 ) {
     Column(modifier = Modifier.fillMaxWidth()) {
         Text(
@@ -315,12 +348,13 @@ private fun ShadesView(
             modifier = Modifier.fillMaxWidth()
         ) {
             family.shades.forEach { shade ->
+                val shadeAppColor = AppColor(shade)
                 ShadeSwatch(
-                    color = shade,
-                    isSelected = shade == selectedColor,
-                    isAlreadyUsed = alreadyUsedColors.contains(shade),
+                    color = shadeAppColor,
+                    isSelected = selectedColor != null && (selectedColor.adaptiveColor == shade || selectedColor.rawValue.equals(shade.name, ignoreCase = true)),
+                    isAlreadyUsed = alreadyUsedColors.any { it.adaptiveColor == shade || it.rawValue.equals(shade.name, ignoreCase = true) },
                     isDarkTheme = isDarkTheme,
-                    onClick = { onSelectShade(shade) }
+                    onClick = { onSelectShade(shadeAppColor) }
                 )
             }
         }
@@ -381,7 +415,7 @@ private fun BaseHueSwatch(
 
 @Composable
 private fun ShadeSwatch(
-    color: AdaptiveColor,
+    color: AppColor,
     isSelected: Boolean,
     isAlreadyUsed: Boolean,
     isDarkTheme: Boolean,
@@ -412,7 +446,7 @@ private fun ShadeSwatch(
         modifier = Modifier
             .size(52.dp)
             .then(borderModifier)
-            .semantics { contentDescription = color.name }
+            .semantics { contentDescription = color.rawValue }
     ) {
         Box(
             modifier = Modifier.fillMaxSize(),
@@ -440,6 +474,21 @@ private fun ShadeSwatch(
         }
     }
 }
+
+@Composable
+private fun ShadeSwatch(
+    color: AdaptiveColor,
+    isSelected: Boolean,
+    isAlreadyUsed: Boolean,
+    isDarkTheme: Boolean,
+    onClick: () -> Unit
+) = ShadeSwatch(
+    color = AppColor(color),
+    isSelected = isSelected,
+    isAlreadyUsed = isAlreadyUsed,
+    isDarkTheme = isDarkTheme,
+    onClick = onClick
+)
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable

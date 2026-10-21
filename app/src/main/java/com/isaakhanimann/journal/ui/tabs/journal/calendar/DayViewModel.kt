@@ -21,6 +21,7 @@ package com.isaakhanimann.journal.ui.tabs.journal.calendar
 import androidx.lifecycle.ViewModel
 import com.isaakhanimann.journal.data.room.experiences.ExperienceRepository
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
+import com.isaakhanimann.journal.data.room.experiences.entities.AppColor
 import com.isaakhanimann.journal.ui.utils.getInstant
 import com.kizitonwose.calendar.core.CalendarDay
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -48,5 +49,5 @@ class DayViewModel @Inject constructor(
 
 data class ExperienceInfo(
     val experienceIds: List<Int>,
-    val colors: List<AdaptiveColor>
+    val colors: List<AppColor>
 )

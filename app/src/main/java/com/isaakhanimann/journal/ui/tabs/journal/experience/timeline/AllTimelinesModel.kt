@@ -19,6 +19,7 @@
 package com.isaakhanimann.journal.ui.tabs.journal.experience.timeline
 
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
+import com.isaakhanimann.journal.data.room.experiences.entities.AppColor
 import com.isaakhanimann.journal.data.substances.classes.roa.RoaDuration
 import com.isaakhanimann.journal.ui.tabs.journal.experience.components.DataForOneEffectLine
 import com.isaakhanimann.journal.ui.tabs.journal.experience.timeline.drawables.AxisDrawable
@@ -40,10 +41,20 @@ class AllTimelinesModel(
     val axisDrawable: AxisDrawable
 
     data class RoaGroup(
-        val color: AdaptiveColor,
+        val color: AppColor,
         val roaDuration: RoaDuration?,
         val weightedLines: List<WeightedLine>
-    )
+    ) {
+        constructor(
+            color: AdaptiveColor,
+            roaDuration: RoaDuration?,
+            weightedLines: List<WeightedLine>
+        ) : this(
+            color = AppColor(color),
+            roaDuration = roaDuration,
+            weightedLines = weightedLines
+        )
+    }
 
     init {
         val ratingTimes = dataForRatings.map { it.time }

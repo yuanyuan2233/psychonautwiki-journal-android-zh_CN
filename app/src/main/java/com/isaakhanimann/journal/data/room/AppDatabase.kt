@@ -23,6 +23,7 @@ import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import com.isaakhanimann.journal.data.room.experiences.ExperienceDao
+import com.isaakhanimann.journal.data.room.experiences.entities.ColorConverter
 import com.isaakhanimann.journal.data.room.experiences.entities.CustomSubstance
 import com.isaakhanimann.journal.data.room.experiences.entities.CustomUnit
 import com.isaakhanimann.journal.data.room.experiences.entities.Experience
@@ -32,9 +33,9 @@ import com.isaakhanimann.journal.data.room.experiences.entities.ShulginRating
 import com.isaakhanimann.journal.data.room.experiences.entities.SubstanceCompanion
 import com.isaakhanimann.journal.data.room.experiences.entities.TimedNote
 
-@TypeConverters(InstantConverter::class)
+@TypeConverters(InstantConverter::class, ColorConverter::class)
 @Database(
-    version = 7,
+    version = 8,
     entities = [Experience::class, Ingestion::class, SubstanceCompanion::class, CustomSubstance::class, ShulginRating::class, TimedNote::class, CustomUnit::class],
     autoMigrations = [
         AutoMigration (from = 1, to = 2),
@@ -43,6 +44,7 @@ import com.isaakhanimann.journal.data.room.experiences.entities.TimedNote
         AutoMigration (from = 4, to = 5),
         AutoMigration (from = 5, to = 6),
         AutoMigration (from = 6, to = 7),
+        AutoMigration (from = 7, to = 8),
     ]
 )
 abstract class AppDatabase : RoomDatabase() {

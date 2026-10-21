@@ -22,6 +22,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.isaakhanimann.journal.data.room.experiences.ExperienceRepository
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
+import com.isaakhanimann.journal.data.room.experiences.entities.AppColor
 import com.isaakhanimann.journal.data.room.experiences.entities.SubstanceCompanion
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -52,7 +53,7 @@ class SubstanceColorsViewModel @Inject constructor(
         experienceRepository.deleteUnusedSubstanceCompanions()
     }
 
-    fun updateColor(color: AdaptiveColor, substanceName: String) {
+    fun updateColor(color: AppColor, substanceName: String) {
         viewModelScope.launch {
             val updatedList = _substanceCompanionsFlow.value.map { companion ->
                 if (companion.substanceName == substanceName) {
@@ -67,7 +68,11 @@ class SubstanceColorsViewModel @Inject constructor(
         }
     }
 
-    val alreadyUsedColorsFlow: StateFlow<List<AdaptiveColor>> =
+    fun updateColor(color: AdaptiveColor, substanceName: String) {
+        updateColor(AppColor(color), substanceName)
+    }
+
+    val alreadyUsedColorsFlow: StateFlow<List<AppColor>> =
         _substanceCompanionsFlow.map { companions ->
             companions.map { it.color }.distinct()
         }.stateIn(
@@ -76,9 +81,9 @@ class SubstanceColorsViewModel @Inject constructor(
             started = SharingStarted.WhileSubscribed(5000)
         )
 
-    val otherColorsFlow: StateFlow<List<AdaptiveColor>> =
+    val otherColorsFlow: StateFlow<List<AppColor>> =
         alreadyUsedColorsFlow.map { alreadyUsedColors ->
-            AdaptiveColor.entries.filter {
+            AdaptiveColor.entries.map { AppColor(it) }.filter {
                 !alreadyUsedColors.contains(it)
             }
         }.stateIn(
@@ -86,5 +91,4 @@ class SubstanceColorsViewModel @Inject constructor(
             scope = viewModelScope,
             started = SharingStarted.WhileSubscribed(5000)
         )
-
 }

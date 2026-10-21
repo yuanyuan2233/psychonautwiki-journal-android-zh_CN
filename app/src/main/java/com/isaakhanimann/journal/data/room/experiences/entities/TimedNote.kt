@@ -19,6 +19,7 @@
 package com.isaakhanimann.journal.data.room.experiences.entities
 
 import androidx.room.Entity
+import androidx.room.Ignore
 import androidx.room.PrimaryKey
 import java.time.Instant
 
@@ -29,7 +30,26 @@ data class TimedNote(
     var creationDate: Instant = Instant.now(),
     var time: Instant,
     var note: String,
-    var color: AdaptiveColor,
+    var color: AppColor,
     var experienceId: Int,
     var isPartOfTimeline: Boolean
-)
+) {
+    @Ignore
+    constructor(
+        id: Int = 0,
+        creationDate: Instant = Instant.now(),
+        time: Instant,
+        note: String,
+        color: AdaptiveColor,
+        experienceId: Int,
+        isPartOfTimeline: Boolean
+    ) : this(
+        id = id,
+        creationDate = creationDate,
+        time = time,
+        note = note,
+        color = AppColor(color),
+        experienceId = experienceId,
+        isPartOfTimeline = isPartOfTimeline
+    )
+}

@@ -39,6 +39,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.isaakhanimann.journal.R
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
+import com.isaakhanimann.journal.data.room.experiences.entities.AppColor
 import com.isaakhanimann.journal.ui.tabs.journal.addingestion.time.ColorPicker
 import com.isaakhanimann.journal.ui.tabs.journal.experience.components.CardWithTitle
 import com.isaakhanimann.journal.ui.tabs.journal.experience.rating.TimePickerSection
@@ -63,8 +64,8 @@ fun TimedNoteScreenContentPreview() {
             )
         },
     ) { padding ->
-        val alreadyUsedColors = listOf(AdaptiveColor.BLUE, AdaptiveColor.PINK)
-        val otherColors = AdaptiveColor.entries.filter { color ->
+        val alreadyUsedColors = listOf(AppColor.BLUE, AppColor.PINK)
+        val otherColors = AdaptiveColor.entries.map { AppColor(it) }.filter { color ->
             !alreadyUsedColors.contains(color)
         }
         TimedNoteScreenContent(
@@ -72,7 +73,7 @@ fun TimedNoteScreenContentPreview() {
             onTimeChange = {},
             note = "Hello this is",
             onNoteChange = {},
-            color = AdaptiveColor.PURPLE,
+            color = AppColor.PURPLE,
             onColorChange = {},
             modifier = Modifier
                 .padding(padding),
@@ -90,10 +91,10 @@ fun TimedNoteScreenContent(
     onTimeChange: (LocalDateTime) -> Unit,
     note: String,
     onNoteChange: (String) -> Unit,
-    color: AdaptiveColor,
-    onColorChange: (AdaptiveColor) -> Unit,
-    alreadyUsedColors: List<AdaptiveColor>,
-    otherColors: List<AdaptiveColor>,
+    color: AppColor,
+    onColorChange: (AppColor) -> Unit,
+    alreadyUsedColors: List<AppColor>,
+    otherColors: List<AppColor>,
     isPartOfTimeline: Boolean,
     onChangeOfIsPartOfTimeline: (Boolean) -> Unit,
     shouldFocusTextFieldOnAppear: Boolean = false,
@@ -153,4 +154,35 @@ fun TimedNoteScreenContent(
         }
         TimePickerSection(selectedTime = selectedTime, onTimeChange = onTimeChange)
     }
+}
+
+@Composable
+fun TimedNoteScreenContent(
+    selectedTime: LocalDateTime,
+    onTimeChange: (LocalDateTime) -> Unit,
+    note: String,
+    onNoteChange: (String) -> Unit,
+    color: AdaptiveColor,
+    onColorChange: (AdaptiveColor) -> Unit,
+    alreadyUsedColors: List<AdaptiveColor>,
+    otherColors: List<AdaptiveColor>,
+    isPartOfTimeline: Boolean,
+    onChangeOfIsPartOfTimeline: (Boolean) -> Unit,
+    shouldFocusTextFieldOnAppear: Boolean = false,
+    modifier: Modifier
+) {
+    TimedNoteScreenContent(
+        selectedTime = selectedTime,
+        onTimeChange = onTimeChange,
+        note = note,
+        onNoteChange = onNoteChange,
+        color = AppColor(color),
+        onColorChange = { onColorChange(it.toAdaptiveColor()) },
+        alreadyUsedColors = alreadyUsedColors.map { AppColor(it) },
+        otherColors = otherColors.map { AppColor(it) },
+        isPartOfTimeline = isPartOfTimeline,
+        onChangeOfIsPartOfTimeline = onChangeOfIsPartOfTimeline,
+        shouldFocusTextFieldOnAppear = shouldFocusTextFieldOnAppear,
+        modifier = modifier
+    )
 }

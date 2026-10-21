@@ -27,6 +27,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
 import com.isaakhanimann.journal.data.room.experiences.ExperienceRepository
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
+import com.isaakhanimann.journal.data.room.experiences.entities.AppColor
 import com.isaakhanimann.journal.data.room.experiences.entities.Experience
 import com.isaakhanimann.journal.data.room.experiences.entities.Ingestion
 import com.isaakhanimann.journal.data.room.experiences.entities.SubstanceCompanion
@@ -97,7 +98,7 @@ class FinishIngestionScreenViewModel @Inject constructor(
 
     var isLoadingColor by mutableStateOf(true)
     var isShowingColorPicker by mutableStateOf(false)
-    var selectedColor by mutableStateOf(AdaptiveColor.BLUE)
+    var selectedColor by mutableStateOf(AppColor.BLUE)
     var note by mutableStateOf("")
     private var hasTitleBeenChanged = false
 
@@ -129,7 +130,7 @@ class FinishIngestionScreenViewModel @Inject constructor(
 
     private val companionFlow = experienceRepo.getAllSubstanceCompanionsFlow()
 
-    val alreadyUsedColorsFlow: StateFlow<List<AdaptiveColor>> =
+    val alreadyUsedColorsFlow: StateFlow<List<AppColor>> =
         companionFlow.map { companions ->
             companions.map { it.color }.distinct()
         }.stateIn(
@@ -138,9 +139,9 @@ class FinishIngestionScreenViewModel @Inject constructor(
             started = SharingStarted.WhileSubscribed(5000)
         )
 
-    val otherColorsFlow: StateFlow<List<AdaptiveColor>> =
+    val otherColorsFlow: StateFlow<List<AppColor>> =
         alreadyUsedColorsFlow.map { alreadyUsedColors ->
-            AdaptiveColor.entries.filter {
+            AdaptiveColor.entries.map { AppColor(it) }.filter {
                 !alreadyUsedColors.contains(it)
             }
         }.stateIn(
@@ -193,9 +194,9 @@ class FinishIngestionScreenViewModel @Inject constructor(
             if (thisCompanion == null) {
                 isShowingColorPicker = true
                 val alreadyUsedColors = allCompanions.map { it.color }
-                val otherColors = AdaptiveColor.entries.filter { !alreadyUsedColors.contains(it) }
+                val otherColors = AdaptiveColor.entries.map { AppColor(it) }.filter { !alreadyUsedColors.contains(it) }
                 selectedColor = otherColors.filter { it.isPreferred }.randomOrNull()
-                    ?: otherColors.randomOrNull() ?: AdaptiveColor.entries.random()
+                    ?: otherColors.randomOrNull() ?: AppColor(AdaptiveColor.entries.random())
             } else {
                 selectedColor = thisCompanion.color
             }

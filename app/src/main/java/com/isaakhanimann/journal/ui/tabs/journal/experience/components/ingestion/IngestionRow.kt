@@ -39,6 +39,7 @@ import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
 import com.isaakhanimann.journal.R
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
+import com.isaakhanimann.journal.data.room.experiences.entities.AppColor
 import com.isaakhanimann.journal.ui.tabs.journal.experience.components.DotRows
 import com.isaakhanimann.journal.ui.tabs.journal.experience.models.IngestionElement
 import com.isaakhanimann.journal.ui.tabs.journal.getLocalizedNameRes
@@ -74,7 +75,7 @@ fun IngestionRow(
         horizontalArrangement = Arrangement.spacedBy(10.dp),
         modifier = modifier.height(intrinsicSize = IntrinsicSize.Min)
     ) {
-        VerticalLine(color = ingestionWithCompanionAndCustomUnit.substanceCompanion?.color ?: AdaptiveColor.RED)
+        VerticalLine(color = ingestionWithCompanionAndCustomUnit.substanceCompanion?.color ?: AppColor.RED)
         Column {
             time()
             val localizedSubstanceName = com.isaakhanimann.journal.ui.tabs.search.SubstanceLocalizationHelper.getSubstanceDisplayName(ingestion.substanceName)

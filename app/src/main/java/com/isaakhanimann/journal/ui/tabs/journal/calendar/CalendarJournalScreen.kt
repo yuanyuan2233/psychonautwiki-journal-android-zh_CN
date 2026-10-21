@@ -66,6 +66,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.isaakhanimann.journal.R
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
+import com.isaakhanimann.journal.data.room.experiences.entities.AppColor
 import com.isaakhanimann.journal.data.room.experiences.relations.ExperienceWithIngestionsCompanionsAndRatings
 import com.isaakhanimann.journal.ui.tabs.journal.components.ExperienceRow
 import com.isaakhanimann.journal.ui.theme.JournalTheme
@@ -307,7 +308,7 @@ fun Day(
 @Composable
 fun HorizontalColorRectangle(
     modifier: Modifier,
-    colors: List<AdaptiveColor>
+    colors: List<AppColor>
 ) {
     val isDarkTheme = isSystemInDarkTheme()
     if (colors.size >= 2) {

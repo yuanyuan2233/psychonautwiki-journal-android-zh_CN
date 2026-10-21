@@ -57,6 +57,7 @@ import androidx.compose.ui.unit.toSize
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.compose.LifecycleEventEffect
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
+import com.isaakhanimann.journal.data.room.experiences.entities.AppColor
 import com.isaakhanimann.journal.data.room.experiences.entities.ShulginRatingOption
 import com.isaakhanimann.journal.ui.tabs.journal.experience.components.DataForOneEffectLine
 import com.isaakhanimann.journal.ui.tabs.journal.experience.components.TimeDisplayOption
@@ -492,7 +493,7 @@ fun DrawScope.drawTimedNote(
     noteTime: Instant,
     pixelsPerSec: Float,
     canvasHeightOuter: Float,
-    color: AdaptiveColor,
+    color: AppColor,
     isDarkTheme: Boolean
 ) {
     val timeStartInSec = Duration.between(startTime, noteTime).seconds
@@ -505,6 +506,24 @@ fun DrawScope.drawTimedNote(
         strokeWidth = strokeWidth,
         cap = StrokeCap.Round,
         pathEffect = PathEffect.dashPathEffect(floatArrayOf(strokeWidth, strokeWidth * 2))
+    )
+}
+
+fun DrawScope.drawTimedNote(
+    startTime: Instant,
+    noteTime: Instant,
+    pixelsPerSec: Float,
+    canvasHeightOuter: Float,
+    color: AdaptiveColor,
+    isDarkTheme: Boolean
+) {
+    drawTimedNote(
+        startTime = startTime,
+        noteTime = noteTime,
+        pixelsPerSec = pixelsPerSec,
+        canvasHeightOuter = canvasHeightOuter,
+        color = AppColor(color),
+        isDarkTheme = isDarkTheme
     )
 }
 

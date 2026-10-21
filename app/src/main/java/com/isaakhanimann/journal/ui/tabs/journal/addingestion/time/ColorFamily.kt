@@ -21,6 +21,7 @@ package com.isaakhanimann.journal.ui.tabs.journal.addingestion.time
 import androidx.annotation.StringRes
 import com.isaakhanimann.journal.R
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
+import com.isaakhanimann.journal.data.room.experiences.entities.AppColor
 
 enum class ColorFamily(
     @StringRes val titleRes: Int,
@@ -148,6 +149,11 @@ enum class ColorFamily(
     companion object {
         fun findFamilyOf(color: AdaptiveColor): ColorFamily? {
             return entries.firstOrNull { it.shades.contains(color) }
+        }
+
+        fun findFamilyOf(color: AppColor): ColorFamily? {
+            val adaptive = color.adaptiveColor ?: return null
+            return findFamilyOf(adaptive)
         }
     }
 }

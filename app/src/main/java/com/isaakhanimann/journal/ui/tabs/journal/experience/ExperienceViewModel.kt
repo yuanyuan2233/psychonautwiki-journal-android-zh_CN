@@ -24,6 +24,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
 import com.isaakhanimann.journal.data.room.experiences.ExperienceRepository
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
+import com.isaakhanimann.journal.data.room.experiences.entities.AppColor
 import com.isaakhanimann.journal.data.room.experiences.relations.IngestionWithCompanionAndCustomUnit
 import com.isaakhanimann.journal.data.substances.classes.Substance
 import com.isaakhanimann.journal.data.substances.classes.roa.RoaDose
@@ -463,7 +464,7 @@ class ExperienceViewModel @Inject constructor(
                     ).toFloat(),
                     horizontalWeight = horizontalWeight,
                     color = oneElement.ingestionWithCompanionAndCustomUnit.substanceCompanion?.color
-                        ?: AdaptiveColor.RED,
+                        ?: AppColor.RED,
                     startTime = ingestion.time,
                     endTime = ingestion.endTime
                 )

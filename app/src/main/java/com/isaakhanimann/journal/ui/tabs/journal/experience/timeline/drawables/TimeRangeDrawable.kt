@@ -1,14 +1,26 @@
 package com.isaakhanimann.journal.ui.tabs.journal.experience.timeline.drawables
 
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
+import com.isaakhanimann.journal.data.room.experiences.entities.AppColor
 import com.isaakhanimann.journal.data.substances.classes.roa.RoaDuration
 
 data class TimeRangeDrawable(
-    val color: AdaptiveColor,
+    val color: AppColor,
     val ingestionStartInSeconds: Float,
     val ingestionEndInSeconds: Float,
     val intersectionCountWithPreviousRanges: Int,
 ) {
+    constructor(
+        color: AdaptiveColor,
+        ingestionStartInSeconds: Float,
+        ingestionEndInSeconds: Float,
+        intersectionCountWithPreviousRanges: Int,
+    ) : this(
+        color = AppColor(color),
+        ingestionStartInSeconds = ingestionStartInSeconds,
+        ingestionEndInSeconds = ingestionEndInSeconds,
+        intersectionCountWithPreviousRanges = intersectionCountWithPreviousRanges,
+    )
     data class IntermediateRepresentation(
         val startInSeconds: Float,
         val endInSeconds: Float,
