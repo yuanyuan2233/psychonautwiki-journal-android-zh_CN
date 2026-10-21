@@ -203,7 +203,11 @@
     <string name="tolerance_legend_full">完全耐受 (脱敏期)</string>
     <string name="tolerance_legend_half">半耐受 (衰减中)</string>
     <string name="tolerance_legend_today">今日 (Now)</string>
+    <string name="tolerance_legend_recovered">结束耐药 (归零)</string>
     <string name="tolerance_legend_custom_dot">黄色小圆点：已融入您个人的主观耐受体感修正</string>
+    <string name="tolerance_recovery_expected">预计耐受归零：%1$s (还剩 %2$d 天)</string>
+    <string name="tolerance_recovery_completed">耐受已完全归零 (已恢复基线)</string>
+    <string name="tolerance_reset_badge">归零</string>
     <string name="tolerance_harm_reduction_title">💡 科学减害提示</string>
     <string name="tolerance_harm_reduction_desc">本模型基于 PsychonautWiki 公开药代动力学阶段推算，默认单次即建立瞬时完全耐受。由于个体生理差异与剂量不计，您可点击任意物质卡片自主调整恢复天数或标记已归零。</string>
     <string name="tolerance_dialog_about_title">关于耐受度模型</string>

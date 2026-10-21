@@ -52,6 +52,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.isaakhanimann.journal.R
+import java.time.Instant
+import java.time.ZoneId
+import java.time.format.DateTimeFormatter
+import java.time.temporal.ChronoUnit
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -199,6 +203,7 @@ fun ToleranceChartScreen(
                             trackedSubstances.forEachIndexed { index, substanceName ->
                                 val localizedName = com.isaakhanimann.journal.ui.tabs.search.SubstanceLocalizationHelper.getLocalizedName(substanceName)
                                 val window = uiState.toleranceWindows.firstOrNull { it.substanceName == substanceName }
+                                val maxEndInstant = uiState.toleranceWindows.filter { it.substanceName == substanceName }.map { it.end }.maxOrNull()
                                 val color = window?.adaptiveColor?.getComposeColor(androidx.compose.foundation.isSystemInDarkTheme())
                                     ?: MaterialTheme.colorScheme.primary
 
@@ -209,36 +214,66 @@ fun ToleranceChartScreen(
                                     verticalAlignment = Alignment.CenterVertically,
                                     horizontalArrangement = Arrangement.SpaceBetween
                                 ) {
-                                    Row(
-                                        verticalAlignment = Alignment.CenterVertically,
+                                    Column(
                                         modifier = Modifier.weight(1f)
                                     ) {
-                                        Box(
-                                            modifier = Modifier
-                                                .size(10.dp)
-                                                .background(color, RoundedCornerShape(5.dp))
-                                        )
-                                        Spacer(modifier = Modifier.width(8.dp))
-                                        Text(
-                                            text = localizedName,
-                                            style = MaterialTheme.typography.bodyMedium,
-                                            fontWeight = FontWeight.SemiBold
-                                        )
-                                        if (localizedName != substanceName) {
-                                            Spacer(modifier = Modifier.width(6.dp))
-                                            Text(
-                                                text = "($substanceName)",
-                                                style = MaterialTheme.typography.bodySmall,
-                                                color = MaterialTheme.colorScheme.onSurfaceVariant
+                                        Row(
+                                            verticalAlignment = Alignment.CenterVertically
+                                        ) {
+                                            Box(
+                                                modifier = Modifier
+                                                    .size(10.dp)
+                                                    .background(color, RoundedCornerShape(5.dp))
                                             )
+                                            Spacer(modifier = Modifier.width(8.dp))
+                                            Text(
+                                                text = localizedName,
+                                                style = MaterialTheme.typography.bodyMedium,
+                                                fontWeight = FontWeight.SemiBold
+                                            )
+                                            if (localizedName != substanceName) {
+                                                Spacer(modifier = Modifier.width(6.dp))
+                                                Text(
+                                                    text = "($substanceName)",
+                                                    style = MaterialTheme.typography.bodySmall,
+                                                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                                                )
+                                            }
+                                            if (window?.isUserCustomized == true) {
+                                                Spacer(modifier = Modifier.width(6.dp))
+                                                Text(
+                                                    text = stringResource(R.string.tolerance_customized_badge),
+                                                    style = MaterialTheme.typography.labelSmall,
+                                                    color = Color(0xFFFFD54F)
+                                                )
+                                            }
                                         }
-                                        if (window?.isUserCustomized == true) {
-                                            Spacer(modifier = Modifier.width(6.dp))
-                                            Text(
-                                                text = stringResource(R.string.tolerance_customized_badge),
-                                                style = MaterialTheme.typography.labelSmall,
-                                                color = Color(0xFFFFD54F)
-                                            )
+
+                                        // 恢复进度与预计归零精确倒计时
+                                        if (maxEndInstant != null) {
+                                            Spacer(modifier = Modifier.height(2.dp))
+                                            val isZh = com.isaakhanimann.journal.ui.tabs.search.SubstanceLocalizationHelper.isChinese()
+                                            val zoneId = remember { ZoneId.systemDefault() }
+                                            val dateFormatter = remember(isZh) {
+                                                DateTimeFormatter.ofPattern(if (isZh) "M月d日" else "MMM d", if (isZh) java.util.Locale.CHINA else java.util.Locale.US).withZone(zoneId)
+                                            }
+                                            val formattedDate = dateFormatter.format(maxEndInstant)
+                                            val now = Instant.now()
+                                            if (maxEndInstant.isAfter(now)) {
+                                                val daysLeft = ChronoUnit.DAYS.between(now.atZone(zoneId).toLocalDate(), maxEndInstant.atZone(zoneId).toLocalDate()).coerceAtLeast(1)
+                                                Text(
+                                                    text = stringResource(R.string.tolerance_recovery_expected, formattedDate, daysLeft),
+                                                    style = MaterialTheme.typography.bodySmall,
+                                                    color = Color(0xFF00C853),
+                                                    fontWeight = FontWeight.Medium
+                                                )
+                                            } else {
+                                                Text(
+                                                    text = stringResource(R.string.tolerance_recovery_completed),
+                                                    style = MaterialTheme.typography.bodySmall,
+                                                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                                                )
+                                            }
                                         }
                                     }
 
@@ -280,6 +315,7 @@ fun ToleranceChartScreen(
                     LegendItem(color = MaterialTheme.colorScheme.primary, text = stringResource(R.string.tolerance_legend_full))
                     LegendItem(color = MaterialTheme.colorScheme.primary.copy(alpha = 0.45f), text = stringResource(R.string.tolerance_legend_half))
                     LegendItem(color = Color(0xFF00E5FF), text = stringResource(R.string.tolerance_legend_today))
+                    LegendItem(color = Color(0xFF00E676), text = stringResource(R.string.tolerance_legend_recovered))
                 }
                 Spacer(modifier = Modifier.height(4.dp))
                 Row(verticalAlignment = Alignment.CenterVertically) {

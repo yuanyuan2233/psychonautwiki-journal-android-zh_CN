@@ -224,6 +224,56 @@ fun ToleranceChart(
                 }
             }
 
+            // 绘制“结束耐药 / 归零”醒目标记线与日期标签
+            val maxEndInstant = windowsForSubstance.map { it.end }.maxOrNull()
+            if (maxEndInstant != null) {
+                val endX = instantToX(maxEndInstant)
+                if (endX in labelColumnWidth..width) {
+                    val isRecoveredFuture = maxEndInstant.isAfter(now)
+                    val markerColor = if (isRecoveredFuture) Color(0xFF00E676) else Color(0x9900E676)
+
+                    // 1. 条带末端立起的垂直标界线（微凸显，贯穿色块并略微延伸）
+                    drawLine(
+                        color = markerColor,
+                        start = Offset(endX, barY - 2.dp.toPx()),
+                        end = Offset(endX, barY + barHeight + 2.dp.toPx()),
+                        strokeWidth = 2.5.dp.toPx()
+                    )
+
+                    // 2. 顶部小端标圆点
+                    drawCircle(
+                        color = markerColor,
+                        radius = 3.5.dp.toPx(),
+                        center = Offset(endX, barY - 2.dp.toPx())
+                    )
+
+                    // 3. 归零日期文字（如 "11月4日 归零"）
+                    val dateText = dateFormatter.format(maxEndInstant) + (if (isZh) " 归零" else " Reset")
+                    val textLayout = textMeasurer.measure(
+                        text = dateText,
+                        style = TextStyle(
+                            fontSize = 10.sp,
+                            fontWeight = FontWeight.SemiBold,
+                            color = markerColor
+                        )
+                    )
+                    val textWidth = textLayout.size.width.toFloat()
+
+                    // 智能避让：优先排布在末端右侧，若超出右界则向左微移
+                    val textTopLeftX = if (endX + textWidth + 4.dp.toPx() <= width) {
+                        endX + 4.dp.toPx()
+                    } else {
+                        (endX - textWidth - 4.dp.toPx()).coerceAtLeast(labelColumnWidth)
+                    }
+                    val textTopLeftY = barY - 14.dp.toPx()
+
+                    drawText(
+                        textLayoutResult = textLayout,
+                        topLeft = Offset(textTopLeftX, textTopLeftY)
+                    )
+                }
+            }
+
             // 行间分割细线
             drawLine(
                 color = if (isDark) Color(0x12FFFFFF) else Color(0x10000000),

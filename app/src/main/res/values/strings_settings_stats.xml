@@ -203,7 +203,11 @@
     <string name="tolerance_legend_full">Full Tolerance</string>
     <string name="tolerance_legend_half">Half Tolerance</string>
     <string name="tolerance_legend_today">Today (Now)</string>
+    <string name="tolerance_legend_recovered">Tolerance Reset</string>
     <string name="tolerance_legend_custom_dot">Yellow dot: customized with personal perception</string>
+    <string name="tolerance_recovery_expected">Expected reset: %1$s (%2$d days left)</string>
+    <string name="tolerance_recovery_completed">Tolerance fully reset (baseline)</string>
+    <string name="tolerance_reset_badge">Reset</string>
     <string name="tolerance_harm_reduction_title">💡 Harm Reduction Notice</string>
     <string name="tolerance_harm_reduction_desc">This model estimates recovery timelines based on PsychonautWiki pharmacokinetic data, assuming full tolerance develops immediately. Because of individual metabolic differences, you can tap any substance card below to adjust recovery days or mark tolerance as reset.</string>
     <string name="tolerance_dialog_about_title">About Tolerance Model</string>
