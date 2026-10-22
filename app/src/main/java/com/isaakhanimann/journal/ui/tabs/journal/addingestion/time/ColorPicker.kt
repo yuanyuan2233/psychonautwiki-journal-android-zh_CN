@@ -49,17 +49,21 @@ import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Slider
+import androidx.compose.material3.SliderDefaults
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.contentDescription
@@ -70,6 +74,7 @@ import androidx.compose.ui.unit.dp
 import com.isaakhanimann.journal.R
 import com.isaakhanimann.journal.data.room.experiences.entities.AdaptiveColor
 import com.isaakhanimann.journal.data.room.experiences.entities.AppColor
+import com.isaakhanimann.journal.data.room.experiences.entities.toHex
 
 @Preview
 @Composable
@@ -198,7 +203,7 @@ fun ColorDialog(
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .heightIn(min = 260.dp, max = 420.dp)
+                    .heightIn(min = 260.dp, max = 500.dp)
                     .verticalScroll(rememberScrollState())
             ) {
                 Crossfade(
@@ -286,7 +291,7 @@ private fun BaseHuesView(
             modifier = Modifier.fillMaxWidth()
         ) {
             ColorFamily.entries.forEach { family ->
-                val isSelectedFamily = selectedColor?.adaptiveColor != null && family.shades.contains(selectedColor.adaptiveColor)
+                val isSelectedFamily = selectedColor != null && (ColorFamily.findFamilyOf(selectedColor) == family)
                 BaseHueSwatch(
                     family = family,
                     isSelectedFamily = isSelectedFamily,
@@ -334,28 +339,175 @@ private fun ShadesView(
     isDarkTheme: Boolean,
     onSelectShade: (AppColor) -> Unit
 ) {
+    // 初始明度：优先从当前已选颜色提取，否则默认中等明度 0.5f
+    val initialLightness = remember(family, selectedColor) {
+        if (selectedColor != null) {
+            val c = selectedColor.getComposeColor(isDarkTheme)
+            val max = maxOf(c.red, c.green, c.blue)
+            val min = minOf(c.red, c.green, c.blue)
+            ((max + min) / 2f).coerceIn(0.15f, 0.85f)
+        } else {
+            0.50f
+        }
+    }
+    var sliderLightness by remember(family) { mutableFloatStateOf(initialLightness) }
+    val customSliderColor = remember(family, sliderLightness) {
+        hslToColor(family.hue, family.saturation, sliderLightness)
+    }
+
     Column(modifier = Modifier.fillMaxWidth()) {
+        // 1. 标准梯度色阶 (100 - 900)
         Text(
-            text = stringResource(R.string.journal_color_select_shade),
-            style = MaterialTheme.typography.bodyMedium,
+            text = stringResource(R.string.journal_color_standard_shades),
+            style = MaterialTheme.typography.labelLarge,
             color = MaterialTheme.colorScheme.onSurfaceVariant
         )
-        Spacer(modifier = Modifier.height(12.dp))
+        Spacer(modifier = Modifier.height(10.dp))
 
         FlowRow(
             horizontalArrangement = Arrangement.spacedBy(10.dp),
             verticalArrangement = Arrangement.spacedBy(10.dp),
             modifier = Modifier.fillMaxWidth()
         ) {
-            family.shades.forEach { shade ->
-                val shadeAppColor = AppColor(shade)
-                ShadeSwatch(
-                    color = shadeAppColor,
-                    isSelected = selectedColor != null && (selectedColor.adaptiveColor == shade || selectedColor.rawValue.equals(shade.name, ignoreCase = true)),
-                    isAlreadyUsed = alreadyUsedColors.any { it.adaptiveColor == shade || it.rawValue.equals(shade.name, ignoreCase = true) },
-                    isDarkTheme = isDarkTheme,
-                    onClick = { onSelectShade(shadeAppColor) }
+            family.standardShades.forEach { shade ->
+                val isSelected = selectedColor != null && (
+                    selectedColor.rawValue.equals(shade.rawValue, ignoreCase = true) ||
+                    (shade.adaptiveColor != null && selectedColor.adaptiveColor == shade.adaptiveColor)
                 )
+                val isAlreadyUsed = alreadyUsedColors.any {
+                    it.rawValue.equals(shade.rawValue, ignoreCase = true) ||
+                    (it.adaptiveColor != null && shade.adaptiveColor != null && it.adaptiveColor == shade.adaptiveColor)
+                }
+                ShadeSwatch(
+                    color = shade,
+                    isSelected = isSelected,
+                    isAlreadyUsed = isAlreadyUsed,
+                    isDarkTheme = isDarkTheme,
+                    onClick = { onSelectShade(shade) }
+                )
+            }
+        }
+
+        // 2. 经典历史混色调 (若存在)
+        if (family.classicShades.isNotEmpty()) {
+            Spacer(modifier = Modifier.height(14.dp))
+            Text(
+                text = stringResource(R.string.journal_color_classic_shades),
+                style = MaterialTheme.typography.labelLarge,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
+            )
+            Spacer(modifier = Modifier.height(10.dp))
+
+            FlowRow(
+                horizontalArrangement = Arrangement.spacedBy(10.dp),
+                verticalArrangement = Arrangement.spacedBy(10.dp),
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                family.classicShades.forEach { shade ->
+                    val isSelected = selectedColor != null && (
+                        selectedColor.rawValue.equals(shade.rawValue, ignoreCase = true) ||
+                        (shade.adaptiveColor != null && selectedColor.adaptiveColor == shade.adaptiveColor)
+                    )
+                    val isAlreadyUsed = alreadyUsedColors.any {
+                        it.rawValue.equals(shade.rawValue, ignoreCase = true) ||
+                        (it.adaptiveColor != null && shade.adaptiveColor != null && it.adaptiveColor == shade.adaptiveColor)
+                    }
+                    ShadeSwatch(
+                        color = shade,
+                        isSelected = isSelected,
+                        isAlreadyUsed = isAlreadyUsed,
+                        isDarkTheme = isDarkTheme,
+                        onClick = { onSelectShade(shade) }
+                    )
+                }
+            }
+        }
+
+        Spacer(modifier = Modifier.height(16.dp))
+        HorizontalDivider()
+        Spacer(modifier = Modifier.height(12.dp))
+
+        // 3. 当前主色下的单轨明暗混色滑条 (解锁千万真彩色)
+        Text(
+            text = stringResource(R.string.journal_color_fine_tune),
+            style = MaterialTheme.typography.labelLarge,
+            color = MaterialTheme.colorScheme.onSurfaceVariant
+        )
+        Spacer(modifier = Modifier.height(10.dp))
+
+        // 当前主色的连续明暗渐变色带
+        val gradientBrush = remember(family) {
+            val stops = (0..10).map { step ->
+                val l = 0.15f + step * (0.85f - 0.15f) / 10f
+                hslToColor(family.hue, family.saturation, l)
+            }
+            Brush.horizontalGradient(stops)
+        }
+
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(36.dp),
+            contentAlignment = Alignment.Center
+        ) {
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(12.dp)
+                    .clip(RoundedCornerShape(6.dp))
+                    .background(gradientBrush)
+                    .border(
+                        1.dp,
+                        MaterialTheme.colorScheme.outlineVariant.copy(alpha = 0.6f),
+                        RoundedCornerShape(6.dp)
+                    )
+            )
+            Slider(
+                value = sliderLightness,
+                onValueChange = { sliderLightness = it },
+                valueRange = 0.15f..0.85f,
+                colors = SliderDefaults.colors(
+                    thumbColor = customSliderColor,
+                    activeTrackColor = Color.Transparent,
+                    inactiveTrackColor = Color.Transparent
+                ),
+                modifier = Modifier.fillMaxWidth()
+            )
+        }
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween,
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(10.dp)
+            ) {
+                Surface(
+                    shape = RoundedCornerShape(8.dp),
+                    color = customSliderColor,
+                    modifier = Modifier
+                        .size(34.dp)
+                        .border(
+                            1.dp,
+                            MaterialTheme.colorScheme.outlineVariant,
+                            RoundedCornerShape(8.dp)
+                        )
+                ) {}
+                Text(
+                    text = customSliderColor.toHex(),
+                    style = MaterialTheme.typography.labelLarge,
+                    fontFamily = androidx.compose.ui.text.font.FontFamily.Monospace,
+                    color = MaterialTheme.colorScheme.onSurface
+                )
+            }
+            TextButton(
+                onClick = { onSelectShade(AppColor(customSliderColor)) }
+            ) {
+                Text(stringResource(R.string.journal_color_apply_custom))
             }
         }
     }

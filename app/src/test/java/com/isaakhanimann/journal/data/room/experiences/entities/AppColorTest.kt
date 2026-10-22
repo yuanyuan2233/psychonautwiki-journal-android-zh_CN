@@ -7,6 +7,8 @@ package com.isaakhanimann.journal.data.room.experiences.entities
 
 import androidx.compose.ui.graphics.Color
 import com.isaakhanimann.journal.ui.tabs.settings.TimedNoteSerializable
+import com.isaakhanimann.journal.ui.tabs.journal.addingestion.time.ColorFamily
+import com.isaakhanimann.journal.ui.tabs.journal.addingestion.time.hslToColor
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
@@ -102,5 +104,44 @@ class AppColorTest {
         val timedNote = json.decodeFromString<TimedNoteSerializable>(oldTimedNoteJson)
         assertEquals("老用户历史笔记", timedNote.note)
         assertEquals(AdaptiveColor.MINT, timedNote.color.adaptiveColor)
+    }
+
+    @Test
+    fun testColorFamilyShadesAndPresets() {
+        assertEquals(13, ColorFamily.entries.size)
+
+        for (family in ColorFamily.entries) {
+            // 每个色系必须包含 9 档标准梯度 (100 - 900)
+            assertEquals("Family ${family.name} 缺少标准 9 档色阶", 9, family.standardShades.size)
+            // 总色阶集合不为空
+            assert(family.shades.size >= 9)
+        }
+
+        // 历史 AdaptiveColor 映射验证
+        assertEquals(ColorFamily.BLUE, ColorFamily.findFamilyOf(AdaptiveColor.BLUE))
+        assertEquals(ColorFamily.RED, ColorFamily.findFamilyOf(AdaptiveColor.FIRE_ENGINE_RED))
+        assertEquals(ColorFamily.MINT, ColorFamily.findFamilyOf(AdaptiveColor.TEAL))
+        assertEquals(ColorFamily.BROWN, ColorFamily.findFamilyOf(AdaptiveColor.SADDLE_BROWN))
+    }
+
+    @Test
+    fun testColorFamilyHueMatchingForCustomHex() {
+        // 自定义纯红 Hex
+        val redCustom = AppColor("#FF1100")
+        assertEquals(ColorFamily.RED, ColorFamily.findFamilyOf(redCustom))
+
+        // 自定义天蓝 Hex
+        val blueCustom = AppColor("#1E90FF")
+        assertEquals(ColorFamily.BLUE, ColorFamily.findFamilyOf(blueCustom))
+
+        // 自定义中性灰 Hex（低饱和度）
+        val grayCustom = AppColor("#777777")
+        assertEquals(ColorFamily.GRAY, ColorFamily.findFamilyOf(grayCustom))
+
+        // HSL 转 Color 验证
+        val redHsl = hslToColor(0f, 1f, 0.5f)
+        assertEquals(1f, redHsl.red, 0.01f)
+        assertEquals(0f, redHsl.green, 0.01f)
+        assertEquals(0f, redHsl.blue, 0.01f)
     }
 }

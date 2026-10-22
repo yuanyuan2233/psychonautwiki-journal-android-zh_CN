@@ -247,6 +247,12 @@
     <string name="journal_color_family_purple">紫色系</string>
     <string name="journal_color_family_pink">粉红/品红系</string>
     <string name="journal_color_family_brown">棕褐/大地系</string>
+    <string name="journal_color_family_gray">灰色/石板系</string>
+    <string name="journal_color_family_cyan">青蓝/天蓝系</string>
+    <string name="journal_color_standard_shades">标准色阶 (100 - 900)</string>
+    <string name="journal_color_classic_shades">经典混合调</string>
+    <string name="journal_color_fine_tune">深浅与明暗微调</string>
+    <string name="journal_color_apply_custom">使用此微调色</string>
     <string name="journal_time_point_in_time">具体时间点</string>
     <string name="journal_time_range">时间范围</string>
     <string name="journal_time_start_colon">开始时间：</string>

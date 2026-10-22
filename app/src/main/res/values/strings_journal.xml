@@ -247,6 +247,12 @@
     <string name="journal_color_family_purple">Purple</string>
     <string name="journal_color_family_pink">Pink &amp; Magenta</string>
     <string name="journal_color_family_brown">Brown &amp; Earth</string>
+    <string name="journal_color_family_gray">Slate &amp; Gray</string>
+    <string name="journal_color_family_cyan">Cyan &amp; Sky</string>
+    <string name="journal_color_standard_shades">Standard shades (100 - 900)</string>
+    <string name="journal_color_classic_shades">Classic tints &amp; blends</string>
+    <string name="journal_color_fine_tune">Fine-tune tone &amp; mixing</string>
+    <string name="journal_color_apply_custom">Apply shade</string>
     <string name="journal_time_point_in_time">Point in time</string>
     <string name="journal_time_range">Time range</string>
     <string name="journal_time_start_colon">Start:</string>
