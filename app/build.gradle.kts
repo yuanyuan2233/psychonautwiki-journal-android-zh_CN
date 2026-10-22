@@ -26,18 +26,37 @@ android {
         schemaDirectory("$projectDir/schemas")
     }
 
+    signingConfigs {
+        create("release") {
+            val keystoreFile = project.findProperty("KEYSTORE_FILE")?.toString()
+                ?: System.getenv("KEYSTORE_FILE")
+            if (keystoreFile != null && file(keystoreFile).exists()) {
+                storeFile = file(keystoreFile)
+                storePassword = project.findProperty("KEYSTORE_PASSWORD")?.toString()
+                    ?: System.getenv("KEYSTORE_PASSWORD")
+                keyAlias = project.findProperty("KEY_ALIAS")?.toString()
+                    ?: System.getenv("KEY_ALIAS")
+                keyPassword = project.findProperty("KEY_PASSWORD")?.toString()
+                    ?: System.getenv("KEY_PASSWORD")
+            }
+        }
+    }
+
     buildTypes {
         debug {
             applicationIdSuffix = ".zh"
             versionNameSuffix = "-zh"
         }
         release {
+            applicationIdSuffix = ".zh"
+            versionNameSuffix = "-zh"
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("release")
             ndk.debugSymbolLevel = "FULL"
         }
     }

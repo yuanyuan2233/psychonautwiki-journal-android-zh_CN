@@ -16,5 +16,9 @@ local.properties
 # Python cache
 __pycache__/
 *.py[cod]
+# Release and binary artifacts
+*.apk
+/release/
+
 # Kotlin compiler daemon logs
 .kotlin/

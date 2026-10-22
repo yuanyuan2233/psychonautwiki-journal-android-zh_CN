@@ -81,9 +81,14 @@ PsychonautWiki Journal 原由 Isaak Hanimann 开源维护（至 v11.11 版本）
 ```bash
 git clone https://github.com/yuanyuan2233/psychonautwiki-journal-android-zh_CN.git
 cd psychonautwiki-journal-android-zh_CN
+
+# 生产环境 Release APK 构建（启用 R8 混淆、资源压缩与独立包名）
+./gradlew assembleRelease
+
+# 或本地调试构建（仅供开发测试）
 ./gradlew assembleDebug
 ```
-产物位置：`app/build/outputs/apk/debug/app-debug.apk`。
+产物位置：`app/build/outputs/apk/release/app-release-unsigned.apk`（或配置签名后生成的 release APK）以及 `app/build/outputs/apk/debug/app-debug.apk`。
 
 ---
 
