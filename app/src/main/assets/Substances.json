@@ -302,12 +302,12 @@
       "summary": "1,4-丁二醇（1,4-BD）是一种具有致醉效应的无色液体。它是 GHB（γ-羟基丁酸）的前体药物，在体内代谢为 GHB，其主观体验与 GHB 相似但通常被认为略显逊色。与 GHB 相比，1,4-BD 具有更高的潜在健康风险，尤其是明显的肝毒性与未代谢原药毒性。",
       "interactions": {
         "dangerous": [
-          "中枢抑制剂",
-          "解离剂"
+          "Depressant",
+          "Dissociatives"
         ],
         "unsafe": [],
         "uncertain": [
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -386,14 +386,14 @@
       "summary": "1B-LSD（1-丁酰基麦角酸二乙酰胺）是一种麦角酰胺类 LSD 类似物，效价与 1P-LSD 相当（略强于 LSD 本身），持续时间略短于 LSD（与 1P-LSD 相近）。于 2018 年底作为 1P-LSD 的替代品推向研究化学品市场。目前 1B-LSD 尚未建立明确的人体毒理与安全性评估数据。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -473,14 +473,14 @@
       "summary": "一种新型致幻性麦角酰胺类化合物，推测为 ETH-LAD 的前体药物，这解释了两者给药剂量的极高相似性；其自身亦可能具备独立的药理活性。目前尚无针对该物质的人体临床或药代动力学科学研究发表。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -550,14 +550,14 @@
       "summary": "一种 LSD 的酰基类似物（1-丙酰基-LSD），效价略强于 LSD 且作用时间稍短。其主观致幻体验与 LSD 极其相似，迄今观察到的安全性特征亦类似。该物质于 2014 年底面世，因其在部分地区的法律灰色地带、与 LSD 接近的药理效应及网络流通性，迅速成为极为流行的研究化学品。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -634,14 +634,14 @@
       ],
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -718,14 +718,14 @@
       ],
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -799,14 +799,14 @@
       ],
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -883,14 +883,14 @@
       ],
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -964,14 +964,14 @@
       ],
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -1041,21 +1041,21 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "中枢兴奋剂",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "可卡因"
+          "Tramadol",
+          "MAOI",
+          "Stimulants",
+          "MDMA",
+          "Cocaine"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -1135,12 +1135,12 @@
       "summary": "苯丙胺家族的合成兴奋剂化合物（2-氟苯丙胺）。据报告其效应与右旋苯丙胺相似，但欣快感更为温和，药效消退期（Comedown）相对平稳。与 4-FA 相比，2-FA 的药效时长更短且共情效应更弱。理论上其产生的神经毒性代谢产物少于未取代的苯丙胺。",
       "interactions": {
         "dangerous": [
-          "曲马多",
+          "Tramadol",
           "ΑMT",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
+          "Dextromethorphan",
           "PCP",
           "25x-NBOMe",
           "2C-T-x",
@@ -1148,16 +1148,16 @@
           "DOx"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
+          "Alcohol",
           "GHB",
           "GBL",
-          "阿片类药物",
-          "可卡因",
-          "大麻",
-          "咖啡因",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "致幻剂"
+          "Opioids",
+          "Cocaine",
+          "Cannabis",
+          "Caffeine",
+          "Ketamine",
+          "Methoxetamine",
+          "Psychedelics"
         ]
       },
       "roas": [
@@ -1235,21 +1235,21 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "中枢兴奋剂",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "可卡因"
+          "Tramadol",
+          "MAOI",
+          "Stimulants",
+          "MDMA",
+          "Cocaine"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -1329,12 +1329,12 @@
       "summary": "一种长效氟代甲基苯丙胺类兴奋剂（2-氟甲基苯丙胺），药效常被拿来与赖氨酸苯丙胺（Lisdexamfetamine）类比。推测其缺乏苯丙胺的部分神经毒性代谢产物。因其具有高度的专注力提升与功能性特征（身体兴奋和欣快感较低），常被非法作为学业或工作专注辅助剂使用。",
       "interactions": {
         "dangerous": [
-          "曲马多",
+          "Tramadol",
           "ΑMT",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
+          "Dextromethorphan",
           "PCP",
           "25x-NBOMe",
           "2C-T-x",
@@ -1342,16 +1342,16 @@
           "DOx"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
+          "Alcohol",
           "GHB",
           "GBL",
-          "阿片类药物",
-          "可卡因",
-          "大麻",
-          "咖啡因",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "致幻剂"
+          "Opioids",
+          "Cocaine",
+          "Cannabis",
+          "Caffeine",
+          "Ketamine",
+          "Methoxetamine",
+          "Psychedelics"
         ]
       },
       "roas": [
@@ -1479,16 +1479,16 @@
       ],
       "interactions": {
         "dangerous": [
-          "酒精 (乙醇)",
+          "Alcohol",
           "GHB",
           "GBL",
-          "阿片类药物",
-          "曲马多"
+          "Opioids",
+          "Tramadol"
         ],
         "unsafe": [],
         "uncertain": [
-          "苯二氮䓬类中枢抑制剂",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "Benzodiazepines",
+          "MAOI"
         ]
       },
       "roas": [
@@ -1709,7 +1709,7 @@
         {
           "name": "sublingual",
           "dose": {
-            "units": "ug",
+            "units": "µg",
             "threshold": 100.0,
             "lightMin": 200.0,
             "commonMin": 400.0,
@@ -1752,7 +1752,7 @@
         {
           "name": "buccal",
           "dose": {
-            "units": "ug",
+            "units": "µg",
             "threshold": 100.0,
             "lightMin": 200.0,
             "commonMin": 400.0,
@@ -1825,24 +1825,24 @@
       "summary": "强效致幻性苯乙胺类化合物（2C-B 的 N-苄氧基衍生物），微克级别即具有极高药理活性。经口服胃肠道吸收失活（被消化道酶迅速代谢分解），主要经舌下含服或口腔黏膜吸收。具有高亲和力的 5-HT2A 受体完全激动活性与高致死风险。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "取代苯丙胺类",
+          "Substituted amphetamines",
           "ΑMT",
-          "可卡因",
-          "右美沙芬",
-          "曲马多"
+          "Cocaine",
+          "Dextromethorphan",
+          "Tramadol"
         ],
         "uncertain": [
           "2C-T-X",
           "5-MeO-xxt",
-          "咖啡因",
-          "大麻",
+          "Caffeine",
+          "Cannabis",
           "DOx",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "乙环利酮 (MXE)"
+          "MAOI",
+          "MDMA",
+          "Methoxetamine"
         ]
       },
       "roas": [
@@ -1928,14 +1928,14 @@
       "summary": "2C-C 的 N-2-羟基苄基致幻性苯乙胺衍生物，具有显著的中枢兴奋与致幻活性，效应与 25C-NBOMe 相似。其效价显著高于母体 2C-C，但略低于 25C-NBOMe。NBOH 系列化合物过量极易导致危险的外周血管收缩（可致肢端缺血坏死），并常伴随剧烈不适的躯体负荷。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -2013,24 +2013,24 @@
       "summary": "一种短效苯乙胺类强效致幻剂，为 2C-C 的 N-苄基衍生物。其主观效应与 LSD 有一定相似性，但视觉幻觉特征更强烈而精神内省与认知解离（深度心理体验）相对较少。在非法市场上频繁被假冒为 LSD 售卖。常伴有显著且不适的躯体负荷，甚至在常规剂量下即已导致过多起急性中毒死亡案例。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "取代苯丙胺类",
+          "Substituted amphetamines",
           "ΑMT",
-          "可卡因",
-          "右美沙芬",
-          "曲马多"
+          "Cocaine",
+          "Dextromethorphan",
+          "Tramadol"
         ],
         "uncertain": [
           "2C-T-X",
           "5-MeO-xxt",
-          "咖啡因",
-          "大麻",
+          "Caffeine",
+          "Cannabis",
           "DOx",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "乙环利酮 (MXE)"
+          "MAOI",
+          "MDMA",
+          "Methoxetamine"
         ]
       },
       "roas": [
@@ -2092,24 +2092,24 @@
       "summary": "2C-D 的罕见 N-邻甲氧基苄基类似物。属于极高活性的致幻性苯乙胺类化合物，兼具显著的中枢兴奋特性。高剂量使用极易诱发致命的急性外周血管收缩，并常引起剧烈不适的躯体负荷。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "取代苯丙胺类",
+          "Substituted amphetamines",
           "ΑMT",
-          "可卡因",
-          "右美沙芬",
-          "曲马多"
+          "Cocaine",
+          "Dextromethorphan",
+          "Tramadol"
         ],
         "uncertain": [
           "2C-T-X",
           "5-MeO-xxt",
-          "咖啡因",
-          "大麻",
+          "Caffeine",
+          "Cannabis",
           "DOx",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "乙环利酮 (MXE)"
+          "MAOI",
+          "MDMA",
+          "Methoxetamine"
         ]
       },
       "roas": [
@@ -2182,14 +2182,14 @@
       "summary": "2C-I 的 N-2-羟基苄基衍生物，属于兼具兴奋特性的强效致幻苯乙胺。效应与 25I-NBOMe 高度相似，效价远超母体 2C-I，但略低于 25I-NBOMe。该类 NBOH 化合物过量可诱发严重且危及生命的外周血管痉挛收缩，并带来剧烈躯体负荷。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -2268,24 +2268,24 @@
       "summary": "一种极具代表性的高活性致幻性苯乙胺类研究化学品。使用者报告其伴随强烈的视觉扭曲幻象及极度不适的躯体负荷，但心理内省深度弱于传统致幻剂。因合成成本低廉，常在黑市被伪充为 LSD 贩卖。其安全性极其低下，哪怕在所谓的“常规剂量”下也已直接导致多起致命急性中毒、癫痫与多器官衰竭死亡事件。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "取代苯丙胺类",
+          "Substituted amphetamines",
           "ΑMT",
-          "可卡因",
-          "右美沙芬",
-          "曲马多"
+          "Cocaine",
+          "Dextromethorphan",
+          "Tramadol"
         ],
         "uncertain": [
           "2C-T-X",
           "5-MeO-xxt",
-          "咖啡因",
-          "大麻",
+          "Caffeine",
+          "Cannabis",
           "DOx",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "乙环利酮 (MXE)"
+          "MAOI",
+          "MDMA",
+          "Methoxetamine"
         ]
       },
       "roas": [
@@ -2401,24 +2401,24 @@
       "summary": "一种罕见、黄色外观且极高活性的致幻性苯乙胺类化合物，为 2C-N 的 N-苄基衍生物。其药理效应与其他 NBOMe 类化合物相似，可引起强烈的幻觉、剧烈的躯体负荷、交感神经兴奋及血管收缩。高剂量下外周血管收缩具有极高危险性，极易致残或致命。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "取代苯丙胺类",
+          "Substituted amphetamines",
           "ΑMT",
-          "可卡因",
-          "右美沙芬",
-          "曲马多"
+          "Cocaine",
+          "Dextromethorphan",
+          "Tramadol"
         ],
         "uncertain": [
           "2C-T-X",
           "5-MeO-xxt",
-          "咖啡因",
-          "大麻",
+          "Caffeine",
+          "Cannabis",
           "DOx",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "乙环利酮 (MXE)"
+          "MAOI",
+          "MDMA",
+          "Methoxetamine"
         ]
       },
       "roas": [
@@ -2502,14 +2502,14 @@
       ],
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -2700,14 +2700,14 @@
       "summary": "一种苯乙胺类致幻剂，属于 2C-B 的二氢二呋喃（dihydrodifuran）稠环类似物。其药理作用时间显著长于 2C-B，兼具致幻、共情与中枢兴奋特征。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -2778,14 +2778,14 @@
       "summary": "2C 系列家族中一种短效的苯乙胺类致幻研究化学品（4-氯-2,5-二甲氧基苯乙胺）。在主观体验中常被描述为兴奋性明显低于其他 2C 系列物质，性质更为镇静和放松，在这方面属于相对独特的致幻剂。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -2865,14 +2865,14 @@
       "summary": "一种药理特征相对平缓的 2C 系列苯乙胺类致幻剂（4-甲基-2,5-二甲氧基苯乙胺），因其极易吸收并融合其他物质的特性而在体验者圈子中被形象地称为“致幻豆腐”。其自身效应特征平淡温和，但常被用于多药协同组合中。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -2947,14 +2947,14 @@
       "summary": "一种极具精神震撼力的强效致幻剂（4-乙基-2,5-二甲氧基苯乙胺），具有非常鲜明强烈的视觉幻象和深刻的思维改变，但常因其伴随的剧烈不适躯体负荷（如胃肠绞痛、恶心、肌肉紧张）而受到诟病。其整体药理效应在 2C 系列中属于强度最高梯队。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -3199,14 +3199,14 @@
       ],
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -3284,14 +3284,14 @@
       "summary": "一种合成苯乙胺类致幻剂（4-丙基-2,5-二甲氧基苯乙胺），主观效应常与 2C-E 相提并论，但其作用时长显著更长（常持续 16-20 小时以上），躯体负荷极其剧烈。它是 2C 系列中效价最高、起效最陡峭且最具挑战性的化合物之一。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -3773,12 +3773,12 @@
       ],
       "interactions": {
         "dangerous": [
-          "中枢抑制剂",
-          "解离剂"
+          "Depressant",
+          "Dissociatives"
         ],
         "unsafe": [],
         "uncertain": [
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -3845,18 +3845,18 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "Tramadol",
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -4106,12 +4106,12 @@
       "summary": "一种效价与甲基苯丙胺相近的氟代苯丙胺类兴奋剂（3-氟苯丙胺）。作为单胺类递质释放剂，其对多巴胺和去甲肾上腺素的选择性明显高于 5-羟色胺，主要表现为纯粹的中枢兴奋、促警觉与身体刺激效应。",
       "interactions": {
         "dangerous": [
-          "曲马多",
+          "Tramadol",
           "ΑMT",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
+          "Dextromethorphan",
           "PCP",
           "25x-NBOMe",
           "2C-T-x",
@@ -4119,16 +4119,16 @@
           "DOx"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
+          "Alcohol",
           "GHB",
           "GBL",
-          "阿片类药物",
-          "可卡因",
-          "大麻",
-          "咖啡因",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "致幻剂"
+          "Opioids",
+          "Cocaine",
+          "Cannabis",
+          "Caffeine",
+          "Ketamine",
+          "Methoxetamine",
+          "Psychedelics"
         ]
       },
       "roas": [
@@ -4208,12 +4208,12 @@
       "summary": "一种具有显著 5-羟色胺能活性的新型氟代苯乙胺类化合物（3-氟乙基苯丙胺）。其药理机制与 4-FA 类似，但其对 5-羟色胺的释放与重摄取抑制作用远强于对多巴胺和去甲肾上腺素的作用（后两者效应极其微弱），因此呈现出强烈的共情、放松与温和欣快特征，而身体刺激性较弱。",
       "interactions": {
         "dangerous": [
-          "曲马多",
+          "Tramadol",
           "ΑMT",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
+          "Dextromethorphan",
           "PCP",
           "25x-NBOMe",
           "2C-T-x",
@@ -4221,16 +4221,16 @@
           "DOx"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
+          "Alcohol",
           "GHB",
           "GBL",
-          "阿片类药物",
-          "可卡因",
-          "大麻",
-          "咖啡因",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "致幻剂"
+          "Opioids",
+          "Cocaine",
+          "Cannabis",
+          "Caffeine",
+          "Ketamine",
+          "Methoxetamine",
+          "Psychedelics"
         ]
       },
       "roas": [
@@ -4355,12 +4355,12 @@
       "summary": "苯丙胺家族的氟代甲基苯丙胺类中枢神经系统兴奋剂（3-氟甲基苯丙胺），兼具多巴胺能兴奋与一定的 5-羟色胺能活性。",
       "interactions": {
         "dangerous": [
-          "曲马多",
+          "Tramadol",
           "ΑMT",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
+          "Dextromethorphan",
           "PCP",
           "25x-NBOMe",
           "2C-T-x",
@@ -4368,16 +4368,16 @@
           "DOx"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
+          "Alcohol",
           "GHB",
           "GBL",
-          "阿片类药物",
-          "可卡因",
-          "大麻",
-          "咖啡因",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "致幻剂"
+          "Opioids",
+          "Cocaine",
+          "Cannabis",
+          "Caffeine",
+          "Ketamine",
+          "Methoxetamine",
+          "Psychedelics"
         ]
       },
       "roas": [
@@ -4456,18 +4456,18 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "Tramadol",
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -4582,8 +4582,8 @@
       "summary": "一种极其罕见且效价极高的芳基环己胺类 PCP 类似物（3-羟基依托环定）。作为 NMDA 受体拮抗剂，其效价大约是 PCP 的 8 倍，同时具有可观的 μ-阿片受体亲和力，化学结构上与乙氧酮（MXE）密切相关。",
       "interactions": {
         "dangerous": [
-          "中枢兴奋剂",
-          "中枢抑制剂"
+          "Stimulants",
+          "Depressant"
         ],
         "unsafe": [],
         "uncertain": []
@@ -4658,8 +4658,8 @@
       "summary": "PCP 的芳基环己胺类解离性类似物（3-羟基苯环利定），临床与毒理学数据极其有限。除具备强效的 NMDA 拮抗解离特性外，研究显示其还具有一定的阿片受体亲和力。多份主观体验报告指出其可能引发剧烈的负面副反应，包括严重的肌肉强直性紧张、躁狂与躯体不适。",
       "interactions": {
         "dangerous": [
-          "中枢兴奋剂",
-          "中枢抑制剂"
+          "Stimulants",
+          "Depressant"
         ],
         "unsafe": [],
         "uncertain": []
@@ -4738,22 +4738,22 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Tramadol",
+          "SNRIs",
+          "MAOI",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -5056,8 +5056,8 @@
       "summary": "3-甲氧基依托环定（3-MeO-PCE），是将 3-MeO-PCP 的哌啶环替换为乙氨基的芳基环己胺类衍生物。效价略高于 3-MeO-PCP，具备显著的 NMDA 受体拮抗活性及 5-羟色胺再摄取抑制作用，解离效应伴随强烈的精神刺激与共情特征。",
       "interactions": {
         "dangerous": [
-          "中枢兴奋剂",
-          "中枢抑制剂"
+          "Stimulants",
+          "Depressant"
         ],
         "unsafe": [],
         "uncertain": []
@@ -5173,8 +5173,8 @@
       ],
       "interactions": {
         "dangerous": [
-          "中枢兴奋剂",
-          "中枢抑制剂"
+          "Stimulants",
+          "Depressant"
         ],
         "unsafe": [],
         "uncertain": []
@@ -5258,8 +5258,8 @@
       "summary": "一种极具代表性的高活性芳基环己胺类解离剂（3-甲氧基苯环利定）。常被与乙氧酮（MXE）对比，但其持续时间更长、镇静成分更少，且兴奋与躁狂特征更为突出；整体体验与母体 PCP 高度吻合。其药效强度大约是 4-MeO-PCP 的 10 倍左右。",
       "interactions": {
         "dangerous": [
-          "中枢兴奋剂",
-          "中枢抑制剂"
+          "Stimulants",
+          "Depressant"
         ],
         "unsafe": [],
         "uncertain": []
@@ -5424,14 +5424,14 @@
       "summary": "艾斯卡林（Escaline）的三碳链类似物（3,5-二甲氧基-4-乙氧基苯丙胺），属于具有致幻与中枢兴奋活性的苯丙胺取代衍生物。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -5546,14 +5546,14 @@
       "summary": "一种相对新颖且罕见的苯丙胺类化合物，为原斯卡林（Proscaline）的三碳同系物（3,5-二甲氧基-4-丙氧基苯丙胺）。兼具中枢兴奋与致幻特性，其药理表现与 2C 系列物质有诸多相似之处。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -5628,14 +5628,14 @@
       "summary": "色胺家族中一种较为罕见的合成致幻剂（4-乙酰氧基-二乙基色胺），药效特征可与裸盖菇素类比。在体内预计会迅速水解脱乙酰化为游离酚羟基代谢物 4-HO-DET（乙乙色胺/Ethocin）而发挥作用。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -5720,14 +5720,14 @@
       "summary": "一种人工合成的脱磷酸裸盖菇素（Psilocin）前体药物（4-乙酰氧基-N,N-二甲基色胺，亦称美斯卡林类似物/Psilacetin）。进入体内后迅速去乙酰化转化为 Psilocin，产生与天然致幻蘑菇几乎无法区分的精神与视觉致幻效应。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -5847,14 +5847,14 @@
       "summary": "一种罕见的合成致幻性色胺（4-乙酰氧基-二异丙基色胺，亦称 Ipracetin），人体使用历史相对较短，可能由亚历山大·舒尔金首次合成。使用者常报告有较为明显的恶心呕吐等胃肠道反应，其主观体验被认为兼具 2C-B 与致幻蘑菇的混合特征。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -5931,14 +5931,14 @@
       "summary": "一种罕见的致幻性色胺类化合物（4-乙酰氧基-N-甲基-N-乙基色胺，亦称 Metacetin），被推测在体内代谢去乙酰化转化为 4-HO-MET。虽然起效时间、持续时长与峰值强度可能稍有出入，但其主观药效谱与 4-HO-MET 大致相同。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -6016,14 +6016,14 @@
       "summary": "一种效价较高的合成色胺化合物（4-乙酰氧基-N-甲基-N-异丙基色胺，Mipracetin）。其视觉幻觉常被描述为类似于致幻蘑菇，但躯体负荷相对轻微。该化合物极具吸湿性。给药剂量相对宽容，整体效应体验常被拿来与 2C-B 类比。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -6161,12 +6161,12 @@
       "summary": "一种兼具共情与兴奋双重特征的氟代苯丙胺衍生物（4-氟苯丙胺 / 4-FA），曾常被作为 MDMA 的替代品滥用。其共情释放时效与 MDMA 类似，但伴随着更为漫长的兴奋性“长尾期”（在此期间主要表现为类似苯丙胺的中枢兴奋）。切勿将其与 4-FMA 混淆，后者效价相近但几乎不具备共情属性。",
       "interactions": {
         "dangerous": [
-          "曲马多",
+          "Tramadol",
           "ΑMT",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
+          "Dextromethorphan",
           "PCP",
           "25x-NBOMe",
           "2C-T-x",
@@ -6174,16 +6174,16 @@
           "DOx"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
+          "Alcohol",
           "GHB",
           "GBL",
-          "阿片类药物",
-          "可卡因",
-          "大麻",
-          "咖啡因",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "致幻剂"
+          "Opioids",
+          "Cocaine",
+          "Cannabis",
+          "Caffeine",
+          "Ketamine",
+          "Methoxetamine",
+          "Psychedelics"
         ]
       },
       "roas": [
@@ -6261,12 +6261,12 @@
       "summary": "一种甲基苯丙胺的氟代类似物（4-氟甲基苯丙胺），属于具有微弱共情倾向的中枢兴奋剂，药理效应与冰毒类似。据报告其功能性专注效果不如 2-FMA 及相关化合物。目前关于其人类药理学机制的研究数据极为匮乏。切勿与 4-FA 混淆，两者的药效谱存在本质差异。",
       "interactions": {
         "dangerous": [
-          "曲马多",
+          "Tramadol",
           "ΑMT",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
+          "Dextromethorphan",
           "PCP",
           "25x-NBOMe",
           "2C-T-x",
@@ -6274,16 +6274,16 @@
           "DOx"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
+          "Alcohol",
           "GHB",
           "GBL",
-          "阿片类药物",
-          "可卡因",
-          "大麻",
-          "咖啡因",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "致幻剂"
+          "Opioids",
+          "Cocaine",
+          "Cannabis",
+          "Caffeine",
+          "Ketamine",
+          "Methoxetamine",
+          "Psychedelics"
         ]
       },
       "roas": [
@@ -6465,14 +6465,14 @@
       "summary": "一种由阿尔伯特·霍夫曼（Albert Hofmann）首次合成的罕见致幻性色胺（4-羟基-二乙基色胺，亦称 Ethocin）。化学结构上与 4-HO-MET 及脱磷酸裸盖菇素（Psilocin / 4-HO-DMT）密切相关，产生类似的致幻体验但人体使用记录极少。整体效应类似于致幻蘑菇，且可能具有一定的中枢兴奋性。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -6548,14 +6548,14 @@
       "summary": "由亚历山大·舒尔金首次合成的致幻性色胺衍生物（4-羟基-二丙基色胺）。低剂量下主要表现为认知敏锐度提升及对艺术、音乐审美鉴赏力的增强，高剂量下则呈现显著的视觉扭曲幻象。该物质通常伴随较强的躯体负荷。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -6670,14 +6670,14 @@
       "summary": "一种致幻性色胺类化合物（4-羟基-二异丙基色胺，亦称 Iprocin），为脱磷酸裸盖菇素（Psilocin）的同系物。其药理体验与致幻蘑菇类似，但在该类别致幻剂中以起效极为迅速、持续时间相对较短而著称。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -6751,14 +6751,14 @@
       "summary": "乙基丙基色胺（EPT）的 4-位羟基化衍生物（4-羟基-乙基丙基色胺 / 4-HO-EPT），属于致幻性色胺。药效强度略高于未取代的母体 EPT。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -6832,14 +6832,14 @@
       "summary": "一种知名的合成致幻性色胺化合物（4-羟基-N-甲基-N-乙基色胺，亦称 Metocin），为脱磷酸裸盖菇素（Psilocin）的功能性结构类似物。游离碱在水和醇中溶解度较差。其主观特征表现为丰富多彩的视觉幻象及较为轻松愉悦的认知心境，躯体负荷相对较低。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -6953,14 +6953,14 @@
       "summary": "色胺类致幻剂化合物（4-羟基-N-甲基-N-丙基色胺），为脱磷酸裸盖菇素（Psilocin）的高级同系物，即 N-甲基-N-丙基色胺（MPT）的 4-位羟基类似物。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -7036,14 +7036,14 @@
       "summary": "一种广为人知的色胺衍生物及脱磷酸裸盖菇素类似物（4-羟基-N-甲基-N-异丙基色胺，亦称 Miprocin），由亚历山大·舒尔金首次合成。据广泛报告其主观效应与致幻蘑菇高度相似，但整体作用时长略短。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -7163,8 +7163,8 @@
       "summary": "一种与 PCP 相关的芳基环己胺类解离性麻醉剂（4-甲氧基苯环利定）。最早由派克-戴维斯（Parke-Davis）于 1960 年代发现，并于 2008 年进入研究化学品市场。效价低于母体 PCP。临床应用极少，曾因其他解离剂短缺而在灰色市场上流通。",
       "interactions": {
         "dangerous": [
-          "中枢兴奋剂",
-          "中枢抑制剂"
+          "Stimulants",
+          "Depressant"
         ],
         "unsafe": [],
         "uncertain": []
@@ -7449,18 +7449,18 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "Tramadol",
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -7529,18 +7529,18 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "Tramadol",
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -7670,22 +7670,22 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Tramadol",
+          "MAOI",
+          "SNRIs",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -7759,12 +7759,12 @@
       ],
       "interactions": {
         "dangerous": [
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "5-羟色胺释放剂",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "三环类抗抑郁药",
-          "曲马多"
+          "SSRIs",
+          "SNRIs",
+          "Serotonin releasers",
+          "MAOI",
+          "Tricyclic antidepressants",
+          "Tramadol"
         ],
         "unsafe": [],
         "uncertain": []
@@ -7816,22 +7816,22 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Tramadol",
+          "MAOI",
+          "SNRIs",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -7907,22 +7907,22 @@
       "interactions": {
         "dangerous": [
           "ΑMT",
-          "单胺氧化酶抑制剂 (MAOI)",
+          "MAOI",
           "PCP"
         ],
         "unsafe": [
-          "取代苯丙胺类",
-          "可卡因",
-          "右美沙芬",
-          "曲马多"
+          "Substituted amphetamines",
+          "Cocaine",
+          "Dextromethorphan",
+          "Tramadol"
         ],
         "uncertain": [
           "2C-T-X",
           "2C-X",
-          "大麻",
+          "Cannabis",
           "DOx",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "麦司卡林",
+          "MDMA",
+          "Mescaline",
           "25x-NBOMe"
         ]
       },
@@ -8050,22 +8050,22 @@
       "interactions": {
         "dangerous": [
           "ΑMT",
-          "单胺氧化酶抑制剂 (MAOI)",
+          "MAOI",
           "PCP"
         ],
         "unsafe": [
-          "取代苯丙胺类",
-          "可卡因",
-          "右美沙芬",
-          "曲马多"
+          "Substituted amphetamines",
+          "Cocaine",
+          "Dextromethorphan",
+          "Tramadol"
         ],
         "uncertain": [
           "2C-T-X",
           "2C-X",
-          "大麻",
+          "Cannabis",
           "DOx",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "麦司卡林",
+          "MDMA",
+          "Mescaline",
           "25x-NBOMe"
         ]
       },
@@ -8181,14 +8181,14 @@
       ],
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -8265,22 +8265,22 @@
       "interactions": {
         "dangerous": [
           "ΑMT",
-          "单胺氧化酶抑制剂 (MAOI)",
+          "MAOI",
           "PCP"
         ],
         "unsafe": [
-          "取代苯丙胺类",
-          "可卡因",
-          "右美沙芬",
-          "曲马多"
+          "Substituted amphetamines",
+          "Cocaine",
+          "Dextromethorphan",
+          "Tramadol"
         ],
         "uncertain": [
           "2C-T-X",
           "2C-X",
-          "大麻",
+          "Cannabis",
           "DOx",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "麦司卡林",
+          "MDMA",
+          "Mescaline",
           "25x-NBOMe"
         ]
       },
@@ -8358,22 +8358,22 @@
       "interactions": {
         "dangerous": [
           "ΑMT",
-          "单胺氧化酶抑制剂 (MAOI)",
+          "MAOI",
           "PCP"
         ],
         "unsafe": [
-          "取代苯丙胺类",
-          "可卡因",
-          "右美沙芬",
-          "曲马多"
+          "Substituted amphetamines",
+          "Cocaine",
+          "Dextromethorphan",
+          "Tramadol"
         ],
         "uncertain": [
           "2C-T-X",
           "2C-X",
-          "大麻",
+          "Cannabis",
           "DOx",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "麦司卡林",
+          "MDMA",
+          "Mescaline",
           "25x-NBOMe"
         ]
       },
@@ -8569,21 +8569,21 @@
       "summary": "一种属于吲唑甲酰胺类的强效合成大麻素受体激动剂（5F-APINACA / 5F-AKB48）。其产生的主观效应与天然大麻有一定相似性，但起效极快且持续时间非常短促。它是 STS-135 的氟代类似物（核心吲哚环被吲唑环所取代），高亲和力的受体完全激动特性使其具备较高的急性毒性与癫痫发作风险。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [],
         "uncertain": [
           "2C-T-x",
           "2C-x",
           "5-MeO-xxT",
-          "取代苯丙胺类",
+          "Substituted amphetamines",
           "ΑMT",
-          "可卡因",
+          "Cocaine",
           "DMT",
           "DOx",
           "LSD",
-          "麦司卡林",
-          "赛洛西宾蘑菇",
+          "Mescaline",
+          "Psilocybin mushrooms",
           "25x-NBOMe"
         ]
       },
@@ -8660,21 +8660,21 @@
       "summary": "一种喹啉酯类合成大麻素受体完全激动剂（5F-PB-22）。具有显著的中枢镇静与感知扭曲特性。作为合成大麻素，其起效极为迅速，因其效价极高且缺乏大麻二酚（CBD）的保护对抗机制，极易引起心动过速、严重意识丧失、惊厥发作乃至急性肾损伤。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [],
         "uncertain": [
           "2C-T-x",
           "2C-x",
           "5-MeO-xxT",
-          "取代苯丙胺类",
+          "Substituted amphetamines",
           "ΑMT",
-          "可卡因",
+          "Cocaine",
           "DMT",
           "DOx",
           "LSD",
-          "麦司卡林",
-          "赛洛西宾蘑菇",
+          "Mescaline",
+          "Psilocybin mushrooms",
           "25x-NBOMe"
         ]
       },
@@ -8768,22 +8768,22 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Tramadol",
+          "MAOI",
+          "SNRIs",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -8871,22 +8871,22 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Tramadol",
+          "MAOI",
+          "SNRIs",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -9000,22 +9000,22 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Tramadol",
+          "SNRIs",
+          "MAOI",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -9195,22 +9195,22 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Tramadol",
+          "SNRIs",
+          "MAOI",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -9441,21 +9441,21 @@
       "summary": "合成大麻素中流传最广的品种之一（AB-FUBINACA），最初由辉瑞公司作为镇痛化合物研发，后因潜在毒性被放弃医用。随后在研究化学品与合成毒品黑市中泛滥。由于其受体激动活性极其强烈且在非法混配物中剂量不均，极易因药物过量导致急性中毒致死，危险性极高。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [],
         "uncertain": [
           "2C-T-x",
           "2C-x",
           "5-MeO-xxT",
-          "取代苯丙胺类",
+          "Substituted amphetamines",
           "ΑMT",
-          "可卡因",
+          "Cocaine",
           "DMT",
           "DOx",
           "LSD",
-          "麦司卡林",
-          "赛洛西宾蘑菇",
+          "Mescaline",
+          "Psilocybin mushrooms",
           "25x-NBOMe"
         ]
       },
@@ -9540,14 +9540,14 @@
       "summary": "AL-LAD（6-烯丙基-6-去甲基-LSD）是一种麦角酰胺类致幻剂，为 LSD 的结构类似物。使用者报告其与 LSD 存在微妙的主观体验差异（如视觉几何变形更为鲜明绚丽），且药效持续时间略短。AL-LAD 的起效剂量区间与高纯度 LSD 相当。自 2013 年在网络上流通以来，在致幻剂探索群体中获得了极高的关注度。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -9636,14 +9636,14 @@
       "summary": "ALD-52（1-乙酰基-LSD / 1-Acetyl-LSD）是一种麦角酰胺类致幻剂，最早由阿尔伯特·霍夫曼（Albert Hofmann）合成，曾在著名的“橙色阳光（Orange Sunshine）”司法审判中作为核心涉案物质而广为人知。该化合物在体内迅速去乙酰化转化为 LSD，属于 LSD 的前体药物，药理效应与 LSD 几乎完全一致。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -9800,27 +9800,27 @@
       "summary": "乙酰芬太尼（Acetylfentanyl）是一种强效阿片类镇痛合成化合物，为芬太尼的 N-乙酰基类似物。其镇痛与中枢抑制效价约为吗啡的 6.67 倍（约比母体化合物芬太尼弱 15 倍）。极易引起致死性呼吸抑制与急性药物过量，非法流通与接触具有极高的致命危险。",
       "interactions": {
         "dangerous": [
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "右美沙芬",
+          "SNRIs",
+          "Alcohol",
+          "Benzodiazepines",
+          "Dextromethorphan",
           "GHB",
           "GBL",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "曲马多",
-          "西柚 / 葡萄柚",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Ketamine",
+          "Methoxetamine",
+          "Tramadol",
+          "Grapefruit",
+          "MAOI",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [],
         "uncertain": [
-          "单胺氧化酶抑制剂 (MAOI)",
-          "一氧化二氮 (笑气)",
+          "MAOI",
+          "Nitrous",
           "PCP",
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -10225,32 +10225,32 @@
       ],
       "interactions": {
         "dangerous": [
-          "中枢抑制剂",
-          "解离剂",
-          "苯二氮䓬类中枢抑制剂",
-          "右美沙芬",
+          "Depressant",
+          "Dissociatives",
+          "Benzodiazepines",
+          "Dextromethorphan",
           "GHB",
           "GBL",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "阿片类药物",
-          "曲马多"
+          "Ketamine",
+          "Methoxetamine",
+          "Opioids",
+          "Tramadol"
         ],
         "unsafe": [
-          "可卡因",
-          "单胺氧化酶抑制剂 (MAOI)",
+          "Cocaine",
+          "MAOI",
           "PCP",
-          "ALDH2 乙醛脱氢酶抑制剂",
-          "肝毒性药物"
+          "ALDH2 inhibitors",
+          "Hepatotoxic drugs"
         ],
         "uncertain": [
-          "中枢兴奋剂",
-          "大麻",
-          "取代苯丙胺类",
+          "Stimulants",
+          "Cannabis",
+          "Substituted amphetamines",
           "ΑMT",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "一氧化二氮 (笑气)",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)"
+          "MDMA",
+          "Nitrous",
+          "SSRIs"
         ]
       },
       "roas": [
@@ -10507,17 +10507,12 @@
       ],
       "interactions": {
         "dangerous": [
-          "阿片类药物 (致命呼吸骤停)",
-          "酮康唑",
-          "伊曲康唑"
+          "Depressant",
+          "Dissociatives"
         ],
-        "unsafe": [
-          "酒精 / 乙醇 (协同严重 CNS 抑制致昏迷)",
-          "西柚汁 (葡萄柚汁)",
-          "西咪替丁"
-        ],
+        "unsafe": [],
         "uncertain": [
-          "氟伏沙明"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -11032,12 +11027,12 @@
       ],
       "interactions": {
         "dangerous": [
-          "曲马多",
+          "Tramadol",
           "ΑMT",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
+          "Dextromethorphan",
           "PCP",
           "25x-NBOMe",
           "2C-T-x",
@@ -11045,16 +11040,16 @@
           "DOx"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
+          "Alcohol",
           "GHB",
           "GBL",
-          "阿片类药物",
-          "可卡因",
-          "大麻",
-          "咖啡因",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "致幻剂"
+          "Opioids",
+          "Cocaine",
+          "Cannabis",
+          "Caffeine",
+          "Ketamine",
+          "Methoxetamine",
+          "Psychedelics"
         ]
       },
       "roas": [
@@ -11312,7 +11307,7 @@
       "summary": "阿尼西坦是一种调节 AMPA 受体的抗焦虑促智药，效力显著强于吡拉西坦。可能对记忆力与认知功能具有改善作用，消遣价值极低。在欧洲作为处方药销售，但尚未获得美国 FDA 批准。",
       "interactions": {
         "dangerous": [
-          "单胺氧化酶抑制剂 (MAOI)"
+          "MAOI"
         ],
         "unsafe": [],
         "uncertain": []
@@ -11522,7 +11517,7 @@
             "peak": {
               "min": 15,
               "max": 30,
-              "units": "hours"
+              "units": "minutes"
             },
             "offset": {
               "min": 30,
@@ -11543,9 +11538,7 @@
         },
         {
           "name": "subcutaneous",
-          "dose": {
-            "units": "Mg#"
-          }
+          "dose": null
         }
       ]
     },
@@ -11763,15 +11756,21 @@
       "summary": "阿莫达非尼是莫达非尼两种异构体中效力更强的一种（R-对映异构体），据报道作用持续时间更长且副作用更少。临床上有时处方用于治疗注意力缺陷多动障碍（ADHD）及白天过度嗜睡。",
       "interactions": {
         "dangerous": [
-          "激素类避孕药 / HRT (CYP3A4 诱导导致疗效失效)"
+          "25x-NBOMe",
+          "25x-NBOH",
+          "Tramadol",
+          "MAOI",
+          "Hormonal birth control"
         ],
         "unsafe": [
-          "奥美拉唑",
-          "地西泮",
-          "华法林"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "中枢神经系统兴奋剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -12251,16 +12250,16 @@
       "summary": "巴氯芬（商品名通常为力奥来素/Lioresal）是一种 GABA-B 受体激动剂和中枢神经系统抑制剂，临床用于治疗肌肉痉挛状态，在酒精依赖戒断治疗中亦显示出应用前景。具有类似于苯尼布特（Phenibut）或普瑞巴林的轻度致醉效应。",
       "interactions": {
         "dangerous": [
-          "解离剂",
-          "中枢兴奋剂",
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "巴比妥类药物",
+          "Dissociatives",
+          "Stimulants",
+          "Alcohol",
+          "Benzodiazepines",
+          "Barbiturates",
           "GHB",
           "GBL",
-          "甲喹酮",
-          "阿片类药物",
-          "中枢抑制剂"
+          "Methaqualone",
+          "Opioids",
+          "Depressant"
         ],
         "unsafe": [],
         "uncertain": []
@@ -12697,9 +12696,9 @@
       "summary": "溴西泮是罗氏公司于 20 世纪 60 年代开发的中长效苯二氮䓬类药物，主要具备显著的抗焦虑作用。大剂量下可能导致去抑制与顺行性遗忘。",
       "interactions": {
         "dangerous": [
-          "中枢抑制剂",
-          "解离剂",
-          "中枢兴奋剂"
+          "Depressant",
+          "Dissociatives",
+          "Stimulants"
         ],
         "unsafe": [],
         "uncertain": []
@@ -12769,12 +12768,12 @@
       "summary": "溴唑仑是一种较新的研究性苯二氮䓬类衍生物，在化学结构上与阿普唑仑高度相近（溴代类似物）。",
       "interactions": {
         "dangerous": [
-          "中枢抑制剂",
-          "解离剂"
+          "Depressant",
+          "Dissociatives"
         ],
         "unsafe": [],
         "uncertain": [
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -12853,14 +12852,14 @@
       "summary": "Bromo-DragonFLY 是一种超强效且药效极其持久的致幻性苯乙胺及苯并呋喃衍生物。2005 至 2006 年间曾被错误混淆并冒充为 2C-B-FLY 贩售，导致了多起严重的致死事故。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -12940,14 +12939,14 @@
       ],
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -13045,22 +13044,22 @@
       ],
       "interactions": {
         "dangerous": [
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "右美沙芬",
+          "Alcohol",
+          "Benzodiazepines",
+          "Dextromethorphan",
           "GHB",
           "GBL",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "曲马多",
-          "西柚 / 葡萄柚"
+          "Ketamine",
+          "Methoxetamine",
+          "Tramadol",
+          "Grapefruit"
         ],
         "unsafe": [],
         "uncertain": [
-          "单胺氧化酶抑制剂 (MAOI)",
-          "一氧化二氮 (笑气)",
+          "MAOI",
+          "Nitrous",
           "PCP",
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -13421,22 +13420,22 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Tramadol",
+          "SNRIs",
+          "MAOI",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -13620,9 +13619,9 @@
           "25x-NBOMe",
           "ΑMT",
           "PCP",
-          "取代苯丙胺类",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "可卡因"
+          "Substituted amphetamines",
+          "MDMA",
+          "Cocaine"
         ]
       },
       "roas": [
@@ -13918,21 +13917,21 @@
       ],
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [],
         "uncertain": [
           "2C-T-x",
           "2C-x",
           "5-MeO-xxT",
-          "取代苯丙胺类",
+          "Substituted amphetamines",
           "ΑMT",
-          "可卡因",
+          "Cocaine",
           "DMT",
           "DOx",
           "LSD",
-          "麦司卡林",
-          "赛洛西宾蘑菇",
+          "Mescaline",
+          "Psilocybin mushrooms",
           "25x-NBOMe"
         ]
       },
@@ -14194,12 +14193,12 @@
       "summary": "卡利普多是一种骨骼肌松弛药（商品名常为索玛/Soma），本身的消遣价值有限，但其主要体内代谢产物甲丙氨酯（Meprobamate）具有中度的镇静安定作用。临床或黑市上有时与可待因或咖啡因制成复方制剂。",
       "interactions": {
         "dangerous": [
-          "中枢抑制剂",
-          "解离剂"
+          "Depressant",
+          "Dissociatives"
         ],
         "unsafe": [],
         "uncertain": [
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -14412,9 +14411,9 @@
       ],
       "interactions": {
         "dangerous": [
-          "中枢抑制剂",
-          "解离剂",
-          "中枢兴奋剂"
+          "Depressant",
+          "Dissociatives",
+          "Stimulants"
         ],
         "unsafe": [],
         "uncertain": []
@@ -14679,12 +14678,12 @@
       "summary": "西诺西泮是一种苯二氮䓬类衍生物，兼具抗焦虑作用，但以显著的镇静催眠效应为主。对于助眠极为有效，相比其他苯二氮䓬类药物其欣快感较轻微。",
       "interactions": {
         "dangerous": [
-          "中枢抑制剂",
-          "解离剂"
+          "Depressant",
+          "Dissociatives"
         ],
         "unsafe": [],
         "uncertain": [
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -15073,16 +15072,12 @@
       "summary": "氯硝西泮是一种常见的中长效处方苯二氮䓬类药物，因其舌下给药起效相对迅速，常用于急性惊恐发作的治疗。以抗焦虑和抗癫痫为主要药理作用，同时也具备典型的肌松与镇静特性。",
       "interactions": {
         "dangerous": [
-          "阿片类药物",
-          "酒精 / 乙醇 (协同强效中枢呼吸抑制)"
+          "Depressant",
+          "Dissociatives"
         ],
-        "unsafe": [
-          "苯妥英钠",
-          "苯巴比妥",
-          "丙戊酸 / 丙戊酸钠 (可诱发失神发作持续状态)"
-        ],
+        "unsafe": [],
         "uncertain": [
-          "CYP3A4 抑制剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -15189,12 +15184,12 @@
       "summary": "氯硝唑仑是一种强效长效的苯二氮䓬类衍生物，具有极强的镇静催眠效应。其临床安全性尚未充分明确，曾有报告指出连续服药仅 3 天在骤停后即诱发癫痫发作。其药理特性常与三唑仑类比，但清除半衰期明显更长。",
       "interactions": {
         "dangerous": [
-          "中枢抑制剂",
-          "解离剂"
+          "Depressant",
+          "Dissociatives"
         ],
         "unsafe": [],
         "uncertain": [
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -15276,16 +15271,12 @@
       "summary": "可乐定是一种中枢性 α2-肾上腺素受体激动剂，常用于治疗高血压、焦虑状态，以及缓解酒精、阿片类药物和烟草的戒断综合征等。",
       "interactions": {
         "dangerous": [
-          "β受体阻滞剂 (停药时加剧恶性高血压反跳)",
-          "TCA (减弱降压效力)"
+          "Depressant",
+          "Dissociatives"
         ],
-        "unsafe": [
-          "酒精 (乙醇)",
-          "中枢神经系统抑制剂",
-          "洋地黄类强心苷 (加重心动过缓)"
-        ],
+        "unsafe": [],
         "uncertain": [
-          "左旋多巴"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -15548,31 +15539,31 @@
       "interactions": {
         "dangerous": [
           "ΑMT",
-          "阿片类药物",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "Opioids",
+          "Tramadol",
+          "MAOI"
         ],
         "unsafe": [
           "DOx",
           "25x-NBOMe",
           "2C-T-x",
           "5-MeO-xxT",
-          "右美沙芬",
+          "Dextromethorphan",
           "PCP",
-          "酒精 (乙醇)"
+          "Alcohol"
         ],
         "uncertain": [
-          "赛洛西宾蘑菇",
+          "Psilocybin mushrooms",
           "LSD",
           "DMT",
-          "麦司卡林",
+          "Mescaline",
           "2C-x",
-          "大麻",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "取代苯丙胺类",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "咖啡因",
+          "Cannabis",
+          "Ketamine",
+          "Methoxetamine",
+          "Substituted amphetamines",
+          "MDMA",
+          "Caffeine",
           "GHB",
           "GBL"
         ]
@@ -15695,22 +15686,22 @@
       ],
       "interactions": {
         "dangerous": [
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "右美沙芬",
+          "Alcohol",
+          "Benzodiazepines",
+          "Dextromethorphan",
           "GHB",
           "GBL",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "曲马多",
-          "西柚 / 葡萄柚"
+          "Ketamine",
+          "Methoxetamine",
+          "Tramadol",
+          "Grapefruit"
         ],
         "unsafe": [],
         "uncertain": [
-          "单胺氧化酶抑制剂 (MAOI)",
-          "一氧化二氮 (笑气)",
+          "MAOI",
+          "Nitrous",
           "PCP",
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -15832,12 +15823,12 @@
       "summary": "考鲁拉西坦是拉西坦家族的促智物质，最初研发用于阿尔茨海默病，目前也被探索用于难治性抑郁障碍与广泛性焦虑障碍。可能作为高亲和力胆碱摄取促进剂与 AMPA 受体正向调节剂，消遣价值极为有限。",
       "interactions": {
         "dangerous": [
-          "中枢抑制剂",
-          "解离剂"
+          "Depressant",
+          "Dissociatives"
         ],
         "unsafe": [],
         "uncertain": [
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -16138,17 +16129,17 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多"
+          "Tramadol"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -16433,14 +16424,14 @@
       ],
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -16612,14 +16603,14 @@
       ],
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -16699,14 +16690,14 @@
       "summary": "DOC（2,5-二甲氧基-4-氯苯异丙胺）是一种强效、兼具兴奋活性的长效致幻性苯乙胺及取代苯丙胺类物质。曾被冒充 LSD 售卖，但在减害社群中亦有使用者单独使用。通常附着于面积稍大于常见 LSD 纸片的印模纸（Blotter）上，或以纯粉末形态存在。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -16841,14 +16832,14 @@
       ],
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -16943,13 +16934,13 @@
       ],
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -17502,8 +17493,8 @@
       "summary": "去氯氯胺酮（DCK）是氯胺酮的新型芳基环己胺类似物，其分离麻醉效力显著高于氯胺酮，且药效持续时间明显更长。",
       "interactions": {
         "dangerous": [
-          "中枢兴奋剂",
-          "中枢抑制剂"
+          "Stimulants",
+          "Depressant"
         ],
         "unsafe": [],
         "uncertain": []
@@ -17738,18 +17729,18 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "Tramadol",
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -17848,12 +17839,12 @@
       ],
       "interactions": {
         "dangerous": [
-          "曲马多",
+          "Tramadol",
           "ΑMT",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
+          "Dextromethorphan",
           "PCP",
           "25x-NBOMe",
           "2C-T-x",
@@ -17861,16 +17852,16 @@
           "DOx"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
+          "Alcohol",
           "GHB",
           "GBL",
-          "阿片类药物",
-          "可卡因",
-          "大麻",
-          "咖啡因",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "致幻剂"
+          "Opioids",
+          "Cocaine",
+          "Cannabis",
+          "Caffeine",
+          "Ketamine",
+          "Methoxetamine",
+          "Psychedelics"
         ]
       },
       "roas": [
@@ -18005,28 +17996,28 @@
         "dangerous": [
           "ΑMT",
           "PCP",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "酒精 (乙醇)",
+          "MDMA",
+          "Alcohol",
           "GHB",
           "GBL",
-          "阿片类药物",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "抗组胺药物"
+          "Opioids",
+          "Tramadol",
+          "MAOI",
+          "SSRIs",
+          "Antihistamine"
         ],
         "unsafe": [
           "DOx",
           "25x-NBOMe",
           "2C-T-x",
           "5-MeO-xxT",
-          "取代苯丙胺类",
-          "可卡因",
-          "安非他酮"
+          "Substituted amphetamines",
+          "Cocaine",
+          "Bupropion"
         ],
         "uncertain": [
-          "苯二氮䓬类中枢抑制剂",
-          "大麻"
+          "Benzodiazepines",
+          "Cannabis"
         ]
       },
       "roas": [
@@ -18117,27 +18108,27 @@
       "summary": "右丙氧芬是一种阿片类镇痛药，为左丙氧芬的光学异构体。临床曾用于治疗轻度疼痛和镇咳。因其对心脏（严重心律失常）、肾脏、肝脏及呼吸抑制等系统性严重致死风险，已在欧美等多国全面撤市。镇痛效力略高于曲马多。",
       "interactions": {
         "dangerous": [
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "右美沙芬",
+          "SNRIs",
+          "Alcohol",
+          "Benzodiazepines",
+          "Dextromethorphan",
           "GHB",
           "GBL",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "曲马多",
-          "西柚 / 葡萄柚",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Ketamine",
+          "Methoxetamine",
+          "Tramadol",
+          "Grapefruit",
+          "MAOI",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [],
         "uncertain": [
-          "单胺氧化酶抑制剂 (MAOI)",
-          "一氧化二氮 (笑气)",
+          "MAOI",
+          "Nitrous",
           "PCP",
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -18449,17 +18440,12 @@
       ],
       "interactions": {
         "dangerous": [
-          "阿片类药物",
-          "中枢神经系统抑制剂"
+          "Depressant",
+          "Dissociatives",
+          "Stimulants"
         ],
-        "unsafe": [
-          "奥美拉唑 (CYP2C19抑制延长清除)",
-          "酒精 (乙醇)",
-          "西咪替丁"
-        ],
-        "uncertain": [
-          "西柚汁 (葡萄柚汁)"
-        ]
+        "unsafe": [],
+        "uncertain": []
       },
       "roas": [
         {
@@ -18562,7 +18548,7 @@
       ],
       "interactions": {
         "dangerous": [
-          "单胺氧化酶抑制剂 (MAOI)"
+          "MAOI"
         ],
         "unsafe": [],
         "uncertain": []
@@ -18758,22 +18744,22 @@
       "summary": "双氢可待因是一种弱效半合成阿片类镇痛兼镇咳药。常与阿司匹林或对乙酰氨基酚配伍制成口服糖浆或片剂。效力略高于可待因，切勿将二者剂量等同对待。",
       "interactions": {
         "dangerous": [
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "右美沙芬",
+          "Alcohol",
+          "Benzodiazepines",
+          "Dextromethorphan",
           "GHB",
           "GBL",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "曲马多",
-          "西柚 / 葡萄柚"
+          "Ketamine",
+          "Methoxetamine",
+          "Tramadol",
+          "Grapefruit"
         ],
         "unsafe": [],
         "uncertain": [
-          "单胺氧化酶抑制剂 (MAOI)",
-          "一氧化二氮 (笑气)",
+          "MAOI",
+          "Nitrous",
           "PCP",
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -19042,8 +19028,8 @@
       "summary": "二苯乙啶（Diphenidine）是一种非竞争性 NMDA 受体拮抗性解离麻醉剂，与依芬乙啶结构相关，具有类似于苯环利定（PCP）和氯胺酮的药理特征。曾作为研究性化学品流行，其剂量反应曲线极其陡峭，微小的剂量增加即可导致深度的解离和精神运动失控，需极度谨慎。",
       "interactions": {
         "dangerous": [
-          "中枢兴奋剂",
-          "中枢抑制剂"
+          "Stimulants",
+          "Depressant"
         ],
         "unsafe": [],
         "uncertain": []
@@ -19714,20 +19700,20 @@
       ],
       "interactions": {
         "dangerous": [
-          "单胺氧化酶抑制剂 (MAOI)",
+          "MAOI",
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多"
+          "Tramadol"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -19833,14 +19819,14 @@
       "summary": "ETH-LAD（6-乙基-6-去甲基-LSD）是一种强效致幻剂，最早由亚历山大·舒尔金合成，效力略高于 LSD。主观体验有时被使用者认为思维冲击感相对平缓，但视觉变形更强。自 2015 年在研究性化学品市场流通后获得了一定知名度。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -19911,11 +19897,11 @@
       ],
       "interactions": {
         "dangerous": [
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "SNRIs",
+          "MAOI",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [],
         "uncertain": []
@@ -20069,8 +20055,8 @@
       "summary": "依芬乙啶是一种解离类药物，其分离解离效力及致意识混乱程度低于 MXE，但整体药理特性相近。据报道在低剂量下常伴随轻度的中枢兴奋效应。",
       "interactions": {
         "dangerous": [
-          "中枢兴奋剂",
-          "中枢抑制剂"
+          "Stimulants",
+          "Depressant"
         ],
         "unsafe": [],
         "uncertain": []
@@ -20147,22 +20133,22 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Tramadol",
+          "SNRIs",
+          "MAOI",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -20248,14 +20234,14 @@
       "summary": "艾司卡林（Escaline，3,5-二甲氧基-4-乙氧基苯乙胺）最早于 20 世纪 50 年代合成，后由大卫·尼科尔斯（David Nichols）在 90 年代重新系统研究。它是麦斯卡林的乙氧基类似物，效力约为麦斯卡林的 6 倍，是一种强效致幻苯乙胺，主观效应包含中枢兴奋和生动的视觉感知扭曲。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -21307,22 +21293,22 @@
       "summary": "乙基吗啡是一种中等强度的半合成阿片类镇痛兼镇咳药，为吗啡的乙基衍生物。效力低于吗啡但强于可待因。据报告具有明显的“天花板效应”（随着剂量增加，欣快感不再持续上升而副作用加剧）。曾被研究用于阿片类依赖维持治疗的潜在备选药物。",
       "interactions": {
         "dangerous": [
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "右美沙芬",
+          "Alcohol",
+          "Benzodiazepines",
+          "Dextromethorphan",
           "GHB",
           "GBL",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "曲马多",
-          "西柚 / 葡萄柚"
+          "Ketamine",
+          "Methoxetamine",
+          "Tramadol",
+          "Grapefruit"
         ],
         "unsafe": [],
         "uncertain": [
-          "单胺氧化酶抑制剂 (MAOI)",
-          "一氧化二氮 (笑气)",
+          "MAOI",
+          "Nitrous",
           "PCP",
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -21404,22 +21390,22 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Tramadol",
+          "SNRIs",
+          "MAOI",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -21503,18 +21489,18 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "Tramadol",
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -21818,12 +21804,12 @@
       ],
       "interactions": {
         "dangerous": [
-          "中枢抑制剂",
-          "解离剂"
+          "Depressant",
+          "Dissociatives"
         ],
         "unsafe": [],
         "uncertain": [
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -21949,12 +21935,12 @@
       ],
       "interactions": {
         "dangerous": [
-          "曲马多",
+          "Tramadol",
           "ΑMT",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
+          "Dextromethorphan",
           "PCP",
           "25x-NBOMe",
           "2C-T-x",
@@ -21962,16 +21948,16 @@
           "DOx"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
+          "Alcohol",
           "GHB",
           "GBL",
-          "阿片类药物",
-          "可卡因",
-          "大麻",
-          "咖啡因",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "致幻剂"
+          "Opioids",
+          "Cocaine",
+          "Cannabis",
+          "Caffeine",
+          "Ketamine",
+          "Methoxetamine",
+          "Psychedelics"
         ]
       },
       "roas": [
@@ -22074,27 +22060,27 @@
       ],
       "interactions": {
         "dangerous": [
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "右美沙芬",
+          "SNRIs",
+          "Alcohol",
+          "Benzodiazepines",
+          "Dextromethorphan",
           "GHB",
           "GBL",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "曲马多",
-          "西柚 / 葡萄柚",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Ketamine",
+          "Methoxetamine",
+          "Tramadol",
+          "Grapefruit",
+          "MAOI",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [],
         "uncertain": [
-          "单胺氧化酶抑制剂 (MAOI)",
-          "一氧化二氮 (笑气)",
+          "MAOI",
+          "Nitrous",
           "PCP",
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -22351,12 +22337,12 @@
       ],
       "interactions": {
         "dangerous": [
-          "中枢抑制剂",
-          "解离剂"
+          "Depressant",
+          "Dissociatives"
         ],
         "unsafe": [],
         "uncertain": [
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -23270,21 +23256,21 @@
       ],
       "interactions": {
         "dangerous": [
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "右美沙芬",
+          "Ketamine",
+          "Methoxetamine",
+          "Dextromethorphan",
           "PCP",
-          "酒精 (乙醇)",
-          "阿片类药物",
-          "曲马多",
-          "苯二氮䓬类中枢抑制剂"
+          "Alcohol",
+          "Opioids",
+          "Tramadol",
+          "Benzodiazepines"
         ],
         "unsafe": [],
         "uncertain": [
-          "一氧化二氮 (笑气)",
-          "取代苯丙胺类",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "可卡因"
+          "Nitrous",
+          "Substituted amphetamines",
+          "MDMA",
+          "Cocaine"
         ]
       },
       "roas": [
@@ -23385,21 +23371,21 @@
       ],
       "interactions": {
         "dangerous": [
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "右美沙芬",
+          "Ketamine",
+          "Methoxetamine",
+          "Dextromethorphan",
           "PCP",
-          "酒精 (乙醇)",
-          "阿片类药物",
-          "曲马多",
-          "苯二氮䓬类中枢抑制剂"
+          "Alcohol",
+          "Opioids",
+          "Tramadol",
+          "Benzodiazepines"
         ],
         "unsafe": [],
         "uncertain": [
-          "一氧化二氮 (笑气)",
-          "取代苯丙胺类",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "可卡因"
+          "Nitrous",
+          "Substituted amphetamines",
+          "MDMA",
+          "Cocaine"
         ]
       },
       "roas": [
@@ -23488,15 +23474,11 @@
       "summary": "GABA（γ-氨基丁酸）的结构类似物，商品名为纽诺汀（Neurontin），最初开发用于抗癫痫治疗。临床上广泛处方用于治疗神经病理性疼痛，由于其具有显著的抗焦虑效应，亦被用于辅助治疗各种焦虑障碍。",
       "interactions": {
         "dangerous": [
-          "阿片类药物 (严重协同中枢与呼吸抑制，FDA黑框警告)"
+          "Opioids",
+          "Depressant"
         ],
-        "unsafe": [
-          "抗酸药物 (含铝镁抗酸药降低加巴喷丁吸收约 20%)",
-          "酒精 (乙醇)"
-        ],
-        "uncertain": [
-          "吗啡 (增加加巴喷丁AUC)"
-        ]
+        "unsafe": [],
+        "uncertain": []
       },
       "roas": [
         {
@@ -24181,22 +24163,22 @@
       ],
       "interactions": {
         "dangerous": [
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "右美沙芬",
+          "Alcohol",
+          "Benzodiazepines",
+          "Dextromethorphan",
           "GHB",
           "GBL",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "曲马多",
-          "西柚 / 葡萄柚"
+          "Ketamine",
+          "Methoxetamine",
+          "Tramadol",
+          "Grapefruit"
         ],
         "unsafe": [],
         "uncertain": [
-          "单胺氧化酶抑制剂 (MAOI)",
-          "一氧化二氮 (笑气)",
+          "MAOI",
+          "Nitrous",
           "PCP",
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -24538,22 +24520,22 @@
       "summary": "一种由可待因衍生的半合成阿片类镇痛药，主要在北美医疗体系中广泛处方，其他国家较少见。整体药理效应相对温和，临床主要用作中重度镇痛药及中枢镇咳药，但在某些场景下存在被滥用倾向。",
       "interactions": {
         "dangerous": [
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "右美沙芬",
+          "Alcohol",
+          "Benzodiazepines",
+          "Dextromethorphan",
           "GHB",
           "GBL",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "曲马多",
-          "西柚 / 葡萄柚"
+          "Ketamine",
+          "Methoxetamine",
+          "Tramadol",
+          "Grapefruit"
         ],
         "unsafe": [],
         "uncertain": [
-          "单胺氧化酶抑制剂 (MAOI)",
-          "一氧化二氮 (笑气)",
+          "MAOI",
+          "Nitrous",
           "PCP",
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -24633,22 +24615,22 @@
       "summary": "一种强效半合成阿片类药物，静脉给药镇痛效力约为静脉注射吗啡的 5 倍左右。美国市场常见速释片剂（如 Dilaudid），其他国家则以缓释制剂为主。临床医院常在需要患者保持清醒的操作/介入手术中用作快速起效的短程镇痛，但在非医疗场景下亦存在高频非法滥用风险。",
       "interactions": {
         "dangerous": [
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "右美沙芬",
+          "Alcohol",
+          "Benzodiazepines",
+          "Dextromethorphan",
           "GHB",
           "GBL",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "曲马多",
-          "西柚 / 葡萄柚"
+          "Ketamine",
+          "Methoxetamine",
+          "Tramadol",
+          "Grapefruit"
         ],
         "unsafe": [],
         "uncertain": [
-          "单胺氧化酶抑制剂 (MAOI)",
-          "一氧化二氮 (笑气)",
+          "MAOI",
+          "Nitrous",
           "PCP",
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -25132,18 +25114,18 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "Tramadol",
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -25248,21 +25230,21 @@
       ],
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [],
         "uncertain": [
           "2C-T-x",
           "2C-x",
           "5-MeO-xxT",
-          "取代苯丙胺类",
+          "Substituted amphetamines",
           "ΑMT",
-          "可卡因",
+          "Cocaine",
           "DMT",
           "DOx",
           "LSD",
-          "麦司卡林",
-          "赛洛西宾蘑菇",
+          "Mescaline",
+          "Psilocybin mushrooms",
           "25x-NBOMe"
         ]
       },
@@ -25338,21 +25320,21 @@
       ],
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [],
         "uncertain": [
           "2C-T-x",
           "2C-x",
           "5-MeO-xxT",
-          "取代苯丙胺类",
+          "Substituted amphetamines",
           "ΑMT",
-          "可卡因",
+          "Cocaine",
           "DMT",
           "DOx",
           "LSD",
-          "麦司卡林",
-          "赛洛西宾蘑菇",
+          "Mescaline",
+          "Psilocybin mushrooms",
           "25x-NBOMe"
         ]
       },
@@ -25865,20 +25847,20 @@
       ],
       "interactions": {
         "dangerous": [
-          "曲马多",
-          "酒精 (乙醇)",
+          "Tramadol",
+          "Alcohol",
           "GHB",
           "GBL",
-          "阿片类药物"
+          "Opioids"
         ],
         "unsafe": [],
         "uncertain": [
-          "取代苯丙胺类",
-          "可卡因",
-          "苯二氮䓬类中枢抑制剂",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "曲唑酮",
-          "西柚 / 葡萄柚"
+          "Substituted amphetamines",
+          "Cocaine",
+          "Benzodiazepines",
+          "MAOI",
+          "Trazodone",
+          "Grapefruit"
         ]
       },
       "roas": [
@@ -26019,22 +26001,22 @@
       "summary": "一种由茜草科帽天木属植物（Mitragyna speciosa，与咖啡树同科）的叶片制备的草本物质。低剂量时表现为温和的中枢兴奋效应，高剂量下则显现出典型的阿片样镇痛镇静特性。高频大剂量长期滥用可导致严重的生理成瘾与剧烈的戒断反应。",
       "interactions": {
         "dangerous": [
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "右美沙芬",
+          "Alcohol",
+          "Benzodiazepines",
+          "Dextromethorphan",
           "GHB",
           "GBL",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "曲马多",
-          "西柚 / 葡萄柚"
+          "Ketamine",
+          "Methoxetamine",
+          "Tramadol",
+          "Grapefruit"
         ],
         "unsafe": [],
         "uncertain": [
-          "单胺氧化酶抑制剂 (MAOI)",
-          "一氧化二氮 (笑气)",
+          "MAOI",
+          "Nitrous",
           "PCP",
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -26220,12 +26202,12 @@
       "interactions": {
         "dangerous": [],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "取代苯丙胺类",
-          "可卡因"
+          "Cannabis",
+          "Substituted amphetamines",
+          "Cocaine"
         ]
       },
       "roas": [
@@ -26302,14 +26284,14 @@
       "summary": "一种天然存在于牵牛花（Morning Glory）和夏威夷小木玫瑰（Hawaiian Baby Woodrose）种子中的色胺/麦角生物碱，常作为合法植物种子流通。其心理致幻效应与 LSD 类似，但视觉幻觉成分极少。该物质以引发严重的恶心、胃部痉挛不适以及高剂量下强烈的时空感膨胀停滞而著称。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -26384,17 +26366,17 @@
       ],
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多",
-          "谵妄剂",
-          "三环类抗抑郁药",
-          "利托那韦"
+          "Tramadol",
+          "Deliriant",
+          "Tricyclic antidepressants",
+          "Ritonavir"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -26481,14 +26463,14 @@
       "summary": "一种麦角酰胺类迷幻剂。按重量计其效力弱于 LSD，相较于其同系物 LSD，LSM-775 诱发的体验往往更偏向温和、梦幻迷离乃至带有一定的中枢镇静色彩。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -26562,14 +26544,14 @@
       "summary": "一种与 LSD 极其相似的麦角酰胺类化合物，通常仅能通过其相对更短的作用时长与 LSD 相区分；部分主观体验报告指出，它在思维层面上可能更具内省自省感，且思维混乱感略少于 LSD。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -27011,12 +26993,12 @@
       ],
       "interactions": {
         "dangerous": [
-          "曲马多",
+          "Tramadol",
           "ΑMT",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
+          "Dextromethorphan",
           "PCP",
           "25x-NBOMe",
           "2C-T-x",
@@ -27024,16 +27006,16 @@
           "DOx"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
+          "Alcohol",
           "GHB",
           "GBL",
-          "阿片类药物",
-          "可卡因",
-          "大麻",
-          "咖啡因",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "致幻剂"
+          "Opioids",
+          "Cocaine",
+          "Cannabis",
+          "Caffeine",
+          "Ketamine",
+          "Methoxetamine",
+          "Psychedelics"
         ]
       },
       "roas": [
@@ -27594,23 +27576,23 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "可卡因",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Tramadol",
+          "MAOI",
+          "SNRIs",
+          "Cocaine",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -27704,22 +27686,22 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Tramadol",
+          "SNRIs",
+          "MAOI",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -27802,22 +27784,22 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Tramadol",
+          "SNRIs",
+          "MAOI",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -27907,24 +27889,24 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "中枢兴奋剂",
-          "可卡因",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Tramadol",
+          "MAOI",
+          "SNRIs",
+          "Stimulants",
+          "Cocaine",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -28046,29 +28028,29 @@
       ],
       "interactions": {
         "dangerous": [
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "右美沙芬"
+          "Tramadol",
+          "MAOI",
+          "Dextromethorphan"
         ],
         "unsafe": [
           "25x-NBOMe",
           "PCP",
-          "5-羟色胺释放剂",
+          "Serotonin releasers",
           "2C-T-x",
-          "5-羟色氨酸 (5-HTP)"
+          "5-Hydroxytryptophan"
         ],
         "uncertain": [
           "5-MeO-xxT",
-          "酒精 (乙醇)",
-          "可卡因",
+          "Alcohol",
+          "Cocaine",
           "DOx",
           "GHB",
           "GBL",
-          "乙环利酮 (MXE)",
+          "Methoxetamine",
           "ΑMT",
-          "蛋白酶抑制剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)"
+          "Protease Inhibitors",
+          "SSRIs",
+          "SNRIs"
         ]
       },
       "roas": [
@@ -28456,18 +28438,18 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "Tramadol",
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -28705,10 +28687,10 @@
           "name": "oral",
           "dose": {
             "units": "mg",
-            "threshold": 200.0,
-            "lightMin": 200.0,
-            "commonMin": 300.0,
-            "strongMin": 700.0,
+            "threshold": 0.2,
+            "lightMin": 0.2,
+            "commonMin": 0.3,
+            "strongMin": 0.7,
             "heavyMin": 1.5
           },
           "duration": {
@@ -28994,8 +28976,8 @@
       ],
       "interactions": {
         "dangerous": [
-          "中枢兴奋剂",
-          "中枢抑制剂"
+          "Stimulants",
+          "Depressant"
         ],
         "unsafe": [],
         "uncertain": []
@@ -29107,7 +29089,7 @@
             "lightMin": 50,
             "commonMin": 400,
             "strongMin": 800,
-            "heavyMin": 600
+            "heavyMin": 1000.0
           }
         }
       ]
@@ -29345,8 +29327,8 @@
       "summary": "一种临床用于阿尔茨海默病治疗的低中度亲和力、电压依赖性非竞争性 NMDA 受体拮抗剂。若被用于超适应症非医疗娱乐性滥用，可能诱发极其冗长、持续时间超过 16 小时以上的深度解离性状态（类似氯胺酮的解离'深洞'）。",
       "interactions": {
         "dangerous": [
-          "中枢兴奋剂",
-          "中枢抑制剂"
+          "Stimulants",
+          "Depressant"
         ],
         "unsafe": [],
         "uncertain": []
@@ -29443,22 +29425,22 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Tramadol",
+          "SNRIs",
+          "MAOI",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -29674,14 +29656,14 @@
           "ΑMT"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
           "5-MeO-xxT",
-          "大麻",
-          "取代苯丙胺类",
-          "可卡因",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "Cannabis",
+          "Substituted amphetamines",
+          "Cocaine",
+          "MAOI"
         ]
       },
       "roas": [
@@ -29764,27 +29746,27 @@
       "summary": "一种长效强效的合成阿片类药物，临床主要用作慢性重度疼痛的镇痛治疗，并因其极长的半衰期而在阿片类成瘾医疗脱瘾及长期替代维持治疗（MMT）中被广泛应用。",
       "interactions": {
         "dangerous": [
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "右美沙芬",
+          "SNRIs",
+          "Alcohol",
+          "Benzodiazepines",
+          "Dextromethorphan",
           "GHB",
           "GBL",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "曲马多",
-          "西柚 / 葡萄柚",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Ketamine",
+          "Methoxetamine",
+          "Tramadol",
+          "Grapefruit",
+          "MAOI",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [],
         "uncertain": [
-          "单胺氧化酶抑制剂 (MAOI)",
-          "一氧化二氮 (笑气)",
+          "MAOI",
+          "Nitrous",
           "PCP",
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -29998,12 +29980,12 @@
       ],
       "interactions": {
         "dangerous": [
-          "曲马多",
+          "Tramadol",
           "ΑMT",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
+          "Dextromethorphan",
           "PCP",
           "25x-NBOMe",
           "2C-T-x",
@@ -30011,16 +29993,16 @@
           "DOx"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
+          "Alcohol",
           "GHB",
           "GBL",
-          "阿片类药物",
-          "可卡因",
-          "大麻",
-          "咖啡因",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "致幻剂"
+          "Opioids",
+          "Cocaine",
+          "Cannabis",
+          "Caffeine",
+          "Ketamine",
+          "Methoxetamine",
+          "Psychedelics"
         ]
       },
       "roas": [
@@ -30276,12 +30258,12 @@
       "summary": "一种喹唑啉酮类强效医药镇静催眠剂，后因苯二氮䓬类药物更优越的安全窗而被全球医药市场逐步淘汰停产。目前除南非地下黑市（以 Mandrax 药丸形式流行）外，在世界其他绝大多数地区已极其罕见。",
       "interactions": {
         "dangerous": [
-          "中枢抑制剂",
-          "解离剂"
+          "Depressant",
+          "Dissociatives"
         ],
         "unsafe": [],
         "uncertain": [
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -30516,18 +30498,18 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "Tramadol",
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -30617,25 +30599,25 @@
       "interactions": {
         "dangerous": [
           "ΑMT",
-          "酒精 (乙醇)",
+          "Alcohol",
           "GHB",
           "GBL",
-          "阿片类药物",
-          "曲马多"
+          "Opioids",
+          "Tramadol"
         ],
         "unsafe": [
-          "单胺氧化酶抑制剂 (MAOI)"
+          "MAOI"
         ],
         "uncertain": [
           "DOx",
           "25x-NBOMe",
           "2C-T-x",
           "PCP",
-          "取代苯丙胺类",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "可卡因",
-          "苯二氮䓬类中枢抑制剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)"
+          "Substituted amphetamines",
+          "MDMA",
+          "Cocaine",
+          "Benzodiazepines",
+          "SSRIs"
         ]
       },
       "roas": [
@@ -30764,9 +30746,9 @@
       "summary": "一种二芳基乙胺类新型解离性物质，是地芬啶（Diphenidine）的高效类似物。该物质以药理效应不可预测、极易发生顺行性失忆断片及突发意识谵妄而著称。",
       "interactions": {
         "dangerous": [
-          "中枢抑制剂",
-          "中枢兴奋剂",
-          "解离剂"
+          "Depressant",
+          "Stimulants",
+          "Dissociatives"
         ],
         "unsafe": [],
         "uncertain": []
@@ -30837,20 +30819,20 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "可卡因"
+          "Tramadol",
+          "MAOI",
+          "MDMA",
+          "Cocaine"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -30990,22 +30972,22 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Tramadol",
+          "SNRIs",
+          "MAOI",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -31105,16 +31087,20 @@
       ],
       "interactions": {
         "dangerous": [
-          "单胺氧化酶抑制剂 (MAOI)",
-          "血管加压药 / 升压药"
+          "25x-NBOMe",
+          "25x-NBOH",
+          "Tramadol",
+          "MAOI"
         ],
         "unsafe": [
-          "酒精 / 乙醇 (破坏缓释机制导致剂量倾泻)",
-          "华法林",
-          "抗惊厥 / 抗癫痫药"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "可乐定"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -31302,22 +31288,22 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Tramadol",
+          "SNRIs",
+          "MAOI",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -31390,14 +31376,14 @@
       ],
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -31675,18 +31661,10 @@
         "common"
       ],
       "interactions": {
-        "dangerous": [
-          "单胺氧化酶抑制剂 (反苯环丙胺、苯乙肼等)"
-        ],
-        "unsafe": [
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "曲马多",
-          "酮康唑"
-        ],
+        "dangerous": [],
+        "unsafe": [],
         "uncertain": [
-          "卡马西平",
-          "西咪替丁"
+          "Antidepressants"
         ]
       },
       "roas": [
@@ -31820,17 +31798,22 @@
       ],
       "interactions": {
         "dangerous": [
-          "甾体避孕药 / 雌激素 (诱导CYP3A4使避孕药/HRT失效)",
-          "环孢素"
+          "25x-NBOMe",
+          "25x-NBOH",
+          "Tramadol",
+          "MAOI",
+          "Hormonal Birth Control",
+          "CYP2C19-substrates"
         ],
         "unsafe": [
-          "地西泮",
-          "苯妥英钠",
-          "华法林",
-          "奥美拉唑"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -31942,22 +31925,22 @@
       ],
       "interactions": {
         "dangerous": [
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "右美沙芬",
+          "Alcohol",
+          "Benzodiazepines",
+          "Dextromethorphan",
           "GHB",
           "GBL",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "曲马多",
-          "西柚 / 葡萄柚"
+          "Ketamine",
+          "Methoxetamine",
+          "Tramadol",
+          "Grapefruit"
         ],
         "unsafe": [],
         "uncertain": [
-          "单胺氧化酶抑制剂 (MAOI)",
-          "一氧化二氮 (笑气)",
+          "MAOI",
+          "Nitrous",
           "PCP",
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -32173,18 +32156,18 @@
       ],
       "interactions": {
         "dangerous": [
-          "阿片类药物",
-          "右美沙芬",
-          "苯海拉明"
+          "Opioids",
+          "Dextromethorphan",
+          "Diphenhydramine"
         ],
         "unsafe": [
-          "中枢兴奋剂",
-          "酒精 (乙醇)",
-          "5-羟色胺释放剂"
+          "Stimulants",
+          "Alcohol",
+          "Serotonin releasers"
         ],
         "uncertain": [
-          "苯二氮䓬类中枢抑制剂",
-          "中枢抑制剂"
+          "Benzodiazepines",
+          "Depressant"
         ]
       },
       "roas": [
@@ -32333,18 +32316,18 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "Tramadol",
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -32471,18 +32454,18 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "Tramadol",
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -32557,22 +32540,22 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Tramadol",
+          "MAOI",
+          "SNRIs",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -32722,18 +32705,18 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "Tramadol",
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -33414,11 +33397,11 @@
         "dangerous": [],
         "unsafe": [],
         "uncertain": [
-          "酒精 (乙醇)",
+          "Alcohol",
           "GHB",
           "GBL",
-          "阿片类药物",
-          "曲马多"
+          "Opioids",
+          "Tramadol"
         ]
       },
       "roas": [
@@ -33628,27 +33611,27 @@
       "summary": "一种强效合成阿片类镇痛药，是临床常用镇痛药曲马多（Tramadol）在体内的主要活性药理代谢产物。单体分子本身的镇痛效力是母药曲马多的数倍，且对 δ-阿片受体和 κ-阿片受体同样展现出显著的结合亲和力。在研究化学品非法市场上曾一度受到热捧，但因涉及原研专利权等法律管制限制，其大规模流通相对罕见。",
       "interactions": {
         "dangerous": [
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "右美沙芬",
+          "SNRIs",
+          "Alcohol",
+          "Benzodiazepines",
+          "Dextromethorphan",
           "GHB",
           "GBL",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "曲马多",
-          "西柚 / 葡萄柚",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Ketamine",
+          "Methoxetamine",
+          "Tramadol",
+          "Grapefruit",
+          "MAOI",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [],
         "uncertain": [
-          "单胺氧化酶抑制剂 (MAOI)",
-          "一氧化二氮 (笑气)",
+          "MAOI",
+          "Nitrous",
           "PCP",
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -33819,8 +33802,8 @@
       "summary": "一种属于芳基环己胺类的强效解离性新型合成物质。在化学结构上是去氯氯胺酮（Deschloroketamine / DCK）与乙环利定（Eticyclidine / PCE）的结构类似物，具有极高的受体结合亲和力与持久的解离作用时长。",
       "interactions": {
         "dangerous": [
-          "中枢兴奋剂",
-          "中枢抑制剂"
+          "Stimulants",
+          "Depressant"
         ],
         "unsafe": [],
         "uncertain": []
@@ -34183,15 +34166,12 @@
       ],
       "interactions": {
         "dangerous": [
-          "阿片类药物"
+          "Depressant",
+          "Dissociatives",
+          "Stimulants"
         ],
-        "unsafe": [
-          "酒精 (乙醇)",
-          "中枢神经系统抑制剂"
-        ],
-        "uncertain": [
-          "苯妥英钠"
-        ]
+        "unsafe": [],
+        "uncertain": []
       },
       "roas": [
         {
@@ -34498,22 +34478,22 @@
       ],
       "interactions": {
         "dangerous": [
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "右美沙芬",
+          "Alcohol",
+          "Benzodiazepines",
+          "Dextromethorphan",
           "GHB",
           "GBL",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "曲马多",
-          "西柚 / 葡萄柚"
+          "Ketamine",
+          "Methoxetamine",
+          "Tramadol",
+          "Grapefruit"
         ],
         "unsafe": [],
         "uncertain": [
-          "单胺氧化酶抑制剂 (MAOI)",
-          "一氧化二氮 (笑气)",
+          "MAOI",
+          "Nitrous",
           "PCP",
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -34616,22 +34596,22 @@
       "summary": "羟吗啡酮（商品名 Opana）是一种强效半合成阿片类镇痛药。作为吗啡的结构衍生物，其镇痛效力约为吗啡的 10 倍。其口服生物利用度极低，因此在非医疗滥用场景下通常被研磨后经鼻黏膜鼻吸或直肠给药。",
       "interactions": {
         "dangerous": [
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "右美沙芬",
+          "Alcohol",
+          "Benzodiazepines",
+          "Dextromethorphan",
           "GHB",
           "GBL",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "曲马多",
-          "西柚 / 葡萄柚"
+          "Ketamine",
+          "Methoxetamine",
+          "Tramadol",
+          "Grapefruit"
         ],
         "unsafe": [],
         "uncertain": [
-          "单胺氧化酶抑制剂 (MAOI)",
-          "一氧化二氮 (笑气)",
+          "MAOI",
+          "Nitrous",
           "PCP",
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -34711,14 +34691,14 @@
       ],
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -34792,8 +34772,8 @@
       "summary": "乙环利定（PCE，Eticyclidine）是一种具有致幻效应的解离性麻醉剂，属于芳基环己胺类化合物。其解离效力略强于苯环利定（PCP）。",
       "interactions": {
         "dangerous": [
-          "中枢兴奋剂",
-          "中枢抑制剂"
+          "Stimulants",
+          "Depressant"
         ],
         "unsafe": [],
         "uncertain": []
@@ -34968,25 +34948,25 @@
           "2C-T-x",
           "ΑMT",
           "5-MeO-xxT",
-          "右美沙芬",
+          "Dextromethorphan",
           "GHB",
           "GBL",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "Tramadol",
+          "MAOI"
         ],
         "unsafe": [
           "DOx",
-          "取代苯丙胺类",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "可卡因",
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)"
+          "Substituted amphetamines",
+          "MDMA",
+          "Cocaine",
+          "Alcohol",
+          "Benzodiazepines",
+          "SSRIs"
         ],
         "uncertain": [
-          "乙环利酮 (MXE)",
-          "咖啡因",
-          "阿片类药物"
+          "Methoxetamine",
+          "Caffeine",
+          "Opioids"
         ]
       },
       "roas": [
@@ -35147,12 +35127,12 @@
       "summary": "一种起效缓慢且具有极强 5-羟色胺释放作用的共情致幻剂。由于其缺乏明显的多巴胺释放机制，使用者常因未能及时体验到预期的兴奋欣快而盲目追加剂量，从而导致体内 5-羟色胺大量蓄积中毒、送医急救乃至死亡。在非法黑市中常被伪装成 MDMA（摇头丸）贩卖销售。",
       "interactions": {
         "dangerous": [
-          "曲马多",
+          "Tramadol",
           "ΑMT",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
+          "Dextromethorphan",
           "PCP",
           "25x-NBOMe",
           "2C-T-x",
@@ -35160,16 +35140,16 @@
           "DOx"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
+          "Alcohol",
           "GHB",
           "GBL",
-          "阿片类药物",
-          "可卡因",
-          "大麻",
-          "咖啡因",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "致幻剂"
+          "Opioids",
+          "Cocaine",
+          "Cannabis",
+          "Caffeine",
+          "Ketamine",
+          "Methoxetamine",
+          "Psychedelics"
         ]
       },
       "roas": [
@@ -35254,14 +35234,14 @@
       "summary": "一种极其罕见的麦角酰胺类致幻剂衍生物，效力略弱于 LSD，但药效持续时间相对更短。",
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [
-          "曲马多"
+          "Tramadol"
         ],
         "uncertain": [
-          "大麻",
-          "中枢兴奋剂"
+          "Cannabis",
+          "Stimulants"
         ]
       },
       "roas": [
@@ -35572,18 +35552,18 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "Tramadol",
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -35841,27 +35821,27 @@
       "summary": "一种由 Otto Eisleb 于 1939 年首次合成的苯基哌啶类合成阿片镇痛药，俗称哌替啶、杜冷丁或美哌啶。作为经典的镇痛药，它曾被广泛处方使用，但后来发现其体内代谢产物去甲哌替啶（Norpethidine）具有明显的中枢神经毒性（可诱发惊厥抽搐），加之与许多药物（特别是单胺氧化酶抑制剂）存在致命的药物相互作用，其临床使用频率已大幅下降。",
       "interactions": {
         "dangerous": [
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "右美沙芬",
+          "SNRIs",
+          "Alcohol",
+          "Benzodiazepines",
+          "Dextromethorphan",
           "GHB",
           "GBL",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "曲马多",
-          "西柚 / 葡萄柚",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Ketamine",
+          "Methoxetamine",
+          "Tramadol",
+          "Grapefruit",
+          "MAOI",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [],
         "uncertain": [
-          "单胺氧化酶抑制剂 (MAOI)",
-          "一氧化二氮 (笑气)",
+          "MAOI",
+          "Nitrous",
           "PCP",
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -36029,12 +36009,12 @@
       "summary": "一种作用时程极长、效力极强但起效主观感知隐匿的苯二氮䓬类药物。在使用者自行盲目给药未知剂量时，因其极易引发灾难性的顺行性健忘、脱抑制行为与意识障碍而臭名昭著。在部分东欧国家被处方用于治疗顽固性癫痫与酒精戒断综合征。",
       "interactions": {
         "dangerous": [
-          "中枢抑制剂",
-          "解离剂"
+          "Depressant",
+          "Dissociatives"
         ],
         "unsafe": [],
         "uncertain": [
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -36670,16 +36650,12 @@
       ],
       "summary": "普瑞巴林（商品名乐瑞卡 Lyrica）是一种 GABA 结构类似物，临床主要用于治疗神经病理性疼痛、部分性癫痫发作以及广泛性焦虑障碍。",
       "interactions": {
-        "dangerous": [
-          "阿片类药物 (严重协同呼吸抑制与昏迷风险)"
-        ],
-        "unsafe": [
-          "劳拉西泮",
-          "酒精 / 乙醇 (运动协调障碍与镇静大幅放大)",
-          "噻唑烷二酮类降糖药 (加剧水肿)"
-        ],
+        "dangerous": [],
+        "unsafe": [],
         "uncertain": [
-          "羟考酮"
+          "Oxycodone",
+          "SSRIs",
+          "MDMA"
         ]
       },
       "roas": [
@@ -37001,18 +36977,18 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "Tramadol",
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -37177,18 +37153,18 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "Tramadol",
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -37441,13 +37417,13 @@
       "interactions": {
         "dangerous": [],
         "unsafe": [
-          "曲马多",
-          "碳酸锂"
+          "Tramadol",
+          "Lithium"
         ],
         "uncertain": [
-          "大麻",
-          "取代苯丙胺类",
-          "可卡因"
+          "Cannabis",
+          "Substituted amphetamines",
+          "Cocaine"
         ]
       },
       "roas": [
@@ -37689,20 +37665,12 @@
       "summary": "一种商品名为思瑞康（Seroquel）的非典型抗精神病处方药。临床亦常被超说明书用于治疗顽固性失眠及情绪大幅波动。该药物具有极强的中枢镇静作用，常被在急救场景下用于终止或减弱经典致幻剂的药效进程（Trip Killer）。极少出现药物滥用情况。",
       "interactions": {
         "dangerous": [
-          "酮康唑",
-          "克拉霉素",
-          "红霉素",
-          "匹莫齐特"
+          "Depressant"
         ],
-        "unsafe": [
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "美沙酮",
-          "氟哌啶醇"
-        ],
+        "unsafe": [],
         "uncertain": [
-          "苯妥英钠",
-          "卡马西平"
+          "Stimulants",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -37990,23 +37958,23 @@
           "5-MeO-xxT",
           "GHB",
           "GBL",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "阿片类药物"
+          "Tramadol",
+          "MAOI",
+          "Opioids"
         ],
         "unsafe": [
           "DOx",
-          "取代苯丙胺类",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "可卡因",
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "右美沙芬"
+          "Substituted amphetamines",
+          "MDMA",
+          "Cocaine",
+          "Alcohol",
+          "Benzodiazepines",
+          "SSRIs",
+          "Dextromethorphan"
         ],
         "uncertain": [
-          "乙环利酮 (MXE)",
-          "咖啡因"
+          "Methoxetamine",
+          "Caffeine"
         ]
       },
       "roas": [
@@ -38357,21 +38325,21 @@
       ],
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [],
         "uncertain": [
           "2C-T-x",
           "2C-x",
           "5-MeO-xxT",
-          "取代苯丙胺类",
+          "Substituted amphetamines",
           "ΑMT",
-          "可卡因",
+          "Cocaine",
           "DMT",
           "DOx",
           "LSD",
-          "麦司卡林",
-          "赛洛西宾蘑菇",
+          "Mescaline",
+          "Psilocybin mushrooms",
           "25x-NBOMe"
         ]
       },
@@ -39372,27 +39340,27 @@
       "summary": "一种强效合成阿片类麻醉镇痛药，其镇痛效力约为母体药物芬太尼的 5 至 10 倍。其临床应用严格局限于手术室内全身麻醉诱导维持及严重术后镇痛。",
       "interactions": {
         "dangerous": [
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "右美沙芬",
+          "SNRIs",
+          "Alcohol",
+          "Benzodiazepines",
+          "Dextromethorphan",
           "GHB",
           "GBL",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "曲马多",
-          "西柚 / 葡萄柚",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Ketamine",
+          "Methoxetamine",
+          "Tramadol",
+          "Grapefruit",
+          "MAOI",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [],
         "uncertain": [
-          "单胺氧化酶抑制剂 (MAOI)",
-          "一氧化二氮 (笑气)",
+          "MAOI",
+          "Nitrous",
           "PCP",
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -39614,21 +39582,21 @@
       ],
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [],
         "uncertain": [
           "2C-T-x",
           "2C-x",
           "5-MeO-xxT",
-          "取代苯丙胺类",
+          "Substituted amphetamines",
           "ΑMT",
-          "可卡因",
+          "Cocaine",
           "DMT",
           "DOx",
           "LSD",
-          "麦司卡林",
-          "赛洛西宾蘑菇",
+          "Mescaline",
+          "Psilocybin mushrooms",
           "25x-NBOMe"
         ]
       },
@@ -39701,21 +39669,21 @@
       ],
       "interactions": {
         "dangerous": [
-          "碳酸锂"
+          "Lithium"
         ],
         "unsafe": [],
         "uncertain": [
           "2C-T-x",
           "2C-x",
           "5-MeO-xxT",
-          "取代苯丙胺类",
+          "Substituted amphetamines",
           "ΑMT",
-          "可卡因",
+          "Cocaine",
           "DMT",
           "DOx",
           "LSD",
-          "麦司卡林",
-          "赛洛西宾蘑菇",
+          "Mescaline",
+          "Psilocybin mushrooms",
           "25x-NBOMe"
         ]
       },
@@ -39876,11 +39844,11 @@
       "summary": "一种极为罕见的致幻苯丙胺及麦斯卡林类似物。由亚历山大·舒尔金首次合成，他曾将其描述为“甲氧基化苯丙胺类化合物中最具满足感与愉悦感的物质之一”。",
       "interactions": {
         "dangerous": [
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "SNRIs",
+          "MAOI",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [],
         "uncertain": []
@@ -40119,27 +40087,27 @@
       "summary": "一种合成阿片类镇痛药物，其效力介于曲马多与吗啡之间，药理机制与曲马多相似。它同时作为 μ-阿片受体激动剂与去甲肾上腺素重摄取抑制剂（NRI）发挥双重作用。具有较高的成瘾潜力，过量使用极易诱发致命的呼吸抑制。严禁与中枢抑制剂或兴奋剂混合使用。",
       "interactions": {
         "dangerous": [
-          "5-羟色胺与去甲肾上腺素再摄取抑制剂 (SNRI)",
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "右美沙芬",
+          "SNRIs",
+          "Alcohol",
+          "Benzodiazepines",
+          "Dextromethorphan",
           "GHB",
           "GBL",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "曲马多",
-          "西柚 / 葡萄柚",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "5-羟色胺释放剂",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "5-羟色氨酸 (5-HTP)"
+          "Ketamine",
+          "Methoxetamine",
+          "Tramadol",
+          "Grapefruit",
+          "MAOI",
+          "Serotonin releasers",
+          "SSRIs",
+          "5-Hydroxytryptophan"
         ],
         "unsafe": [],
         "uncertain": [
-          "单胺氧化酶抑制剂 (MAOI)",
-          "一氧化二氮 (笑气)",
+          "MAOI",
+          "Nitrous",
           "PCP",
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -41126,23 +41094,23 @@
       "categories": [],
       "interactions": {
         "dangerous": [
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "右美沙芬",
+          "Alcohol",
+          "Benzodiazepines",
+          "Dextromethorphan",
           "GHB",
           "GBL",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "曲马多",
-          "西柚 / 葡萄柚"
+          "Ketamine",
+          "Methoxetamine",
+          "Tramadol",
+          "Grapefruit"
         ],
         "unsafe": [],
         "uncertain": [
-          "取代苯丙胺类",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "一氧化二氮 (笑气)",
+          "Substituted amphetamines",
+          "MAOI",
+          "Nitrous",
           "PCP",
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -41234,7 +41202,7 @@
           "name": "oral",
           "dose": {
             "units": "mg",
-            "threshold": 25.0,
+            "threshold": 1.0,
             "lightMin": 2.0,
             "commonMin": 4.0,
             "strongMin": 6.0,
@@ -41562,24 +41530,24 @@
       ],
       "interactions": {
         "dangerous": [
-          "可卡因",
-          "右美沙芬",
+          "Cocaine",
+          "Dextromethorphan",
           "GHB",
           "GBL",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "西柚 / 葡萄柚",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
+          "MAOI",
+          "Grapefruit",
+          "MDMA",
           "ΑMT"
         ],
         "unsafe": [
           "2C-T-x"
         ],
         "uncertain": [
-          "苯二氮䓬类中枢抑制剂",
-          "乙环利酮 (MXE)",
-          "酒精 (乙醇)",
-          "一氧化二氮 (笑气)",
-          "取代苯丙胺类"
+          "Benzodiazepines",
+          "Methoxetamine",
+          "Alcohol",
+          "Nitrous",
+          "Substituted amphetamines"
         ]
       },
       "roas": [
@@ -42189,18 +42157,18 @@
         "dangerous": [
           "25x-NBOMe",
           "25x-NBOH",
-          "曲马多",
-          "单胺氧化酶抑制剂 (MAOI)"
+          "Tramadol",
+          "MAOI"
         ],
         "unsafe": [
-          "右美沙芬",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "中枢兴奋剂"
+          "Dextromethorphan",
+          "MDMA",
+          "Stimulants"
         ],
         "uncertain": [
-          "酒精 (乙醇)",
-          "乙环利酮 (MXE)",
-          "解离剂"
+          "Alcohol",
+          "Methoxetamine",
+          "Dissociatives"
         ]
       },
       "roas": [
@@ -42277,22 +42245,22 @@
       "summary": "一种强效合成 μ-阿片受体激动剂，在结构上与 AH-7921 密切相关。其药效持续时间极短，且中枢呼吸抑制毒性极高。",
       "interactions": {
         "dangerous": [
-          "酒精 (乙醇)",
-          "苯二氮䓬类中枢抑制剂",
-          "右美沙芬",
+          "Alcohol",
+          "Benzodiazepines",
+          "Dextromethorphan",
           "GHB",
           "GBL",
-          "氯胺酮",
-          "乙环利酮 (MXE)",
-          "曲马多",
-          "西柚 / 葡萄柚"
+          "Ketamine",
+          "Methoxetamine",
+          "Tramadol",
+          "Grapefruit"
         ],
         "unsafe": [],
         "uncertain": [
-          "单胺氧化酶抑制剂 (MAOI)",
-          "一氧化二氮 (笑气)",
+          "MAOI",
+          "Nitrous",
           "PCP",
-          "中枢兴奋剂"
+          "Stimulants"
         ]
       },
       "roas": [
@@ -44129,24 +44097,24 @@
           "2C-T-x",
           "2C-x",
           "5-MeO-xxT",
-          "取代苯丙胺类",
-          "可卡因",
+          "Substituted amphetamines",
+          "Cocaine",
           "DOx",
-          "右美沙芬",
-          "单胺氧化酶抑制剂 (MAOI)",
-          "MDMA (亚甲二氧甲基苯丙胺) (亚甲二氧甲基苯丙胺)",
-          "麦司卡林",
-          "乙环利酮 (MXE)",
+          "Dextromethorphan",
+          "MAOI",
+          "MDMA",
+          "Mescaline",
+          "Methoxetamine",
           "25x-NBOMe",
           "PCP",
-          "选择性5-羟色胺再摄取抑制剂 (SSRI)",
-          "曲马多"
+          "SSRIs",
+          "Tramadol"
         ],
         "unsafe": [],
         "uncertain": [
-          "酒精 (乙醇)",
-          "咖啡因",
-          "大麻"
+          "Alcohol",
+          "Caffeine",
+          "Cannabis"
         ]
       },
       "roas": [

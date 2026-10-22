@@ -272,10 +272,21 @@ interface ExperienceDao {
     @Transaction
     suspend fun deleteEverythingOfExperience(experienceId: Int) {
         deleteIngestions(experienceId)
+        deleteTimedNotes(experienceId)
         deleteRatings(experienceId)
         deleteExperience(experienceId)
     }
 
+    @Transaction
+    suspend fun replaceEverything(journalExport: JournalExport) {
+        deleteEverything()
+        insertEverything(journalExport)
+    }
+
+
+    @Transaction
+    @Query("DELETE FROM timedNote WHERE experienceId = :experienceId")
+    suspend fun deleteTimedNotes(experienceId: Int)
 
     @Transaction
     @Query("DELETE FROM ingestion")

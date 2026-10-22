@@ -21,6 +21,7 @@ package com.isaakhanimann.journal.ui.tabs.journal.addingestion.interactions
 import com.isaakhanimann.journal.data.substances.classes.InteractionType
 import com.isaakhanimann.journal.data.substances.classes.Interactions
 import com.isaakhanimann.journal.data.substances.repositories.SubstanceRepository
+import com.isaakhanimann.journal.ui.tabs.search.SubstanceLocalizationHelper
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -159,19 +160,44 @@ class InteractionChecker @Inject constructor(
     }
 
     private fun extendAndCleanInteractions(interactions: List<String>): List<String> {
-        return interactions.flatMap { name ->
+        return interactions.flatMap { rawName ->
+            val resolvedList = mutableListOf(rawName)
+            // 归一化中文名称或附带注释的条目为标准英文名
+            SubstanceLocalizationHelper.getCanonicalEnglishName(rawName)?.let { canonical ->
+                resolvedList.add(canonical)
+            }
+            // 去除括号中的临床说明或化学注释
+            val clean = rawName.replace(Regex("[\\(（][^\\)）]*[\\)）]"), "").trim()
+            if (clean != rawName && clean.isNotEmpty()) {
+                resolvedList.add(clean)
+                SubstanceLocalizationHelper.getCanonicalEnglishName(clean)?.let { canonical ->
+                    resolvedList.add(canonical)
+                }
+            }
+            // 针对 "/"、"、" 拆分多物质条目
+            val parts = clean.split(Regex("[/、|]")).map { it.trim() }.filter { it.isNotEmpty() }
+            if (parts.size > 1) {
+                for (part in parts) {
+                    resolvedList.add(part)
+                    SubstanceLocalizationHelper.getCanonicalEnglishName(part)?.let { canonical ->
+                        resolvedList.add(canonical)
+                    }
+                }
+            }
+            resolvedList
+        }.flatMap { name ->
             when (name) {
-                "Substituted amphetamines" -> {
-                    return@flatMap substitutedAmphetamines
+                "Substituted amphetamines", "取代苯丙胺类" -> {
+                    substitutedAmphetamines
                 }
-                "Serotonin releasers" -> {
-                    return@flatMap serotoninReleasers
+                "Serotonin releasers", "5-羟色胺释放剂" -> {
+                    serotoninReleasers
                 }
-                "Tricyclic antidepressants" -> {
-                    return@flatMap emptyList() // remove because we don't want to match "depressant" with it and there is no substance that belongs to that class
+                "Tricyclic antidepressants", "三环类抗抑郁药" -> {
+                    emptyList() // remove because we don't want to match "depressant" with it and there is no substance that belongs to that class
                 }
                 else -> {
-                    return@flatMap listOf(name)
+                    listOf(name)
                 }
             }
         }.distinct()

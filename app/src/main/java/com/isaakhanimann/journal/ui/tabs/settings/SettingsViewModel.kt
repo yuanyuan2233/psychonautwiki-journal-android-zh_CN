@@ -29,9 +29,11 @@ import com.isaakhanimann.journal.data.room.experiences.ExperienceRepository
 import com.isaakhanimann.journal.ui.tabs.settings.combinations.UserPreferences
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 import javax.inject.Inject
@@ -89,7 +91,9 @@ class SettingsViewModel @Inject constructor(
 
     fun importFile(uri: Uri) {
         viewModelScope.launch {
-            val text = fileSystemConnection.getTextFromUri(uri)
+            val text = withContext(Dispatchers.IO) {
+                fileSystemConnection.getTextFromUri(uri)
+            }
             if (text == null) {
                 snackbarHostState.showSnackbar(
                     message = context.getString(R.string.settings_file_not_found),
@@ -97,10 +101,20 @@ class SettingsViewModel @Inject constructor(
                 )
             } else {
                 try {
-                    val json = Json { ignoreUnknownKeys = true }
-                    val journalExport = json.decodeFromString<JournalExport>(text)
-                    experienceRepository.deleteEverything()
-                    experienceRepository.insertEverything(journalExport)
+                    val journalExport = withContext(Dispatchers.IO) {
+                        val json = Json { ignoreUnknownKeys = true }
+                        json.decodeFromString<JournalExport>(text)
+                    }
+                    if (journalExport.isEmpty()) {
+                        snackbarHostState.showSnackbar(
+                            message = context.getString(R.string.settings_decoding_file_failed),
+                            duration = SnackbarDuration.Short
+                        )
+                        return@launch
+                    }
+                    withContext(Dispatchers.IO) {
+                        experienceRepository.replaceEverything(journalExport)
+                    }
                     snackbarHostState.showSnackbar(
                         message = context.getString(R.string.settings_import_successful),
                         duration = SnackbarDuration.Short
@@ -196,8 +210,12 @@ class SettingsViewModel @Inject constructor(
                 customUnits = customUnitsSerializable
             )
             try {
-                val jsonList = Json.encodeToString(journalExport)
-                fileSystemConnection.saveTextInUri(uri, text = jsonList)
+                val jsonList = withContext(Dispatchers.Default) {
+                    Json.encodeToString(journalExport)
+                }
+                withContext(Dispatchers.IO) {
+                    fileSystemConnection.saveTextInUri(uri, text = jsonList)
+                }
                 snackbarHostState.showSnackbar(
                     message = context.getString(R.string.settings_export_successful),
                     duration = SnackbarDuration.Short

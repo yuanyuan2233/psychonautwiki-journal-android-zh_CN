@@ -34,7 +34,11 @@ data class JournalExport(
     val substanceCompanions: List<SubstanceCompanion> = emptyList(),
     val customSubstances: List<CustomSubstance> = emptyList(),
     val customUnits: List<CustomUnitSerializable> = emptyList()
-)
+) {
+    fun isEmpty(): Boolean {
+        return experiences.isEmpty() && substanceCompanions.isEmpty() && customSubstances.isEmpty() && customUnits.isEmpty()
+    }
+}
 
 @Serializable
 data class ExperienceSerializable(

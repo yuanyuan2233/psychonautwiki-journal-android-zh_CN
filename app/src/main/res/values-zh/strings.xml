@@ -13,7 +13,7 @@
     <string name="disclaimer_mitigate_risks">我使用本应用仅用于个人或他人物质使用的风险减害（Harm Reduction）与安全参考。</string>
     <string name="disclaimer_incomplete_data">我知悉本应用内包含的数据可能存在误差、局限或不完整。</string>
     <string name="disclaimer_professional_help">在尝试任何形式的自我治疗前，我应当主动寻求专业医疗人员的协助与诊断。</string>
-    <string name="disclaimer_local_data_notice">您的数据始终完全加密保存在本地设备上</string>
+    <string name="disclaimer_local_data_notice">您的数据始终保存在本地设备上</string>
     <string name="btn_continue">继续</string>
 
     <!-- Administration Routes (ROA) -->

@@ -32,6 +32,9 @@ class ToleranceCalculatorTest {
         assertEquals(120.0, ToleranceTimeParser.getZeroToleranceInHours("LSD", null)!!, 0.01)
         assertEquals(72.0, ToleranceTimeParser.getHalfToleranceInHours("Psilocybin", null)!!, 0.01)
         assertEquals(1800.0, ToleranceTimeParser.getZeroToleranceInHours("MDMA", null)!!, 0.01)
+        assertEquals(36.0, ToleranceTimeParser.getHalfToleranceInHours("2C-B", null)!!, 0.01)
+        assertEquals(72.0, ToleranceTimeParser.getZeroToleranceInHours("2C-B", null)!!, 0.01)
+        assertEquals(2.0, ToleranceTimeParser.getZeroToleranceInHours("Changa", null)!!, 0.01)
     }
 
     @Test

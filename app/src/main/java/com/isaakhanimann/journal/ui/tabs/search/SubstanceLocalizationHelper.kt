@@ -697,6 +697,55 @@ object SubstanceLocalizationHelper {
      */
     fun getLocalizedName(name: String): String = getSubstanceDisplayName(name)
 
+    /**
+     * 将中文名称、别名或包含注释的交互词条反向归一化为英文 Canonical Name 或标准类别标识
+     */
+    fun getCanonicalEnglishName(name: String): String? {
+        val trimmed = name.trim()
+        if (trimmed.isEmpty()) return null
+
+        // 1. 如果本身就是标准英文键
+        if (ZH_NAME_MAP.containsKey(trimmed)) return trimmed
+        ZH_NAME_MAP.keys.firstOrNull { it.equals(trimmed, ignoreCase = true) }?.let { return it }
+
+        // 2. 去除括号中的临床说明或化学注释
+        val clean = trimmed.replace(Regex("[\\(（][^\\)）]*[\\)）]"), "").trim()
+        if (clean.isNotEmpty()) {
+            if (ZH_NAME_MAP.containsKey(clean)) return clean
+            ZH_NAME_MAP.keys.firstOrNull { it.equals(clean, ignoreCase = true) }?.let { return it }
+
+            // 反查字典
+            ZH_NAME_MAP.entries.firstOrNull { it.value.equals(clean, ignoreCase = true) }?.key?.let { return it }
+
+            // 针对 "/"、"、" 拆分部分进行反查
+            val parts = clean.split(Regex("[/、|]")).map { it.trim() }.filter { it.isNotEmpty() }
+            for (part in parts) {
+                ZH_NAME_MAP.entries.firstOrNull { it.value.equals(part, ignoreCase = true) }?.key?.let { return it }
+            }
+
+            // 常见大类词条归一化
+            when {
+                clean.contains("中枢抑制剂") || clean.contains("中枢神经系统抑制剂") -> return "Depressant"
+                clean.contains("中枢兴奋剂") || clean.contains("中枢神经兴奋剂") -> return "Stimulants"
+                clean.contains("阿片") -> return "Opioids"
+                clean.contains("解离") -> return "Dissociatives"
+                clean.contains("致幻") -> return "Psychedelics"
+                clean.contains("苯二氮") -> return "Benzodiazepines"
+                clean.contains("单胺氧化酶") || clean.contains("MAOI") -> return "MAOI"
+                clean.contains("三环类") || clean.contains("TCA") -> return "Tricyclic antidepressants"
+                clean.contains("SSRI") -> return "SSRIs"
+                clean.contains("SNRI") -> return "SNRIs"
+                clean.contains("5-羟色胺释放") -> return "Serotonin releasers"
+                clean.contains("取代苯丙胺") -> return "Substituted amphetamines"
+            }
+        }
+
+        // 3. 全词反查
+        ZH_NAME_MAP.entries.firstOrNull { it.value.equals(trimmed, ignoreCase = true) }?.key?.let { return it }
+
+        return null
+    }
+
     fun isChinese(): Boolean {
         return Locale.getDefault().language.startsWith("zh")
     }

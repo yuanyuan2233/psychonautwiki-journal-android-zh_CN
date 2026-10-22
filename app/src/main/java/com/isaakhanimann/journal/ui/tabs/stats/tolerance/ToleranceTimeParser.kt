@@ -49,12 +49,12 @@ object ToleranceTimeParser {
      * 获取指定物质的半耐受小时数 (Half Tolerance in Hours)
      */
     fun getHalfToleranceInHours(substanceName: String, tolerance: Tolerance?): Double? {
-        if (tolerance == null) return null
-        
         // 1. 优先尝试解析文本
-        val parsed = parseTimeToHours(tolerance.half)
-        if (parsed != null && parsed > 0) {
-            return parsed
+        if (tolerance != null) {
+            val parsed = parseTimeToHours(tolerance.half)
+            if (parsed != null && parsed > 0) {
+                return parsed
+            }
         }
 
         // 2. 查基准对照表
@@ -74,12 +74,12 @@ object ToleranceTimeParser {
      * 获取指定物质的耐受归零小时数 (Zero Tolerance in Hours)
      */
     fun getZeroToleranceInHours(substanceName: String, tolerance: Tolerance?): Double? {
-        if (tolerance == null) return null
-
         // 1. 优先尝试解析文本
-        val parsed = parseTimeToHours(tolerance.zero)
-        if (parsed != null && parsed > 0) {
-            return parsed
+        if (tolerance != null) {
+            val parsed = parseTimeToHours(tolerance.zero)
+            if (parsed != null && parsed > 0) {
+                return parsed
+            }
         }
 
         // 2. 查基准对照表
