@@ -76,12 +76,14 @@ class ToleranceViewModel @Inject constructor(
 
                 val now = Instant.now()
                 val fromInstant = now.minus(range.days, ChronoUnit.DAYS)
+                // 考虑长半衰期耐受（如 MDMA 归零约需 75 天），回溯更早的摄入以包含当前仍处于耐受期的窗口
+                val lookbackLimit = fromInstant.minus(120, ChronoUnit.DAYS)
 
-                // 提取用户历史上在此时间段内的真实摄入
+                // 提取用户历史上的真实摄入
                 val realIngestions = experiencesWithIngestions.flatMap { exp ->
                     exp.ingestionsWithCompanionAndCustomUnit
                         .map { it.ingestion }
-                        .filter { ing -> ing.time.isAfter(fromInstant) }
+                        .filter { ing -> ing.time.isAfter(lookbackLimit) }
                         .map { ing ->
                             SubstanceAndDay(
                                 substanceName = ing.substanceName,
@@ -102,7 +104,10 @@ class ToleranceViewModel @Inject constructor(
                         substanceCompanions = companions,
                         substanceRepo = substanceRepo,
                         customizations = customMap
-                    )
+                    ).filter { window ->
+                        // 窗口终点在所选时间范围起点之后，即在此时间段内仍处于耐受期
+                        window.end.isAfter(fromInstant)
+                    }
 
                     // 找出有记录但暂无耐受模型的物质名称
                     val allNames = allIngestionPairs.map { it.substanceName }.toSet()

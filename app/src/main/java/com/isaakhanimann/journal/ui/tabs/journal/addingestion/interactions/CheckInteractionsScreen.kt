@@ -75,6 +75,10 @@ fun CheckInteractionsScreen(
     navigateToNext: () -> Unit,
     viewModel: CheckInteractionsViewModel = hiltViewModel()
 ) {
+    val context = androidx.compose.ui.platform.LocalContext.current
+    val alertText = androidx.compose.runtime.remember(viewModel.alertItems, context) {
+        viewModel.getFormattedAlertText(context)
+    }
     CheckInteractionsScreen(
         substanceName = viewModel.substanceName,
         substanceUrl = viewModel.substance.url,
@@ -89,7 +93,7 @@ fun CheckInteractionsScreen(
         },
         isShowingAlert = viewModel.isShowingAlert,
         alertInteractionType = viewModel.alertInteractionType,
-        alertText = viewModel.alertText
+        alertText = alertText
     )
 }
 

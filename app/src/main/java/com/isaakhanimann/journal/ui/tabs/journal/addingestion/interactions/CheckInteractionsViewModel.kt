@@ -44,7 +44,6 @@ import javax.inject.Inject
 
 @HiltViewModel
 class CheckInteractionsViewModel @Inject constructor(
-    @ApplicationContext private val context: Context,
     substanceRepo: SubstanceRepository,
     private val experienceRepo: ExperienceRepository,
     private val combinationSettingsStorage: CombinationSettingsStorage,
@@ -61,8 +60,14 @@ class CheckInteractionsViewModel @Inject constructor(
     var isSearchingForInteractions by mutableStateOf(true)
     var isShowingAlert by mutableStateOf(false)
     var alertInteractionType by mutableStateOf<InteractionType?>(null)
-    var alertText by mutableStateOf("")
+    var alertItems by mutableStateOf<List<AlertItem>>(emptyList())
     private var latestIngestionsOfEverySubstanceSinceTwoDays: List<Ingestion> = emptyList()
+
+    sealed interface AlertItem {
+        val type: InteractionType
+        data class IngestionAlert(override val type: InteractionType, val ingestion: Ingestion) : AlertItem
+        data class ExtraAlert(override val type: InteractionType, val extra: String) : AlertItem
+    }
 
     init {
         viewModelScope.launch {
@@ -103,36 +108,44 @@ class CheckInteractionsViewModel @Inject constructor(
             } else {
                 return
             }
-        val now = Instant.now()
-        val messages = dangerousIngestions.map { ingestion ->
-            val timeDiff = getDurationText(fromInstant = ingestion.time, toInstant = now, context = context)
-            val localizedName = com.isaakhanimann.journal.ui.tabs.search.SubstanceLocalizationHelper.getLocalizedName(ingestion.substanceName)
-            context.getString(R.string.journal_alert_dangerous_with_time, localizedName, timeDiff)
-        }.toMutableList()
-        messages += dangerousExtras.map { extra ->
-            val localizedExtra = com.isaakhanimann.journal.ui.tabs.search.SubstanceLocalizationHelper.getLocalizedName(extra)
-            context.getString(R.string.journal_alert_dangerous_extra, localizedExtra)
-        }
-        messages += unsafeIngestions.map { ingestion ->
-            val timeDiff = getDurationText(fromInstant = ingestion.time, toInstant = now, context = context)
-            val localizedName = com.isaakhanimann.journal.ui.tabs.search.SubstanceLocalizationHelper.getLocalizedName(ingestion.substanceName)
-            context.getString(R.string.journal_alert_unsafe_with_time, localizedName, timeDiff)
-        }
-        messages += unsafeExtras.map { extra ->
-            val localizedExtra = com.isaakhanimann.journal.ui.tabs.search.SubstanceLocalizationHelper.getLocalizedName(extra)
-            context.getString(R.string.journal_alert_unsafe_extra, localizedExtra)
-        }
-        messages += uncertainIngestions.map { ingestion ->
-            val timeDiff = getDurationText(fromInstant = ingestion.time, toInstant = now, context = context)
-            val localizedName = com.isaakhanimann.journal.ui.tabs.search.SubstanceLocalizationHelper.getLocalizedName(ingestion.substanceName)
-            context.getString(R.string.journal_alert_uncertain_with_time, localizedName, timeDiff)
-        }
-        messages += uncertainExtras.map { extra ->
-            val localizedExtra = com.isaakhanimann.journal.ui.tabs.search.SubstanceLocalizationHelper.getLocalizedName(extra)
-            context.getString(R.string.journal_alert_uncertain_extra, localizedExtra)
-        }
-        alertText = messages.distinct().joinToString(separator = "\n")
+        val items = mutableListOf<AlertItem>()
+        dangerousIngestions.forEach { items.add(AlertItem.IngestionAlert(InteractionType.DANGEROUS, it)) }
+        dangerousExtras.forEach { items.add(AlertItem.ExtraAlert(InteractionType.DANGEROUS, it)) }
+        unsafeIngestions.forEach { items.add(AlertItem.IngestionAlert(InteractionType.UNSAFE, it)) }
+        unsafeExtras.forEach { items.add(AlertItem.ExtraAlert(InteractionType.UNSAFE, it)) }
+        uncertainIngestions.forEach { items.add(AlertItem.IngestionAlert(InteractionType.UNCERTAIN, it)) }
+        uncertainExtras.forEach { items.add(AlertItem.ExtraAlert(InteractionType.UNCERTAIN, it)) }
+        alertItems = items
         isShowingAlert = true
+    }
+
+    fun getFormattedAlertText(context: Context): String {
+        val now = Instant.now()
+        val messages = mutableListOf<String>()
+        for (item in alertItems) {
+            when (item) {
+                is AlertItem.IngestionAlert -> {
+                    val timeDiff = getDurationText(fromInstant = item.ingestion.time, toInstant = now, context = context)
+                    val localizedName = com.isaakhanimann.journal.ui.tabs.search.SubstanceLocalizationHelper.getLocalizedName(item.ingestion.substanceName)
+                    val strRes = when (item.type) {
+                        InteractionType.DANGEROUS -> R.string.journal_alert_dangerous_with_time
+                        InteractionType.UNSAFE -> R.string.journal_alert_unsafe_with_time
+                        InteractionType.UNCERTAIN -> R.string.journal_alert_uncertain_with_time
+                    }
+                    messages.add(context.getString(strRes, localizedName, timeDiff))
+                }
+                is AlertItem.ExtraAlert -> {
+                    val localizedExtra = com.isaakhanimann.journal.ui.tabs.search.SubstanceLocalizationHelper.getLocalizedName(item.extra)
+                    val strRes = when (item.type) {
+                        InteractionType.DANGEROUS -> R.string.journal_alert_dangerous_extra
+                        InteractionType.UNSAFE -> R.string.journal_alert_unsafe_extra
+                        InteractionType.UNCERTAIN -> R.string.journal_alert_uncertain_extra
+                    }
+                    messages.add(context.getString(strRes, localizedExtra))
+                }
+            }
+        }
+        return messages.distinct().joinToString(separator = "\n")
     }
 
     private fun getIngestionsWithInteraction(): List<IngestionInteraction> {
